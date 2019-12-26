@@ -41,9 +41,9 @@ const App = () => {
         transparent: '0.1'
     };
     return (
-        <div className="App">
+        <ThemeProvider theme={theme}>
             App
-        </div>
+        </ThemeProvider>
     );
 }
 
