@@ -1,11 +1,8 @@
 import React, {useState, useEffect} from 'react';
-import {Navbar, Nav} from 'react-bootstrap';
 import styled from 'styled-components';
 import {elastic as Menu} from 'react-burger-menu'
 
 import {SECTION_NAMES} from '../../data/constants';
-
-import logo from '../../assets/images/logo.svg';
 
 const StyledMenu = styled(Menu)`
 /* Position and sizing of burger button */
@@ -82,7 +79,10 @@ const SideMenu = (props) => {
 
     return (
 
-        <StyledMenu>
+        <StyledMenu
+            pageWrapId={ "page-wrap" }
+            outerContainerId={ "outer-container" }
+        >
             {
                 SECTION_NAMES.map((section) => {
                     return (
