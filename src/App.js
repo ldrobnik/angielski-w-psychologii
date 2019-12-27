@@ -2,6 +2,8 @@ import React from 'react';
 import {ThemeProvider} from 'styled-components';
 import ReactGA from 'react-ga';
 
+import Home from './components/Home/Home';
+
 //Google Analytics code
 const ANALYTICS_KEY = process.env.REACT_APP_ANALYTICS_KEY; // Google analytics API key
 ReactGA.initialize(ANALYTICS_KEY);
@@ -38,11 +40,25 @@ const App = () => {
         //opacity
         slightlyTranslucent: '0.7',
         translucent: '0.5',
-        transparent: '0.1'
+        transparent: '0.1',
+
+        //animations
+        pulsateAnimation: '0.8s ease-in-out infinite',
+        blurAnimation: '6s ease-out alternate infinite',
+        popAnimation: '0.5s ease-in-out 1',
+        fadeInAnimation:'0.7s ease-in-out 1',
+
+        //blur filter
+        lightBlur: '3px',
+        heavyBlur: '8px',
+
+        //spacing
+        navIconMargin: '0.1em',
+        navIconPadding: '0.6em'
     };
     return (
         <ThemeProvider theme={theme}>
-            App
+            <Home />
         </ThemeProvider>
     );
 }
