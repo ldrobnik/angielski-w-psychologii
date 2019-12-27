@@ -4,6 +4,8 @@ import styled from 'styled-components';
 
 import {SECTION_NAMES} from '../../data/constants';
 
+import logo from '../../assets/images/logo.svg';
+
 const NavigationBar = (props) => {
 
     const StyledNavLink = styled(Nav.Link)`
@@ -16,7 +18,16 @@ const NavigationBar = (props) => {
 
     return (
 
-        <Navbar bg="light" variant="light">
+        <Navbar expand="md" collapseOnSelect="true" bg="light" variant="light">
+            <Navbar.Brand href="#">
+                <img
+                    src={logo}
+                    alt="Logo"
+                    width="30"
+                    height="30"
+                    className="d-inline-block align-top"
+                />
+            </Navbar.Brand>
             <Nav className="mr-auto">
                 {
                     SECTION_NAMES.map((section) => {
