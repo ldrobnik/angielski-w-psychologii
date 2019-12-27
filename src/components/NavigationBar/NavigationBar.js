@@ -18,7 +18,7 @@ const NavigationBar = (props) => {
 
     return (
 
-        <Navbar bg="light" variant="light">
+        <Navbar bg="light" variant="light" sticky="top">
             <Navbar.Brand href="#">
                 <img
                     src={logo}
