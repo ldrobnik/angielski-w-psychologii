@@ -17,7 +17,7 @@ const App = () => {
         themeColor: '#9D0059',
         darkThemeColor: '#682049',
         darkColor: '#0f0f0f',
-        lightColor: '#bbbbbb',
+        lightColor: '#f8f9fa',
 
         //fonts
         cursive: `'Fugaz One', cursive`,
