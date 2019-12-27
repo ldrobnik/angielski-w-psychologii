@@ -14,7 +14,7 @@ const App = () => {
     // Theme to be used in the project, two primary colors depending on redux state
     const theme = {
         //colours
-        themeColor: '#9D0059',
+        themeColor: '#9d0059',
         darkThemeColor: '#682049',
         darkColor: '#0f0f0f',
         lightColor: '#f8f9fa',
