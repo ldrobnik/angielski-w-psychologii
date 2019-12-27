@@ -31,10 +31,10 @@ const App = () => {
         smallCaptionSize: '0.8em',
 
         //breakpoints
-        extraSmallScr: '480px',
-        smallScr: '736px',
-        mediumScr: '980px',
-        largeScr: '1280px',
+        extraSmallScr: '576px',
+        smallScr: '768px',
+        mediumScr: '992px',
+        largeScr: '1200px',
         extraLargeScr: '1690px',
 
         //opacity
