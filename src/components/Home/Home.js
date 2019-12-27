@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {createGlobalStyle} from 'styled-components';
+import NavBar from "../NavBar/NavBar";
 
 /* STYLED COMPONENTS */
 const GlobalStyle = createGlobalStyle`
@@ -27,7 +28,7 @@ const Home = (props) => {
     return (
         <React.Fragment>
             <GlobalStyle />
-            Home
+            <NavBar />
         </React.Fragment>
     );
 };
