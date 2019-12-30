@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {createGlobalStyle} from 'styled-components';
+import styled, {createGlobalStyle} from 'styled-components';
 
 import NavigationBar from "../NavigationBar/NavigationBar";
 import SideMenu from "../SideMenu/SideMenu";
@@ -59,15 +59,15 @@ const Home = (props) => {
         <div id="outer-container">
             <GlobalStyle />
             {menu}
+            <div id="top"></div>
             <div id="page-wrap">
                 {
                     SECTION_NAMES.map((section) => {
                         return (
                             <div key={section.id} >
-                                <h1 id={`#${section.id}`}>{section.name}</h1>
+                                <h1 id={section.id}>{section.name}</h1>
                                 {FILLER}
                             </div>
-
 
                         )
                     })
