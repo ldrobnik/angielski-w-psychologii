@@ -9,10 +9,9 @@ import logo from '../../assets/images/logo.svg';
 const NavigationBar = (props) => {
 
     const StyledNavLink = styled(Nav.Link)`
-
+      color: ${props => props.theme.themeColor} !important;
       &&&.active {
-        color: ${props => props.theme.themeColor} !important;
-      
+         color: ${props => props.theme.darkColor} !important;
       }    
 `;
 
