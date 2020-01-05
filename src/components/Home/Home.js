@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import styled, {createGlobalStyle} from 'styled-components';
 
+
 import NavigationBar from "../NavigationBar/NavigationBar";
 import SideMenu from "../SideMenu/SideMenu";
 
@@ -26,6 +27,7 @@ const GlobalStyle = createGlobalStyle`
         background-color: ${props => props.theme.themeColor};
      }
 `;
+
 
 const Home = (props) => {
 
@@ -65,7 +67,9 @@ const Home = (props) => {
                     SECTION_NAMES.map((section) => {
                         return (
                             <div key={section.id} >
-                                <h1 id={section.id}>{section.name}</h1>
+                                <h1 id={section.id}>
+                                    {section.name}
+                                </h1>
                                 {FILLER}
                             </div>
 
