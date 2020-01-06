@@ -1,5 +1,4 @@
 import React from 'react';
-import {ThemeProvider} from 'styled-components';
 import ReactGA from 'react-ga';
 
 import Home from './components/Home/Home';
@@ -11,55 +10,8 @@ ReactGA.pageview(window.location.pathname + window.location.search);
 
 const App = () => {
 
-    // Theme to be used in the project, two primary colors depending on redux state
-    const theme = {
-        //colours
-        themeColor: '#9d0059',
-        darkThemeColor: '#682049',
-        darkColor: '#0f0f0f',
-        lightColor: '#f8f9fa',
-
-        //fonts
-        cursive: `'Fugaz One', cursive`,
-        serif: `'Roboto Slab', serif`,
-
-        //font sizes
-        titleSize: '5em',
-        subtitleSize: '2em',
-        bodySize: '1.3em',
-        captionSize: '1em',
-        smallCaptionSize: '0.8em',
-
-        //breakpoints
-        extraSmallScr: '576px',
-        smallScr: '768px',
-        mediumScr: '992px',
-        largeScr: '1200px',
-        extraLargeScr: '1690px',
-
-        //opacity
-        slightlyTranslucent: '0.7',
-        translucent: '0.5',
-        transparent: '0.1',
-
-        //animations
-        pulsateAnimation: '0.8s ease-in-out infinite',
-        blurAnimation: '6s ease-out alternate infinite',
-        popAnimation: '0.5s ease-in-out 1',
-        fadeInAnimation:'0.7s ease-in-out 1',
-
-        //blur filter
-        lightBlur: '3px',
-        heavyBlur: '8px',
-
-        //spacing
-        navIconMargin: '0.1em',
-        navIconPadding: '0.6em'
-    };
     return (
-        <ThemeProvider theme={theme}>
-            <Home />
-        </ThemeProvider>
+        <Home/>
     );
 }
 

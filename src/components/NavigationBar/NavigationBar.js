@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import {Navbar, Nav} from 'react-bootstrap';
-import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import './NavigatorBar.css';
