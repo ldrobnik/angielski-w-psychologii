@@ -2,7 +2,7 @@
 
 
 body {
-  background: linear-gradient($themeColor, darken($themeColor, 7)) !important;
+  background: linear-gradient($themeColor, darken($themeColor, 7));
   font-family: $serif;
   @include set-selection;
 }
@@ -33,4 +33,3 @@ a {
   }
 
 }
-
