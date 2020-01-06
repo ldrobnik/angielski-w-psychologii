@@ -17,36 +17,39 @@ const NavigationBar = (props) => {
 
     return (
 
-        <Navbar bg="light" variant="light" sticky="top">
+        <Navbar collapseOnSelect expand="lg" bg="light" variant="light" sticky="top">
             <Navbar.Brand>
                 <AnchorLink href="#top"
                             offset={OFFSET}>
-                <img
-                    src={logo}
-                    alt="Logo"
-                    width="30"
-                    height="30"
-                    className="d-inline-block align-top"
-                />
+                    <img
+                        src={logo}
+                        alt="Logo"
+                        width="30"
+                        height="30"
+                        className="d-inline-block align-top"
+                    />
                 </AnchorLink>
             </Navbar.Brand>
-            <Nav className="mr-auto">
-                {
-                    SECTION_NAMES.map((section) => {
-                        return (
-                            <Nav.Link key={section.id}>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse>
+                <Nav className="mr-auto">
+                    {
+                        SECTION_NAMES.map((section) => {
+                            return (
+                                <Nav.Link key={section.id}>
 
-                                <StyledNavLink href={`#${section.id}`}
-                                            offset={OFFSET}>
-                                    {section.name}
-                                </StyledNavLink>
+                                    <StyledNavLink href={`#${section.id}`}
+                                                   offset={OFFSET}>
+                                        {section.name}
+                                    </StyledNavLink>
 
-                            </Nav.Link>
+                                </Nav.Link>
 
-                        )
-                    })
-                }
-            </Nav>
+                            )
+                        })
+                    }
+                </Nav>
+            </Navbar.Collapse>
         </Navbar>
 
     );
