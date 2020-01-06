@@ -1,6 +1,6 @@
 body {
   background: linear-gradient(#9d0059, #790045);
-  font-family: "Roboto Slab", serif; }
+  font-family: "Roboto Slab", serif !important; }
   body ::-moz-selection {
     background: #9d0059;
     color: #f8f9fa; }

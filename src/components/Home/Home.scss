@@ -3,7 +3,7 @@
 
 body {
   background: linear-gradient($themeColor, darken($themeColor, 7));
-  font-family: $serif;
+  font-family: $serif !important;
   @include set-selection;
 }
 
