@@ -4,23 +4,23 @@ import React from 'react';
 export const SECTION_NAMES = [
     {
         id: 'o-mnie',
-        name: 'O mnie'
+        name: <React.Fragment>O&nbsp;mnie</React.Fragment>
     },
     {
         id: 'angielski-w-psychologii',
-        name: 'Angielski w psychologii'
+        name: <React.Fragment>Angielski w&nbsp;psychologii</React.Fragment>
     },
     {
         id: 'tlumaczenia-w-psychologii',
-        name: 'Tłumaczenia w psychologii'
+        name: <React.Fragment>Tłumaczenia w&nbsp;psychologii</React.Fragment>
     },
     {
         id: 'oferta',
-        name: 'Oferta'
+        name: <React.Fragment>Oferta</React.Fragment>
     },
     {
         id: 'kontakt',
-        name: 'Kontakt'
+        name: <React.Fragment>Kontakt</React.Fragment>
     }
 ];
 

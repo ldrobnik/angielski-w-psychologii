@@ -1,1 +1,36 @@
-@import '../../styles/main';
+@import '../../styles/common';
+
+
+body {
+  background: linear-gradient($themeColor, darken($themeColor, 7)) !important;
+  font-family: $serif;
+  @include set-selection;
+}
+
+a {
+  color: $themeColor;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:link {
+    color: $themeColor;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $themeColor;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: $themeColor;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: $themeColor;
+    text-decoration: none;
+  }
+
+}
+

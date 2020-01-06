@@ -1,0 +1,11 @@
+@import '../../styles/common';
+
+.navLink {
+  color: $themeColor !important;
+  text-decoration: none !important;
+  padding: 10px;
+}
+
+.active {
+  color: setColor(-1) !important;
+}

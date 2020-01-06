@@ -3,16 +3,11 @@ import {Navbar, Nav} from 'react-bootstrap';
 import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
+import './NavigatorBar.css';
+
 import {SECTION_NAMES, OFFSET_DESKTOP, OFFSET_MOBILE, MOBILE_BREAKPOINT} from '../../data/constants';
 
 import logo from '../../assets/images/logo.svg';
-
-/* STYLED COMPONENTS */
-const StyledNavLink = styled(AnchorLink)`
-      color: ${props => props.theme.themeColor} !important;
-      text-decoration: none;
-      padding: 10px;
-`;
 
 const NavigationBar = (props) => {
 
@@ -74,17 +69,18 @@ const NavigationBar = (props) => {
                     {
                         SECTION_NAMES.map((section) => {
                             return (
-                                <StyledNavLink
+                                <AnchorLink
                                     key={section.id}
                                     href={`#${section.id}`}
                                     offset={scrollOffset}
                                     onClick={() => setNavExpanded(false)}
+                                    className='navLink'
                                 >
 
                                         {section.name}
 
 
-                                </StyledNavLink>
+                                </AnchorLink>
 
                             )
                         })

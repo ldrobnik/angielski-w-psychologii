@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,QAAS;EACP,KAAK,EAAE,kBAAsB;EAC7B,eAAe,EAAE,eAAe;EAChC,OAAO,EAAE,IAAI;;AAGf,OAAQ;EACN,KAAK,EAAE,kBAAuB",
+"sources": ["NavigatorBar.scss"],
+"names": [],
+"file": "NavigatorBar.css"
+}
