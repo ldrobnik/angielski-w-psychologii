@@ -7,17 +7,38 @@ import {SECTION_NAMES, OFFSET} from '../../data/constants';
 
 import logo from '../../assets/images/logo.svg';
 
-const NavigationBar = (props) => {
-
-    const StyledNavLink = styled(AnchorLink)`
+/* STYLED COMPONENTS */
+const StyledNavLink = styled(AnchorLink)`
       color: ${props => props.theme.themeColor} !important;
       text-decoration: none;
+      padding: 10px;
          
 `;
 
+const NavigationBar = (props) => {
+
+    // Specifies whether the nav is expanded
+    const [navExpanded, setNavExpanded] = useState(false);
+
+    //expands the nav
+    const expandNav = () => {
+        setNavExpanded(true)
+    };
+
+    //closes the nav
+    const closeNav = () => {
+        setNavExpanded(false)
+    };
+
     return (
 
-        <Navbar collapseOnSelect expand="lg" bg="light" variant="light" sticky="top">
+        <Navbar
+            collapseOnSelect
+            expand="lg"
+            bg="light"
+            variant="light"
+            sticky="top"
+            >
             <Navbar.Brand>
                 <AnchorLink href="#top"
                             offset={OFFSET}>
@@ -32,18 +53,23 @@ const NavigationBar = (props) => {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse>
-                <Nav className="mr-auto">
+                <Nav
+                    className="mr-auto"
+
+                >
                     {
                         SECTION_NAMES.map((section) => {
                             return (
-                                <Nav.Link key={section.id}>
+                                <StyledNavLink
+                                    key={section.id}
+                                    href={`#${section.id}`}
+                                    offset={OFFSET}
+                                >
 
-                                    <StyledNavLink href={`#${section.id}`}
-                                                   offset={OFFSET}>
                                         {section.name}
-                                    </StyledNavLink>
 
-                                </Nav.Link>
+
+                                </StyledNavLink>
 
                             )
                         })
