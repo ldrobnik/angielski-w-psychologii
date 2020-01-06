@@ -12,7 +12,6 @@ const StyledNavLink = styled(AnchorLink)`
       color: ${props => props.theme.themeColor} !important;
       text-decoration: none;
       padding: 10px;
-         
 `;
 
 const NavigationBar = (props) => {
@@ -28,7 +27,7 @@ const NavigationBar = (props) => {
             collapseOnSelect
             onToggle={() => setNavExpanded(!navExpanded)}
             expanded={navExpanded}
-            expand="lg"
+            expand="md"
             bg="light"
             variant="light"
             sticky="top"
