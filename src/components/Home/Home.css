@@ -1,0 +1,28 @@
+body {
+  background: linear-gradient(#9d0059, #6a003c) !important;
+  font-family: "Roboto Slab", serif; }
+  body ::-moz-selection {
+    background: #9d0059;
+    color: #f8f9fa; }
+  body ::selection {
+    background: #9d0059;
+    color: #f8f9fa; }
+
+a {
+  color: #9d0059;
+  text-decoration: none;
+  cursor: pointer; }
+  a:link {
+    color: #9d0059;
+    text-decoration: none; }
+  a:visited {
+    color: #9d0059;
+    text-decoration: none; }
+  a:hover {
+    color: #9d0059;
+    text-decoration: none; }
+  a:active {
+    color: #9d0059;
+    text-decoration: none; }
+
+/*# sourceMappingURL=Home.css.map */
