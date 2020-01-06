@@ -20,20 +20,14 @@ const NavigationBar = (props) => {
     // Specifies whether the nav is expanded
     const [navExpanded, setNavExpanded] = useState(false);
 
-    //expands the nav
-    const expandNav = () => {
-        setNavExpanded(true)
-    };
 
-    //closes the nav
-    const closeNav = () => {
-        setNavExpanded(false)
-    };
 
     return (
 
         <Navbar
             collapseOnSelect
+            onToggle={() => setNavExpanded(!navExpanded)}
+            expanded={navExpanded}
             expand="lg"
             bg="light"
             variant="light"
@@ -41,7 +35,9 @@ const NavigationBar = (props) => {
             >
             <Navbar.Brand>
                 <AnchorLink href="#top"
-                            offset={OFFSET}>
+                            offset={OFFSET}
+                            onClick={() => setNavExpanded(false)}
+                >
                     <img
                         src={logo}
                         alt="Logo"
@@ -53,10 +49,7 @@ const NavigationBar = (props) => {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse>
-                <Nav
-                    className="mr-auto"
-
-                >
+                <Nav className="mr-auto">
                     {
                         SECTION_NAMES.map((section) => {
                             return (
@@ -64,6 +57,7 @@ const NavigationBar = (props) => {
                                     key={section.id}
                                     href={`#${section.id}`}
                                     offset={OFFSET}
+                                    onClick={() => setNavExpanded(false)}
                                 >
 
                                         {section.name}
