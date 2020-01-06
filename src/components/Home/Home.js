@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import {Container} from 'react-bootstrap';
 
 import './Home.css';
 
@@ -17,18 +16,15 @@ const Home = (props) => {
 
     return (
         <div id="outer-container">
-            <NavigationBar />
+            <NavigationBar/>
             <div id="top"></div>
             <div id="page-wrap">
-                <Container>
-                    <Jumbotron />
-                    <About id={SECTION_NAMES[0]} />
-                    <EnglishInPsychology id={SECTION_NAMES[1]} />
-                    <TranslationsInPsychology id={SECTION_NAMES[2]} />
-                    <Offer id={SECTION_NAMES[3]} />
-                    <Contact id={SECTION_NAMES[4]} />
-                </Container>
-
+                <Jumbotron/>
+                <About id={SECTION_NAMES[0]}/>
+                <EnglishInPsychology id={SECTION_NAMES[1]}/>
+                <TranslationsInPsychology id={SECTION_NAMES[2]}/>
+                <Offer id={SECTION_NAMES[3]}/>
+                <Contact id={SECTION_NAMES[4]}/>
             </div>
         </div>
     );

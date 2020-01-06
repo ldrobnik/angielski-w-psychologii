@@ -25,4 +25,8 @@ a {
     color: #9d0059;
     text-decoration: none; }
 
+.lightBackground {
+  background-color: #f8f9fa !important;
+  width: 100vw; }
+
 /*# sourceMappingURL=Home.css.map */
