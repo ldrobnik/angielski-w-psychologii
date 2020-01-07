@@ -1,10 +1,17 @@
 .anchorButton {
   display: block;
-  background: #f8f9fa;
-  font-size: 1.5em;
-  width: 5em;
-  margin: 1em auto 0 auto; }
+  background-color: #f8f9fa;
+  max-width: 6em;
+  margin: 1em auto 0 auto;
+  padding: 0.3em 0.5em;
+  font-size: 2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #9d0059 !important;
+  transition: background-color 1s; }
   .anchorButton:hover {
-    background: white; }
+    background-color: #ffd0eb;
+    text-decoration: none; }
 
 /*# sourceMappingURL=AnchorButton.css.map */

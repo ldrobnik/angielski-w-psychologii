@@ -38,3 +38,17 @@
   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
 }
+
+//creates box shadow
+@mixin shadow($x, $y, $blur, $spread, $brightness) {
+  -webkit-box-shadow: $x $y $blur $spread setColor($brightness);
+  -moz-box-shadow: $x $y $blur $spread setColor($brightness);
+  box-shadow: $x $y $blur $spread setColor($brightness);
+}
+
+//creates inset box shadow
+@mixin insetShadow($x, $y, $blur, $spread, $brightness) {
+  -webkit-box-shadow: inset $x $y $blur $spread setColor($brightness);
+  -moz-box-shadow: inset $x $y $blur $spread setColor($brightness);
+  box-shadow: inset $x $y $blur $spread setColor($brightness);
+}

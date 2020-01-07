@@ -2,12 +2,19 @@
 
 .anchorButton {
   display: block;
-  background: $lightColor;
-  font-size: 1.5em;
-  width: 5em;
+  background-color: $lightColor;
+  max-width: 6em;
   margin: 1em auto 0 auto;
+  padding: 0.3em 0.5em;
+  font-size: 2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: $themeColor !important;
+  transition: background-color 1s;
 
   &:hover {
-    background: setColor(7);
+    background-color: setColor(6);
+    text-decoration: none;
   }
 }

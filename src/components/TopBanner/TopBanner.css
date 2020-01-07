@@ -8,7 +8,7 @@
 
 .title {
   font-family: "Fugaz One", cursive;
-  margin-top: 15vh;
+  margin-top: 18vh;
   font-size: 4em; }
   @media all and (max-width: 450px) {
     .title {
@@ -21,7 +21,7 @@
 
 .subtitle {
   font-size: 1.2em;
-  margin: 1em 0 1.5em 0; }
+  margin: 1.5em 0 2em 0; }
   @media all and (max-width: 450px) {
     .subtitle {
       font-size: 1em; } }
