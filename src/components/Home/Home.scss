@@ -40,6 +40,10 @@ a {
   color: $darkColor;
   width: 100vw;
   @include set-selection($themeColor, $lightColor);
+
+  h1 {
+    color: $themeColor;
+  }
 }
 
 .sectionContent {

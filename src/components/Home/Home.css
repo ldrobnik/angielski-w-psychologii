@@ -36,6 +36,8 @@ a {
   .lightBackground ::selection {
     background: #9d0059;
     color: #f8f9fa; }
+  .lightBackground h1 {
+    color: #9d0059; }
 
 .sectionContent {
   padding: 3% 1% 5% 1%; }
