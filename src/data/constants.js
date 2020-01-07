@@ -24,6 +24,13 @@ export const SECTION_NAMES = [
     }
 ];
 
+//Text used on the website
+export const WEBSITE_TEXT = {
+    topBanner: {
+        title: <React.Fragment>Angielski w&nbsp;psychologii</React.Fragment>
+    }
+};
+
 //offset used for smooth scrolling
 export const OFFSET_DESKTOP = '60px';
 export const OFFSET_MOBILE = '280px';
