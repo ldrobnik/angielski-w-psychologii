@@ -41,7 +41,7 @@ export const WEBSITE_TEXT = {
         <React.Fragment>Wychodząc naprzeciw potrzebom osób, które nie mają czasu lub możliwości uczestniczenia
             w&nbsp;moich kursach na żywo, oferuję zajęcia przez Skype.</React.Fragment>
     ],
-    englishInPsychology: [
+    english: [
         <React.Fragment><p>Chcesz być <span
             class="highlighted">na bieżąco z&nbsp;nowościami ze świata psychologii</span>?
             Walczysz czasem z&nbsp;tekstami specjalistycznymi z&nbsp;twojej dziedziny, które nie
@@ -72,7 +72,60 @@ export const WEBSITE_TEXT = {
         < p > Jeżeli masz jakieś pytania, <a href="#contact" className="highlighted contact-me">napisz do
             mnie</a>.</p>
         </React.Fragment>
-    ]
+    ],
+    translations: [
+        <React.Fragment>Oferuję tłumaczenia tekstów z&nbsp;dziedziny psychologii – zarówno artykułów z&nbsp;języka angielskiego na polski, jak i&nbsp;prac naukowych z&nbsp;języka polskiego na angielski.</React.Fragment>,
+        <React.Fragment>Wykonuję również korekty i&nbsp;redakcje tłumaczeń dla klientów, którzy władają językiem angielskim, jednak chcieliby, żeby ich tekst został gruntownie zweryfikowany lub przeredagowany tak, aby był bardziej klarowny i&nbsp;lepszy stylistycznie.</React.Fragment>
+    ],
+    offer: {
+        english: {
+            title: <React.Fragment>„English for psychology” przez Skype</React.Fragment>,
+            content: [
+                {
+                    type: <React.Fragment>Indywidualnie:</React.Fragment>,
+                    price: <React.Fragment>80&nbsp;zł brutto/60&nbsp;min</React.Fragment>
+                },
+                {
+                    type: <React.Fragment>Grupa dwuosobowa:</React.Fragment>,
+                    price: <React.Fragment>50&nbsp;zł brutto/os./60&nbsp;min</React.Fragment>
+                }
+            ]
+        },
+        translations: {
+            title: <React.Fragment>Tłumaczenia</React.Fragment>,
+            content: [
+                {
+                    type: <React.Fragment>Tłumaczenia:</React.Fragment>,
+                    price: <React.Fragment>40&nbsp;zł brutto/1&nbsp;strona tłumaczeniowa (1800&nbsp;znaków ze spacjami)</React.Fragment>
+                },
+                {
+                    type: <React.Fragment>Korekty tłumaczeń:</React.Fragment>,
+                    price: <React.Fragment>15&nbsp;zł brutto/1&nbsp;strona tłumaczeniowa (1800&nbsp;znaków ze spacjami)</React.Fragment>
+                }
+            ]
+        }
+    },
+    contact: {
+        details: {
+            email: {
+                title: "E-mail:",
+                value: "k.lasocha@gmail.com"
+            },
+            phone: {
+                title: "Telefon:",
+                value: "600 829 261"
+            }
+        },
+        available: {
+            title: "Przykładowe godziny zajęć",
+            hours: [
+                "Poniedziałki 15:30 – 16:30",
+                "Środy 15:30 – 16:30",
+                "Poniedziałek 15:30 – 16:30"
+            ]
+        }
+
+    }
 };
 
 //offset used for smooth scrolling
