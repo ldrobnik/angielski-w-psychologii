@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 import './Home.css';
 
 import NavigationBar from "../NavigationBar/NavigationBar";
-import Jumbotron from '../Jumbotron/Jumbotron';
+import TopBanner from '../TopBanner/TopBanner';
 import About from '../About/About';
 import EnglishInPsychology from '../EnglishInPsychology/EnglishInPsychology';
 import TranslationsInPsychology from '../TranslationsInPsychology/TranslationsInPsychology';
@@ -19,7 +19,7 @@ const Home = (props) => {
             <NavigationBar/>
             <div id="top"></div>
             <div id="page-wrap">
-                <Jumbotron />
+                <TopBanner />
                 <About id={SECTION_NAMES[0]} />
                 <EnglishInPsychology id={SECTION_NAMES[1]}/>
                 <TranslationsInPsychology id={SECTION_NAMES[2]}/>
