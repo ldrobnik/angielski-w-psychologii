@@ -6,6 +6,7 @@ body {
   font-family: $serif !important;
   @include set-selection($lightColor, $themeColor);
   color: $lightColor !important;
+  overflow-x: hidden;
 }
 
 a {

@@ -1,7 +1,8 @@
 body {
   background: linear-gradient(#9d0059, #790045);
   font-family: "Roboto Slab", serif !important;
-  color: #f8f9fa !important; }
+  color: #f8f9fa !important;
+  overflow-x: hidden; }
   body ::-moz-selection {
     background: #f8f9fa;
     color: #9d0059; }

@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 848 848" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:10;">
-    <g id="Warstwa-1" serif:id="Warstwa 1" transform="matrix(4.16667,0,0,4.16667,0,0)">
-        <g transform="matrix(0,-1,-1,-0,101.669,11.283)">
-            <circle cx="-90.386" cy="-0.001" r="90.386" style="fill:none;stroke:rgb(156,29,92);stroke-width:10px;"/>
-        </g>
-        <g transform="matrix(2.5684,0,0,2.53617,-687.985,-666.608)">
-            <text x="289.64px" y="312.627px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:50px;fill:rgb(157,0,89);">ψ</text>
-        </g>
+<svg width="100%" height="100%" viewBox="0 0 850 850" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:10;">
+    <g transform="matrix(0,-4.16667,-4.16667,-0,424.998,48.3896)">
+        <circle cx="-90.386" cy="-0.001" r="90.386" style="fill:rgb(248,249,250);stroke:rgb(156,29,92);stroke-width:10px;"/>
+    </g>
+    <g transform="matrix(10.7017,0,0,10.5674,-2865.23,-2776.16)">
+        <path d="M292.618,286.699L296.988,286.699L296.988,299.492C296.988,301.885 297.184,303.708 297.574,304.961C297.965,306.214 298.791,307.26 300.052,308.098C301.314,308.937 303.051,309.413 305.265,309.527L305.265,286.699L309.659,286.699L309.659,309.527C311.792,309.413 313.484,308.957 314.738,308.159C315.991,307.362 316.833,306.341 317.264,305.095C317.696,303.85 317.911,301.983 317.911,299.492L317.911,286.699L322.281,286.699L322.281,299.346C322.281,302.731 321.968,305.246 321.342,306.89C320.715,308.534 319.449,309.97 317.545,311.199C315.641,312.428 313.012,313.099 309.659,313.213L309.659,322.564L305.265,322.564L305.265,313.213C303.1,313.148 301.204,312.839 299.576,312.285C297.949,311.732 296.569,310.849 295.438,309.636C294.307,308.424 293.554,307.15 293.18,305.816C292.806,304.481 292.618,302.324 292.618,299.346L292.618,286.699Z" style="fill:rgb(157,0,89);fill-rule:nonzero;"/>
     </g>
 </svg>
