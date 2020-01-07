@@ -28,13 +28,50 @@ export const SECTION_NAMES = [
 export const WEBSITE_TEXT = {
     topBanner: {
         title: <React.Fragment>Angielski w&nbsp;psychologii</React.Fragment>,
-        subtitle: <React.Fragment>Język angielski dla psychologów, psychoterapeutów i&nbsp;osób zainteresowanych psychologią</React.Fragment>,
+        subtitle: <React.Fragment>Język angielski dla psychologów, psychoterapeutów i&nbsp;osób zainteresowanych
+            psychologią</React.Fragment>,
         button: <React.Fragment>Oferta</React.Fragment>
     },
     about: [
-        <React.Fragment>Od 14 lat wspieram osoby dorosłe w&nbsp;ich rozwoju językowym. Przeprowadziłam kilkadziesiąt kursów języka angielskiego ogólnego i&nbsp;biznesowego na różnych poziomach zaawansowania.</React.Fragment>,
-        <React.Fragment>Jestem współautorką specjalistycznego podręcznika języka angielskiego dla psychologów, w&nbsp;oparciu o&nbsp;który przeprowadziłam kilka edycji mojego autorskiego kursu „Angielski w psychologii” z&nbsp;grupą poznańskich psychologów i&nbsp;psychoterapeutów.</React.Fragment>,
-        <React.Fragment>Wychodząc naprzeciw potrzebom osób, które nie mają czasu lub możliwości uczestniczenia w&nbsp;moich kursach na żywo, oferuję zajęcia przez Skype.</React.Fragment>
+        <React.Fragment>Od 14 lat wspieram osoby dorosłe w&nbsp;ich rozwoju językowym. Przeprowadziłam kilkadziesiąt
+            kursów języka angielskiego ogólnego i&nbsp;biznesowego na różnych poziomach zaawansowania.</React.Fragment>,
+        <React.Fragment>Jestem współautorką specjalistycznego podręcznika języka angielskiego dla psychologów,
+            w&nbsp;oparciu o&nbsp;który przeprowadziłam kilka edycji mojego autorskiego kursu „Angielski w psychologii”
+            z&nbsp;grupą poznańskich psychologów i&nbsp;psychoterapeutów.</React.Fragment>,
+        <React.Fragment>Wychodząc naprzeciw potrzebom osób, które nie mają czasu lub możliwości uczestniczenia
+            w&nbsp;moich kursach na żywo, oferuję zajęcia przez Skype.</React.Fragment>
+    ],
+    englishInPsychology: [
+        <React.Fragment><p>Chcesz być <span
+            class="highlighted">na bieżąco z&nbsp;nowościami ze świata psychologii</span>?
+            Walczysz czasem z&nbsp;tekstami specjalistycznymi z&nbsp;twojej dziedziny, które nie
+            zostały jeszcze przetłumaczone? Czujesz, że coś cię omija, gdy koledzy po fachu
+            udostępniają w&nbsp;mediach społecznościowych filmiki, czy memy, których nie jesteś w&nbsp;stanie
+            zrozumieć?</p>
+            <p>Jestem pewna, że posiadasz jakieś podstawy angielskiego. Kolejny krok to postanowienie
+                <span class="highlighted">wspięcia się na jego wyższy poziom</span> oraz wytrwanie w&nbsp;tym
+                postanowieniu. A ja - jestem od tego, żeby ci pomóc.</p></React.Fragment>,
+
+        <React.Fragment>
+            <p>Na naszych zajęciach skupimy się przede wszystkim na <span className="highlighted">poznaniu i&nbsp;użyciu właściwego słownictwa</span>.
+                Bez obaw - nie zasypię cię listami wyjętych z&nbsp;kontekstu słówek do wykucia na
+                pamięć. Nasze słownictwo będzie osadzone w odpowiednim kontekście (artykuły, czy filmy
+                z&nbsp;interesującej
+                cię dziedziny psychologii), zaprezentowane tak, żebyś nie tylko wiedział/a, co słowa
+                znaczą, ale też, jak ich użyć (kolokacje!). Będziemy <span className="highlighted">regularnie wracać do poprzednich lekcji</span> tak,
+                aby retencja słownictwa była u&nbsp;ciebie jak największa.</p>
+        </React.Fragment>,
+
+        <React.Fragment>
+        <p>A co z&nbsp;gramatyką? Oczywiście, gramatyka jest ważna, jednak to nie ona będzie
+            wyznaczać nam kierunek. Gdy zobaczę, że walczysz z&nbsp;jakimś czasem (Present Perfect -
+            zgadłam?) - poświęcimy mu uwagę, ale <span
+                className="highlighted">zawsze w kontekście i&nbsp;świadomie</span>,
+            nie mechanicznie i&nbsp;na zasadzie &bdquo;sztuka dla sztuki&rdquo;, bo to po prostu nie
+            działa.</p>
+        < p > Jeżeli masz jakieś pytania, <a href="#contact" className="highlighted contact-me">napisz do
+            mnie</a>.</p>
+        </React.Fragment>
     ]
 };
 
