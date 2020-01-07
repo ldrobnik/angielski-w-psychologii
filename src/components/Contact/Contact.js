@@ -7,7 +7,7 @@ import {SECTION_NAMES, FILLER} from "../../data/constants";
 const Contact = (props) => {
 
     return (
-        <div className='lightBackground'>
+        <div className="lightBackground sectionContent">
             <Container>
                 <Row>
                     <h1 id={SECTION_NAMES[4].id}>

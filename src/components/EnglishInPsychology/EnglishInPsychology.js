@@ -7,14 +7,16 @@ import {SECTION_NAMES, FILLER} from "../../data/constants";
 const EnglishInPsychology = (props) => {
 
     return (
-        <Container>
-            <Row>
-                <h1 id={SECTION_NAMES[1].id}>
-                    {SECTION_NAMES[1].name}
-                </h1>
-                {FILLER}
-            </Row>
-        </Container>
+        <div className="sectionContent">
+            <Container>
+                <Row>
+                    <h1 id={SECTION_NAMES[1].id}>
+                        {SECTION_NAMES[1].name}
+                    </h1>
+                    {FILLER}
+                </Row>
+            </Container>
+        </div>
     );
 };
 

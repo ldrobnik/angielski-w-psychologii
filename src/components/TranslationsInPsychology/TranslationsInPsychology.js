@@ -8,7 +8,7 @@ import Contact from "../Contact/Contact";
 const TranslationsInPsychology = (props) => {
 
     return (
-        <div className='lightBackground'>
+        <div className="lightBackground sectionContent">
             <Container>
                 <Row>
                     <h1 id={SECTION_NAMES[2].id}>

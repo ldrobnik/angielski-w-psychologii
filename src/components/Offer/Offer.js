@@ -7,14 +7,16 @@ import {SECTION_NAMES, FILLER} from "../../data/constants";
 const Offer = (props) => {
 
     return (
-        <Container>
-            <Row>
-                <h1 id={SECTION_NAMES[3].id}>
-                    {SECTION_NAMES[3].name}
-                </h1>
-                {FILLER}
-            </Row>
-        </Container>
+        <div className="sectionContent">
+            <Container>
+                <Row>
+                    <h1 id={SECTION_NAMES[3].id}>
+                        {SECTION_NAMES[3].name}
+                    </h1>
+                    {FILLER}
+                </Row>
+            </Container>
+        </div>
     );
 };
 

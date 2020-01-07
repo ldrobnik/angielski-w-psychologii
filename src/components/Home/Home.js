@@ -19,8 +19,8 @@ const Home = (props) => {
             <NavigationBar/>
             <div id="top"></div>
             <div id="page-wrap">
-                <Jumbotron/>
-                <About id={SECTION_NAMES[0]}/>
+                <Jumbotron />
+                <About id={SECTION_NAMES[0]} />
                 <EnglishInPsychology id={SECTION_NAMES[1]}/>
                 <TranslationsInPsychology id={SECTION_NAMES[2]}/>
                 <Offer id={SECTION_NAMES[3]}/>

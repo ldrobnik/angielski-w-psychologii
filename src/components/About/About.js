@@ -7,15 +7,15 @@ import {SECTION_NAMES, FILLER} from "../../data/constants";
 const About = (props) => {
 
     return (
-        <div className='lightBackground'>
-        <Container>
-            <Row>
-                <h1 id={SECTION_NAMES[0].id}>
-                    {SECTION_NAMES[0].name}
-                </h1>
-                {FILLER}
-            </Row>
-        </Container>
+        <div className="lightBackground sectionContent">
+            <Container>
+                <Row>
+                    <h1 id={SECTION_NAMES[0].id}>
+                        {SECTION_NAMES[0].name}
+                    </h1>
+                    {FILLER}
+                </Row>
+            </Container>
         </div>
     );
 };

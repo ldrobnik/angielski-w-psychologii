@@ -1,6 +1,7 @@
 body {
   background: linear-gradient(#9d0059, #790045);
-  font-family: "Roboto Slab", serif !important; }
+  font-family: "Roboto Slab", serif !important;
+  color: #f8f9fa !important; }
   body ::-moz-selection {
     background: #9d0059;
     color: #f8f9fa; }
@@ -27,6 +28,10 @@ a {
 
 .lightBackground {
   background-color: #f8f9fa !important;
+  color: #0f0f0f;
   width: 100vw; }
+
+.sectionContent {
+  padding: 3% 1% 5% 1%; }
 
 /*# sourceMappingURL=Home.css.map */
