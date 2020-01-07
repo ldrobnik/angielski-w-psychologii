@@ -40,10 +40,10 @@
 }
 
 //creates box shadow
-@mixin shadow($x, $y, $blur, $spread, $brightness) {
-  -webkit-box-shadow: $x $y $blur $spread setColor($brightness);
-  -moz-box-shadow: $x $y $blur $spread setColor($brightness);
-  box-shadow: $x $y $blur $spread setColor($brightness);
+@mixin shadow($x, $y, $blur, $alpha) {
+  -webkit-box-shadow: $x $y $blur 0 rgba(0,0,0,$alpha);
+  -moz-box-shadow: $x $y $blur 0 rgba(0,0,0,$alpha);
+  box-shadow: $x $y $blur 0 rgba(0,0,0,$alpha);
 }
 
 //creates inset box shadow

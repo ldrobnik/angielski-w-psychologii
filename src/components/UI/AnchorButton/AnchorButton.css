@@ -9,7 +9,10 @@
   font-family: "Roboto Slab", serif !important;
   letter-spacing: 0.1em;
   color: #9d0059 !important;
-  transition: background-color 1s; }
+  transition: background-color 1s;
+  -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5); }
   .anchorButton:hover {
     background-color: #ffd0eb;
     text-decoration: none; }
