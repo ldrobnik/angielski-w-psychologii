@@ -1,0 +1,10 @@
+.anchorButton {
+  display: block;
+  background: #f8f9fa;
+  font-size: 1.5em;
+  width: 5em;
+  margin: 1em auto 0 auto; }
+  .anchorButton:hover {
+    background: white; }
+
+/*# sourceMappingURL=AnchorButton.css.map */

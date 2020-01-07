@@ -1,0 +1,13 @@
+@import '../../../styles/common';
+
+.anchorButton {
+  display: block;
+  background: $lightColor;
+  font-size: 1.5em;
+  width: 5em;
+  margin: 1em auto 0 auto;
+
+  &:hover {
+    background: setColor(7);
+  }
+}
