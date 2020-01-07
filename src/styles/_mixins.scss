@@ -26,11 +26,6 @@
   background-clip: padding-box; /* stops bg color from leaking outside the border: */
 }
 
-//gives an element a custom shadow
-@mixin shadow {
-  box-shadow: 4px 3px 10px setColor(-4);
-}
-
 //turns on flex display
 @mixin flex {
   display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */

@@ -12,7 +12,11 @@
   transition: background-color 1s;
   -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
-  box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5); }
+  box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
   .anchorButton:hover {
     background-color: #ffd0eb;
     text-decoration: none; }
