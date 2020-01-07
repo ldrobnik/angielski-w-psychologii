@@ -30,7 +30,12 @@ export const WEBSITE_TEXT = {
         title: <React.Fragment>Angielski w&nbsp;psychologii</React.Fragment>,
         subtitle: <React.Fragment>Język angielski dla psychologów, psychoterapeutów i&nbsp;osób zainteresowanych psychologią</React.Fragment>,
         button: <React.Fragment>Oferta</React.Fragment>
-    }
+    },
+    about: [
+        <React.Fragment>Od 14 lat wspieram osoby dorosłe w&nbsp;ich rozwoju językowym. Przeprowadziłam kilkadziesiąt kursów języka angielskiego ogólnego i&nbsp;biznesowego na różnych poziomach zaawansowania.</React.Fragment>,
+        <React.Fragment>Jestem współautorką specjalistycznego podręcznika języka angielskiego dla psychologów, w&nbsp;oparciu o&nbsp;który przeprowadziłam kilka edycji mojego autorskiego kursu „Angielski w psychologii” z&nbsp;grupą poznańskich psychologów i&nbsp;psychoterapeutów.</React.Fragment>,
+        <React.Fragment>Wychodząc naprzeciw potrzebom osób, które nie mają czasu lub możliwości uczestniczenia w&nbsp;moich kursach na żywo, oferuję zajęcia przez Skype.</React.Fragment>
+    ]
 };
 
 //offset used for smooth scrolling
