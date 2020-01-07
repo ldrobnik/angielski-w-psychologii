@@ -9,6 +9,7 @@ const TopBanner = (props) => {
     return (
         <Jumbotron fluid>
             <h1 className="title">{WEBSITE_TEXT.topBanner.title}</h1>
+            <div className="subtitle">{WEBSITE_TEXT.topBanner.subtitle}</div>
         </Jumbotron>
     );
 };

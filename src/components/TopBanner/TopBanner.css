@@ -8,13 +8,21 @@
 
 .title {
   font-family: "Fugaz One", cursive;
-  margin-top: 12vh;
+  margin-top: 15vh;
   font-size: 4em; }
   @media all and (max-width: 450px) {
     .title {
+      margin-top: 12vh;
       font-size: 2.5em; } }
   @media all and (max-width: 290px) {
     .title {
-      font-size: 12vw; } }
+      margin-top: 12vh;
+      font-size: 1.2em; } }
+
+.subtitle {
+  font-size: 1.2em; }
+  @media all and (max-width: 450px) {
+    .subtitle {
+      font-size: 1em; } }
 
 /*# sourceMappingURL=TopBanner.css.map */

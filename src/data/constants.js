@@ -27,7 +27,9 @@ export const SECTION_NAMES = [
 //Text used on the website
 export const WEBSITE_TEXT = {
     topBanner: {
-        title: <React.Fragment>Angielski w&nbsp;psychologii</React.Fragment>
+        title: <React.Fragment>Angielski w&nbsp;psychologii</React.Fragment>,
+        subtitle: <React.Fragment>Język angielski dla psychologów, psychoterapeutów i&nbsp;osób zainteresowanych psychologią</React.Fragment>,
+        button: <React.Fragment>Oferta</React.Fragment>
     }
 };
 
