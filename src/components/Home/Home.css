@@ -3,11 +3,11 @@ body {
   font-family: "Roboto Slab", serif !important;
   color: #f8f9fa !important; }
   body ::-moz-selection {
-    background: #9d0059;
-    color: #f8f9fa; }
+    background: #f8f9fa;
+    color: #9d0059; }
   body ::selection {
-    background: #9d0059;
-    color: #f8f9fa; }
+    background: #f8f9fa;
+    color: #9d0059; }
 
 a {
   color: #9d0059;
@@ -30,6 +30,12 @@ a {
   background-color: #f8f9fa !important;
   color: #0f0f0f;
   width: 100vw; }
+  .lightBackground ::-moz-selection {
+    background: #9d0059;
+    color: #f8f9fa; }
+  .lightBackground ::selection {
+    background: #9d0059;
+    color: #f8f9fa; }
 
 .sectionContent {
   padding: 3% 1% 5% 1%; }

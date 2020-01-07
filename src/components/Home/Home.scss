@@ -4,7 +4,7 @@
 body {
   background: linear-gradient($themeColor, darken($themeColor, 7));
   font-family: $serif !important;
-  @include set-selection;
+  @include set-selection($lightColor, $themeColor);
   color: $lightColor !important;
 }
 
@@ -39,6 +39,7 @@ a {
   background-color: $lightColor !important;
   color: $darkColor;
   width: 100vw;
+  @include set-selection($themeColor, $lightColor);
 }
 
 .sectionContent {
