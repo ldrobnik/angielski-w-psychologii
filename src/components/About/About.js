@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {Row, Container, Col} from 'react-bootstrap';
+import posed from 'react-pose';
 import TextBubble from '../UI/TextBubble/TextBubble';
 import Portrait from './Portrait/Portrait';
 import './About.css';
@@ -7,7 +8,47 @@ import photo from '../../assets/images/portrait.jpg';
 
 import {SECTION_NAMES, WEBSITE_TEXT} from "../../data/constants";
 
+/* POSE */
+const AnimatedList = posed.div({
+    visible: {
+        delayChildren: 400,
+        staggerChildren: 350
+    }
+});
+
+const AnimatedMessage = posed.div({
+    visible: {
+        x: '0%',
+        transition: {
+            type: 'spring',
+            stiffness: 100
+        }
+    },
+    hidden: {
+        x: '300%'
+    }
+});
+
 const About = (props) => {
+
+    //specifies whether text links should be visible
+    const [messagesVisible, setMessagesVisible] = useState(false);
+
+    //shows the messages
+    const showMessages = () => {
+        setMessagesVisible(true);
+    };
+
+    //hidesthe messages
+    const hideMessages = () => {
+        setMessagesVisible(false);
+    };
+
+    //show messages after a while
+    useEffect(() => {
+            setTimeout(showMessages, 1000);
+        }
+    );
 
     return (
         <div className="lightBackground sectionContent">
@@ -36,16 +77,23 @@ const About = (props) => {
                     <Col
                         className="verticallyCentered"
                     >
-                        {WEBSITE_TEXT.about.details.map((bubble, k) => {
-                                return (
-                                    <TextBubble
-                                        type="theme"
-                                        message={bubble}
-                                        key={k}
-                                    />
-                                )
-                            }
-                        )}
+                        <AnimatedList
+                            pose={messagesVisible ? 'visible' : 'hidden'}>
+                            {WEBSITE_TEXT.about.details.map((bubble, k) => {
+                                    return (
+                                        <AnimatedMessage
+                                            pose={messagesVisible ? 'visible' : 'hidden'}
+                                        >
+                                            <TextBubble
+                                                type="theme"
+                                                message={bubble}
+                                                key={k}
+                                            />
+                                        </AnimatedMessage>
+                                    )
+                                }
+                            )}
+                        </AnimatedList>
                     </Col>
                 </Row>
             </Container>
