@@ -7,11 +7,12 @@ import './About.css';
 import photo from '../../assets/images/portrait.jpg';
 
 import {SECTION_NAMES, WEBSITE_TEXT} from "../../data/constants";
+import {Waypoint} from "react-waypoint";
 
 /* POSE */
 const AnimatedList = posed.div({
     visible: {
-        delayChildren: 400,
+        delayChildren: 1500,
         staggerChildren: 350
     }
 });
@@ -39,14 +40,9 @@ const About = (props) => {
         setMessagesVisible(true);
     };
 
-    //hidesthe messages
-    const hideMessages = () => {
-        setMessagesVisible(false);
-    };
 
-    //show messages after a while
     useEffect(() => {
-            setTimeout(showMessages, 1000);
+            setTimeout(showMessages, 500);
         }
     );
 
@@ -77,26 +73,30 @@ const About = (props) => {
                     <Col
                         className="verticallyCentered"
                     >
-                        <AnimatedList
-                            pose={messagesVisible ? 'visible' : 'hidden'}>
-                            {WEBSITE_TEXT.about.details.map((bubble, k) => {
-                                    return (
-                                        <AnimatedMessage
-                                            pose={messagesVisible ? 'visible' : 'hidden'}
-                                        >
-                                            <TextBubble
-                                                type="theme"
-                                                message={bubble}
-                                                key={k}
-                                            />
-                                        </AnimatedMessage>
-                                    )
-                                }
-                            )}
-                        </AnimatedList>
+
+                            <AnimatedList
+                                pose={messagesVisible ? 'visible' : 'hidden'}
+                            >
+                                {WEBSITE_TEXT.about.details.map((bubble, k) => {
+                                        return (
+                                            <AnimatedMessage
+                                                pose={messagesVisible ? 'visible' : 'hidden'}
+                                            >
+                                                <TextBubble
+                                                    type="theme"
+                                                    message={bubble}
+                                                    key={k}
+                                                />
+                                            </AnimatedMessage>
+                                        )
+                                    }
+                                )}
+                            </AnimatedList>
+
                     </Col>
                 </Row>
             </Container>
+
         </div>
     );
 };

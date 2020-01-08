@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import posed from 'react-pose';
 import './Home.css';
 
 import NavigationBar from "../NavigationBar/NavigationBar";
@@ -12,22 +11,21 @@ import Contact from '../Contact/Contact';
 
 import {SECTION_NAMES} from "../../data/constants";
 
-/* POSE */
-const AnimatedContent = posed.div({
-    visible: {
-        opacity: 1,
-        filter: 'blur(0)',
-        transition: {
-            ease: 'easeIn',
-            duration: 500 }
-    },
-    hidden: {
-        opacity: 0,
-        filter: 'blur(20px)'
-    }
-});
-
 const Home = (props) => {
+
+    //specifies whether the photo is visible (it is turn visible when the photo is loaded
+    const [contentVisible, setContentVisible] = useState(false);
+
+    //sets photo visibility to true
+    const showContent = () => {
+        setContentVisible(true);
+    };
+
+    //show content
+    useEffect(() => {
+            showContent();
+        }
+    );
 
     return (
         <div id="outer-container">

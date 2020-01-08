@@ -3,6 +3,7 @@ import {Row, Container} from 'react-bootstrap';
 import './Offer.css';
 
 import {SECTION_NAMES, FILLER} from "../../data/constants";
+import {Waypoint} from "react-waypoint";
 
 const Offer = (props) => {
 
