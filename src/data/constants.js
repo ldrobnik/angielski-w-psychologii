@@ -36,15 +36,15 @@ export const WEBSITE_TEXT = {
         name: <React.Fragment>Katarzyna Łasocha-Nowak</React.Fragment>,
         description: <React.Fragment>Nauczycielka języka angielskiego i&nbsp;tłumaczka</React.Fragment>,
         details: [
-            <React.Fragment>Od 14 lat wspieram osoby dorosłe w&nbsp;ich rozwoju językowym. Przeprowadziłam kilkadziesiąt
+            <React.Fragment>Od <span className="highlighted">14 lat</span> wspieram osoby dorosłe w&nbsp;ich rozwoju językowym. Przeprowadziłam kilkadziesiąt
                 kursów języka angielskiego ogólnego i&nbsp;biznesowego na różnych poziomach
                 zaawansowania.</React.Fragment>,
-            <React.Fragment>Jestem współautorką specjalistycznego podręcznika języka angielskiego dla psychologów,
+            <React.Fragment>Jestem współautorką <span className="highlighted">specjalistycznego podręcznika języka angielskiego dla psychologów</span>,
                 w&nbsp;oparciu o&nbsp;który przeprowadziłam kilka edycji mojego autorskiego kursu „Angielski w
                 psychologii”
                 z&nbsp;grupą poznańskich psychologów i&nbsp;psychoterapeutów.</React.Fragment>,
             <React.Fragment>Wychodząc naprzeciw potrzebom osób, które nie mają czasu lub możliwości uczestniczenia
-                w&nbsp;moich kursach na żywo, oferuję zajęcia przez Skype.</React.Fragment>
+                w&nbsp;moich kursach na żywo, oferuję <span className="highlighted">zajęcia przez Skype</span>.</React.Fragment>
         ]
     },
     english: [

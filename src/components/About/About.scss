@@ -1,1 +1,14 @@
 @import '../../styles/common';
+
+.introduction {
+  text-align: center;
+  width: 100%;
+
+  h2 {
+    color: $themeColor;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+}

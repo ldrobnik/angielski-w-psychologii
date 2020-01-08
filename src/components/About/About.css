@@ -1,3 +1,9 @@
-
+.introduction {
+  text-align: center;
+  width: 100%; }
+  .introduction h2 {
+    color: #9d0059; }
+  .introduction p {
+    font-size: 1.1em; }
 
 /*# sourceMappingURL=About.css.map */

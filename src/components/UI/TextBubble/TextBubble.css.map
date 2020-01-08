@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,WAAY;EACV,MAAM,ECQM,iBAAqB;EDPjC,OAAO,EAAE,QAAQ;EACjB,MAAM,EAAE,IAAI;EEiCZ,kBAAkB,EAAE,gCAAgC;EACpD,eAAe,EAAE,gCAAgC;EACjD,UAAU,EAAE,gCAAgC",
+"sources": ["TextBubble.scss","../../../styles/_variables.scss","../../../styles/_mixins.scss"],
+"names": [],
+"file": "TextBubble.css"
+}
