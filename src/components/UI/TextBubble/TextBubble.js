@@ -6,7 +6,7 @@ import './TextBubble.css';
 const TextBubble = (props) => {
 
     return (
-        <div className="textBubble">
+        <div className={`${props.type}TextBubble`}>
             {props.message}
         </div>
     );

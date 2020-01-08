@@ -1,0 +1,12 @@
+@import '../../../styles/common';
+
+.portraitWrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.portrait {
+  max-height: 400px;
+  @include regularShadow;
+  margin: 10px auto;
+}

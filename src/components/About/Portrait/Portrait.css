@@ -1,0 +1,12 @@
+.portraitWrapper {
+  width: 100%;
+  text-align: center; }
+
+.portrait {
+  max-height: 400px;
+  -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
+  margin: 10px auto; }
+
+/*# sourceMappingURL=Portrait.css.map */

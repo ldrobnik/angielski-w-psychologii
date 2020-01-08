@@ -35,6 +35,7 @@ export const WEBSITE_TEXT = {
     about: {
         name: <React.Fragment>Katarzyna Łasocha-Nowak</React.Fragment>,
         description: <React.Fragment>Nauczycielka języka angielskiego i&nbsp;tłumaczka</React.Fragment>,
+        altText: 'Katarzyna Łasocha-Nowak',
         details: [
             <React.Fragment>Od <span className="highlighted">14 lat</span> wspieram osoby dorosłe w&nbsp;ich rozwoju językowym. Przeprowadziłam kilkadziesiąt
                 kursów języka angielskiego ogólnego i&nbsp;biznesowego na różnych poziomach

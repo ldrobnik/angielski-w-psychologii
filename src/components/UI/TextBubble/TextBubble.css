@@ -1,7 +1,17 @@
-.textBubble {
+.themeTextBubble {
   border: #9d0059 1px solid;
   padding: 5px 10px;
   margin: 10px;
+  background-color: #f8f9fa;
+  -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5); }
+
+.lightTextBubble {
+  border: #f8f9fa 1px solid;
+  padding: 5px 10px;
+  margin: 10px;
+  background-color: #9d0059;
   -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5); }

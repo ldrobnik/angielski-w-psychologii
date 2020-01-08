@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import {Row, Container, Col} from 'react-bootstrap';
 import TextBubble from '../UI/TextBubble/TextBubble';
+import Portrait from './Portrait/Portrait';
 import './About.css';
+import photo from '../../assets/images/portrait.jpg';
 
 import {SECTION_NAMES, WEBSITE_TEXT} from "../../data/constants";
 
@@ -23,12 +25,18 @@ const About = (props) => {
                 </Row>
                 <Row>
                     <Col sm={5}>
-
+                        <Portrait
+                            source={photo}
+                            altText={WEBSITE_TEXT.about.altText}
+                        />
                     </Col>
                     <Col>
                         {WEBSITE_TEXT.about.details.map((bubble, k) => {
                                 return (
-                                    <TextBubble message={bubble}/>
+                                    <TextBubble
+                                        type="theme"
+                                        message={bubble}
+                                    />
                                 )
                             }
                         )}
