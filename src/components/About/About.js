@@ -35,6 +35,7 @@ const About = (props) => {
     //specifies whether text links should be visible
     const [messagesVisible, setMessagesVisible] = useState(false);
 
+
     //shows the messages
     const showMessages = () => {
         setMessagesVisible(true);
@@ -42,7 +43,7 @@ const About = (props) => {
 
 
     useEffect(() => {
-            setTimeout(showMessages, 500);
+            setTimeout(showMessages, 1000);
         }
     );
 
@@ -81,11 +82,11 @@ const About = (props) => {
                                         return (
                                             <AnimatedMessage
                                                 pose={messagesVisible ? 'visible' : 'hidden'}
+                                                key={k}
                                             >
                                                 <TextBubble
                                                     type="theme"
                                                     message={bubble}
-                                                    key={k}
                                                 />
                                             </AnimatedMessage>
                                         )
@@ -96,7 +97,6 @@ const About = (props) => {
                     </Col>
                 </Row>
             </Container>
-
         </div>
     );
 };
