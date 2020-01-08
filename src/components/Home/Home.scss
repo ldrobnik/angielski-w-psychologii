@@ -36,6 +36,10 @@ a {
 
 }
 
+.highlighted {
+  font-weight: bold;
+}
+
 .lightBackground {
   background-color: $lightColor !important;
   color: $darkColor;
@@ -43,6 +47,10 @@ a {
   @include set-selection($themeColor, $lightColor);
 
   h1 {
+    color: $themeColor;
+  }
+
+  .highlighted {
     color: $themeColor;
   }
 }

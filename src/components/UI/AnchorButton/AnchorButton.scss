@@ -12,7 +12,7 @@
   letter-spacing: 0.1em;
   color: $themeColor !important;
   transition: background-color 1s;
-  @include shadow(4px, 4px, 5px, 0.5);
+  @include regularShadow;
   @include no-select;
 
   &:hover {

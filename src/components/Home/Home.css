@@ -27,6 +27,9 @@ a {
     color: #9d0059;
     text-decoration: none; }
 
+.highlighted {
+  font-weight: bold; }
+
 .lightBackground {
   background-color: #f8f9fa !important;
   color: #0f0f0f;
@@ -38,6 +41,8 @@ a {
     background: #9d0059;
     color: #f8f9fa; }
   .lightBackground h1 {
+    color: #9d0059; }
+  .lightBackground .highlighted {
     color: #9d0059; }
 
 .sectionContent {

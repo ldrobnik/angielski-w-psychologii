@@ -47,3 +47,8 @@
   -moz-box-shadow: inset $x $y $blur $spread setColor($brightness);
   box-shadow: inset $x $y $blur $spread setColor($brightness);
 }
+
+//regular shadow effect
+@mixin regularShadow {
+  @include shadow(4px, 4px, 5px, 0.5);
+}
