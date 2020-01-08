@@ -48,4 +48,9 @@ a {
 .sectionContent {
   padding: 3% 1% 5% 1%; }
 
+.verticallyCentered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
 /*# sourceMappingURL=Home.css.map */

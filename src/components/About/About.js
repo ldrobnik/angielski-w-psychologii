@@ -24,18 +24,24 @@ const About = (props) => {
                     </div>
                 </Row>
                 <Row>
-                    <Col sm={5}>
+                    <Col
+                        md={5}
+                        className="verticallyCentered"
+                    >
                         <Portrait
                             source={photo}
                             altText={WEBSITE_TEXT.about.altText}
                         />
                     </Col>
-                    <Col>
+                    <Col
+                        className="verticallyCentered"
+                    >
                         {WEBSITE_TEXT.about.details.map((bubble, k) => {
                                 return (
                                     <TextBubble
                                         type="theme"
                                         message={bubble}
+                                        key={k}
                                     />
                                 )
                             }

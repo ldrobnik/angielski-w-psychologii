@@ -2,11 +2,18 @@
 
 .portraitWrapper {
   width: 100%;
-  text-align: center;
+  text-align: right;
+  padding-right: 50px;
+
+  @media all and (max-width: 767px) {
+    text-align: center;
+    padding-right: 0;
+  }
+
 }
 
 .portrait {
   max-height: 400px;
   @include regularShadow;
-  margin: 10px auto;
+  margin: 15px;
 }

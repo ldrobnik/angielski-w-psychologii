@@ -2,16 +2,18 @@
 
 .themeTextBubble {
   border: $themeBorder;
-  padding: 5px 10px;
-  margin: 10px;
+  padding: 15px 20px;
+  margin: 15px 10px;
+  font-size: 1.1em;
   background-color: $lightColor;
   @include regularShadow;
 }
 
 .lightTextBubble {
   border: $lightBorder;
-  padding: 5px 10px;
-  margin: 10px;
+  padding: 15px 20px;
+  margin: 15px 10px;
+  font-size: 1.1em;
   background-color: $themeColor;
   @include regularShadow;
 }
