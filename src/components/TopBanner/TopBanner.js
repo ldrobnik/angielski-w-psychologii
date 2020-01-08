@@ -10,13 +10,17 @@ import AnchorButton from "../UI/AnchorButton/AnchorButton";
 const TopBanner = (props) => {
 
     return (
-        <Jumbotron fluid>
-            <h1 className="title">{WEBSITE_TEXT.topBanner.title}</h1>
-            <div className="subtitle">{WEBSITE_TEXT.topBanner.subtitle}</div>
-            <AnchorButton
-                target="oferta"
-                message={WEBSITE_TEXT.topBanner.button}
-            />
+        <Jumbotron
+            className="verticallyCentered"
+            fluid>
+            <div>
+                <h1 className="title">{WEBSITE_TEXT.topBanner.title}</h1>
+                <div className="subtitle">{WEBSITE_TEXT.topBanner.subtitle}</div>
+                <AnchorButton
+                    target="oferta"
+                    message={WEBSITE_TEXT.topBanner.button}
+                />
+            </div>
         </Jumbotron>
     );
 };
