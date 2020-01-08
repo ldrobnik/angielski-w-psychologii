@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-
+import posed from 'react-pose';
 import './Home.css';
 
 import NavigationBar from "../NavigationBar/NavigationBar";
@@ -10,7 +10,22 @@ import TranslationsInPsychology from '../TranslationsInPsychology/TranslationsIn
 import Offer from '../Offer/Offer';
 import Contact from '../Contact/Contact';
 
-import {SECTION_NAMES, FILLER} from "../../data/constants";
+import {SECTION_NAMES} from "../../data/constants";
+
+/* POSE */
+const AnimatedContent = posed.div({
+    visible: {
+        opacity: 1,
+        filter: 'blur(0)',
+        transition: {
+            ease: 'easeIn',
+            duration: 500 }
+    },
+    hidden: {
+        opacity: 0,
+        filter: 'blur(20px)'
+    }
+});
 
 const Home = (props) => {
 
