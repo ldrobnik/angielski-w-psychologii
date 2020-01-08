@@ -32,15 +32,21 @@ export const WEBSITE_TEXT = {
             psychologią</React.Fragment>,
         button: <React.Fragment>Oferta</React.Fragment>
     },
-    about: [
-        <React.Fragment>Od 14 lat wspieram osoby dorosłe w&nbsp;ich rozwoju językowym. Przeprowadziłam kilkadziesiąt
-            kursów języka angielskiego ogólnego i&nbsp;biznesowego na różnych poziomach zaawansowania.</React.Fragment>,
-        <React.Fragment>Jestem współautorką specjalistycznego podręcznika języka angielskiego dla psychologów,
-            w&nbsp;oparciu o&nbsp;który przeprowadziłam kilka edycji mojego autorskiego kursu „Angielski w psychologii”
-            z&nbsp;grupą poznańskich psychologów i&nbsp;psychoterapeutów.</React.Fragment>,
-        <React.Fragment>Wychodząc naprzeciw potrzebom osób, które nie mają czasu lub możliwości uczestniczenia
-            w&nbsp;moich kursach na żywo, oferuję zajęcia przez Skype.</React.Fragment>
-    ],
+    about: {
+        name: <React.Fragment>Katarzyna Łasocha-Nowak</React.Fragment>,
+        description: <React.Fragment>Nauczycielka języka angielskiego i&nbsp;tłumaczka</React.Fragment>,
+        details: [
+            <React.Fragment>Od 14 lat wspieram osoby dorosłe w&nbsp;ich rozwoju językowym. Przeprowadziłam kilkadziesiąt
+                kursów języka angielskiego ogólnego i&nbsp;biznesowego na różnych poziomach
+                zaawansowania.</React.Fragment>,
+            <React.Fragment>Jestem współautorką specjalistycznego podręcznika języka angielskiego dla psychologów,
+                w&nbsp;oparciu o&nbsp;który przeprowadziłam kilka edycji mojego autorskiego kursu „Angielski w
+                psychologii”
+                z&nbsp;grupą poznańskich psychologów i&nbsp;psychoterapeutów.</React.Fragment>,
+            <React.Fragment>Wychodząc naprzeciw potrzebom osób, które nie mają czasu lub możliwości uczestniczenia
+                w&nbsp;moich kursach na żywo, oferuję zajęcia przez Skype.</React.Fragment>
+        ]
+    },
     english: [
         <React.Fragment><p>Chcesz być <span
             class="highlighted">na bieżąco z&nbsp;nowościami ze świata psychologii</span>?
@@ -63,19 +69,22 @@ export const WEBSITE_TEXT = {
         </React.Fragment>,
 
         <React.Fragment>
-        <p>A co z&nbsp;gramatyką? Oczywiście, gramatyka jest ważna, jednak to nie ona będzie
-            wyznaczać nam kierunek. Gdy zobaczę, że walczysz z&nbsp;jakimś czasem (Present Perfect -
-            zgadłam?) - poświęcimy mu uwagę, ale <span
-                className="highlighted">zawsze w kontekście i&nbsp;świadomie</span>,
-            nie mechanicznie i&nbsp;na zasadzie &bdquo;sztuka dla sztuki&rdquo;, bo to po prostu nie
-            działa.</p>
-        < p > Jeżeli masz jakieś pytania, <a href="#contact" className="highlighted contact-me">napisz do
-            mnie</a>.</p>
+            <p>A co z&nbsp;gramatyką? Oczywiście, gramatyka jest ważna, jednak to nie ona będzie
+                wyznaczać nam kierunek. Gdy zobaczę, że walczysz z&nbsp;jakimś czasem (Present Perfect -
+                zgadłam?) - poświęcimy mu uwagę, ale <span
+                    className="highlighted">zawsze w kontekście i&nbsp;świadomie</span>,
+                nie mechanicznie i&nbsp;na zasadzie &bdquo;sztuka dla sztuki&rdquo;, bo to po prostu nie
+                działa.</p>
+            < p> Jeżeli masz jakieś pytania, <a href="#contact" className="highlighted contact-me">napisz do
+                mnie</a>.</p>
         </React.Fragment>
     ],
     translations: [
-        <React.Fragment>Oferuję tłumaczenia tekstów z&nbsp;dziedziny psychologii – zarówno artykułów z&nbsp;języka angielskiego na polski, jak i&nbsp;prac naukowych z&nbsp;języka polskiego na angielski.</React.Fragment>,
-        <React.Fragment>Wykonuję również korekty i&nbsp;redakcje tłumaczeń dla klientów, którzy władają językiem angielskim, jednak chcieliby, żeby ich tekst został gruntownie zweryfikowany lub przeredagowany tak, aby był bardziej klarowny i&nbsp;lepszy stylistycznie.</React.Fragment>
+        <React.Fragment>Oferuję tłumaczenia tekstów z&nbsp;dziedziny psychologii – zarówno artykułów z&nbsp;języka
+            angielskiego na polski, jak i&nbsp;prac naukowych z&nbsp;języka polskiego na angielski.</React.Fragment>,
+        <React.Fragment>Wykonuję również korekty i&nbsp;redakcje tłumaczeń dla klientów, którzy władają językiem
+            angielskim, jednak chcieliby, żeby ich tekst został gruntownie zweryfikowany lub przeredagowany tak, aby był
+            bardziej klarowny i&nbsp;lepszy stylistycznie.</React.Fragment>
     ],
     offer: {
         english: {
@@ -96,11 +105,13 @@ export const WEBSITE_TEXT = {
             content: [
                 {
                     type: <React.Fragment>Tłumaczenia:</React.Fragment>,
-                    price: <React.Fragment>40&nbsp;zł brutto/1&nbsp;strona tłumaczeniowa (1800&nbsp;znaków ze spacjami)</React.Fragment>
+                    price: <React.Fragment>40&nbsp;zł brutto/1&nbsp;strona tłumaczeniowa (1800&nbsp;znaków ze
+                        spacjami)</React.Fragment>
                 },
                 {
                     type: <React.Fragment>Korekty tłumaczeń:</React.Fragment>,
-                    price: <React.Fragment>15&nbsp;zł brutto/1&nbsp;strona tłumaczeniowa (1800&nbsp;znaków ze spacjami)</React.Fragment>
+                    price: <React.Fragment>15&nbsp;zł brutto/1&nbsp;strona tłumaczeniowa (1800&nbsp;znaków ze
+                        spacjami)</React.Fragment>
                 }
             ]
         }
