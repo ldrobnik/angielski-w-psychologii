@@ -1,6 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import {Navbar, Nav} from 'react-bootstrap';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import {connect} from 'react-redux';
+
+import * as actionTypes from '../../store/actions';
 
 import './NavigatorBar.css';
 
@@ -18,22 +21,31 @@ const NavigationBar = (props) => {
 
     // Updates the window width
     const handleWindowSizeChange = () => {
-        setWindowWidth(window.innerWidth);
+        setWindowWidth(window.innerWidth); //update the window width state with the current window width
+        setMobile(); //update the store with mobile status
+    };
+
+    // Lets the store know if the page is displayed on a mobile device
+    const setMobile = () => {
+        props.onMobileChange(windowWidth < MOBILE_BREAKPOINT);
     };
 
     // Specifies whether the app is displayed on a mobile device
     const isMobile = windowWidth < MOBILE_BREAKPOINT;
 
     //Specifies smooth scroll offset depending on the window width
-    const scrollOffset = isMobile ? OFFSET_MOBILE : OFFSET_DESKTOP;
+    const scrollOffset = props.mobile ? OFFSET_MOBILE : OFFSET_DESKTOP;
 
 
-    // Adds an event listener to monitor the screen width and remove the listener when the component unmounts
+
     useEffect(() => {
-        window.addEventListener('resize', handleWindowSizeChange);
+        setMobile(); //update the store with the mobile status
+
+        window.addEventListener('resize', handleWindowSizeChange); // Add an event listener to monitor the screen width
 
         return () => {
-            window.removeEventListener('resize', handleWindowSizeChange);
+
+            window.removeEventListener('resize', handleWindowSizeChange); //remove the listener when the component unmounts
         }
     });
 
@@ -91,4 +103,24 @@ const NavigationBar = (props) => {
     );
 };
 
-export default NavigationBar;
+const mapStateToProps = state => {
+    return {
+        mobile: state.isMobile,
+        loaded: state.pageLoaded
+    };
+};
+
+const mapDispatchToProps = dispatch => {
+    return {
+        onMobileChange: (newState) => dispatch({
+            type: actionTypes.SET_MOBILE,
+            isMobile: newState
+        }),
+        onPageLoadedChange: (newState) => dispatch({
+            type: actionTypes.SET_PAGE_LOADED,
+            pageLoaded: newState
+        })
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(NavigationBar);
