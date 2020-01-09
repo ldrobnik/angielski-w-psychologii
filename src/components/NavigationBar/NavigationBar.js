@@ -105,8 +105,7 @@ const NavigationBar = (props) => {
 
 const mapStateToProps = state => {
     return {
-        mobile: state.isMobile,
-        loaded: state.pageLoaded
+        mobile: state.isMobile
     };
 };
 
@@ -115,10 +114,6 @@ const mapDispatchToProps = dispatch => {
         onMobileChange: (newState) => dispatch({
             type: actionTypes.SET_MOBILE,
             isMobile: newState
-        }),
-        onPageLoadedChange: (newState) => dispatch({
-            type: actionTypes.SET_PAGE_LOADED,
-            pageLoaded: newState
         })
     };
 };

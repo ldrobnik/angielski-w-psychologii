@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {Row, Container, Col} from 'react-bootstrap';
+import {connect} from 'react-redux';
 import posed from 'react-pose';
 import TextBubble from '../UI/TextBubble/TextBubble';
 import Portrait from './Portrait/Portrait';
@@ -39,8 +40,11 @@ const About = (props) => {
     //shows the messages
     const showMessages = () => {
         setMessagesVisible(true);
+        console.log(animationOffset);
     };
 
+    //offset for triggering animation - larger for mobile
+    const animationOffset = props.mobile ? "-60%" : "-40%";
     return (
         <React.Fragment>
 
@@ -98,10 +102,16 @@ const About = (props) => {
         </div>
             <Waypoint
                 onEnter={() => showMessages()}
-                bottomOffset="-40%"
+                bottomOffset={animationOffset}
             />
         </React.Fragment>
     );
 };
 
-export default About;
+const mapStateToProps = state => {
+    return {
+        mobile: state.isMobile
+    };
+};
+
+export default connect(mapStateToProps)(About);
