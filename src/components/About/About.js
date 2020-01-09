@@ -87,8 +87,9 @@ const About = (props) => {
                                             >
                                                 <TextBubble
                                                     type="theme"
-                                                    message={bubble}
-                                                />
+                                                >
+                                                    {bubble}
+                                                </TextBubble>
                                             </AnimatedMessage>
                                         )
                                     }

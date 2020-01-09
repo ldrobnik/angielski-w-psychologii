@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 
 import './TextBubble.css';
 
@@ -7,7 +7,7 @@ const TextBubble = (props) => {
 
     return (
         <div className={`${props.type}TextBubble`}>
-            {props.message}
+            {props.children}
         </div>
     );
 };
