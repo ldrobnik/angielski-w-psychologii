@@ -30,7 +30,8 @@ export const WEBSITE_TEXT = {
         title: <React.Fragment>Angielski w&nbsp;psychologii</React.Fragment>,
         subtitle: <React.Fragment>Język angielski dla psychologów, psychoterapeutów i&nbsp;osób zainteresowanych
             psychologią</React.Fragment>,
-        button: <React.Fragment>Oferta</React.Fragment>
+        button: <React.Fragment>Oferta</React.Fragment>,
+        backdropAltText: "Poznańskie Jeżyce"
     },
     about: {
         name: <React.Fragment>Katarzyna Łasocha-Nowak</React.Fragment>,

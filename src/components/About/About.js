@@ -40,7 +40,6 @@ const About = (props) => {
     //shows the messages
     const showMessages = () => {
         setMessagesVisible(true);
-        console.log(animationOffset);
     };
 
     //offset for triggering animation - larger for mobile

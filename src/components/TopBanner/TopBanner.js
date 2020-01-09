@@ -6,6 +6,7 @@ import '../UI/AnchorButton/AnchorButton';
 
 import {WEBSITE_TEXT} from "../../data/constants";
 import AnchorButton from "../UI/AnchorButton/AnchorButton";
+import backdrop from '../../assets/images/backdrop.jpg';
 
 const TopBanner = (props) => {
 
@@ -13,7 +14,7 @@ const TopBanner = (props) => {
         <Jumbotron
             className="verticallyCentered"
             fluid>
-            <div>
+            <div className="bannerContent">
                 <h1 className="title">{WEBSITE_TEXT.topBanner.title}</h1>
                 <div className="subtitle">{WEBSITE_TEXT.topBanner.subtitle}</div>
                 <AnchorButton
@@ -21,6 +22,12 @@ const TopBanner = (props) => {
                     message={WEBSITE_TEXT.topBanner.button}
                 />
             </div>
+            <img
+                className="hiddenBackdrop"
+                src={backdrop}
+                alt={WEBSITE_TEXT.topBanner.backdropAltText}
+                onLoad={alert('loaded')}
+            />
         </Jumbotron>
     );
 };

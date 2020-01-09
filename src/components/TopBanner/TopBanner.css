@@ -6,7 +6,10 @@
   min-height: 70vh;
   margin-bottom: 0 !important;
   width: 100%;
-  overflow-y: hidden; }
+  overflow: hidden; }
+
+.topBannerContainer {
+  overflow: hidden; }
 
 .title {
   font-family: "Fugaz One", cursive;
@@ -26,5 +29,8 @@
   @media all and (max-width: 450px) {
     .subtitle {
       font-size: 1em; } }
+
+.hiddenBackdrop {
+  display: none; }
 
 /*# sourceMappingURL=TopBanner.css.map */
