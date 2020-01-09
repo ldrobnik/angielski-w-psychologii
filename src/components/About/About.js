@@ -39,14 +39,7 @@ const About = (props) => {
     //shows the messages
     const showMessages = () => {
         setMessagesVisible(true);
-        console.log('enter');
     };
-
-
-    useEffect(() => {
-            // setTimeout(showMessages, 1000);
-        }
-    );
 
     return (
         <React.Fragment>
@@ -106,6 +99,7 @@ const About = (props) => {
         </div>
             <Waypoint
                 onEnter={() => showMessages()}
+                bottomOffset="-60%"
             />
         </React.Fragment>
     );
