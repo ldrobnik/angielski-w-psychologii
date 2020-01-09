@@ -31,6 +31,10 @@
       font-size: 1em; } }
 
 .hiddenBackdrop {
-  display: none; }
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+  top: -1000;
+  left: -1000; }
 
 /*# sourceMappingURL=TopBanner.css.map */

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import './Home.css';
 
 import NavigationBar from "../NavigationBar/NavigationBar";
@@ -12,20 +12,6 @@ import Contact from '../Contact/Contact';
 import {SECTION_NAMES} from "../../data/constants";
 
 const Home = (props) => {
-
-    //specifies whether the photo is visible (it is turn visible when the photo is loaded
-    const [contentVisible, setContentVisible] = useState(false);
-
-    //sets photo visibility to true
-    const showContent = () => {
-        setContentVisible(true);
-    };
-
-    //show content
-    useEffect(() => {
-            showContent();
-        }
-    );
 
     return (
         <div id="outer-container">

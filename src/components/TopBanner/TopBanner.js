@@ -1,5 +1,6 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {Jumbotron} from 'react-bootstrap';
+import {connect} from 'react-redux';
 import './TopBanner.css';
 
 import '../UI/AnchorButton/AnchorButton';
@@ -7,8 +8,14 @@ import '../UI/AnchorButton/AnchorButton';
 import {WEBSITE_TEXT} from "../../data/constants";
 import AnchorButton from "../UI/AnchorButton/AnchorButton";
 import backdrop from '../../assets/images/backdrop.jpg';
+import * as actionTypes from "../../store/actions";
 
 const TopBanner = (props) => {
+
+    //Changes the page loaded state in Redux store
+    const handleLoaded = () => {
+      props.onLoadedChange(true);
+    };
 
     return (
         <Jumbotron
@@ -26,10 +33,19 @@ const TopBanner = (props) => {
                 className="hiddenBackdrop"
                 src={backdrop}
                 alt={WEBSITE_TEXT.topBanner.backdropAltText}
-                onLoad={alert('loaded')}
+                onLoad={() => handleLoaded()}
             />
         </Jumbotron>
     );
 };
 
-export default TopBanner;
+const mapDispatchToProps = dispatch => {
+    return {
+        onLoadedChange: (newState) => dispatch({
+            type: actionTypes.SET_PAGE_LOADED,
+            pageLoaded: newState
+        })
+    };
+};
+
+export default connect(null, mapDispatchToProps)(TopBanner);

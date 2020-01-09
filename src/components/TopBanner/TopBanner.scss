@@ -41,5 +41,9 @@
 }
 
 .hiddenBackdrop {
-  display: none;
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+  top: -1000;
+  left: -1000;
 }
