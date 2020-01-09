@@ -12,7 +12,7 @@ import {Waypoint} from "react-waypoint";
 /* POSE */
 const AnimatedList = posed.div({
     visible: {
-        delayChildren: 1500,
+        delayChildren: 400,
         staggerChildren: 350
     }
 });
@@ -39,27 +39,33 @@ const About = (props) => {
     //shows the messages
     const showMessages = () => {
         setMessagesVisible(true);
+        console.log('enter');
     };
 
 
     useEffect(() => {
-            setTimeout(showMessages, 1000);
+            // setTimeout(showMessages, 1000);
         }
     );
 
     return (
+        <React.Fragment>
+
         <div className="lightBackground sectionContent">
+
             <Container>
                 <Row>
                     <h1 id={SECTION_NAMES[0].id}>
                         {SECTION_NAMES[0].name}
                     </h1>
                 </Row>
-                <Row className="separator"></Row>
+
                 <Row>
                     <div className="introduction">
                         <h2>{WEBSITE_TEXT.about.name}</h2>
                         <p>{WEBSITE_TEXT.about.description}</p>
+                        <Row className="separator">
+                        </Row>
                     </div>
                 </Row>
                 <Row>
@@ -75,7 +81,6 @@ const About = (props) => {
                     <Col
                         className="verticallyCentered"
                     >
-
                             <AnimatedList
                                 pose={messagesVisible ? 'visible' : 'hidden'}
                             >
@@ -95,13 +100,14 @@ const About = (props) => {
                                     }
                                 )}
                             </AnimatedList>
-                    <Waypoint
-                        onEnter={() => {showMessages();}}
-                    />
                     </Col>
                 </Row>
             </Container>
         </div>
+            <Waypoint
+                onEnter={() => showMessages()}
+            />
+        </React.Fragment>
     );
 };
 
