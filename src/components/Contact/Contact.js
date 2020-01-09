@@ -13,6 +13,9 @@ const Contact = (props) => {
                     <h1 id={SECTION_NAMES[4].id}>
                         {SECTION_NAMES[4].name}
                     </h1>
+                </Row>
+                <Row className="separator"></Row>
+                <Row>
                     {FILLER}
                 </Row>
             </Container>

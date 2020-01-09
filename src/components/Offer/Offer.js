@@ -14,6 +14,9 @@ const Offer = (props) => {
                     <h1 id={SECTION_NAMES[3].id}>
                         {SECTION_NAMES[3].name}
                     </h1>
+                </Row>
+                <Row className="separator"></Row>
+                <Row>
                     {FILLER}
                 </Row>
             </Container>

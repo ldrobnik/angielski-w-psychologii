@@ -41,6 +41,14 @@ a {
   font-weight: bold;
 }
 
+
+.separator {
+  background-color: $lightColor;
+  width: 100%;
+  height: 8px;
+  margin-bottom: 1.5em;
+}
+
 .lightBackground {
   background-color: $lightColor !important;
   color: $darkColor;
@@ -53,6 +61,10 @@ a {
 
   .highlighted {
     color: $themeColor;
+  }
+
+  .separator {
+    background-color: $themeColor;
   }
 }
 

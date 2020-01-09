@@ -55,6 +55,7 @@ const About = (props) => {
                         {SECTION_NAMES[0].name}
                     </h1>
                 </Row>
+                <Row className="separator"></Row>
                 <Row>
                     <div className="introduction">
                         <h2>{WEBSITE_TEXT.about.name}</h2>
@@ -93,7 +94,9 @@ const About = (props) => {
                                     }
                                 )}
                             </AnimatedList>
-
+                    <Waypoint
+                        onEnter={() => {showMessages();}}
+                    />
                     </Col>
                 </Row>
             </Container>
