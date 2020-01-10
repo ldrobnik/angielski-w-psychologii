@@ -13,7 +13,7 @@ import {Waypoint} from "react-waypoint";
 /* POSE */
 const AnimatedList = posed.div({
     visible: {
-        delayChildren: 800,
+        delayChildren: 100,
         staggerChildren: 350
     }
 });
