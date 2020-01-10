@@ -72,8 +72,25 @@ a {
   overflow-x: hidden;
 }
 
+//for vertically centered content
 .verticallyCentered {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+//for content displayed but not visible
+.notVisible {
+  visibility: hidden;
+}
+
+//for content not displayed
+.notDisplayed {
+  display: none;
+}
+
+.constrained {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }

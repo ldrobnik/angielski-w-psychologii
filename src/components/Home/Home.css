@@ -62,4 +62,15 @@ a {
   flex-direction: column;
   justify-content: center; }
 
+.notVisible {
+  visibility: hidden; }
+
+.notDisplayed {
+  display: none; }
+
+.constrained {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+
 /*# sourceMappingURL=Home.css.map */
