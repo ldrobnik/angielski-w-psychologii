@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import {Row, Container} from 'react-bootstrap';
-import './TranslationsInPsychology.css';
+import './Translations.css';
 
 import {SECTION_NAMES, FILLER} from "../../data/constants";
 import Contact from "../Contact/Contact";
 
-const TranslationsInPsychology = (props) => {
+const Translations = (props) => {
 
     return (
         <div className="lightBackground sectionContent">
@@ -24,4 +24,4 @@ const TranslationsInPsychology = (props) => {
     );
 };
 
-export default TranslationsInPsychology;
+export default Translations;

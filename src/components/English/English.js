@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import {Row, Container} from 'react-bootstrap';
-import './EnglishInPsychology.css';
+import './English.css';
 
 import {SECTION_NAMES, FILLER} from "../../data/constants";
 
-const EnglishInPsychology = (props) => {
+const English = (props) => {
 
     return (
         <div className="sectionContent">
@@ -23,4 +23,4 @@ const EnglishInPsychology = (props) => {
     );
 };
 
-export default EnglishInPsychology;
+export default English;

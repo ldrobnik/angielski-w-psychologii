@@ -90,7 +90,7 @@ export const WEBSITE_TEXT = {
     ],
     offer: {
         english: {
-            title: <React.Fragment>„English for psychology” przez Skype</React.Fragment>,
+            title: <React.Fragment>„Angielski w&nbsp;psychologii” przez Skype</React.Fragment>,
             content: [
                 {
                     type: <React.Fragment>Indywidualnie:</React.Fragment>,
