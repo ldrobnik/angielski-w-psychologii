@@ -3,7 +3,6 @@ import {Row, Container} from 'react-bootstrap';
 import './Translations.css';
 
 import {SECTION_NAMES, FILLER} from "../../data/constants";
-import Contact from "../Contact/Contact";
 
 const Translations = (props) => {
 
