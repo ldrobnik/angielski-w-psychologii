@@ -84,32 +84,18 @@ a {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  z-index: 100;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-//class wrapping all page content
-.siteContent {
-  top: 0;
-}
 
 //class for content that should not be displayed
 .notDisplayed {
   display: none;
 }
 
-//keyframes for pulsating animation
-
-@keyframes pulsate {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0.5;
-  }
-
-  100% {
-    opacity: 1;
-  }
+//class for content that should not be visible
+.notVisible {
+  visibility: hidden;
 }

@@ -1,24 +1,45 @@
 @import '../../../styles/common';
 
+//keyframes for pulsating animation
+
+@keyframes pulsate {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .spinnerWrapper {
   position: absolute;
   z-index: 500;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: pulsate $pulsateAnimation;
+  animation: pulsate 0.8s ease-in-out infinite;
+}
 
-  img {
-    height: 110px;
-  }
+.outerWrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 400;
+  height: 100vh;
+  width: 100vw;
 }
 
 .spinnerBackdrop {
-  position: absolute;
+  position: relative;
   left: 0;
   top: 0;
-  z-index: 80;
-  width: 100%;
-  height: 100%;
-  background: $lightColor;
+  z-index: 400;
+  width: 100vw;
+  height: 100vh;
+  background: $lightColor !important;
 }

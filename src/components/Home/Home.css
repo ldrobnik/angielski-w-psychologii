@@ -66,21 +66,14 @@ a {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  z-index: 100;
-  position: relative; }
-
-.siteContent {
-  top: 0; }
+  position: fixed;
+  top: 0;
+  left: 0; }
 
 .notDisplayed {
   display: none; }
 
-@keyframes pulsate {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0.5; }
-  100% {
-    opacity: 1; } }
+.notVisible {
+  visibility: hidden; }
 
 /*# sourceMappingURL=Home.css.map */
