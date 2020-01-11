@@ -1,5 +1,4 @@
-import React from 'react';
-import posed from "react-pose";
+import React, {useEffect} from 'react';
 import {connect} from 'react-redux';
 
 import './Home.css';
@@ -10,9 +9,12 @@ import English from '../English/English';
 import Translations from '../Translations/Translations';
 import Offer from '../Offer/Offer';
 import Contact from '../Contact/Contact';
-
 import Spinner from '../UI/Spinner/Spinner';
+
 import {SECTION_NAMES} from "../../data/constants";
+
+
+
 
 const Home = (props) => {
 
@@ -23,11 +25,10 @@ const Home = (props) => {
     const navBar = (props.loaded) ? <NavigationBar /> : null;
 
     //display spinner only when the page is not loaded
-    const spinner = (!props.loaded) ? <Spinner /> : null;
+    let spinner = (!props.loaded) ? <Spinner /> : null;
 
-    console.log(props.loaded, containerClass);
     return (
-        <React.Fragment>
+        <div className="contentWrapper">
             <div className={containerClass}>
                 {spinner}
                 {navBar}
@@ -39,7 +40,7 @@ const Home = (props) => {
                 <Offer id={SECTION_NAMES[3]} />
                 <Contact id={SECTION_NAMES[4]} />
             </div>
-        </React.Fragment>
+        </div>
     );
 };
 

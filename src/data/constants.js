@@ -133,10 +133,13 @@ export const WEBSITE_TEXT = {
         available: {
             title: "Przykładowe godziny zajęć",
             hours: [
-                "Poniedziałki 15:30 – 16:30",
-                "Środy 15:30 – 16:30",
-                "Poniedziałek 15:30 – 16:30"
-            ]
+                "poniedziałek, godz 15:30, środa 15:30 i 16:30 i piątek 8:45",
+                <React.Fragment>Poniedziałki 15:30"</React.Fragment>,
+                <React.Fragment>Środy 15:30</React.Fragment>,
+                <React.Fragment>Środy 16:30</React.Fragment>,
+                <React.Fragment>Piątki 8:45</React.Fragment>
+            ],
+            info: <React.Fragment>Więcej wolnych terminów od czerwca</React.Fragment>
         }
 
     }
@@ -149,17 +152,6 @@ export const OFFSET_MOBILE = '280px';
 //breakpoint below which the navbar collapses
 export const MOBILE_BREAKPOINT = 768;
 
-//Reusable posed component specifying the basic fade-in animation
-export const AnimatedContent = posed.div({
-    visible: {
-        opacity: 1,
-        filter: 'blur(0px)'
-    },
-    hidden: {
-        opacity: 0,
-        filter: 'blur(20px)'
-    }
-});
 
 
 
