@@ -14,8 +14,6 @@ import Contact from '../Contact/Contact';
 import Spinner from '../UI/Spinner/Spinner';
 import {SECTION_NAMES} from "../../data/constants";
 
-
-
 const Home = (props) => {
 
     //class applied to outer container to prevent scrolling before the page is loaded

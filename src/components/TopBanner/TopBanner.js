@@ -33,7 +33,7 @@ const TopBanner = (props) => {
                 className="hiddenBackdrop"
                 src={backdrop}
                 alt={WEBSITE_TEXT.topBanner.backdropAltText}
-                onLoad={() => setTimeout(handleLoaded, 3000)}
+                onLoad={() => setTimeout(handleLoaded, 1000)}
             />
         </Jumbotron>
     );
