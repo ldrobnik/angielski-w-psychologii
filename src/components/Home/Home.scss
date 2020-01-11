@@ -79,18 +79,26 @@ a {
   justify-content: center;
 }
 
-//for content displayed but not visible
-.notVisible {
-  visibility: hidden;
-}
-
-//for content not displayed
-.notDisplayed {
-  display: none;
-}
-
+//class applied to page container to prevent scrolling
 .constrained {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  z-index: 100;
+}
+
+//keyframes for pulsating animation
+
+@keyframes pulsate {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
