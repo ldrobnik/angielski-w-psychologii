@@ -1,5 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 import posed from 'react-pose';
+import {connect} from 'react-redux';
 
 import logoImage from '../../../assets/images/logo.svg';
 
@@ -16,31 +17,33 @@ const AnimatedContent = posed.div({
 });
 
 
-const Spinner = () => {
+const Spinner = (props) => {
 
-    //specifies spinner visibility
-    const [spinnerVisible, setSpinnerVisible] = useState(false);
-
-    //shows spinner
-    const showSpinner = () => {
-        setSpinnerVisible(true);
-    };
+    //specifies whether the spinner is visible based on whether the page has loaded
+    const spinnerVisible = !props.loaded;
 
     return (
-        <React.Fragment>
+
+        <AnimatedContent
+            pose={spinnerVisible ? 'visible' : 'hidden'}>
             <div className="spinnerWrapper">
-                <AnimatedContent
-                    pose={spinnerVisible ? 'visible' : 'hidden'}>
-                    <img
-                        src={logoImage}
-                        alt='loading spinner'
-                        onLoad={showSpinner}
-                    />
-                </AnimatedContent>
+
+                <img
+                    src={logoImage}
+                    alt='loading spinner'
+                />
+
             </div>
             <div className="spinnerBackdrop"></div>
-        </React.Fragment>
+        </AnimatedContent>
+
     );
 };
 
-export default Spinner;
+const mapStateToProps = state => {
+    return {
+        loaded: state.pageLoaded
+    };
+};
+
+export default connect(mapStateToProps)(Spinner);

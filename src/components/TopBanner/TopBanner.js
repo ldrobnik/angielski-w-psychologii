@@ -14,7 +14,7 @@ const TopBanner = (props) => {
 
     //Changes the page loaded state in Redux store
     const handleLoaded = () => {
-      props.onLoadedChange(true);
+        props.onLoadedChange(true);
     };
 
     return (
@@ -33,7 +33,7 @@ const TopBanner = (props) => {
                 className="hiddenBackdrop"
                 src={backdrop}
                 alt={WEBSITE_TEXT.topBanner.backdropAltText}
-                onLoad={() => handleLoaded()}
+                onLoad={() => setTimeout(handleLoaded, 3000)}
             />
         </Jumbotron>
     );

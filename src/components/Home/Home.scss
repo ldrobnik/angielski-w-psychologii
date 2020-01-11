@@ -85,6 +85,17 @@ a {
   height: 100vh;
   overflow: hidden;
   z-index: 100;
+  position: relative;
+}
+
+//class wrapping all page content
+.siteContent {
+  top: 0;
+}
+
+//class for content that should not be displayed
+.notDisplayed {
+  display: none;
 }
 
 //keyframes for pulsating animation
