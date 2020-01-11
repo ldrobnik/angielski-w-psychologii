@@ -30,8 +30,6 @@ const NavigationBar = (props) => {
         props.onMobileChange(windowWidth < MOBILE_BREAKPOINT);
     };
 
-    // Specifies whether the app is displayed on a mobile device
-    const isMobile = windowWidth < MOBILE_BREAKPOINT;
 
     //Specifies smooth scroll offset depending on the window width
     const scrollOffset = props.mobile ? OFFSET_MOBILE : OFFSET_DESKTOP;
@@ -99,13 +97,13 @@ const NavigationBar = (props) => {
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
-
     );
 };
 
 const mapStateToProps = state => {
     return {
-        mobile: state.isMobile
+        mobile: state.isMobile,
+        loaded: state.pageLoaded
     };
 };
 
