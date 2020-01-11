@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import {connect} from 'react-redux';
+import posed, {PoseGroup} from 'react-pose';
 
 import './Home.css';
 import NavigationBar from "../NavigationBar/NavigationBar";
@@ -14,6 +15,19 @@ import Spinner from '../UI/Spinner/Spinner';
 import {SECTION_NAMES} from "../../data/constants";
 
 
+/* POSE */
+const AnimatedOverlay = posed.div({
+    enter: {
+        opacity: 1
+    },
+    exit: {
+        opacity: 0,
+        transition: {
+            duration: 1500,
+            ease: 'easeOut'
+        }
+    }
+});
 
 
 const Home = (props) => {
@@ -31,6 +45,11 @@ const Home = (props) => {
         <div className="contentWrapper">
             <div className={containerClass}>
                 {spinner}
+                <PoseGroup>
+                    {!props.loaded && [
+                        <AnimatedOverlay key="overlay" className="overlay" />
+                    ]}
+                </PoseGroup>
                 {navBar}
                 <div id="top"></div>
                 <TopBanner />
