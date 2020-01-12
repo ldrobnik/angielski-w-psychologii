@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import {Row, Container, Col} from 'react-bootstrap';
 import {connect} from 'react-redux';
+import {Waypoint} from "react-waypoint";
 import posed from 'react-pose';
 import TextBubble from '../UI/TextBubble/TextBubble';
 import Portrait from './Portrait/Portrait';
 import './About.css';
-import photo from '../../assets/images/portrait.jpg';
 
+import photo from '../../assets/images/portrait.jpg';
 import {SECTION_NAMES, WEBSITE_TEXT} from "../../data/constants";
-import {Waypoint} from "react-waypoint";
 
 /* POSE */
 const AnimatedList = posed.div({
@@ -86,7 +86,7 @@ const About = (props) => {
                                                 key={k}
                                             >
                                                 <TextBubble
-                                                    type="theme"
+                                                    type="light"
                                                 >
                                                     {bubble}
                                                 </TextBubble>

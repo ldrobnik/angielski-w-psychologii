@@ -1,5 +1,5 @@
 import React from 'react';
-import {Col, Image} from 'react-bootstrap';
+import {Col, Row} from 'react-bootstrap';
 
 import RoundedImage from '../RoundedImage/RoundedImage';
 import './Note.css';
@@ -32,9 +32,9 @@ const Note = (props) => {
     }
 
     return (
-        <React.Fragment>
+        <Row>
             {content}
-        </React.Fragment>
+        </Row>
     );
 };
 

@@ -44,3 +44,5 @@ const RoundedImage = (props) => {
     );
 
 };
+
+export default RoundedImage;

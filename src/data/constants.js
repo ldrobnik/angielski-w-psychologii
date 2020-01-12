@@ -50,7 +50,8 @@ export const WEBSITE_TEXT = {
                 w&nbsp;moich kursach na żywo, oferuję <span className="highlighted">zajęcia przez Skype</span>.</React.Fragment>
         ]
     },
-    english: [
+    english: {
+        messages: [
         <React.Fragment><p>Chcesz być <span
             class="highlighted">na bieżąco z&nbsp;nowościami ze świata psychologii</span>?
             Walczysz czasem z&nbsp;tekstami specjalistycznymi z&nbsp;twojej dziedziny, które nie
@@ -82,6 +83,11 @@ export const WEBSITE_TEXT = {
                 mnie</a>.</p>
         </React.Fragment>
     ],
+        altTexts: [
+            "Podręcznik do nauki psychologii",
+
+        ]
+    },
     translations: [
         <React.Fragment>Oferuję tłumaczenia tekstów z&nbsp;dziedziny psychologii – zarówno artykułów z&nbsp;języka
             angielskiego na polski, jak i&nbsp;prac naukowych z&nbsp;języka polskiego na angielski.</React.Fragment>,

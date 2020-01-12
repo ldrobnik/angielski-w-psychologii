@@ -1,4 +1,4 @@
-.themeTextBubble {
+.lightTextBubble {
   border: #9d0059 1px solid;
   padding: 15px 20px;
   margin: 15px 10px;
@@ -8,7 +8,7 @@
   -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5); }
 
-.lightTextBubble {
+.themeTextBubble {
   border: #f8f9fa 1px solid;
   padding: 15px 20px;
   margin: 15px 10px;

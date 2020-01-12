@@ -1,6 +1,6 @@
 @import '../../../styles/common';
 
-.themeTextBubble {
+.lightTextBubble {
   border: $themeBorder;
   padding: 15px 20px;
   margin: 15px 10px;
@@ -9,7 +9,7 @@
   @include regularShadow;
 }
 
-.lightTextBubble {
+.themeTextBubble {
   border: $lightBorder;
   padding: 15px 20px;
   margin: 15px 10px;
