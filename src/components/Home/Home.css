@@ -62,6 +62,11 @@ a {
   flex-direction: column;
   justify-content: center; }
 
+.centeredBothWays {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .constrained {
   width: 100vw;
   height: 100vh;

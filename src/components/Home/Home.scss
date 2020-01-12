@@ -78,6 +78,14 @@ a {
   justify-content: center;
 }
 
+//for content centered both vertically and horizontally
+
+.centeredBothWays {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 //class applied to page container to prevent scrolling
 .constrained {
   width: 100vw;
