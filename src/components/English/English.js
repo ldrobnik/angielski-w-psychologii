@@ -17,7 +17,7 @@ import {SECTION_NAMES, WEBSITE_TEXT} from "../../data/constants";
 const AnimatedList = posed.div({
     visible: {
         delayChildren: 800,
-        staggerChildren: 350
+        staggerChildren: 450
     }
 });
 
@@ -49,7 +49,7 @@ const English = (props) => {
     const illustrations = [illustration0, illustration1, illustration2];
 
     //offset for triggering animation - larger for mobile
-    const animationOffset = props.mobile ? "50px" : "100px";
+    const animationOffset = props.mobile ? "50px" : "150px";
 
     return (
         <React.Fragment>
