@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import {connect} from 'react-redux';
 import {Row, Container} from 'react-bootstrap';
 import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
@@ -22,14 +23,14 @@ const AnimatedList = posed.div({
 
 const AnimatedMessage = posed.div({
     visible: {
-        height: '100%',
+        transform: 'scale(1, 1)',
         transition: {
             type: 'spring',
             stiffness: 100
         }
     },
     hidden: {
-        height: '1%'
+        transform: 'scale(1, 0)'
     }
 });
 
@@ -94,4 +95,10 @@ const English = (props) => {
     );
 };
 
-export default English;
+const mapStateToProps = state => {
+    return {
+        mobile: state.isMobile
+    };
+};
+
+export default connect(mapStateToProps)(English);
