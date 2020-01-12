@@ -11,7 +11,7 @@ const Note = (props) => {
     //constant containing the image column
     const imageColumn = (<Col
         md={3}
-        className="centeredBothWays"
+        className="centeredBothWays noteColumn"
     >
         <RoundedImage
             source={props.source}
@@ -22,7 +22,7 @@ const Note = (props) => {
     //constant containing the text column
     const textColumn = (
         <Col
-            className="verticallyCentered"
+            className="verticallyCentered noteColumn"
         >
             {props.children}
         </Col>
