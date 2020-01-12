@@ -23,14 +23,14 @@ const AnimatedList = posed.div({
 
 const AnimatedMessage = posed.div({
     visible: {
-        x: '0%',
+        transform: 'scale(1, 1)',
         transition: {
             type: 'spring',
             stiffness: 100
         }
     },
     hidden: {
-        x: '-600%'
+        transform: 'scale(0, 1)'
     }
 });
 
@@ -49,7 +49,7 @@ const Translations = (props) => {
     const illustrations = [illustration0, illustration1];
 
     //offset for triggering animation - larger for mobile
-    const animationOffset = props.mobile ? "10%" : "20%";
+    const animationOffset = props.mobile ? "50px" : "100px";
 
 
     return (
