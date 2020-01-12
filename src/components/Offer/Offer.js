@@ -9,7 +9,6 @@ import {SECTION_NAMES, WEBSITE_TEXT} from "../../data/constants";
 import TextBubble from '../UI/TextBubble/TextBubble';
 
 /* POSE */
-
 const AnimatedMessageLeft = posed.div({
     visible: {
         x: '0%',
