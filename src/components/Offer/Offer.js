@@ -12,27 +12,27 @@ import TextBubble from '../UI/TextBubble/TextBubble';
 
 const AnimatedMessageLeft = posed.div({
     visible: {
-        transform: 'scale(1, 1)',
+        x: '0%',
         transition: {
             type: 'spring',
             stiffness: 100
         }
     },
     hidden: {
-        transform: 'scale(0, 1)'
+        x: '-500%'
     }
 });
 
 const AnimatedMessageRight = posed.div({
     visible: {
-        transform: 'scale(1, 1)',
+        x: '0%',
         transition: {
             type: 'spring',
             stiffness: 100
         }
     },
     hidden: {
-        transform: 'scale(0, 1)'
+        x: '500%'
     }
 });
 
@@ -49,7 +49,6 @@ const Offer = (props) => {
 
     //offset for triggering animation - larger for mobile
     const animationOffset = props.mobile ? "50px" : "100px";
-
 
     return (
         <React.Fragment>
@@ -80,13 +79,15 @@ const Offer = (props) => {
                                     <Row className="offerContent">
                                         {WEBSITE_TEXT.offer.english.content.map((item, k) => {
                                             return (
-                                                <div key={k}>
-                                                    <p className="serviceType">
+                                                <div key={k}
+                                                    className="serviceItem"
+                                                >
+                                                    <div className="serviceType">
                                                         {item.type}
-                                                    </p>
-                                                    <p className="servicePrice">
+                                                    </div>
+                                                    <div className="servicePrice">
                                                         {item.price}
-                                                    </p>
+                                                    </div>
                                                 </div>
                                             );
                                         })}
@@ -94,7 +95,7 @@ const Offer = (props) => {
                                 </TextBubble>
                             </AnimatedMessageLeft>
                         </Col>
-                        <Col>
+                        <Col md={6}>
                             <AnimatedMessageRight
                                 pose={messagesVisible ? 'visible' : 'hidden'}
                             >
@@ -108,18 +109,22 @@ const Offer = (props) => {
                                     <Row className="offerContent">
                                         {WEBSITE_TEXT.offer.translations.content.map((item, k) => {
                                             return (
-                                                <div key={k}>
-                                                    <p className="serviceType">
+
+                                                <div key={k}
+                                                     className="serviceItem"
+                                                >
+                                                    <div className="serviceType">
                                                         {item.type}
-                                                    </p>
-                                                    <p className="servicePrice">
+                                                    </div>
+                                                    <div className="servicePrice">
                                                         {item.price}
-                                                    </p>
+                                                    </div>
                                                 </div>
+
                                             );
                                         })}
                                     </Row>
-                                    <Row>
+                                    <Row className="offerFootnote">
                                         {WEBSITE_TEXT.offer.translations.footnote}
                                     </Row>
                                 </TextBubble>

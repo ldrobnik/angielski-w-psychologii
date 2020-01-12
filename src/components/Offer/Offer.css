@@ -1,5 +1,20 @@
 .offerBox {
-  min-height: 400px;
+  min-height: 500px;
   color: #f8f9fa; }
+
+.serviceItem {
+  width: 100%;
+  margin: 10px 0 10px 40px; }
+
+.servicePrice {
+  margin-left: 40px; }
+
+.priceValue {
+  font-size: 2em;
+  font-weight: bold;
+  color: #ff6abe; }
+
+.offerFootnote {
+  font-size: 0.8em; }
 
 /*# sourceMappingURL=Offer.css.map */

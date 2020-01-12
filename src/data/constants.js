@@ -119,11 +119,11 @@ export const WEBSITE_TEXT = {
             content: [
                 {
                     type: <React.Fragment>Indywidualnie:</React.Fragment>,
-                    price: <React.Fragment>80&nbsp;zł brutto/60&nbsp;min</React.Fragment>
+                    price: <React.Fragment><span className="priceValue">80&nbsp;zł</span> brutto/60&nbsp;min</React.Fragment>
                 },
                 {
                     type: <React.Fragment>Grupa dwuosobowa:</React.Fragment>,
-                    price: <React.Fragment>50&nbsp;zł brutto/os./60&nbsp;min</React.Fragment>
+                    price: <React.Fragment><span className="priceValue">50&nbsp;zł</span> brutto/os./60&nbsp;min</React.Fragment>
                 }
             ]
         },
@@ -132,11 +132,11 @@ export const WEBSITE_TEXT = {
             content: [
                 {
                     type: <React.Fragment>Tłumaczenia:</React.Fragment>,
-                    price: <React.Fragment>40&nbsp;zł brutto/1&nbsp;strona tłumaczeniowa*</React.Fragment>
+                    price: <React.Fragment><span className="priceValue">40&nbsp;zł</span> brutto/1&nbsp;strona tłumaczeniowa*</React.Fragment>
                 },
                 {
                     type: <React.Fragment>Korekty tłumaczeń:</React.Fragment>,
-                    price: <React.Fragment>15&nbsp;zł brutto/1&nbsp;strona tłumaczeniowa*</React.Fragment>
+                    price: <React.Fragment><span className="priceValue">15&nbsp;zł</span> brutto/1&nbsp;strona tłumaczeniowa*</React.Fragment>
                 }
             ],
             footnote: <React.Fragment>*1800&nbsp;znaków ze spacjami</React.Fragment>

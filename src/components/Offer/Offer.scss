@@ -1,6 +1,29 @@
 @import '../../styles/common';
 
 .offerBox {
-  min-height: 400px;
+  min-height: 500px;
   color: $lightColor;
+}
+
+.serviceItem {
+  width: 100%;
+  margin: 10px 0 10px 40px;
+}
+
+.serviceType {
+
+}
+
+.servicePrice {
+  margin-left: 40px;
+}
+
+.priceValue {
+  font-size: 2em;
+  font-weight: bold;
+  color: setColor(4);
+}
+
+.offerFootnote {
+  font-size: 0.8em;
 }
