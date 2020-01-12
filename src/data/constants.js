@@ -115,7 +115,7 @@ export const WEBSITE_TEXT = {
     },
     offer: {
         english: {
-            title: <React.Fragment>„Angielski w&nbsp;psychologii” przez Skype</React.Fragment>,
+            title: <React.Fragment>Angielski w&nbsp;psychologii przez Skype</React.Fragment>,
             content: [
                 {
                     type: <React.Fragment>Indywidualnie:</React.Fragment>,
@@ -132,15 +132,14 @@ export const WEBSITE_TEXT = {
             content: [
                 {
                     type: <React.Fragment>Tłumaczenia:</React.Fragment>,
-                    price: <React.Fragment>40&nbsp;zł brutto/1&nbsp;strona tłumaczeniowa (1800&nbsp;znaków ze
-                        spacjami)</React.Fragment>
+                    price: <React.Fragment>40&nbsp;zł brutto/1&nbsp;strona tłumaczeniowa*</React.Fragment>
                 },
                 {
                     type: <React.Fragment>Korekty tłumaczeń:</React.Fragment>,
-                    price: <React.Fragment>15&nbsp;zł brutto/1&nbsp;strona tłumaczeniowa (1800&nbsp;znaków ze
-                        spacjami)</React.Fragment>
+                    price: <React.Fragment>15&nbsp;zł brutto/1&nbsp;strona tłumaczeniowa*</React.Fragment>
                 }
-            ]
+            ],
+            footnote: <React.Fragment>*1800&nbsp;znaków ze spacjami</React.Fragment>
         }
     },
     contact: {

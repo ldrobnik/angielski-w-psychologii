@@ -49,7 +49,7 @@ const English = (props) => {
     const illustrations = [illustration0, illustration1, illustration2];
 
     //offset for triggering animation - larger for mobile
-    const animationOffset = props.mobile ? "50px" : "150px";
+    const animationOffset = props.mobile ? "300px" : "250px";
 
     return (
         <React.Fragment>
