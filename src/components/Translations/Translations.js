@@ -13,23 +13,24 @@ import TextBubble from "../UI/TextBubble/TextBubble";
 import Note from "../UI/Note/Note";
 
 /* POSE */
+
 const AnimatedList = posed.div({
     visible: {
-        delayChildren: 100,
-        staggerChildren: 350
+        delayChildren: 800,
+        staggerChildren: 450
     }
 });
 
 const AnimatedMessage = posed.div({
     visible: {
-        transform: 'scale(1, 1)',
+        x: '0%',
         transition: {
             type: 'spring',
             stiffness: 100
         }
     },
     hidden: {
-        transform: 'scale(1, 0)'
+        x: '-600%'
     }
 });
 
@@ -49,6 +50,7 @@ const Translations = (props) => {
 
     //offset for triggering animation - larger for mobile
     const animationOffset = props.mobile ? "10%" : "20%";
+
 
     return (
         <React.Fragment>
@@ -72,14 +74,14 @@ const Translations = (props) => {
                                     return (
                                         <AnimatedMessage
                                             pose={messagesVisible ? 'visible' : 'hidden'}
-                                            key={k}
                                         >
                                             <TextBubble
                                                 type="light"
+                                                key={k}
                                             >
                                                 <Note
                                                     source={illustrations[k]}
-                                                    altText={WEBSITE_TEXT.translations.altTexts}
+                                                    altText={WEBSITE_TEXT.translations.altTexts[k]}
                                                     order={k}
                                                 >
                                                     {bubble}

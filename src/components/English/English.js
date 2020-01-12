@@ -16,7 +16,7 @@ import {SECTION_NAMES, WEBSITE_TEXT} from "../../data/constants";
 /* POSE */
 const AnimatedList = posed.div({
     visible: {
-        delayChildren: 100,
+        delayChildren: 800,
         staggerChildren: 350
     }
 });
@@ -80,7 +80,7 @@ const English = (props) => {
                                             >
                                                 <Note
                                                     source={illustrations[k]}
-                                                    altText={WEBSITE_TEXT.english.altTexts}
+                                                    altText={WEBSITE_TEXT.english.altTexts[k]}
                                                     order={k}
                                                 >
                                                     {bubble}
