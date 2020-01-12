@@ -1,5 +1,9 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import {
+    faPhone,
+    faEnvelope
+} from "@fortawesome/free-solid-svg-icons";
 
 
 //offset used for smooth scrolling
@@ -145,11 +149,11 @@ export const WEBSITE_TEXT = {
     contact: {
         details: {
             email: {
-                title: "E-mail:",
+                icon: faEnvelope,
                 value: "k.lasocha@gmail.com"
             },
             phone: {
-                title: "Telefon:",
+                icon: faPhone,
                 value: "600 829 261"
             }
         },
@@ -157,8 +161,7 @@ export const WEBSITE_TEXT = {
             title: "Przykładowe godziny zajęć",
             hours: [
                 <React.Fragment>Poniedziałki 15:30"</React.Fragment>,
-                <React.Fragment>Środy 15:30</React.Fragment>,
-                <React.Fragment>Środy 16:30</React.Fragment>,
+                <React.Fragment>Środy 15:30&nbsp;i&nbsp;16:30</React.Fragment>,
                 <React.Fragment>Piątki 8:45</React.Fragment>
             ],
             info: <React.Fragment>Więcej wolnych terminów od czerwca</React.Fragment>,
