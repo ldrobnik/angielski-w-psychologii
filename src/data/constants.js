@@ -67,11 +67,11 @@ export const WEBSITE_TEXT = {
             udostępniają w&nbsp;mediach społecznościowych filmiki, czy memy, których nie jesteś w&nbsp;stanie
             zrozumieć?</p>
             <p>Jestem pewna, że posiadasz jakieś podstawy angielskiego. Kolejny krok to postanowienie <span class="highlighted">wspięcia się na jego wyższy poziom</span> oraz wytrwanie w&nbsp;tym
-                postanowieniu. A ja - jestem od tego, żeby ci pomóc.</p></React.Fragment>,
+                postanowieniu. A ja – jestem od tego, żeby ci pomóc.</p></React.Fragment>,
 
         <React.Fragment>
             <p>Na naszych zajęciach skupimy się przede wszystkim na <span className="highlighted">poznaniu i&nbsp;użyciu właściwego słownictwa</span>.
-                Bez obaw - nie zasypię cię listami wyjętych z&nbsp;kontekstu słówek do wykucia na
+                Bez obaw – nie zasypię cię listami wyjętych z&nbsp;kontekstu słówek do wykucia na
                 pamięć. Nasze słownictwo będzie osadzone w odpowiednim kontekście (artykuły, czy filmy
                 z&nbsp;interesującej
                 cię dziedziny psychologii), zaprezentowane tak, żebyś nie tylko wiedział/a, co słowa
@@ -82,7 +82,7 @@ export const WEBSITE_TEXT = {
         <React.Fragment>
             <p>A co z&nbsp;gramatyką? Oczywiście, gramatyka jest ważna, jednak to nie ona będzie
                 wyznaczać nam kierunek. Gdy zobaczę, że walczysz z&nbsp;jakimś czasem (Present Perfect -
-                zgadłam?) - poświęcimy mu uwagę, ale <span
+                zgadłam?) – poświęcimy mu uwagę, ale <span
                     className="highlighted">zawsze w kontekście i&nbsp;świadomie</span>,
                 nie mechanicznie i&nbsp;na zasadzie &bdquo;sztuka dla sztuki&rdquo;, bo to po prostu nie
                 działa.</p>
@@ -99,11 +99,13 @@ export const WEBSITE_TEXT = {
     },
     translations: {
         messages: [
-        <React.Fragment>Oferuję tłumaczenia tekstów z&nbsp;dziedziny psychologii – zarówno artykułów z&nbsp;języka
-            angielskiego na polski, jak i&nbsp;prac naukowych z&nbsp;języka polskiego na angielski.</React.Fragment>,
-        <React.Fragment>Wykonuję również korekty i&nbsp;redakcje tłumaczeń dla klientów, którzy władają językiem
+            <p>Oferuję <span
+                className="highlighted">tłumaczenia tekstów z&nbsp;dziedziny psychologii</span> – zarówno artykułów z&nbsp;języka
+            angielskiego na polski, jak i&nbsp;prac naukowych z&nbsp;języka polskiego na angielski.</p>,
+            <p>Wykonuję również <span
+                className="highlighted">korekty i&nbsp;redakcje tłumaczeń</span> dla klientów, którzy władają językiem
             angielskim, jednak chcieliby, żeby ich tekst został gruntownie zweryfikowany lub przeredagowany tak, aby był
-            bardziej klarowny i&nbsp;lepszy stylistycznie.</React.Fragment>
+            bardziej klarowny i&nbsp;lepszy stylistycznie.</p>
     ],
         altTexts: [
             "Laptop",
