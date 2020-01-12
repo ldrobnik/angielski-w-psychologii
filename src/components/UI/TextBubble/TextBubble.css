@@ -17,5 +17,21 @@
   -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5); }
+  .themeTextBubble a {
+    color: #f8f9fa;
+    text-decoration: none;
+    cursor: pointer; }
+    .themeTextBubble a:link {
+      color: #f8f9fa;
+      text-decoration: none; }
+    .themeTextBubble a:visited {
+      color: #f8f9fa;
+      text-decoration: none; }
+    .themeTextBubble a:hover {
+      color: #f8f9fa;
+      text-decoration: none; }
+    .themeTextBubble a:active {
+      color: #f8f9fa;
+      text-decoration: none; }
 
 /*# sourceMappingURL=TextBubble.css.map */

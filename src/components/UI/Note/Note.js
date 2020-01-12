@@ -1,4 +1,5 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import {Col, Row} from 'react-bootstrap';
 
 import RoundedImage from '../RoundedImage/RoundedImage';
@@ -19,17 +20,30 @@ const Note = (props) => {
     </Col>);
 
     //constant containing the text column
-    const textColumn = (<Col>{props.children}</Col>);
+    const textColumn = (
+        <Col
+            className="verticallyCentered"
+        >
+            {props.children}
+        </Col>
+    );
 
     //variable holding the entire content
     let content;
 
-    //depending on the note's order, display on left or right
-    if (props.order%2 !== 0) {
+    //depending on the note's order, display on left or right; on mobile devices display on top
+
+    if (props.mobile) {
         content = <React.Fragment>{imageColumn}{textColumn}</React.Fragment>;
     } else {
-        content = <React.Fragment>{textColumn}{imageColumn}</React.Fragment>;
+        if (props.order%2 !== 0) {
+            content = <React.Fragment>{imageColumn}{textColumn}</React.Fragment>;
+        } else {
+            content = <React.Fragment>{textColumn}{imageColumn}</React.Fragment>;
+        }
+
     }
+
 
     return (
         <Row>
@@ -38,4 +52,11 @@ const Note = (props) => {
     );
 };
 
-export default Note;
+const mapStateToProps = state => {
+    return {
+        mobile: state.isMobile
+    };
+};
+
+
+export default connect(mapStateToProps)(Note);

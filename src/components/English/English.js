@@ -48,10 +48,14 @@ const English = (props) => {
     //array of all illustration sources
     const illustrations = [illustration0, illustration1, illustration2];
 
+    //offset for triggering animation - larger for mobile
+    const animationOffset = props.mobile ? "10%" : "20%";
+
     return (
         <React.Fragment>
             <Waypoint
                 onEnter={() => showMessages()}
+                bottomOffset={animationOffset}
             />
             <div className="sectionContent">
                 <Container>

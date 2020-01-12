@@ -38,7 +38,9 @@ const RoundedImage = (props) => {
                 src={props.source}
                 alt={props.altText}
                 onLoad={showPhoto}
-                rounded
+                roundedCircle
+                fluid
+                className="illustration"
             />
         </AnimatedPic>
     );

@@ -16,4 +16,31 @@
   font-size: 1.1em;
   background-color: $themeColor;
   @include regularShadow;
+
+  a {
+    color: $lightColor;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:link {
+      color: $lightColor;
+      text-decoration: none;
+    }
+
+    &:visited {
+      color: $lightColor;
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: $lightColor;
+      text-decoration: none;
+    }
+
+    &:active {
+      color: $lightColor;
+      text-decoration: none;
+    }
+
+  }
 }
