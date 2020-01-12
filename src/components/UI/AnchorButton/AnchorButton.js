@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import {Button} from 'react-bootstrap';
 
 import './AnchorButton.css';
 

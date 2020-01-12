@@ -1,5 +1,13 @@
 import React from 'react';
-import posed from 'react-pose';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+
+
+//offset used for smooth scrolling
+export const OFFSET_DESKTOP = '60px';
+export const OFFSET_MOBILE = '280px';
+
+//breakpoint below which the navbar collapses
+export const MOBILE_BREAKPOINT = 768;
 
 //section names
 export const SECTION_NAMES = [
@@ -79,8 +87,8 @@ export const WEBSITE_TEXT = {
                     className="highlighted">zawsze w kontekście i&nbsp;świadomie</span>,
                 nie mechanicznie i&nbsp;na zasadzie &bdquo;sztuka dla sztuki&rdquo;, bo to po prostu nie
                 działa.</p>
-            < p> Jeżeli masz jakieś pytania, <a href="#contact" className="highlighted contact-me">napisz do
-                mnie</a>.</p>
+            < p> Jeżeli masz jakieś pytania, <AnchorLink href="#kontakt" offset={OFFSET_DESKTOP} className="highlighted">napisz do
+                mnie</AnchorLink>.</p>
         </React.Fragment>
     ],
         altTexts: [
@@ -151,12 +159,6 @@ export const WEBSITE_TEXT = {
     }
 };
 
-//offset used for smooth scrolling
-export const OFFSET_DESKTOP = '60px';
-export const OFFSET_MOBILE = '280px';
-
-//breakpoint below which the navbar collapses
-export const MOBILE_BREAKPOINT = 768;
 
 
 
