@@ -1,8 +1,13 @@
 @import '../../styles/common';
 
 .offerBox {
-  min-height: 500px;
+  min-height: 330px !important;
   color: $lightColor;
+  padding: 20px;
+}
+
+.serviceName {
+  margin-bottom: 30px;
 }
 
 .serviceItem {
@@ -11,11 +16,13 @@
 }
 
 .serviceType {
-
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 .servicePrice {
   margin-left: 40px;
+  font-size: 0.8em;
 }
 
 .priceValue {
@@ -25,5 +32,6 @@
 }
 
 .offerFootnote {
-  font-size: 0.8em;
+  font-size: 0.7em;
+  padding-left: 40px;
 }

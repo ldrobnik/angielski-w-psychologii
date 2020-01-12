@@ -1,13 +1,22 @@
 .offerBox {
-  min-height: 500px;
-  color: #f8f9fa; }
+  min-height: 330px !important;
+  color: #f8f9fa;
+  padding: 20px; }
+
+.serviceName {
+  margin-bottom: 30px; }
 
 .serviceItem {
   width: 100%;
   margin: 10px 0 10px 40px; }
 
+.serviceType {
+  font-weight: bold;
+  font-size: 1.5em; }
+
 .servicePrice {
-  margin-left: 40px; }
+  margin-left: 40px;
+  font-size: 0.8em; }
 
 .priceValue {
   font-size: 2em;
@@ -15,6 +24,7 @@
   color: #ff6abe; }
 
 .offerFootnote {
-  font-size: 0.8em; }
+  font-size: 0.7em;
+  padding-left: 40px; }
 
 /*# sourceMappingURL=Offer.css.map */

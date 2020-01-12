@@ -65,68 +65,70 @@ const Offer = (props) => {
                     </Row>
                     <Row className="separator"></Row>
                     <Row>
-                        <Col md={6}>
+                        <Col md={7}>
                             <AnimatedMessageLeft
                                 pose={messagesVisible ? 'visible' : 'hidden'}
                             >
                                 <TextBubble
                                     type="theme"
-                                    className="offerBox"
                                 >
-                                    <Row>
-                                        <h2>{WEBSITE_TEXT.offer.english.title}</h2>
-                                    </Row>
-                                    <Row className="offerContent">
-                                        {WEBSITE_TEXT.offer.english.content.map((item, k) => {
-                                            return (
-                                                <div key={k}
-                                                    className="serviceItem"
-                                                >
-                                                    <div className="serviceType">
-                                                        {item.type}
+                                    <div className="offerBox">
+                                        <Row>
+                                            <h2 className="serviceName">{WEBSITE_TEXT.offer.english.title}</h2>
+                                        </Row>
+                                        <Row className="offerContent">
+                                            {WEBSITE_TEXT.offer.english.content.map((item, k) => {
+                                                return (
+                                                    <div key={k}
+                                                         className="serviceItem"
+                                                    >
+                                                        <div className="serviceType">
+                                                            {item.type}
+                                                        </div>
+                                                        <div className="servicePrice">
+                                                            {item.price}
+                                                        </div>
                                                     </div>
-                                                    <div className="servicePrice">
-                                                        {item.price}
-                                                    </div>
-                                                </div>
-                                            );
-                                        })}
-                                    </Row>
+                                                );
+                                            })}
+                                        </Row>
+                                    </div>
                                 </TextBubble>
                             </AnimatedMessageLeft>
                         </Col>
-                        <Col md={6}>
+                        <Col>
                             <AnimatedMessageRight
                                 pose={messagesVisible ? 'visible' : 'hidden'}
                             >
                                 <TextBubble
                                     type="theme"
-                                    className="offerBox"
                                 >
-                                    <Row>
-                                        <h2>{WEBSITE_TEXT.offer.translations.title}</h2>
-                                    </Row>
-                                    <Row className="offerContent">
-                                        {WEBSITE_TEXT.offer.translations.content.map((item, k) => {
-                                            return (
+                                    <div className="offerBox">
+                                        <Row>
+                                            <h2 className="serviceName">{WEBSITE_TEXT.offer.translations.title}</h2>
+                                        </Row>
+                                        <Row className="offerContent">
+                                            {WEBSITE_TEXT.offer.translations.content.map((item, k) => {
+                                                return (
 
-                                                <div key={k}
-                                                     className="serviceItem"
-                                                >
-                                                    <div className="serviceType">
-                                                        {item.type}
+                                                    <div key={k}
+                                                         className="serviceItem"
+                                                    >
+                                                        <div className="serviceType">
+                                                            {item.type}
+                                                        </div>
+                                                        <div className="servicePrice">
+                                                            {item.price}
+                                                        </div>
                                                     </div>
-                                                    <div className="servicePrice">
-                                                        {item.price}
-                                                    </div>
-                                                </div>
 
-                                            );
-                                        })}
-                                    </Row>
-                                    <Row className="offerFootnote">
-                                        {WEBSITE_TEXT.offer.translations.footnote}
-                                    </Row>
+                                                );
+                                            })}
+                                        </Row>
+                                        <Row className="offerFootnote">
+                                            {WEBSITE_TEXT.offer.translations.footnote}
+                                        </Row>
+                                    </div>
                                 </TextBubble>
                             </AnimatedMessageRight>
                         </Col>
