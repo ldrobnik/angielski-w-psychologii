@@ -66,8 +66,7 @@ export const WEBSITE_TEXT = {
             zostały jeszcze przetłumaczone? Czujesz, że coś cię omija, gdy koledzy po fachu
             udostępniają w&nbsp;mediach społecznościowych filmiki, czy memy, których nie jesteś w&nbsp;stanie
             zrozumieć?</p>
-            <p>Jestem pewna, że posiadasz jakieś podstawy angielskiego. Kolejny krok to postanowienie
-                <span class="highlighted">wspięcia się na jego wyższy poziom</span> oraz wytrwanie w&nbsp;tym
+            <p>Jestem pewna, że posiadasz jakieś podstawy angielskiego. Kolejny krok to postanowienie <span class="highlighted">wspięcia się na jego wyższy poziom</span> oraz wytrwanie w&nbsp;tym
                 postanowieniu. A ja - jestem od tego, żeby ci pomóc.</p></React.Fragment>,
 
         <React.Fragment>
@@ -93,16 +92,25 @@ export const WEBSITE_TEXT = {
     ],
         altTexts: [
             "Podręcznik do nauki psychologii",
+            "Podręcznik do nauki słownictwa",
+            "Pomoce multimedialne"
 
         ]
     },
-    translations: [
+    translations: {
+        messages: [
         <React.Fragment>Oferuję tłumaczenia tekstów z&nbsp;dziedziny psychologii – zarówno artykułów z&nbsp;języka
             angielskiego na polski, jak i&nbsp;prac naukowych z&nbsp;języka polskiego na angielski.</React.Fragment>,
         <React.Fragment>Wykonuję również korekty i&nbsp;redakcje tłumaczeń dla klientów, którzy władają językiem
             angielskim, jednak chcieliby, żeby ich tekst został gruntownie zweryfikowany lub przeredagowany tak, aby był
             bardziej klarowny i&nbsp;lepszy stylistycznie.</React.Fragment>
     ],
+        altTexts: [
+            "Laptop",
+            "Zeszyt"
+
+        ]
+    },
     offer: {
         english: {
             title: <React.Fragment>„Angielski w&nbsp;psychologii” przez Skype</React.Fragment>,

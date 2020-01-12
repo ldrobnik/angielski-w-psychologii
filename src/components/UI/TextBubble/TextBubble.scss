@@ -18,27 +18,27 @@
   @include regularShadow;
 
   a {
-    color: $lightColor;
+    color: setColor(4);
     text-decoration: none;
     cursor: pointer;
 
     &:link {
-      color: $lightColor;
+      color: setColor(4);
       text-decoration: none;
     }
 
     &:visited {
-      color: $lightColor;
+      color: setColor(4);
       text-decoration: none;
     }
 
     &:hover {
-      color: $lightColor;
+      color: setColor(6);
       text-decoration: none;
     }
 
     &:active {
-      color: $lightColor;
+      color: setColor(4);
       text-decoration: none;
     }
 

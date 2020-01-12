@@ -29,7 +29,8 @@ a {
     text-decoration: none; }
 
 .highlighted {
-  font-weight: bold; }
+  font-weight: bold;
+  color: #ff6abe; }
 
 .separator {
   background-color: #f8f9fa;
