@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAEA,SAAU;EACR,UAAU,EAAE,KAAK;EACjB,KAAK,ECDM,OAAO",
+"sources": ["Offer.scss","../../styles/_variables.scss"],
 "names": [],
 "file": "Offer.css"
 }
