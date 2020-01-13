@@ -1,7 +1,7 @@
 .lightTextBubble {
   border: #9d0059 1px solid;
   padding: 15px 20px;
-  margin: 15px 10px;
+  margin: 25px 10px;
   font-size: 1.1em;
   background-color: #f8f9fa;
   -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
@@ -11,7 +11,7 @@
 .themeTextBubble {
   border: #f8f9fa 1px solid;
   padding: 15px 20px;
-  margin: 15px 10px;
+  margin: 25px 10px;
   font-size: 1.1em;
   background-color: #9d0059;
   -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
