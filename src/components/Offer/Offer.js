@@ -49,6 +49,7 @@ const Offer = (props) => {
     //offset for triggering animation - larger for mobile
     const animationOffset = props.mobile ? "50px" : "100px";
 
+
     return (
         <React.Fragment>
             <Waypoint
@@ -63,15 +64,20 @@ const Offer = (props) => {
                         </h1>
                     </Row>
                     <Row className="separator"></Row>
-                    <Row>
-                        <Col md={7}>
+                    <Row className="offerRow">
+                        <Col
+                            className="offerColumn"
+                            lg={7}
+                        >
                             <AnimatedMessageLeft
                                 pose={messagesVisible ? 'visible' : 'hidden'}
                             >
                                 <TextBubble
                                     type="theme"
                                 >
-                                    <div className="offerBox">
+                                    <div
+                                        className="offerBox"
+                                    >
                                         <Row>
                                             <h2 className="serviceName">{WEBSITE_TEXT.offer.english.title}</h2>
                                         </Row>
@@ -95,14 +101,18 @@ const Offer = (props) => {
                                 </TextBubble>
                             </AnimatedMessageLeft>
                         </Col>
-                        <Col>
+                        <Col
+                            className="offerColumn"
+                        >
                             <AnimatedMessageRight
                                 pose={messagesVisible ? 'visible' : 'hidden'}
                             >
                                 <TextBubble
                                     type="theme"
                                 >
-                                    <div className="offerBox">
+                                    <div
+                                        className="offerBox"
+                                    >
                                         <Row>
                                             <h2 className="serviceName">{WEBSITE_TEXT.offer.translations.title}</h2>
                                         </Row>

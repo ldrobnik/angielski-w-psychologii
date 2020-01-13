@@ -1,5 +1,6 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import {
     faPhone,
     faEnvelope
@@ -158,7 +159,7 @@ export const WEBSITE_TEXT = {
             }
         },
         available: {
-            title: "Przykładowe godziny zajęć",
+            title: "Możliwe godziny zajęć",
             hours: [
                 <React.Fragment>Poniedziałki 15:30"</React.Fragment>,
                 <React.Fragment>Środy 15:30&nbsp;i&nbsp;16:30</React.Fragment>,
