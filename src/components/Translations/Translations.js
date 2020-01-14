@@ -49,7 +49,7 @@ const Translations = (props) => {
     const illustrations = [illustration0, illustration1];
 
     //offset for triggering animation - larger for mobile
-    const animationOffset = props.mobile ? "50px" : "100px";
+    const animationOffset = props.mobile ? "50px" : "350px";
 
 
     return (

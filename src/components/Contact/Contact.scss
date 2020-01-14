@@ -41,6 +41,10 @@
       text-decoration: none;
     }
 
+    @media all and (max-width: 360px) {
+      font-size: 0.8em;
+    }
+
   }
 }
 
@@ -63,6 +67,10 @@
 
   li {
     margin-left: 30px;
+
+    @media all and (max-width: 360px) {
+      margin-left: 0;
+    }
   }
 }
 

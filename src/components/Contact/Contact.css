@@ -27,6 +27,9 @@
     .contactItem a:active {
       color: #0f0f0f;
       text-decoration: none; }
+    @media all and (max-width: 360px) {
+      .contactItem a {
+        font-size: 0.8em; } }
 
 .contactIcon {
   color: #9d0059;
@@ -42,6 +45,9 @@
     margin-bottom: 20px; }
   .availableHours li {
     margin-left: 30px; }
+    @media all and (max-width: 360px) {
+      .availableHours li {
+        margin-left: 0; } }
 
 .hoursNote {
   color: #9d0059;
