@@ -70,7 +70,7 @@ const Contact = (props) => {
                     </Row>
                     <Row className="separator"></Row>
                     <Row>
-                        <Col md={5}>
+                        <Col lg={5}>
                             <AnimatedMessageLeft
                                 pose={messagesVisible ? 'visible' : 'hidden'}
                             >
@@ -82,10 +82,12 @@ const Contact = (props) => {
                                             {WEBSITE_TEXT.contact.details.map((detail, k) => {
                                                     return (
                                                         <div
-                                                            className="verticallyCentered"
+                                                            className="contactItem verticallyCentered"
                                                             key={k}
                                                         >
-                                                            {detail}
+                                                            <p>
+                                                                {detail}
+                                                            </p>
                                                         </div>
                                                     );
                                                 }
@@ -103,22 +105,24 @@ const Contact = (props) => {
                                     type="light"
                                 >
                                     <div className="contactBox verticallyCentered">
-                                        <h3 className="hoursTitle">
-                                            {WEBSITE_TEXT.contact.available.title}
-                                        </h3>
-                                        <ul className="hoursList">
-                                            {WEBSITE_TEXT.contact.available.hours.map((hour, k) => {
-                                                    return (
-                                                        <li>
-                                                            {hour}
-                                                        </li>
-                                                    );
-                                                }
-                                            )}
-                                        </ul>
-                                        <p classsName="hoursNote">
-                                            {WEBSITE_TEXT.contact.available.info}
-                                        </p>
+                                        <div class="availableHours">
+                                            <h3>
+                                                {WEBSITE_TEXT.contact.available.title}
+                                            </h3>
+                                            <ul>
+                                                {WEBSITE_TEXT.contact.available.hours.map((hour, k) => {
+                                                        return (
+                                                            <li>
+                                                                {hour}
+                                                            </li>
+                                                        );
+                                                    }
+                                                )}
+                                            </ul>
+                                            <div classsName="hoursNote">
+                                                {WEBSITE_TEXT.contact.available.info}
+                                            </div>
+                                        </div>
                                     </div>
                                 </TextBubble>
                             </AnimatedMessageRight>

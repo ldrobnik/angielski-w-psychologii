@@ -12,26 +12,30 @@ import TextBubble from '../UI/TextBubble/TextBubble';
 const AnimatedMessageLeft = posed.div({
     visible: {
         x: '0%',
+        opacity: '1',
         transition: {
             type: 'spring',
             stiffness: 90
         }
     },
     hidden: {
-        x: '-500%'
+        x: '-500%',
+        opacity: '0'
     }
 });
 
 const AnimatedMessageRight = posed.div({
     visible: {
         x: '0%',
+        opacity: '1',
         transition: {
             type: 'spring',
             stiffness: 100
         }
     },
     hidden: {
-        x: '500%'
+        x: '500%',
+        opacity: '0'
     }
 });
 

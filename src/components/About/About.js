@@ -21,13 +21,15 @@ const AnimatedList = posed.div({
 const AnimatedMessage = posed.div({
     visible: {
         x: '0%',
+        opacity: '1',
         transition: {
             type: 'spring',
             stiffness: 80
         }
     },
     hidden: {
-        x: '300%'
+        x: '300%',
+        opacity: '0'
     }
 });
 

@@ -161,27 +161,27 @@ export const WEBSITE_TEXT = {
     },
     contact: {
         details: [
-            <p>
+            <React.Fragment>
                 <FontAwesomeIcon
                     icon={faEnvelope}
                     class="contactIcon"
                 />
                 <a href="mailto: k.lasocha@gmail.com">k.lasocha@gmail.com</a>
-            </p>,
-            <p>
+            </React.Fragment>,
+            <React.Fragment>
                 <FontAwesomeIcon
                     icon={faPhone}
                     class="contactIcon"
                 />
                 600&nbsp;829&nbsp;261
-            </p>
+            </React.Fragment>
         ],
         available: {
-            title: <React.Fragment>Możliwe godziny zajęć:</React.Fragment>,
+            title: <React.Fragment>Możliwe godziny zajęć</React.Fragment>,
             hours: [
-                <React.Fragment>Poniedziałki 15:30</React.Fragment>,
-                <React.Fragment>Środy 15:30&nbsp;i&nbsp;16:30</React.Fragment>,
-                <React.Fragment>Piątki 8:45</React.Fragment>
+                <React.Fragment>poniedziałki 15:30</React.Fragment>,
+                <React.Fragment>środy 15:30&nbsp;i&nbsp;16:30</React.Fragment>,
+                <React.Fragment>piątki 8:45</React.Fragment>
             ],
             info: <React.Fragment>Więcej wolnych terminów od czerwca</React.Fragment>
         },
