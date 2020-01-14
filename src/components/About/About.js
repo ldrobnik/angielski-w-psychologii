@@ -45,7 +45,7 @@ const About = (props) => {
     };
 
     //offset for triggering animation - larger for mobile
-    const animationOffset = props.mobile ? "-200px" : "-100px";
+    const animationOffset = props.mobile ? "-80%" : "-150px";
     return (
         <React.Fragment>
 
