@@ -20,7 +20,8 @@
   .themeTextBubble a {
     color: #ff6abe;
     text-decoration: none;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: color 1s; }
     .themeTextBubble a:link {
       color: #ff6abe;
       text-decoration: none; }

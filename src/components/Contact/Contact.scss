@@ -14,6 +14,34 @@
 
 .contactItem {
   white-space: nowrap;
+
+  a {
+    color: $darkColor;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 1s;
+
+    &:link {
+      color: $darkColor;
+      text-decoration: none;
+    }
+
+    &:visited {
+      color: $darkColor;
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: $themeColor;
+      text-decoration: none;
+    }
+
+    &:active {
+      color: $darkColor;
+      text-decoration: none;
+    }
+
+  }
 }
 
 
@@ -21,7 +49,7 @@
   color: $themeColor;
   max-width: 25px;
   margin-right: 15px;
-  transform: translateY(-4px);
+  transform: translateY(-2px);
 }
 
 .availableHours {

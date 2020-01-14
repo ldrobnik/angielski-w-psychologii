@@ -21,6 +21,7 @@
     color: setColor(4);
     text-decoration: none;
     cursor: pointer;
+    transition: color 1s;
 
     &:link {
       color: setColor(4);
