@@ -70,32 +70,35 @@ export const WEBSITE_TEXT = {
             <React.Fragment><p>Chcesz być <span
                 class="highlighted">na bieżąco z&nbsp;nowościami ze świata psychologii</span>?
                 Walczysz czasem z&nbsp;tekstami specjalistycznymi z&nbsp;twojej dziedziny, które nie
-                zostały jeszcze przetłumaczone? Czujesz, że coś cię omija, gdy koledzy po fachu
-                udostępniają w&nbsp;mediach społecznościowych filmiki, czy memy, których nie jesteś w&nbsp;stanie
-                zrozumieć?</p>
+                zostały jeszcze przetłumaczone?</p>
+                <p>Czujesz, że coś cię omija, gdy koledzy po fachu
+                    udostępniają w&nbsp;mediach społecznościowych filmiki, czy memy, których nie jesteś w&nbsp;stanie
+                    zrozumieć?</p>
                 <p>Jestem pewna, że posiadasz jakieś podstawy angielskiego. Kolejny krok to postanowienie <span
                     class="highlighted">wspięcia się na jego wyższy poziom</span> oraz wytrwanie w&nbsp;tym
                     postanowieniu. A ja – jestem od tego, żeby ci pomóc.</p></React.Fragment>,
 
             <React.Fragment>
                 <p>Na naszych zajęciach skupimy się przede wszystkim na <span
-                    className="highlighted">poznaniu i&nbsp;użyciu właściwego słownictwa</span>.
-                    Bez obaw – nie zasypię cię listami wyjętych z&nbsp;kontekstu słówek do wykucia na
-                    pamięć. Nasze słownictwo będzie osadzone w odpowiednim kontekście (artykuły, czy filmy
+                    className="highlighted">poznaniu i&nbsp;użyciu właściwego słownictwa</span>. Bez obaw – nie zasypię cię listami wyjętych z&nbsp;kontekstu słówek do wykucia na
+                    pamięć.</p>
+                <p>Nasze słownictwo będzie osadzone w odpowiednim kontekście (artykuły, czy filmy
                     z&nbsp;interesującej
                     cię dziedziny psychologii), zaprezentowane tak, żebyś nie tylko wiedział/a, co słowa
-                    znaczą, ale też, jak ich użyć (kolokacje!). Będziemy <span className="highlighted">regularnie wracać do poprzednich lekcji</span> tak,
+                    znaczą, ale też, jak ich użyć (kolokacje!).</p>
+                <p>Będziemy <span className="highlighted">regularnie wracać do poprzednich lekcji</span> tak,
                     aby retencja słownictwa była u&nbsp;ciebie jak największa.</p>
             </React.Fragment>,
 
             <React.Fragment>
                 <p>A co z&nbsp;gramatyką? Oczywiście, gramatyka jest ważna, jednak to nie ona będzie
-                    wyznaczać nam kierunek. Gdy zobaczę, że walczysz z&nbsp;jakimś czasem (Present Perfect -
+                    wyznaczać nam kierunek.</p>
+                <p>Gdy zobaczę, że walczysz z&nbsp;jakimś czasem (Present Perfect -
                     zgadłam?) – poświęcimy mu uwagę, ale <span
                         className="highlighted">zawsze w kontekście i&nbsp;świadomie</span>,
                     nie mechanicznie i&nbsp;na zasadzie &bdquo;sztuka dla sztuki&rdquo;, bo to po prostu nie
                     działa.</p>
-                < p> Jeżeli masz jakieś pytania, <AnchorLink href="#kontakt" offset={OFFSET_DESKTOP}
+                <p> Jeżeli masz jakieś pytania, <AnchorLink href="#kontakt" offset={OFFSET_DESKTOP}
                                                              className="highlighted">napisz do
                     mnie</AnchorLink>.</p>
             </React.Fragment>
