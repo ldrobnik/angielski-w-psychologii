@@ -20,7 +20,7 @@ const AnimatedMessageLeft = posed.div({
         }
     },
     hidden: {
-        transform: 'scale(0.3, 1)',
+        transform: 'scale(0, 1)',
         opacity: 0
     }
 });
@@ -30,12 +30,13 @@ const AnimatedMessageRight = posed.div({
         transform: 'scale(1, 1)',
         opacity: 1,
         transition: {
+            delay: 400,
             type: 'spring',
             stiffness: 80
         }
     },
     hidden: {
-        transform: 'scale(1, 0.3)',
+        transform: 'scale(1, 0)',
         opacity: 0
     }
 });
@@ -102,6 +103,9 @@ const Contact = (props) => {
                             </AnimatedMessageRight>
                         </Col>
 
+                    </Row>
+                    <Row className="copyrightNote centeredBothWays">
+                        {WEBSITE_TEXT.contact.copyrightNotice}
                     </Row>
                 </Container>
             </div>

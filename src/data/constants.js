@@ -52,7 +52,8 @@ export const WEBSITE_TEXT = {
         description: <React.Fragment>Nauczycielka języka angielskiego i&nbsp;tłumaczka</React.Fragment>,
         altText: 'Katarzyna Łasocha-Nowak',
         details: [
-            <React.Fragment>Od <span className="highlighted">14 lat</span> wspieram osoby dorosłe w&nbsp;ich rozwoju językowym. Przeprowadziłam kilkadziesiąt
+            <React.Fragment>Od <span className="highlighted">14 lat</span> wspieram osoby dorosłe w&nbsp;ich rozwoju
+                językowym. Przeprowadziłam kilkadziesiąt
                 kursów języka angielskiego ogólnego i&nbsp;biznesowego na różnych poziomach
                 zaawansowania.</React.Fragment>,
             <React.Fragment>Jestem współautorką <span className="highlighted">specjalistycznego podręcznika języka angielskiego dla psychologów</span>,
@@ -60,41 +61,45 @@ export const WEBSITE_TEXT = {
                 psychologii”
                 z&nbsp;grupą poznańskich psychologów i&nbsp;psychoterapeutów.</React.Fragment>,
             <React.Fragment>Wychodząc naprzeciw potrzebom osób, które nie mają czasu lub możliwości uczestniczenia
-                w&nbsp;moich kursach na żywo, oferuję <span className="highlighted">zajęcia przez Skype</span>.</React.Fragment>
+                w&nbsp;moich kursach na żywo, oferuję <span
+                    className="highlighted">zajęcia przez Skype</span>.</React.Fragment>
         ]
     },
     english: {
         messages: [
-        <React.Fragment><p>Chcesz być <span
-            class="highlighted">na bieżąco z&nbsp;nowościami ze świata psychologii</span>?
-            Walczysz czasem z&nbsp;tekstami specjalistycznymi z&nbsp;twojej dziedziny, które nie
-            zostały jeszcze przetłumaczone? Czujesz, że coś cię omija, gdy koledzy po fachu
-            udostępniają w&nbsp;mediach społecznościowych filmiki, czy memy, których nie jesteś w&nbsp;stanie
-            zrozumieć?</p>
-            <p>Jestem pewna, że posiadasz jakieś podstawy angielskiego. Kolejny krok to postanowienie <span class="highlighted">wspięcia się na jego wyższy poziom</span> oraz wytrwanie w&nbsp;tym
-                postanowieniu. A ja – jestem od tego, żeby ci pomóc.</p></React.Fragment>,
+            <React.Fragment><p>Chcesz być <span
+                class="highlighted">na bieżąco z&nbsp;nowościami ze świata psychologii</span>?
+                Walczysz czasem z&nbsp;tekstami specjalistycznymi z&nbsp;twojej dziedziny, które nie
+                zostały jeszcze przetłumaczone? Czujesz, że coś cię omija, gdy koledzy po fachu
+                udostępniają w&nbsp;mediach społecznościowych filmiki, czy memy, których nie jesteś w&nbsp;stanie
+                zrozumieć?</p>
+                <p>Jestem pewna, że posiadasz jakieś podstawy angielskiego. Kolejny krok to postanowienie <span
+                    class="highlighted">wspięcia się na jego wyższy poziom</span> oraz wytrwanie w&nbsp;tym
+                    postanowieniu. A ja – jestem od tego, żeby ci pomóc.</p></React.Fragment>,
 
-        <React.Fragment>
-            <p>Na naszych zajęciach skupimy się przede wszystkim na <span className="highlighted">poznaniu i&nbsp;użyciu właściwego słownictwa</span>.
-                Bez obaw – nie zasypię cię listami wyjętych z&nbsp;kontekstu słówek do wykucia na
-                pamięć. Nasze słownictwo będzie osadzone w odpowiednim kontekście (artykuły, czy filmy
-                z&nbsp;interesującej
-                cię dziedziny psychologii), zaprezentowane tak, żebyś nie tylko wiedział/a, co słowa
-                znaczą, ale też, jak ich użyć (kolokacje!). Będziemy <span className="highlighted">regularnie wracać do poprzednich lekcji</span> tak,
-                aby retencja słownictwa była u&nbsp;ciebie jak największa.</p>
-        </React.Fragment>,
+            <React.Fragment>
+                <p>Na naszych zajęciach skupimy się przede wszystkim na <span
+                    className="highlighted">poznaniu i&nbsp;użyciu właściwego słownictwa</span>.
+                    Bez obaw – nie zasypię cię listami wyjętych z&nbsp;kontekstu słówek do wykucia na
+                    pamięć. Nasze słownictwo będzie osadzone w odpowiednim kontekście (artykuły, czy filmy
+                    z&nbsp;interesującej
+                    cię dziedziny psychologii), zaprezentowane tak, żebyś nie tylko wiedział/a, co słowa
+                    znaczą, ale też, jak ich użyć (kolokacje!). Będziemy <span className="highlighted">regularnie wracać do poprzednich lekcji</span> tak,
+                    aby retencja słownictwa była u&nbsp;ciebie jak największa.</p>
+            </React.Fragment>,
 
-        <React.Fragment>
-            <p>A co z&nbsp;gramatyką? Oczywiście, gramatyka jest ważna, jednak to nie ona będzie
-                wyznaczać nam kierunek. Gdy zobaczę, że walczysz z&nbsp;jakimś czasem (Present Perfect -
-                zgadłam?) – poświęcimy mu uwagę, ale <span
-                    className="highlighted">zawsze w kontekście i&nbsp;świadomie</span>,
-                nie mechanicznie i&nbsp;na zasadzie &bdquo;sztuka dla sztuki&rdquo;, bo to po prostu nie
-                działa.</p>
-            < p> Jeżeli masz jakieś pytania, <AnchorLink href="#kontakt" offset={OFFSET_DESKTOP} className="highlighted">napisz do
-                mnie</AnchorLink>.</p>
-        </React.Fragment>
-    ],
+            <React.Fragment>
+                <p>A co z&nbsp;gramatyką? Oczywiście, gramatyka jest ważna, jednak to nie ona będzie
+                    wyznaczać nam kierunek. Gdy zobaczę, że walczysz z&nbsp;jakimś czasem (Present Perfect -
+                    zgadłam?) – poświęcimy mu uwagę, ale <span
+                        className="highlighted">zawsze w kontekście i&nbsp;świadomie</span>,
+                    nie mechanicznie i&nbsp;na zasadzie &bdquo;sztuka dla sztuki&rdquo;, bo to po prostu nie
+                    działa.</p>
+                < p> Jeżeli masz jakieś pytania, <AnchorLink href="#kontakt" offset={OFFSET_DESKTOP}
+                                                             className="highlighted">napisz do
+                    mnie</AnchorLink>.</p>
+            </React.Fragment>
+        ],
         altTexts: [
             "Podręcznik do nauki psychologii",
             "Podręcznik do nauki słownictwa",
@@ -105,13 +110,15 @@ export const WEBSITE_TEXT = {
     translations: {
         messages: [
             <p>Oferuję <span
-                className="highlighted">tłumaczenia tekstów z&nbsp;dziedziny psychologii</span> – zarówno artykułów z&nbsp;języka
-            angielskiego na polski, jak i&nbsp;prac naukowych z&nbsp;języka polskiego na angielski.</p>,
+                className="highlighted">tłumaczenia tekstów z&nbsp;dziedziny psychologii</span> – zarówno artykułów
+                z&nbsp;języka
+                angielskiego na polski, jak i&nbsp;prac naukowych z&nbsp;języka polskiego na angielski.</p>,
             <p>Wykonuję również <span
                 className="highlighted">korekty i&nbsp;redakcje tłumaczeń</span> dla klientów, którzy władają językiem
-            angielskim, jednak chcieliby, żeby ich tekst został gruntownie zweryfikowany lub przeredagowany tak, aby był
-            bardziej klarowny i&nbsp;lepszy stylistycznie.</p>
-    ],
+                angielskim, jednak chcieliby, żeby ich tekst został gruntownie zweryfikowany lub przeredagowany tak, aby
+                był
+                bardziej klarowny i&nbsp;lepszy stylistycznie.</p>
+        ],
         altTexts: [
             "Laptop",
             "Zeszyt"
@@ -128,7 +135,8 @@ export const WEBSITE_TEXT = {
                 },
                 {
                     type: <React.Fragment>Grupa dwuosobowa:</React.Fragment>,
-                    price: <React.Fragment><span className="priceValue">50&nbsp;zł</span>&nbsp;&nbsp;brutto/os./60&nbsp;min</React.Fragment>
+                    price: <React.Fragment><span
+                        className="priceValue">50&nbsp;zł</span>&nbsp;&nbsp;brutto/os./60&nbsp;min</React.Fragment>
                 }
             ]
         },
@@ -137,11 +145,15 @@ export const WEBSITE_TEXT = {
             content: [
                 {
                     type: <React.Fragment>Tłumaczenia:</React.Fragment>,
-                    price: <React.Fragment><span className="priceValue">40&nbsp;zł</span>&nbsp;&nbsp;brutto/1&nbsp;strona tłumaczeniowa*</React.Fragment>
+                    price: <React.Fragment><span
+                        className="priceValue">40&nbsp;zł</span>&nbsp;&nbsp;brutto/1&nbsp;strona
+                        tłumaczeniowa*</React.Fragment>
                 },
                 {
                     type: <React.Fragment>Korekty tłumaczeń:</React.Fragment>,
-                    price: <React.Fragment><span className="priceValue">15&nbsp;zł</span>&nbsp;&nbsp;brutto/1&nbsp;strona tłumaczeniowa*</React.Fragment>
+                    price: <React.Fragment><span
+                        className="priceValue">15&nbsp;zł</span>&nbsp;&nbsp;brutto/1&nbsp;strona
+                        tłumaczeniowa*</React.Fragment>
                 }
             ],
             footnote: <React.Fragment>*1800&nbsp;znaków ze spacjami</React.Fragment>
@@ -149,13 +161,13 @@ export const WEBSITE_TEXT = {
     },
     contact: {
         details: [
-                <div>
-                    <FontAwesomeIcon
-                        icon={faEnvelope}
-                        class="contactIcon"
-                    />
-                    <a href="mailto: k.lasocha@gmail.com">k.lasocha@gmail.com</a>
-                </div>,
+            <div>
+                <FontAwesomeIcon
+                    icon={faEnvelope}
+                    class="contactIcon"
+                />
+                <a href="mailto: k.lasocha@gmail.com">k.lasocha@gmail.com</a>
+            </div>,
             <div>
                 <FontAwesomeIcon
                     icon={faPhone}
@@ -164,15 +176,15 @@ export const WEBSITE_TEXT = {
                 600&nbsp;829&nbsp;261
             </div>
         ],
-        },
         available: {
-            title: "Możliwe godziny zajęć",
+            title: <React.Fragment>Możliwe godziny zajęć</React.Fragment>,
             hours: [
                 <React.Fragment>Poniedziałki 15:30"</React.Fragment>,
                 <React.Fragment>Środy 15:30&nbsp;i&nbsp;16:30</React.Fragment>,
                 <React.Fragment>Piątki 8:45</React.Fragment>
             ],
-            info: <React.Fragment>Więcej wolnych terminów od czerwca</React.Fragment>,
-            copyrightNotice: <React.Fragment>&copy; 2020 Łukasz Drobnik</React.Fragment>
-        }
+            info: <React.Fragment>Więcej wolnych terminów od czerwca</React.Fragment>
+        },
+        copyrightNotice: <React.Fragment>&copy; 2020 Łukasz Drobnik</React.Fragment>
+    }
 };
