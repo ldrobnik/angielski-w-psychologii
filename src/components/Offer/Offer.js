@@ -13,7 +13,7 @@ const AnimatedMessageLeft = posed.div({
     visible: {
         x: '0%',
         opacity: '1',
-        delay: '400',
+        delay: '600',
         transition: {
             type: 'spring',
             stiffness: 90
@@ -29,7 +29,7 @@ const AnimatedMessageRight = posed.div({
     visible: {
         x: '0%',
         opacity: '1',
-        delay: '400',
+        delay: '600',
         transition: {
             type: 'spring',
             stiffness: 100
