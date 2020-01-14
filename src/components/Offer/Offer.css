@@ -9,6 +9,12 @@
 .serviceItem {
   width: 100%;
   margin: 10px 0 10px 40px; }
+  @media all and (max-width: 360px) {
+    .serviceItem {
+      margin: 5px 0 10px 10px; } }
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    .serviceItem {
+      margin: 10px 0 10px 15vw; } }
 
 .serviceType {
   font-weight: bold;
@@ -17,10 +23,14 @@
 .servicePrice {
   margin-left: 40px;
   font-size: 0.8em; }
+  @media all and (max-width: 360px) {
+    .servicePrice {
+      margin-left: 10px; } }
 
 .priceValue {
   font-size: 2em;
   font-weight: bold;
+  padding-right: 6px;
   color: #ff6abe; }
 
 .offerFootnote {
