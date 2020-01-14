@@ -161,20 +161,20 @@ export const WEBSITE_TEXT = {
     },
     contact: {
         details: [
-            <div>
+            <p>
                 <FontAwesomeIcon
                     icon={faEnvelope}
                     class="contactIcon"
                 />
                 <a href="mailto: k.lasocha@gmail.com">k.lasocha@gmail.com</a>
-            </div>,
-            <div>
+            </p>,
+            <p>
                 <FontAwesomeIcon
                     icon={faPhone}
                     class="contactIcon"
                 />
                 600&nbsp;829&nbsp;261
-            </div>
+            </p>
         ],
         available: {
             title: <React.Fragment>Możliwe godziny zajęć:</React.Fragment>,

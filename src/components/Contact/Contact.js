@@ -70,7 +70,7 @@ const Contact = (props) => {
                     </Row>
                     <Row className="separator"></Row>
                     <Row>
-                        <Col md={4}>
+                        <Col md={5}>
                             <AnimatedMessageLeft
                                 pose={messagesVisible ? 'visible' : 'hidden'}
                             >
@@ -78,17 +78,19 @@ const Contact = (props) => {
                                     type="light"
                                 >
                                     <div className="contactBox verticallyCentered">
-                                        {WEBSITE_TEXT.contact.details.map((detail, k) => {
-                                                return (
-                                                    <div
-                                                        className="verticallyCentered"
-                                                        key={k}
-                                                    >
-                                                        {detail}
-                                                    </div>
-                                                );
-                                            }
-                                        )}
+                                        <div className="contactDetails">
+                                            {WEBSITE_TEXT.contact.details.map((detail, k) => {
+                                                    return (
+                                                        <div
+                                                            className="verticallyCentered"
+                                                            key={k}
+                                                        >
+                                                            {detail}
+                                                        </div>
+                                                    );
+                                                }
+                                            )}
+                                        </div>
                                     </div>
                                 </TextBubble>
                             </AnimatedMessageLeft>

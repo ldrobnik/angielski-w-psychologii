@@ -1,6 +1,11 @@
 .contactBox {
   min-height: 300px; }
 
+.contactDetails {
+  margin-right: auto;
+  margin-left: auto;
+  white-space: nowrap; }
+
 .contactIcon {
   color: #9d0059;
   max-width: 25px;
