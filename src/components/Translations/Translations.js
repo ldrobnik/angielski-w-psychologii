@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import {connect} from 'react-redux';
 import {Row, Container} from 'react-bootstrap';
 import posed from 'react-pose';
@@ -74,10 +74,10 @@ const Translations = (props) => {
                                     return (
                                         <AnimatedMessage
                                             pose={messagesVisible ? 'visible' : 'hidden'}
+                                            key={k}
                                         >
                                             <TextBubble
                                                 type="light"
-                                                key={k}
                                             >
                                                 <Note
                                                     source={illustrations[k]}

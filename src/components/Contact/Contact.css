@@ -49,6 +49,14 @@
       .availableHours li {
         margin-left: 0; } }
 
+.hoursIcon {
+  max-width: 15px;
+  margin-right: 20px;
+  color: #9d0059; }
+
+.hoursItem {
+  margin: 2px 0; }
+
 .hoursNote {
   color: #9d0059;
   margin-top: 20px;

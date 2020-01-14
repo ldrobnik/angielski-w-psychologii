@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import './AnchorButton.css';

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import {connect} from 'react-redux';
 import {Row, Col, Container} from 'react-bootstrap';
 import posed from 'react-pose';
@@ -73,7 +73,7 @@ const Offer = (props) => {
                     <Row className="offerRow">
                         <Col
                             className="offerColumn"
-                            lg={7}
+                            lg={6}
                         >
                             <AnimatedMessageLeft
                                 pose={messagesVisible ? 'visible' : 'hidden'}
@@ -119,13 +119,12 @@ const Offer = (props) => {
                                     <div
                                         className="offerBox"
                                     >
-                                        <Row>
+                                        <div>
                                             <h2 className="serviceName">{WEBSITE_TEXT.offer.translations.title}</h2>
-                                        </Row>
-                                        <Row className="offerContent">
+                                        </div>
+                                        <Row>
                                             {WEBSITE_TEXT.offer.translations.content.map((item, k) => {
                                                 return (
-
                                                     <div key={k}
                                                          className="serviceItem"
                                                     >
@@ -140,9 +139,11 @@ const Offer = (props) => {
                                                 );
                                             })}
                                         </Row>
-                                        <Row className="offerFootnote">
-                                            {WEBSITE_TEXT.offer.translations.footnote}
-                                        </Row>
+                                            <p className="offerFootnote">
+                                                {WEBSITE_TEXT.offer.translations.footnote}
+                                            </p>
+
+
                                     </div>
                                 </TextBubble>
                             </AnimatedMessageRight>

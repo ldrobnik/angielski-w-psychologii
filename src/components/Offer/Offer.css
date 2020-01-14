@@ -11,24 +11,15 @@
 
 .serviceItem {
   width: 100%;
-  margin: 10px 0 10px 40px; }
-  @media all and (max-width: 360px) {
-    .serviceItem {
-      margin: 5px 0 10px 10px; } }
-  @media all and (min-width: 768px) and (max-width: 991px) {
-    .serviceItem {
-      margin: 10px 0 10px 15vw; } }
+  margin: 4px 0; }
 
 .serviceType {
   font-weight: bold;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  margin-top: 10px; }
 
 .servicePrice {
-  margin-left: 40px;
   font-size: 0.8em; }
-  @media all and (max-width: 360px) {
-    .servicePrice {
-      margin-left: 10px; } }
 
 .priceValue {
   font-size: 2em;
@@ -38,6 +29,6 @@
 
 .offerFootnote {
   font-size: 0.7em;
-  padding-left: 40px; }
+  margin-top: 30px; }
 
 /*# sourceMappingURL=Offer.css.map */

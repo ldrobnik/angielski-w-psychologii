@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import {connect} from 'react-redux';
 import {Row, Col, Container} from 'react-bootstrap';
 import posed from 'react-pose';
@@ -71,7 +71,7 @@ const Contact = (props) => {
                     </Row>
                     <Row className="separator"></Row>
                     <Row>
-                        <Col lg={5}>
+                        <Col lg={6}>
                             <AnimatedMessageLeft
                                 pose={messagesVisible ? 'visible' : 'hidden'}
                             >
@@ -106,20 +106,23 @@ const Contact = (props) => {
                                     type="light"
                                 >
                                     <div className="contactBox verticallyCentered">
-                                        <div class="availableHours">
+                                        <div className="availableHours">
                                             <h3>
                                                 {WEBSITE_TEXT.contact.available.title}
                                             </h3>
-                                            <ul>
-                                                {WEBSITE_TEXT.contact.available.hours.map((hour, k) => {
-                                                        return (
-                                                            <li>
-                                                                {hour}
-                                                            </li>
-                                                        );
-                                                    }
-                                                )}
-                                            </ul>
+                                            <div className="hoursListContainer">
+                                                    {WEBSITE_TEXT.contact.available.hours.map((hour, k) => {
+                                                            return (
+                                                                <div
+                                                                    className="hoursItem"
+                                                                    key={k}
+                                                                >
+                                                                    {hour}
+                                                                </div>
+                                                            );
+                                                        }
+                                                    )}
+                                            </div>
                                             <div className="hoursNote">
                                                 {WEBSITE_TEXT.contact.available.info}
                                             </div>

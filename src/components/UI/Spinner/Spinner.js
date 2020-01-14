@@ -1,11 +1,11 @@
-import React, {forwardRef} from 'react';
+import React from 'react';
 import {connect} from 'react-redux';
 
 import logoImage from '../../../assets/images/logo.svg';
 import './Spinner.css';
 
 
-const Spinner = (props, innerRef) => {
+const Spinner = () => {
 
 
     return (

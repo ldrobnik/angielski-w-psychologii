@@ -4,6 +4,7 @@
   margin: 25px 10px;
   font-size: 1.1em;
   background-color: #f8f9fa;
+  text-align: center;
   -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5); }
@@ -14,6 +15,7 @@
   margin: 25px 10px;
   font-size: 1.1em;
   background-color: #9d0059;
+  text-align: center;
   -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5); }

@@ -3,7 +3,8 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
     faPhone,
-    faEnvelope
+    faEnvelope,
+    faClock
 } from "@fortawesome/free-solid-svg-icons";
 
 
@@ -68,14 +69,14 @@ export const WEBSITE_TEXT = {
     english: {
         messages: [
             <React.Fragment><p>Chcesz być <span
-                class="highlighted">na bieżąco z&nbsp;nowościami ze świata psychologii</span>?
+                className="highlighted">na bieżąco z&nbsp;nowościami ze świata psychologii</span>?
                 Walczysz czasem z&nbsp;tekstami specjalistycznymi z&nbsp;twojej dziedziny, które nie
                 zostały jeszcze przetłumaczone?</p>
                 <p>Czujesz, że coś cię omija, gdy koledzy po fachu
                     udostępniają w&nbsp;mediach społecznościowych filmiki czy memy, których nie jesteś w&nbsp;stanie
                     zrozumieć?</p>
                 <p>Jestem pewna, że posiadasz jakieś podstawy angielskiego. Kolejny krok to postanowienie <span
-                    class="highlighted">wspięcia się na jego wyższy poziom</span> oraz wytrwanie w&nbsp;tym
+                    className="highlighted">wspięcia się na jego wyższy poziom</span> oraz wytrwanie w&nbsp;tym
                     postanowieniu. A ja – jestem od tego, żeby ci pomóc.</p></React.Fragment>,
 
             <React.Fragment>
@@ -167,14 +168,14 @@ export const WEBSITE_TEXT = {
             <React.Fragment>
                 <FontAwesomeIcon
                     icon={faEnvelope}
-                    class="contactIcon"
+                    className="contactIcon"
                 />
                 <a href="mailto: k.lasocha@gmail.com">k.lasocha@gmail.com</a>
             </React.Fragment>,
             <React.Fragment>
                 <FontAwesomeIcon
                     icon={faPhone}
-                    class="contactIcon"
+                    className="contactIcon"
                 />
                 600&nbsp;829&nbsp;261
             </React.Fragment>
@@ -182,9 +183,18 @@ export const WEBSITE_TEXT = {
         available: {
             title: <React.Fragment>Możliwe godziny zajęć</React.Fragment>,
             hours: [
-                <React.Fragment>poniedziałki 15:30</React.Fragment>,
-                <React.Fragment>środy 15:30&nbsp;i&nbsp;16:30</React.Fragment>,
-                <React.Fragment>piątki 8:45</React.Fragment>
+                <React.Fragment><FontAwesomeIcon
+                    icon={faClock}
+                    className="hoursIcon"
+                />poniedziałki 15:30</React.Fragment>,
+                <React.Fragment><FontAwesomeIcon
+                    icon={faClock}
+                    className="hoursIcon"
+                />środy 15:30&nbsp;i&nbsp;16:30</React.Fragment>,
+                <React.Fragment><FontAwesomeIcon
+                    icon={faClock}
+                    className="hoursIcon"
+                />piątki 8:45</React.Fragment>
             ],
             info: <React.Fragment>Więcej wolnych terminów od czerwca</React.Fragment>
         },

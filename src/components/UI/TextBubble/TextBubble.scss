@@ -6,6 +6,7 @@
   margin: 25px 10px;
   font-size: 1.1em;
   background-color: $lightColor;
+  text-align: center;
   @include regularShadow;
 }
 
@@ -15,6 +16,7 @@
   margin: 25px 10px;
   font-size: 1.1em;
   background-color: $themeColor;
+  text-align: center;
   @include regularShadow;
 
   a {
