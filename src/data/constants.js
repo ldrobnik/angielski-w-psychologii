@@ -145,7 +145,7 @@ export const WEBSITE_TEXT = {
             ]
         },
         translations: {
-            title: <React.Fragment>Tłumaczenia</React.Fragment>,
+            title: <React.Fragment>Tłumaczenia w&nbsp;psychologii</React.Fragment>,
             content: [
                 {
                     type: <React.Fragment>Tłumaczenia:</React.Fragment>,
