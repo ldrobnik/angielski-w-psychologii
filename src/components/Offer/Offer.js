@@ -87,7 +87,7 @@ const Offer = (props) => {
                                         <Row>
                                             <h2 className="serviceName">{WEBSITE_TEXT.offer.english.title}</h2>
                                         </Row>
-                                        <Row className="offerContent">
+                                        <Row>
                                             {WEBSITE_TEXT.offer.english.content.map((item, k) => {
                                                 return (
                                                     <div key={k}
