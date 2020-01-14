@@ -1,6 +1,6 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
     faPhone,
     faEnvelope
@@ -151,14 +151,14 @@ export const WEBSITE_TEXT = {
         details: [
                 <React.Fragment>
                     <FontAwesomeIcon
-                        icon={faEnvelopea}
+                        icon={faEnvelope}
                         class="contactIcon"
                     />
                     <a href="mailto: k.lasocha@gmail.com">k.lasocha@gmail.com</a>
                 </React.Fragment>,
             <React.Fragment>
                 <FontAwesomeIcon
-                    icon={faEnvelopea}
+                    icon={faPhone}
                     class="contactIcon"
                 />
                 600&nbsp;829&nbsp;261
@@ -175,6 +175,4 @@ export const WEBSITE_TEXT = {
             info: <React.Fragment>Więcej wolnych terminów od czerwca</React.Fragment>,
             copyrightNotice: <React.Fragment>&copy; 2020 Łukasz Drobnik</React.Fragment>
         }
-
-    }
 };

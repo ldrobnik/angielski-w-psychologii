@@ -66,7 +66,17 @@ const Contact = (props) => {
                         <Col md={4}>
                             <AnimatedMessageLeft
                                 pose={messagesVisible ? 'visible' : 'hidden'}
-                            >details</AnimatedMessageLeft>
+                            >
+                                {WEBSITE_TEXT.contact.details.map((detail, k) => {
+                                    return(
+                                        <div key={k}>
+                                            {detail}
+                                        </div>
+                                    );
+                                    }
+                                    )}
+
+                            </AnimatedMessageLeft>
                         </Col>
                         <Col>
                             <AnimatedMessageRight
