@@ -2,6 +2,9 @@
   min-height: 370px;
   color: #f8f9fa;
   padding: 20px; }
+  .offerBox h2 {
+    font-weight: bold;
+    font-size: 1.8em; }
 
 .serviceName {
   margin-bottom: 30px; }

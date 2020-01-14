@@ -72,7 +72,7 @@ export const WEBSITE_TEXT = {
                 Walczysz czasem z&nbsp;tekstami specjalistycznymi z&nbsp;twojej dziedziny, które nie
                 zostały jeszcze przetłumaczone?</p>
                 <p>Czujesz, że coś cię omija, gdy koledzy po fachu
-                    udostępniają w&nbsp;mediach społecznościowych filmiki, czy memy, których nie jesteś w&nbsp;stanie
+                    udostępniają w&nbsp;mediach społecznościowych filmiki czy memy, których nie jesteś w&nbsp;stanie
                     zrozumieć?</p>
                 <p>Jestem pewna, że posiadasz jakieś podstawy angielskiego. Kolejny krok to postanowienie <span
                     class="highlighted">wspięcia się na jego wyższy poziom</span> oraz wytrwanie w&nbsp;tym

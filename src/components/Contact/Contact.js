@@ -54,7 +54,7 @@ const Contact = (props) => {
     };
 
     //offset for triggering animation - larger for mobile
-    const animationOffset = props.mobile ? "200px" : "250px";
+    const animationOffset = props.mobile ? "200px" : "300px";
 
     return (
         <React.Fragment>
