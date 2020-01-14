@@ -177,9 +177,9 @@ export const WEBSITE_TEXT = {
             </div>
         ],
         available: {
-            title: <React.Fragment>Możliwe godziny zajęć</React.Fragment>,
+            title: <React.Fragment>Możliwe godziny zajęć:</React.Fragment>,
             hours: [
-                <React.Fragment>Poniedziałki 15:30"</React.Fragment>,
+                <React.Fragment>Poniedziałki 15:30</React.Fragment>,
                 <React.Fragment>Środy 15:30&nbsp;i&nbsp;16:30</React.Fragment>,
                 <React.Fragment>Piątki 8:45</React.Fragment>
             ],

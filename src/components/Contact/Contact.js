@@ -77,17 +77,19 @@ const Contact = (props) => {
                                 <TextBubble
                                     type="light"
                                 >
-                                    {WEBSITE_TEXT.contact.details.map((detail, k) => {
-                                            return (
-                                                <div
-                                                    className="verticallyCentered"
-                                                    key={k}
-                                                >
-                                                    {detail}
-                                                </div>
-                                            );
-                                        }
-                                    )}
+                                    <div className="contactBox verticallyCentered">
+                                        {WEBSITE_TEXT.contact.details.map((detail, k) => {
+                                                return (
+                                                    <div
+                                                        className="verticallyCentered"
+                                                        key={k}
+                                                    >
+                                                        {detail}
+                                                    </div>
+                                                );
+                                            }
+                                        )}
+                                    </div>
                                 </TextBubble>
                             </AnimatedMessageLeft>
                         </Col>
@@ -98,7 +100,24 @@ const Contact = (props) => {
                                 <TextBubble
                                     type="light"
                                 >
-                                hours
+                                    <div className="contactBox verticallyCentered">
+                                        <h3 className="hoursTitle">
+                                            {WEBSITE_TEXT.contact.available.title}
+                                        </h3>
+                                        <ul className="hoursList">
+                                            {WEBSITE_TEXT.contact.available.hours.map((hour, k) => {
+                                                    return (
+                                                        <li>
+                                                            {hour}
+                                                        </li>
+                                                    );
+                                                }
+                                            )}
+                                        </ul>
+                                        <p classsName="hoursNote">
+                                            {WEBSITE_TEXT.contact.available.info}
+                                        </p>
+                                    </div>
                                 </TextBubble>
                             </AnimatedMessageRight>
                         </Col>
