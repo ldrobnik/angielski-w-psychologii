@@ -149,20 +149,20 @@ export const WEBSITE_TEXT = {
     },
     contact: {
         details: [
-                <React.Fragment>
+                <div>
                     <FontAwesomeIcon
                         icon={faEnvelope}
                         class="contactIcon"
                     />
                     <a href="mailto: k.lasocha@gmail.com">k.lasocha@gmail.com</a>
-                </React.Fragment>,
-            <React.Fragment>
+                </div>,
+            <div>
                 <FontAwesomeIcon
                     icon={faPhone}
                     class="contactIcon"
                 />
                 600&nbsp;829&nbsp;261
-            </React.Fragment>
+            </div>
         ],
         },
         available: {

@@ -5,32 +5,38 @@ import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
 import './Contact.css';
 
+import TextBubble from '../UI/TextBubble/TextBubble';
+
 import {SECTION_NAMES, WEBSITE_TEXT} from "../../data/constants";
 
 /* POSE */
 const AnimatedMessageLeft = posed.div({
     visible: {
-        x: '0%',
+        transform: 'scale(1, 1)',
+        opacity: 1,
         transition: {
             type: 'spring',
-            stiffness: 100
+            stiffness: 80
         }
     },
     hidden: {
-        x: '-500%'
+        transform: 'scale(0.3, 1)',
+        opacity: 0
     }
 });
 
 const AnimatedMessageRight = posed.div({
     visible: {
-        x: '0%',
+        transform: 'scale(1, 1)',
+        opacity: 1,
         transition: {
             type: 'spring',
-            stiffness: 100
+            stiffness: 80
         }
     },
     hidden: {
-        x: '500%'
+        transform: 'scale(1, 0.3)',
+        opacity: 0
     }
 });
 
@@ -67,21 +73,33 @@ const Contact = (props) => {
                             <AnimatedMessageLeft
                                 pose={messagesVisible ? 'visible' : 'hidden'}
                             >
-                                {WEBSITE_TEXT.contact.details.map((detail, k) => {
-                                    return(
-                                        <div key={k}>
-                                            {detail}
-                                        </div>
-                                    );
-                                    }
+                                <TextBubble
+                                    type="light"
+                                >
+                                    {WEBSITE_TEXT.contact.details.map((detail, k) => {
+                                            return (
+                                                <div
+                                                    className="verticallyCentered"
+                                                    key={k}
+                                                >
+                                                    {detail}
+                                                </div>
+                                            );
+                                        }
                                     )}
-
+                                </TextBubble>
                             </AnimatedMessageLeft>
                         </Col>
                         <Col>
                             <AnimatedMessageRight
                                 pose={messagesVisible ? 'visible' : 'hidden'}
-                            >hours</AnimatedMessageRight>
+                            >
+                                <TextBubble
+                                    type="light"
+                                >
+                                hours
+                                </TextBubble>
+                            </AnimatedMessageRight>
                         </Col>
 
                     </Row>

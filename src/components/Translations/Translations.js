@@ -26,7 +26,7 @@ const AnimatedMessage = posed.div({
         transform: 'scale(1, 1)',
         transition: {
             type: 'spring',
-            stiffness: 100
+            stiffness: 80
         }
     },
     hidden: {

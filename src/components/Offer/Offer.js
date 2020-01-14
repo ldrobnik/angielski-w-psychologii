@@ -14,7 +14,7 @@ const AnimatedMessageLeft = posed.div({
         x: '0%',
         transition: {
             type: 'spring',
-            stiffness: 100
+            stiffness: 90
         }
     },
     hidden: {
