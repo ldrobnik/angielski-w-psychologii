@@ -13,6 +13,7 @@ const AnimatedMessageLeft = posed.div({
     visible: {
         x: '0%',
         opacity: '1',
+        delay: '400',
         transition: {
             type: 'spring',
             stiffness: 90
@@ -28,6 +29,7 @@ const AnimatedMessageRight = posed.div({
     visible: {
         x: '0%',
         opacity: '1',
+        delay: '400',
         transition: {
             type: 'spring',
             stiffness: 100
@@ -51,7 +53,7 @@ const Offer = (props) => {
     };
 
     //offset for triggering animation - larger for mobile
-    const animationOffset = props.mobile ? "50px" : "100px";
+    const animationOffset = props.mobile ? "30%" : "250px";
 
 
     return (
