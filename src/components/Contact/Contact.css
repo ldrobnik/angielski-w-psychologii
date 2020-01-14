@@ -30,7 +30,8 @@
   color: #9d0059;
   margin-top: 20px;
   padding: 5px 10px;
-  border: #9d0059 1px solid; }
+  border: #9d0059 1px solid;
+  text-align: center; }
 
 .copyrightNote {
   font-size: 0.8em;
