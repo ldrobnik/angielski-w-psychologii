@@ -148,15 +148,22 @@ export const WEBSITE_TEXT = {
         }
     },
     contact: {
-        details: {
-            email: {
-                icon: faEnvelope,
-                value: "k.lasocha@gmail.com"
-            },
-            phone: {
-                icon: faPhone,
-                value: "600 829 261"
-            }
+        details: [
+                <React.Fragment>
+                    <FontAwesomeIcon
+                        icon={faEnvelopea}
+                        class="contactIcon"
+                    />
+                    <a href="mailto: k.lasocha@gmail.com">k.lasocha@gmail.com</a>
+                </React.Fragment>,
+            <React.Fragment>
+                <FontAwesomeIcon
+                    icon={faEnvelopea}
+                    class="contactIcon"
+                />
+                600&nbsp;829&nbsp;261
+            </React.Fragment>
+        ],
         },
         available: {
             title: "Możliwe godziny zajęć",
