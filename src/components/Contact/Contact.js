@@ -119,7 +119,7 @@ const Contact = (props) => {
                                                     }
                                                 )}
                                             </ul>
-                                            <div classsName="hoursNote">
+                                            <div className="hoursNote">
                                                 {WEBSITE_TEXT.contact.available.info}
                                             </div>
                                         </div>

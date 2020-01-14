@@ -39,8 +39,9 @@
 }
 
 .hoursNote {
-  color: $themeColor !important;
+  color: $themeColor;
   margin-top: 20px;
+  padding: 5px 10px;
   border: $themeBorder;
 }
 
@@ -48,5 +49,5 @@
   font-size: 0.8em;
   color: $darkColor;
   height: 30px;
-  padding: 10px;
+  margin: 100px 0 10px 0;
 }
