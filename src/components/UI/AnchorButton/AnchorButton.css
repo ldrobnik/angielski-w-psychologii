@@ -1,9 +1,9 @@
 .anchorButton {
   display: block;
   background-color: #f8f9fa;
-  max-width: 6em;
+  max-width: 5.5em;
   margin: 1em auto 0 auto;
-  padding: 0.4em 0.6em;
+  padding: 0.2em;
   font-size: 1.6em;
   font-weight: 700;
   font-family: "Roboto Slab", serif !important;
