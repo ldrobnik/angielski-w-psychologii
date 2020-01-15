@@ -135,12 +135,12 @@ export const WEBSITE_TEXT = {
             content: [
                 {
                     type: <React.Fragment>Indywidualnie:</React.Fragment>,
-                    price: <React.Fragment><span className="priceValue">80&nbsp;zł</span> brutto/60&nbsp;min</React.Fragment>
+                    price: <React.Fragment><span className="priceValue">100&nbsp;zł</span> brutto/60&nbsp;min</React.Fragment>
                 },
                 {
                     type: <React.Fragment>Grupa dwuosobowa:</React.Fragment>,
                     price: <React.Fragment><span
-                        className="priceValue">50&nbsp;zł</span> brutto/os./60&nbsp;min</React.Fragment>
+                        className="priceValue">70&nbsp;zł</span> brutto/os./60&nbsp;min</React.Fragment>
                 }
             ]
         },
