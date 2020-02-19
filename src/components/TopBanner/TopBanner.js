@@ -1,4 +1,5 @@
 import React from 'react';
+import {bindActionCreators} from "redux";
 import {Jumbotron} from 'react-bootstrap';
 import {connect} from 'react-redux';
 import './TopBanner.css';
@@ -8,13 +9,13 @@ import '../UI/AnchorButton/AnchorButton';
 import {WEBSITE_TEXT} from "../../data/constants";
 import AnchorButton from "../UI/AnchorButton/AnchorButton";
 import backdrop from '../../assets/images/backdrop.jpg';
-import * as actionTypes from "../../store/actions";
+import {setPageLoaded} from "../../actions";
 
 const TopBanner = (props) => {
 
     //Changes the page loaded state in Redux store
     const handleLoaded = () => {
-        props.onLoadedChange(true);
+        props.setPageLoaded(true);
     };
 
     return (
@@ -40,12 +41,7 @@ const TopBanner = (props) => {
 };
 
 const mapDispatchToProps = dispatch => {
-    return {
-        onLoadedChange: (newState) => dispatch({
-            type: actionTypes.SET_PAGE_LOADED,
-            pageLoaded: newState
-        })
-    };
+    return bindActionCreators({setPageLoaded}, dispatch);
 };
 
 export default connect(null, mapDispatchToProps)(TopBanner);

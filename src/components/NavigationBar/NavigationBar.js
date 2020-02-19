@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react';
+import {bindActionCreators} from "redux";
 import {Navbar, Nav} from 'react-bootstrap';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {connect} from 'react-redux';
 
-import * as actionTypes from '../../store/actions';
+import {setMobile} from "../../actions";
 
 import './NavigatorBar.css';
 
@@ -27,7 +28,7 @@ const NavigationBar = (props) => {
 
     // Lets the store know if the page is displayed on a mobile device
     const setMobile = () => {
-        props.onMobileChange(windowWidth < MOBILE_BREAKPOINT);
+        props.setMobile(windowWidth < MOBILE_BREAKPOINT);
     };
 
 
@@ -108,12 +109,7 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = dispatch => {
-    return {
-        onMobileChange: (newState) => dispatch({
-            type: actionTypes.SET_MOBILE,
-            isMobile: newState
-        })
-    };
+    return bindActionCreators({setMobile}, dispatch);
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(NavigationBar);

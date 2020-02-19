@@ -5,7 +5,7 @@ import { createStore } from 'redux';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import reducer from './store/reducer';
+import reducer from './reducers';
 
 const store = createStore(reducer);
 
