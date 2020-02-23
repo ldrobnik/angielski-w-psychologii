@@ -1,9 +1,16 @@
 @import '../../styles/common';
 
 .offerBox {
-  min-height: 370px;
   color: $lightColor;
   padding: 20px;
+
+  @media all and (min-width: 992px) {
+    min-height: 510px;
+  }
+
+  @media all and (min-width: 1200px) {
+    min-height: 480px;
+  }
 
   h2 {
     font-weight: bold;

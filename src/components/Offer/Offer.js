@@ -73,7 +73,7 @@ const Offer = (props) => {
                     <Row className="offerRow">
                         <Col
                             className="offerColumn"
-                            lg={6}
+                            lg={7}
                         >
                             <AnimatedMessageLeft
                                 pose={messagesVisible ? 'visible' : 'hidden'}
@@ -103,6 +103,9 @@ const Offer = (props) => {
                                                 );
                                             })}
                                         </Row>
+                                        <p className="offerFootnote">
+                                            {WEBSITE_TEXT.offer.english.footnote}
+                                        </p>
                                     </div>
                                 </TextBubble>
                             </AnimatedMessageLeft>
@@ -135,15 +138,12 @@ const Offer = (props) => {
                                                             {item.price}
                                                         </div>
                                                     </div>
-
                                                 );
                                             })}
                                         </Row>
                                             <p className="offerFootnote">
                                                 {WEBSITE_TEXT.offer.translations.footnote}
                                             </p>
-
-
                                     </div>
                                 </TextBubble>
                             </AnimatedMessageRight>

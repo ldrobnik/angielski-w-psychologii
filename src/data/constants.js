@@ -141,8 +141,14 @@ export const WEBSITE_TEXT = {
                     type: <React.Fragment>Grupa dwuosobowa:</React.Fragment>,
                     price: <React.Fragment><span
                         className="priceValue">70&nbsp;zł</span> brutto/os./60&nbsp;min</React.Fragment>
+                },
+                {
+                    type: <React.Fragment>Pakiet 10&nbsp;lekcji<sup>*</sup>:</React.Fragment>,
+                    price: <React.Fragment><span
+                        className="priceValue">800&nbsp;zł</span> brutto</React.Fragment>
                 }
-            ]
+            ],
+            footnote: <React.Fragment>*Do wykorzystania w&nbsp;ciągu 12&nbsp;tygodni</React.Fragment>
         },
         translations: {
             title: <React.Fragment>Tłumaczenia w&nbsp;psychologii</React.Fragment>,
