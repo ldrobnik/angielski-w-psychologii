@@ -64,6 +64,9 @@
   border: #9d0059 1px solid;
   text-align: center; }
 
+.booked {
+  opacity: 0.5; }
+
 .copyrightNote {
   font-size: 0.8em;
   color: #0f0f0f;

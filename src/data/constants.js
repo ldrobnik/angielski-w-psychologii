@@ -189,18 +189,19 @@ export const WEBSITE_TEXT = {
         available: {
             title: <React.Fragment>Dostępne godziny zajęć</React.Fragment>,
             hours: [
-                <React.Fragment><FontAwesomeIcon
+                <div><FontAwesomeIcon
                     icon={faClock}
                     className="hoursIcon"
-                />poniedziałki 15:30</React.Fragment>,
-                <React.Fragment><FontAwesomeIcon
+                />poniedziałki 15:30</div>,
+                <div><FontAwesomeIcon
                     icon={faClock}
                     className="hoursIcon"
-                />środy 15:30&nbsp;i&nbsp;16:30</React.Fragment>,
-                <React.Fragment><FontAwesomeIcon
+                />środy 15:30&nbsp;i&nbsp;16:30</div>,
+                <div className="booked">
+                    <FontAwesomeIcon
                     icon={faClock}
                     className="hoursIcon"
-                />piątki 8:45</React.Fragment>
+                />piątki 8:45</div>
             ],
             info: <React.Fragment>Więcej wolnych terminów od czerwca</React.Fragment>
         },
