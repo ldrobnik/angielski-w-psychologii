@@ -1,7 +1,8 @@
 .portraitWrapper {
   width: 100%;
   text-align: right;
-  padding-right: 50px; }
+  padding-right: 50px;
+  z-index: 0; }
   @media all and (max-width: 767px) {
     .portraitWrapper {
       text-align: center;

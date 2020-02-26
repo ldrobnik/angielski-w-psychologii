@@ -28,7 +28,7 @@ const AnimatedMessage = posed.div({
         }
     },
     hidden: {
-        x: '300%',
+        x: '-300%',
         opacity: '0'
     }
 });
@@ -67,16 +67,7 @@ const About = (props) => {
                 </Row>
                 <Row>
                     <Col
-                        md={5}
-                        className="verticallyCentered"
-                    >
-                        <Portrait
-                            source={photo}
-                            altText={WEBSITE_TEXT.about.altText}
-                        />
-                    </Col>
-                    <Col
-                        className="verticallyCentered"
+                        className="verticallyCentered aboutTextBubbles"
                     >
                             <AnimatedList
                                 pose={messagesVisible ? 'visible' : 'hidden'}
@@ -97,6 +88,15 @@ const About = (props) => {
                                     }
                                 )}
                             </AnimatedList>
+                    </Col>
+                    <Col
+                        md={5}
+                        className="verticallyCentered"
+                    >
+                        <Portrait
+                            source={photo}
+                            altText={WEBSITE_TEXT.about.altText}
+                        />
                     </Col>
                 </Row>
             </Container>

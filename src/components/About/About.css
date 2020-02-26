@@ -6,4 +6,7 @@
   .introduction p {
     font-size: 1.1em; }
 
+.aboutTextBubbles {
+  z-index: 300; }
+
 /*# sourceMappingURL=About.css.map */
