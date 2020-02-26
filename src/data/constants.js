@@ -196,12 +196,17 @@ export const WEBSITE_TEXT = {
                 <div><FontAwesomeIcon
                     icon={faClock}
                     className="hoursIcon"
-                />środy 15:30&nbsp;i&nbsp;16:30</div>,
+                />środy 15:45</div>,
                 <div className="booked">
                     <FontAwesomeIcon
                     icon={faClock}
                     className="hoursIcon"
-                />piątki 8:45</div>
+                />piątki 8:45</div>,
+                <div>
+                    <FontAwesomeIcon
+                        icon={faClock}
+                        className="hoursIcon"
+                    />piątki 16:00</div>
             ],
             info: <React.Fragment>Więcej wolnych terminów od czerwca</React.Fragment>
         },
