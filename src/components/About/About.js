@@ -44,6 +44,48 @@ const About = (props) => {
         setMessagesVisible(true);
     };
 
+    //contains the portrait jsx
+    const portrait = (
+        <Col
+            md={5}
+            className="verticallyCentered"
+        >
+            <Portrait
+                source={photo}
+                altText={WEBSITE_TEXT.about.altText}
+            />
+        </Col>
+    );
+    //contains the text bubble jsx
+    const textBubbles = (
+        <Col
+            className="verticallyCentered aboutTextBubbles"
+            md={7}
+        >
+            <AnimatedList
+                pose={messagesVisible ? 'visible' : 'hidden'}
+            >
+                {WEBSITE_TEXT.about.details.map((bubble, k) => {
+                        return (
+                            <AnimatedMessage
+                                pose={messagesVisible ? 'visible' : 'hidden'}
+                                key={k}
+                            >
+                                <TextBubble
+                                    type="light"
+                                >
+                                    {bubble}
+                                </TextBubble>
+                            </AnimatedMessage>
+                        )
+                    }
+                )}
+            </AnimatedList>
+        </Col>
+    );
+    //shows different content order on mobile and larger screens
+    const mainContent = props.mobile ? <React.Fragment>{portrait}{textBubbles}</React.Fragment> : <React.Fragment>{textBubbles}{portrait} </React.Fragment>;
+
     //offset for triggering animation - larger for mobile
     const animationOffset = props.mobile ? "-80%" : "-150px";
     return (
@@ -66,38 +108,40 @@ const About = (props) => {
                     </div>
                 </Row>
                 <Row>
-                    <Col
-                        className="verticallyCentered aboutTextBubbles"
-                    >
-                            <AnimatedList
-                                pose={messagesVisible ? 'visible' : 'hidden'}
-                            >
-                                {WEBSITE_TEXT.about.details.map((bubble, k) => {
-                                        return (
-                                            <AnimatedMessage
-                                                pose={messagesVisible ? 'visible' : 'hidden'}
-                                                key={k}
-                                            >
-                                                <TextBubble
-                                                    type="light"
-                                                >
-                                                    {bubble}
-                                                </TextBubble>
-                                            </AnimatedMessage>
-                                        )
-                                    }
-                                )}
-                            </AnimatedList>
-                    </Col>
-                    <Col
-                        md={5}
-                        className="verticallyCentered"
-                    >
-                        <Portrait
-                            source={photo}
-                            altText={WEBSITE_TEXT.about.altText}
-                        />
-                    </Col>
+                    {/*<Col*/}
+                    {/*    className="verticallyCentered aboutTextBubbles"*/}
+                    {/*    md={7}*/}
+                    {/*>*/}
+                    {/*        <AnimatedList*/}
+                    {/*            pose={messagesVisible ? 'visible' : 'hidden'}*/}
+                    {/*        >*/}
+                    {/*            {WEBSITE_TEXT.about.details.map((bubble, k) => {*/}
+                    {/*                    return (*/}
+                    {/*                        <AnimatedMessage*/}
+                    {/*                            pose={messagesVisible ? 'visible' : 'hidden'}*/}
+                    {/*                            key={k}*/}
+                    {/*                        >*/}
+                    {/*                            <TextBubble*/}
+                    {/*                                type="light"*/}
+                    {/*                            >*/}
+                    {/*                                {bubble}*/}
+                    {/*                            </TextBubble>*/}
+                    {/*                        </AnimatedMessage>*/}
+                    {/*                    )*/}
+                    {/*                }*/}
+                    {/*            )}*/}
+                    {/*        </AnimatedList>*/}
+                    {/*</Col>*/}
+                    {/*<Col*/}
+                    {/*    md={5}*/}
+                    {/*    className="verticallyCentered"*/}
+                    {/*>*/}
+                    {/*    <Portrait*/}
+                    {/*        source={photo}*/}
+                    {/*        altText={WEBSITE_TEXT.about.altText}*/}
+                    {/*    />*/}
+                    {/*</Col>*/}
+                    {mainContent}
                 </Row>
             </Container>
         </div>
