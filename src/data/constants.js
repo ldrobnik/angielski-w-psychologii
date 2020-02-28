@@ -189,7 +189,8 @@ export const WEBSITE_TEXT = {
         available: {
             title: <React.Fragment>Dostępne godziny zajęć</React.Fragment>,
             hours: [
-                <div><FontAwesomeIcon
+                <div className="booked">
+                    <FontAwesomeIcon
                     icon={faClock}
                     className="hoursIcon"
                 />poniedziałki 15:30</div>,
