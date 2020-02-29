@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {bindActionCreators} from "redux";
 import {connect} from 'react-redux';
 import {Row, Container} from 'react-bootstrap';
 import posed from 'react-pose';
@@ -11,6 +12,7 @@ import illustration1 from '../../assets/images/translations1.jpg';
 import {SECTION_NAMES, WEBSITE_TEXT} from "../../data/constants";
 import TextBubble from "../UI/TextBubble/TextBubble";
 import Note from "../UI/Note/Note";
+import {setActiveSection} from "../../actions";
 
 /* POSE */
 
@@ -45,6 +47,11 @@ const Translations = (props) => {
         setMessagesVisible(true);
     };
 
+    //sets current section as active
+    const setSection = () => {
+        props.setActiveSection(SECTION_NAMES[2].id);
+    };
+
     //array of all illustration sources
     const illustrations = [illustration0, illustration1];
 
@@ -57,6 +64,9 @@ const Translations = (props) => {
             <Waypoint
                 onEnter={() => showMessages()}
                 bottomOffset={animationOffset}
+            />
+            <Waypoint
+                onEnter={() => setSection()}
             />
             <div className="lightBackground sectionContent">
                 <Container>
@@ -105,5 +115,8 @@ const mapStateToProps = state => {
     };
 };
 
+const mapDispatchToProps = dispatch => {
+    return bindActionCreators({setActiveSection}, dispatch);
+};
 
-export default connect(mapStateToProps)(Translations);
+export default connect(mapStateToProps, mapDispatchToProps)(Translations);

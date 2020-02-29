@@ -104,7 +104,6 @@ const English = (props) => {
                                 }
                             )}
                         </AnimatedList>
-
                     </Row>
                 </Container>
             </div>
