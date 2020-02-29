@@ -78,13 +78,20 @@ const NavigationBar = (props) => {
                 <Nav className="mr-auto">
                     {
                         SECTION_NAMES.map((section) => {
+                            let linkClass = '';
+                            if (section.id === props.active) {
+                                linkClass = 'navLink active'
+                            } else {
+                                linkClass = 'navLink'
+                            }
+                            console.log(section, props.active, linkClass);
                             return (
                                 <AnchorLink
                                     key={section.id}
                                     href={`#${section.id}`}
                                     offset={scrollOffset}
                                     onClick={() => setNavExpanded(false)}
-                                    className='navLink'
+                                    className={linkClass}
                                 >
                                         {section.name}
                                 </AnchorLink>
@@ -101,7 +108,8 @@ const NavigationBar = (props) => {
 const mapStateToProps = state => {
     return {
         mobile: state.isMobile,
-        loaded: state.pageLoaded
+        loaded: state.pageLoaded,
+        active: state.activeSection
     };
 };
 

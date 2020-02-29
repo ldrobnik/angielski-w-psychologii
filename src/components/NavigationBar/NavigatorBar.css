@@ -4,7 +4,7 @@
   padding: 10px; }
 
 .active {
-  color: #6a003c !important; }
+  text-decoration: underline !important; }
 
 .navbar-light .navbar-toggler {
   border: none !important;
