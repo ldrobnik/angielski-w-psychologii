@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {bindActionCreators} from "redux";
 import {connect} from 'react-redux';
 import {Row, Container} from 'react-bootstrap';
 import posed from 'react-pose';
@@ -12,6 +13,7 @@ import illustration1 from '../../assets/images/english1.jpg';
 import illustration2 from '../../assets/images/english2.jpg';
 
 import {SECTION_NAMES, WEBSITE_TEXT} from "../../data/constants";
+import {setActiveSection} from "../../actions";
 
 /* POSE */
 const AnimatedList = posed.div({
@@ -47,6 +49,12 @@ const English = (props) => {
         setMessagesVisible(true);
     };
 
+    //sets current section as active
+    const setSection = () => {
+        props.setActiveSection(SECTION_NAMES[1].id);
+    };
+
+
     //array of all illustration sources
     const illustrations = [illustration0, illustration1, illustration2];
 
@@ -58,6 +66,9 @@ const English = (props) => {
             <Waypoint
                 onEnter={() => showMessages()}
                 bottomOffset={animationOffset}
+            />
+            <Waypoint
+                onEnter={() => setSection()}
             />
             <div className="sectionContent">
                 <Container>
@@ -107,4 +118,8 @@ const mapStateToProps = state => {
     };
 };
 
-export default connect(mapStateToProps)(English);
+const mapDispatchToProps = dispatch => {
+    return bindActionCreators({setActiveSection}, dispatch);
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(English);

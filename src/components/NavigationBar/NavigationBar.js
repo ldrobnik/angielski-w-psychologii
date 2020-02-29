@@ -31,7 +31,6 @@ const NavigationBar = (props) => {
         props.setMobile(windowWidth < MOBILE_BREAKPOINT);
     };
 
-
     //Specifies smooth scroll offset depending on the window width
     const scrollOffset = props.mobile ? OFFSET_MOBILE : OFFSET_DESKTOP;
 

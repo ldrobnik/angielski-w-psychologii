@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {bindActionCreators} from "redux";
 import {Row, Container, Col} from 'react-bootstrap';
 import {connect} from 'react-redux';
 import {Waypoint} from "react-waypoint";
@@ -9,6 +10,7 @@ import './About.css';
 
 import photo from '../../assets/images/portrait.jpg';
 import {SECTION_NAMES, WEBSITE_TEXT} from "../../data/constants";
+import {setActiveSection} from "../../actions";
 
 /* POSE */
 const AnimatedList = posed.div({
@@ -42,6 +44,11 @@ const About = (props) => {
     //shows the messages
     const showMessages = () => {
         setMessagesVisible(true);
+    };
+
+    //sets current section as active
+    const setSection = () => {
+        props.setActiveSection(SECTION_NAMES[0].id);
     };
 
     //contains the portrait jsx
@@ -92,7 +99,9 @@ const About = (props) => {
         <React.Fragment>
 
         <div className="lightBackground sectionContent">
-
+            <Waypoint
+                onEnter={() => setSection()}
+            />
             <Container>
                 <Row>
                     <h1 id={SECTION_NAMES[0].id}>
@@ -126,4 +135,8 @@ const mapStateToProps = state => {
     };
 };
 
-export default connect(mapStateToProps)(About);
+const mapDispatchToProps = dispatch => {
+    return bindActionCreators({setActiveSection}, dispatch);
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(About);
