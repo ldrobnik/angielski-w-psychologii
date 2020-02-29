@@ -86,10 +86,7 @@ const NavigationBar = (props) => {
                                     onClick={() => setNavExpanded(false)}
                                     className='navLink'
                                 >
-
                                         {section.name}
-
-
                                 </AnchorLink>
 
                             )

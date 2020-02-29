@@ -2,7 +2,8 @@ import * as actionTypes from '../actions/constants';
 
 const initialState = {
     isMobile: false,
-    pageLoaded: false
+    pageLoaded: false,
+    activeSection: 'o-mnie'
 };
 
 const reducer = (state = initialState, action) => {
@@ -16,6 +17,11 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 pageLoaded: action.pageLoaded
+            };
+        case actionTypes.SET_ACTIVE_SECTION:
+            return {
+                ...state,
+                activeSection: action.activeSection
             };
         default:
             return state;

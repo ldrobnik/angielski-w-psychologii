@@ -108,39 +108,6 @@ const About = (props) => {
                     </div>
                 </Row>
                 <Row>
-                    {/*<Col*/}
-                    {/*    className="verticallyCentered aboutTextBubbles"*/}
-                    {/*    md={7}*/}
-                    {/*>*/}
-                    {/*        <AnimatedList*/}
-                    {/*            pose={messagesVisible ? 'visible' : 'hidden'}*/}
-                    {/*        >*/}
-                    {/*            {WEBSITE_TEXT.about.details.map((bubble, k) => {*/}
-                    {/*                    return (*/}
-                    {/*                        <AnimatedMessage*/}
-                    {/*                            pose={messagesVisible ? 'visible' : 'hidden'}*/}
-                    {/*                            key={k}*/}
-                    {/*                        >*/}
-                    {/*                            <TextBubble*/}
-                    {/*                                type="light"*/}
-                    {/*                            >*/}
-                    {/*                                {bubble}*/}
-                    {/*                            </TextBubble>*/}
-                    {/*                        </AnimatedMessage>*/}
-                    {/*                    )*/}
-                    {/*                }*/}
-                    {/*            )}*/}
-                    {/*        </AnimatedList>*/}
-                    {/*</Col>*/}
-                    {/*<Col*/}
-                    {/*    md={5}*/}
-                    {/*    className="verticallyCentered"*/}
-                    {/*>*/}
-                    {/*    <Portrait*/}
-                    {/*        source={photo}*/}
-                    {/*        altText={WEBSITE_TEXT.about.altText}*/}
-                    {/*    />*/}
-                    {/*</Col>*/}
                     {mainContent}
                 </Row>
             </Container>

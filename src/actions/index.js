@@ -15,3 +15,11 @@ export const setPageLoaded = (pageLoaded) => {
         pageLoaded
     }
 };
+
+//Specifies which section should be indicated as active on the navbar
+export const setActiveSection = (activeSection) => {
+    return {
+        type: actionTypes.SET_ACTIVE_SECTION,
+        activeSection
+    }
+};
