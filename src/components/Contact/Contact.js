@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {bindActionCreators} from "redux";
 import {connect} from 'react-redux';
 import {Row, Col, Container} from 'react-bootstrap';
 import posed from 'react-pose';
@@ -8,6 +9,7 @@ import './Contact.css';
 import TextBubble from '../UI/TextBubble/TextBubble';
 
 import {SECTION_NAMES, WEBSITE_TEXT} from "../../data/constants";
+import {setActiveSection} from "../../actions";
 
 /* POSE */
 const AnimatedMessageLeft = posed.div({
@@ -53,6 +55,11 @@ const Contact = (props) => {
         setMessagesVisible(true);
     };
 
+    //sets current section as active
+    const setSection = () => {
+        props.setActiveSection(SECTION_NAMES[4].id);
+    };
+
     //offset for triggering animation - larger for mobile
     const animationOffset = props.mobile ? "200px" : "300px";
 
@@ -70,6 +77,9 @@ const Contact = (props) => {
                         </h1>
                     </Row>
                     <Row className="separator"></Row>
+                    <Waypoint
+                        onEnter={() => setSection()}
+                    />
                     <Row>
                         <Col lg={6}>
                             <AnimatedMessageLeft
@@ -148,4 +158,8 @@ const mapStateToProps = state => {
     };
 };
 
-export default connect(mapStateToProps)(Contact);
+const mapDispatchToProps = dispatch => {
+    return bindActionCreators({setActiveSection}, dispatch);
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Contact);

@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
 import {connect} from 'react-redux';
+import {bindActionCreators} from "redux";
 import {Row, Col, Container} from 'react-bootstrap';
 import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
 
 import './Offer.css';
 import {SECTION_NAMES, WEBSITE_TEXT} from "../../data/constants";
+import {setActiveSection} from "../../actions";
 import TextBubble from '../UI/TextBubble/TextBubble';
 
 /* POSE */
@@ -52,6 +54,11 @@ const Offer = (props) => {
         setMessagesVisible(true);
     };
 
+    //sets current section as active
+    const setSection = () => {
+        props.setActiveSection(SECTION_NAMES[3].id);
+    };
+
     //offset for triggering animation - larger for mobile
     const animationOffset = props.mobile ? "30%" : "250px";
 
@@ -70,6 +77,9 @@ const Offer = (props) => {
                         </h1>
                     </Row>
                     <Row className="separator"></Row>
+                    <Waypoint
+                        onEnter={() => setSection()}
+                    />
                     <Row className="offerRow">
                         <Col
                             className="offerColumn"
@@ -161,5 +171,9 @@ const mapStateToProps = state => {
     };
 };
 
+const mapDispatchToProps = dispatch => {
+    return bindActionCreators({setActiveSection}, dispatch);
+};
 
-export default connect(mapStateToProps)(Offer);
+
+export default connect(mapStateToProps, mapDispatchToProps)(Offer);

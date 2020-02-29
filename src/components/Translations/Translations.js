@@ -65,9 +65,6 @@ const Translations = (props) => {
                 onEnter={() => showMessages()}
                 bottomOffset={animationOffset}
             />
-            <Waypoint
-                onEnter={() => setSection()}
-            />
             <div className="lightBackground sectionContent">
                 <Container>
                     <Row>
@@ -76,6 +73,9 @@ const Translations = (props) => {
                         </h1>
                     </Row>
                     <Row className="separator"></Row>
+                    <Waypoint
+                        onEnter={() => setSection()}
+                    />
                     <Row>
                         <AnimatedList
                             pose={messagesVisible ? 'visible' : 'hidden'}

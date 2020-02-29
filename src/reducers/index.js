@@ -3,7 +3,7 @@ import * as actionTypes from '../actions/constants';
 const initialState = {
     isMobile: false,
     pageLoaded: false,
-    activeSection: 'o-mnie'
+    activeSection: ''
 };
 
 const reducer = (state = initialState, action) => {

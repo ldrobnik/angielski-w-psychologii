@@ -99,9 +99,6 @@ const About = (props) => {
         <React.Fragment>
 
         <div className="lightBackground sectionContent">
-            <Waypoint
-                onEnter={() => setSection()}
-            />
             <Container>
                 <Row>
                     <h1 id={SECTION_NAMES[0].id}>
@@ -110,6 +107,9 @@ const About = (props) => {
                 </Row>
                 <Row className="separator">
                 </Row>
+                <Waypoint
+                    onEnter={() => setSection()}
+                />
                 <Row>
                     <div className="introduction">
                         <h2>{WEBSITE_TEXT.about.name}</h2>
