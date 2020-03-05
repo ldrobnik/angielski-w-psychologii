@@ -53,10 +53,11 @@ export const WEBSITE_TEXT = {
         description: <React.Fragment>Nauczycielka języka angielskiego i&nbsp;tłumaczka</React.Fragment>,
         altText: 'Katarzyna Łasocha-Nowak',
         details: [
-            <React.Fragment>Od <span className="highlighted">14 lat</span> wspieram osoby dorosłe w&nbsp;ich rozwoju
-                językowym. Przeprowadziłam kilkadziesiąt
-                kursów języka angielskiego ogólnego i&nbsp;biznesowego na różnych poziomach
-                zaawansowania.</React.Fragment>,
+            <React.Fragment>Od 14 lat wspieram osoby dorosłe w&nbsp;ich rozwoju
+                językowym. Przeprowadziłam <span className="highlighted">kilkadziesiąt
+                kursów języka angielskiego</span> ogólnego i&nbsp;specjalistycznego na różnych poziomach zaawansowania. Nauczam osoby dojrzałe w&nbsp;ramach Akademii 50&nbsp;plus oraz studentów 2&nbsp;szkół wyższych — poznańskiego oddziału SWPS i&nbsp;WSB.
+
+            </React.Fragment>,
             <React.Fragment>Jestem współautorką <span className="highlighted">specjalistycznego podręcznika języka angielskiego dla psychologów</span>,
                 w&nbsp;oparciu o&nbsp;który przeprowadziłam kilka edycji mojego autorskiego kursu „Angielski w
                 psychologii”
