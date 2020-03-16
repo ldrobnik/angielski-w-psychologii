@@ -1,0 +1,5 @@
+# Redirect default Netlify subdomain to primary domain
+https://angwpsycho.netlify.com/* https://angielskiwpsychologii.pl/:splat 301!
+
+# Prevent errors when accessing routes other than '/'
+/*    /index.html   200
