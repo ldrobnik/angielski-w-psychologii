@@ -18,17 +18,22 @@ const TopBanner = (props) => {
         props.setPageLoaded(true);
     };
 
+    //title depending on whether the main page is loaded
+    const title = props.mainPage ? WEBSITE_TEXT.topBanner.title : WEBSITE_TEXT.blog.topBanner.title;
+
+    //subtitle depending on whether the main page is loaded
+    const subtitle = props.mainPage ? WEBSITE_TEXT.topBanner.subtitle : WEBSITE_TEXT.blog.topBanner.subtitle;
     return (
         <Jumbotron
             className="verticallyCentered"
             fluid>
             <div className="bannerContent">
-                <h1 className="title">{WEBSITE_TEXT.topBanner.title}</h1>
-                <div className="subtitle">{WEBSITE_TEXT.topBanner.subtitle}</div>
-                <AnchorButton
+                <h1 className="title">{title}</h1>
+                <div className="subtitle">{subtitle}</div>
+                {props.mainPage && <AnchorButton
                     target="oferta"
                     message={WEBSITE_TEXT.topBanner.button}
-                />
+                />}
             </div>
             <img
                 className="hiddenBackdrop"
@@ -40,8 +45,14 @@ const TopBanner = (props) => {
     );
 };
 
+const mapStateToProps = state => {
+    return {
+        mainPage: state.mainDisplayed
+    }
+};
+
 const mapDispatchToProps = dispatch => {
     return bindActionCreators({setPageLoaded}, dispatch);
 };
 
-export default connect(null, mapDispatchToProps)(TopBanner);
+export default connect(mapStateToProps, mapDispatchToProps)(TopBanner);

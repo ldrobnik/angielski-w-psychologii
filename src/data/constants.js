@@ -213,5 +213,12 @@ export const WEBSITE_TEXT = {
             info: <React.Fragment>Więcej wolnych terminów od czerwca</React.Fragment>
         },
         copyrightNotice: <React.Fragment>&copy; 2020 Łukasz Drobnik & Katarzyna Łasocha-Nowak</React.Fragment>
+    },
+    blog: {
+        topBanner: {
+            title: <React.Fragment>Angielski w&nbsp;psychologii</React.Fragment>,
+            subtitle: <React.Fragment>Blog o&nbsp;nauce języka angielskiego dla psychologów, psychoterapeutów i&nbsp;osób zainteresowanych
+                psychologią</React.Fragment>
+        }
     }
 };
