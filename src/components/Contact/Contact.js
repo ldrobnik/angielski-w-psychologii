@@ -7,6 +7,7 @@ import {Waypoint} from "react-waypoint";
 import './Contact.css';
 
 import TextBubble from '../UI/TextBubble/TextBubble';
+import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
 
 import {SECTION_NAMES, WEBSITE_TEXT} from "../../data/constants";
 import {setActiveSection} from "../../actions";
@@ -143,10 +144,8 @@ const Contact = (props) => {
                         </Col>
 
                     </Row>
-                    <Row className="copyrightNote centeredBothWays">
-                        {WEBSITE_TEXT.contact.copyrightNotice}
-                    </Row>
                 </Container>
+                <CopyrightNote />
             </div>
         </React.Fragment>
     );

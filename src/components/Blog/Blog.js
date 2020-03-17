@@ -4,6 +4,7 @@ import {bindActionCreators} from "redux";
 import {setMainPage} from "../../actions";
 
 import TopBanner from '../TopBanner/TopBanner';
+import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
 
 const Blog = props => {
 
@@ -21,6 +22,7 @@ const Blog = props => {
             <div id="top"></div>
             <TopBanner/>
             <div>Here goes the blog.</div>
+            <CopyrightNote />
         </React.Fragment>
     );
 };
