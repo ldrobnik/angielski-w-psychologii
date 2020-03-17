@@ -1,12 +1,13 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import {Route, Switch, withRouter} from 'react-router-dom';
+import {Redirect} from 'react-router';
 import posed, {PoseGroup} from 'react-pose';
 
 import './Home.css';
-import NavigationBar from "../NavigationBar/NavigationBar";
 import Layout from '../Layout/Layout';
 import Main from '../Main/Main';
-import Spinner from '../UI/Spinner/Spinner';
+import Blog from '../Blog/Blog';
 
 /* POSE */
 const AnimatedOverlay = posed.div({
@@ -23,14 +24,16 @@ const AnimatedOverlay = posed.div({
 });
 
 
-const Home = (props) => {
-
-    //class applied to outer container to prevent scrolling before the page is loaded
-    const containerClass = (props.loaded) ? "" : "constrained";
+const Home = () => {
 
     return (
         <Layout>
-            <Main/>
+            <Switch>
+                <Route path="/" exact component={Main} key="main"/>
+                <Route path="/blog/" exact component={Blog} key="blog"/>
+                <Route path="/blog/:id" exact component={Blog} key="blog-entry"/>
+                <Route render={() => <Redirect to="/"/>} key="default"/>
+            </Switch>
         </Layout>
     );
 };
