@@ -59,46 +59,61 @@ const NavigationBar = (props) => {
             sticky="top"
         >
             <Navbar.Brand>
-                <AnchorLink href="#top"
-                            offset={scrollOffset}
-                            onClick={() => setNavExpanded(false)}
-                >
-                    <img
-                        src={logo}
-                        alt="Logo"
-                        width="30"
-                        height="30"
-                        className="d-inline-block align-top"
-                    />
-                </AnchorLink>
+                {props.mainPage
+                    ?
+                    <AnchorLink href="#top"
+                                offset={scrollOffset}
+                                onClick={() => setNavExpanded(false)}
+                    >
+                        <img
+                            src={logo}
+                            alt="Logo"
+                            width="30"
+                            height="30"
+                            className="d-inline-block align-top"
+                        />
+                    </AnchorLink>
+                    :
+                    <Link to="/"
+                          onClick={() => setNavExpanded(false)}
+                    >
+                        <img
+                            src={logo}
+                            alt="Logo"
+                            width="30"
+                            height="30"
+                            className="d-inline-block align-top"
+                        />
+                    </Link>
+                }
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
             <Navbar.Collapse>
                 <Nav className="mr-auto">
                     {props.mainPage &&
-                        (
-                            SECTION_NAMES.map((section) => {
-                                let linkClass = '';
-                                if (section.id === props.active) {
-                                    linkClass = 'navLink active'
-                                } else {
-                                    linkClass = 'navLink'
-                                }
-                                console.log(section, props.active, linkClass);
-                                return (
-                                    <AnchorLink
-                                        key={section.id}
-                                        href={`#${section.id}`}
-                                        offset={scrollOffset}
-                                        onClick={() => setNavExpanded(false)}
-                                        className={linkClass}
-                                    >
-                                        {section.name}
-                                    </AnchorLink>
+                    (
+                        SECTION_NAMES.map((section) => {
+                            let linkClass = '';
+                            if (section.id === props.active) {
+                                linkClass = 'navLink active'
+                            } else {
+                                linkClass = 'navLink'
+                            }
+                            console.log(section, props.active, linkClass);
+                            return (
+                                <AnchorLink
+                                    key={section.id}
+                                    href={`#${section.id}`}
+                                    offset={scrollOffset}
+                                    onClick={() => setNavExpanded(false)}
+                                    className={linkClass}
+                                >
+                                    {section.name}
+                                </AnchorLink>
 
-                                )
-                            })
-                        )
+                            )
+                        })
+                    )
                     }
                     {props.mainPage &&
                     <Link
@@ -114,8 +129,8 @@ const NavigationBar = (props) => {
                     }
 
 
-                        </Nav>
-                    }
+                </Nav>
+                }
             </Navbar.Collapse>
         </Navbar>
     );
