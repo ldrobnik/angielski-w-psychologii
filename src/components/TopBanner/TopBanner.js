@@ -19,10 +19,10 @@ const TopBanner = (props) => {
     };
 
     //title depending on whether the main page is loaded
-    const title = props.mainPage ? WEBSITE_TEXT.topBanner.title : WEBSITE_TEXT.blog.topBanner.title;
+    const title = props.mainPage ? WEBSITE_TEXT.topBanner.title : WEBSITE_TEXT.blogBanner.title;
 
     //subtitle depending on whether the main page is loaded
-    const subtitle = props.mainPage ? WEBSITE_TEXT.topBanner.subtitle : WEBSITE_TEXT.blog.topBanner.subtitle;
+    const subtitle = props.mainPage ? WEBSITE_TEXT.topBanner.subtitle : WEBSITE_TEXT.blogBanner.subtitle;
 
     //banner class depending on whether the main page is displayed
     const bannerClass = props.mainPage? "verticallyCentered wide" : "verticallyCentered thin";

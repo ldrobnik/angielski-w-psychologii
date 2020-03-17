@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {bindActionCreators} from "redux";
 import {Navbar, Nav} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {connect} from 'react-redux';
 
@@ -8,7 +9,7 @@ import {setMobile} from "../../actions";
 
 import './NavigatorBar.css';
 
-import {SECTION_NAMES, OFFSET_DESKTOP, OFFSET_MOBILE, MOBILE_BREAKPOINT} from '../../data/constants';
+import {SECTION_NAMES, OFFSET_DESKTOP, OFFSET_MOBILE, MOBILE_BREAKPOINT, WEBSITE_TEXT} from '../../data/constants';
 
 import logo from '../../assets/images/logo.svg';
 
@@ -35,7 +36,6 @@ const NavigationBar = (props) => {
     const scrollOffset = props.mobile ? OFFSET_MOBILE : OFFSET_DESKTOP;
 
 
-
     useEffect(() => {
         setMobile(); //update the store with the mobile status
 
@@ -57,7 +57,7 @@ const NavigationBar = (props) => {
             bg="light"
             variant="light"
             sticky="top"
-            >
+        >
             <Navbar.Brand>
                 <AnchorLink href="#top"
                             offset={scrollOffset}
@@ -72,33 +72,50 @@ const NavigationBar = (props) => {
                     />
                 </AnchorLink>
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
             <Navbar.Collapse>
                 <Nav className="mr-auto">
-                    {
-                        SECTION_NAMES.map((section) => {
-                            let linkClass = '';
-                            if (section.id === props.active) {
-                                linkClass = 'navLink active'
-                            } else {
-                                linkClass = 'navLink'
-                            }
-                            console.log(section, props.active, linkClass);
-                            return (
-                                <AnchorLink
-                                    key={section.id}
-                                    href={`#${section.id}`}
-                                    offset={scrollOffset}
-                                    onClick={() => setNavExpanded(false)}
-                                    className={linkClass}
-                                >
+                    {props.mainPage &&
+                        (
+                            SECTION_NAMES.map((section) => {
+                                let linkClass = '';
+                                if (section.id === props.active) {
+                                    linkClass = 'navLink active'
+                                } else {
+                                    linkClass = 'navLink'
+                                }
+                                console.log(section, props.active, linkClass);
+                                return (
+                                    <AnchorLink
+                                        key={section.id}
+                                        href={`#${section.id}`}
+                                        offset={scrollOffset}
+                                        onClick={() => setNavExpanded(false)}
+                                        className={linkClass}
+                                    >
                                         {section.name}
-                                </AnchorLink>
+                                    </AnchorLink>
 
-                            )
-                        })
+                                )
+                            })
+                        )
                     }
-                </Nav>
+                    {props.mainPage &&
+                    <Link
+                        to={WEBSITE_TEXT.blogLink.url}
+                        className="navLink"
+                    >{WEBSITE_TEXT.blogLink.name}</Link>
+                    }
+                    {!props.mainPage &&
+                    <Link
+                        to={WEBSITE_TEXT.homeLink.url}
+                        className="navLink"
+                    >{WEBSITE_TEXT.homeLink.name}</Link>
+                    }
+
+
+                        </Nav>
+                    }
             </Navbar.Collapse>
         </Navbar>
     );
@@ -108,7 +125,8 @@ const mapStateToProps = state => {
     return {
         mobile: state.isMobile,
         loaded: state.pageLoaded,
-        active: state.activeSection
+        active: state.activeSection,
+        mainPage: state.mainDisplayed
     };
 };
 

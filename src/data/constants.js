@@ -55,7 +55,9 @@ export const WEBSITE_TEXT = {
         details: [
             <React.Fragment>Od 14 lat wspieram osoby dorosłe w&nbsp;ich rozwoju
                 językowym. Przeprowadziłam <span className="highlighted">kilkadziesiąt
-                kursów języka angielskiego</span> ogólnego i&nbsp;specjalistycznego na różnych poziomach zaawansowania. Nauczam osoby dojrzałe w&nbsp;ramach Akademii 50&nbsp;plus oraz studentów 2&nbsp;szkół wyższych — poznańskiego oddziału SWPS i&nbsp;WSB.
+                kursów języka angielskiego</span> ogólnego i&nbsp;specjalistycznego na różnych poziomach zaawansowania.
+                Nauczam osoby dojrzałe w&nbsp;ramach Akademii 50&nbsp;plus oraz studentów 2&nbsp;szkół wyższych —
+                poznańskiego oddziału SWPS i&nbsp;WSB.
 
             </React.Fragment>,
             <React.Fragment>Jestem współautorką <span className="highlighted">specjalistycznego podręcznika języka angielskiego dla psychologów</span>,
@@ -82,7 +84,8 @@ export const WEBSITE_TEXT = {
 
             <React.Fragment>
                 <p>Na naszych zajęciach skupimy się przede wszystkim na <span
-                    className="highlighted">poznaniu i&nbsp;użyciu właściwego słownictwa</span>. Bez obaw – nie zasypię cię listami wyjętych z&nbsp;kontekstu słówek do wykucia na
+                    className="highlighted">poznaniu i&nbsp;użyciu właściwego słownictwa</span>. Bez obaw – nie zasypię
+                    cię listami wyjętych z&nbsp;kontekstu słówek do wykucia na
                     pamięć.</p>
                 <p>Nasze słownictwo będzie osadzone w odpowiednim kontekście (artykuły, czy filmy
                     z&nbsp;interesującej
@@ -101,7 +104,7 @@ export const WEBSITE_TEXT = {
                     nie mechanicznie i&nbsp;na zasadzie &bdquo;sztuka dla sztuki&rdquo;, bo to po prostu nie
                     działa.</p>
                 <p> Jeżeli masz jakieś pytania, <AnchorLink href="#kontakt" offset={OFFSET_DESKTOP}
-                                                             className="highlighted">napisz do
+                                                            className="highlighted">napisz do
                     mnie</AnchorLink>.</p>
             </React.Fragment>
         ],
@@ -136,7 +139,8 @@ export const WEBSITE_TEXT = {
             content: [
                 {
                     type: <React.Fragment>Indywidualnie:</React.Fragment>,
-                    price: <React.Fragment><span className="priceValue">100&nbsp;zł</span> brutto/60&nbsp;min</React.Fragment>
+                    price: <React.Fragment><span
+                        className="priceValue">100&nbsp;zł</span> brutto/60&nbsp;min</React.Fragment>
                 },
                 {
                     type: <React.Fragment>Grupa dwuosobowa:</React.Fragment>,
@@ -192,18 +196,18 @@ export const WEBSITE_TEXT = {
             hours: [
                 <div className="booked">
                     <FontAwesomeIcon
-                    icon={faClock}
-                    className="hoursIcon"
-                />poniedziałki 15:30</div>,
+                        icon={faClock}
+                        className="hoursIcon"
+                    />poniedziałki 15:30</div>,
                 <div><FontAwesomeIcon
                     icon={faClock}
                     className="hoursIcon"
                 />środy 15:45</div>,
                 <div className="booked">
                     <FontAwesomeIcon
-                    icon={faClock}
-                    className="hoursIcon"
-                />piątki 8:45</div>,
+                        icon={faClock}
+                        className="hoursIcon"
+                    />piątki 8:45</div>,
                 <div>
                     <FontAwesomeIcon
                         icon={faClock}
@@ -214,11 +218,18 @@ export const WEBSITE_TEXT = {
         },
         copyrightNotice: <React.Fragment>&copy; 2020 Łukasz Drobnik & Katarzyna Łasocha-Nowak</React.Fragment>
     },
-    blog: {
-        topBanner: {
-            title: <React.Fragment>Angielski w&nbsp;psychologii</React.Fragment>,
-            subtitle: <React.Fragment>Blog o&nbsp;nauce języka angielskiego dla psychologów, psychoterapeutów i&nbsp;osób zainteresowanych
-                psychologią</React.Fragment>
-        }
+    blogBanner: {
+        title: <React.Fragment>Angielski w&nbsp;psychologii</React.Fragment>,
+        subtitle: <React.Fragment>Blog o&nbsp;nauce języka angielskiego dla psychologów, psychoterapeutów i&nbsp;osób
+            zainteresowanych
+            psychologią</React.Fragment>
+    },
+    blogLink: {
+        name: 'Blog',
+        url: '/blog/'
+    },
+    homeLink: {
+        name: 'Strona główna',
+        url: '/'
     }
 };
