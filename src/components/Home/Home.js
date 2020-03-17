@@ -2,7 +2,6 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {Route, Switch, withRouter} from 'react-router-dom';
 import {Redirect} from 'react-router';
-import posed, {PoseGroup} from 'react-pose';
 
 import './Home.css';
 import Layout from '../Layout/Layout';
@@ -44,4 +43,4 @@ const mapStateToProps = state => {
     }
 };
 
-export default connect(mapStateToProps)(Home);
+export default withRouter(connect(mapStateToProps)(Home));
