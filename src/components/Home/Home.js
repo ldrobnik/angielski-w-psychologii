@@ -8,20 +8,6 @@ import Layout from '../Layout/Layout';
 import Main from '../Main/Main';
 import Blog from '../Blog/Blog';
 
-/* POSE */
-const AnimatedOverlay = posed.div({
-    enter: {
-        opacity: 1
-    },
-    exit: {
-        opacity: 0,
-        transition: {
-            ease: 'easeOut',
-            duration: 800
-        }
-    }
-});
-
 
 const Home = () => {
 
