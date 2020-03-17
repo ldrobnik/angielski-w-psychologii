@@ -212,6 +212,6 @@ export const WEBSITE_TEXT = {
             ],
             info: <React.Fragment>Więcej wolnych terminów od czerwca</React.Fragment>
         },
-        copyrightNotice: <React.Fragment>&copy; 2020 Łukasz Drobnik</React.Fragment>
+        copyrightNotice: <React.Fragment>&copy; 2020 Łukasz Drobnik & Katarzyna Łasocha-Nowak</React.Fragment>
     }
 };

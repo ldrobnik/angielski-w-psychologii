@@ -4,6 +4,7 @@ import posed, {PoseGroup} from 'react-pose';
 
 import './Home.css';
 import NavigationBar from "../NavigationBar/NavigationBar";
+import Main from '../Main/Main';
 import TopBanner from '../TopBanner/TopBanner';
 import About from '../About/About';
 import English from '../English/English';
@@ -35,29 +36,17 @@ const Home = (props) => {
     //class applied to outer container to prevent scrolling before the page is loaded
     const containerClass = (props.loaded) ? "" : "constrained";
 
-    //display the navbar only after the page is loaded
-    const navBar = (props.loaded) ? <NavigationBar /> : null;
-
-    //display spinner only when the page is not loaded
-    let spinner = (!props.loaded) ? <Spinner /> : null;
-
     return (
         <div className="contentWrapper">
             <div className={containerClass}>
-                {spinner}
+                {!props.loaded && <Spinner/>}
                 <PoseGroup>
                     {!props.loaded && [
                         <AnimatedOverlay key="overlay" className="overlay" />
                     ]}
                 </PoseGroup>
-                {navBar}
-                <div id="top"></div>
-                <TopBanner />
-                <About id={SECTION_NAMES[0]} />
-                <English id={SECTION_NAMES[1]} />
-                <Translations id={SECTION_NAMES[2]} />
-                <Offer id={SECTION_NAMES[3]} />
-                <Contact id={SECTION_NAMES[4]} />
+                {props.loaded && <NavigationBar/>}
+                <Main />
             </div>
         </div>
     );
