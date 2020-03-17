@@ -96,6 +96,7 @@ const NavigationBar = (props) => {
                     :
                     <Link to="/"
                           onClick={() => setNavExpanded(false)}
+                          onClick={() => handleLoaded()}
                     >
                         <img
                             src={logo}
