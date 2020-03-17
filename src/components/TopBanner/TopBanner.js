@@ -23,9 +23,13 @@ const TopBanner = (props) => {
 
     //subtitle depending on whether the main page is loaded
     const subtitle = props.mainPage ? WEBSITE_TEXT.topBanner.subtitle : WEBSITE_TEXT.blog.topBanner.subtitle;
+
+    //banner class depending on whether the main page is displayed
+    const bannerClass = props.mainPage? "verticallyCentered wide" : "verticallyCentered thin";
+
     return (
         <Jumbotron
-            className="verticallyCentered"
+            className={bannerClass}
             fluid>
             <div className="bannerContent">
                 <h1 className="title">{title}</h1>
@@ -33,6 +37,7 @@ const TopBanner = (props) => {
                 {props.mainPage && <AnchorButton
                     target="oferta"
                     message={WEBSITE_TEXT.topBanner.button}
+                    className="bannerButton"
                 />}
             </div>
             <img

@@ -12,6 +12,14 @@
   overflow: hidden;
 }
 
+.wide {
+  min-height: 70vh;
+}
+
+.thin {
+  min-height: 40vh;
+}
+
 .topBannerContainer{
   overflow: hidden;
 }
@@ -33,11 +41,15 @@
 
 .subtitle {
   font-size: 1.3em;
-  margin: 1.5em 0 2em 0;
+  margin: 1.5em 0 0 0;
 
   @media all and (max-width: 450px) {
     font-size: 1em;
   }
+}
+
+.bannerButton {
+  margin-top: 2em;
 }
 
 .hiddenBackdrop {
