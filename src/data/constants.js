@@ -9,8 +9,8 @@ import {
 
 
 //offset used for smooth scrolling
-export const OFFSET_DESKTOP = '60px';
-export const OFFSET_MOBILE = '280px';
+export const OFFSET_DESKTOP = '60';
+export const OFFSET_MOBILE = '280';
 
 //breakpoint below which the navbar collapses
 export const MOBILE_BREAKPOINT = 768;

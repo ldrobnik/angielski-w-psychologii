@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {connect} from 'react-redux';
 
-import {setMobile} from "../../actions";
+import {setMobile, setPageLoaded} from "../../actions";
 
 import './NavigatorBar.css';
 
@@ -24,20 +24,40 @@ const NavigationBar = (props) => {
     // Updates the window width
     const handleWindowSizeChange = () => {
         setWindowWidth(window.innerWidth); //update the window width state with the current window width
-        setMobile(); //update the store with mobile status
+        handleMobile(); //update the store with mobile status
     };
 
     // Lets the store know if the page is displayed on a mobile device
-    const setMobile = () => {
+    const handleMobile = () => {
         props.setMobile(windowWidth < MOBILE_BREAKPOINT);
+        console.log(props.mobile, scrollOffset);
+    };
+
+    //Sets page status as not loaded
+    const handleLoaded = () => {
+        props.setPageLoaded(false);
     };
 
     //Specifies smooth scroll offset depending on the window width
     const scrollOffset = props.mobile ? OFFSET_MOBILE : OFFSET_DESKTOP;
 
+    //specifies the url and text of the router link
+
+    const routerLink = props.mainPage ?
+        {
+            name: WEBSITE_TEXT.blogLink.name,
+            url: WEBSITE_TEXT.blogLink.url
+        }
+        :
+        {
+            name: WEBSITE_TEXT.homeLink.name,
+            url: WEBSITE_TEXT.homeLink.url
+        }
+    ;
+
 
     useEffect(() => {
-        setMobile(); //update the store with the mobile status
+        handleMobile(); //update the store with the mobile status
 
         window.addEventListener('resize', handleWindowSizeChange); // Add an event listener to monitor the screen width
 
@@ -99,7 +119,6 @@ const NavigationBar = (props) => {
                             } else {
                                 linkClass = 'navLink'
                             }
-                            console.log(section, props.active, linkClass);
                             return (
                                 <AnchorLink
                                     key={section.id}
@@ -115,18 +134,12 @@ const NavigationBar = (props) => {
                         })
                     )
                     }
-                    {props.mainPage &&
+
                     <Link
-                        to={WEBSITE_TEXT.blogLink.url}
+                        to={routerLink.url}
                         className="navLink"
-                    >{WEBSITE_TEXT.blogLink.name}</Link>
-                    }
-                    {!props.mainPage &&
-                    <Link
-                        to={WEBSITE_TEXT.homeLink.url}
-                        className="navLink"
-                    >{WEBSITE_TEXT.homeLink.name}</Link>
-                    }
+                        onClick={() => handleLoaded()}
+                    >{routerLink.name}</Link>
 
 
                 </Nav>
@@ -146,7 +159,10 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = dispatch => {
-    return bindActionCreators({setMobile}, dispatch);
+    return bindActionCreators({
+        setMobile,
+        setPageLoaded
+    }, dispatch);
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(NavigationBar);
