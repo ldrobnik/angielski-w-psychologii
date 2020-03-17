@@ -56,7 +56,7 @@ const Offer = (props) => {
 
     //sets current section as active
     const setSection = () => {
-        props.setActiveSection(SECTION_NAMES[3].id);
+        props.setActiveSection(SECTION_NAMES.main[3].id);
     };
 
     //offset for triggering animation - larger for mobile
@@ -72,8 +72,8 @@ const Offer = (props) => {
             <div className="sectionContent">
                 <Container>
                     <Row>
-                        <h1 id={SECTION_NAMES[3].id}>
-                            {SECTION_NAMES[3].name}
+                        <h1 id={SECTION_NAMES.main[3].id}>
+                            {SECTION_NAMES.main[3].name}
                         </h1>
                     </Row>
                     <Row className="separator"></Row>

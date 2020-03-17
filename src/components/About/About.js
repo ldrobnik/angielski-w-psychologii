@@ -48,7 +48,7 @@ const About = (props) => {
 
     //sets current section as active
     const setSection = () => {
-        props.setActiveSection(SECTION_NAMES[0].id);
+        props.setActiveSection(SECTION_NAMES.main[0].id);
     };
 
     //contains the portrait jsx
@@ -101,8 +101,8 @@ const About = (props) => {
         <div className="lightBackground sectionContent">
             <Container>
                 <Row>
-                    <h1 id={SECTION_NAMES[0].id}>
-                        {SECTION_NAMES[0].name}
+                    <h1 id={SECTION_NAMES.main[0].id}>
+                        {SECTION_NAMES.main[0].name}
                     </h1>
                 </Row>
                 <Row className="separator">

@@ -27,11 +27,11 @@ const Main = props => {
         <React.Fragment>
             <div id="top"></div>
             <TopBanner/>
-            <About id={SECTION_NAMES[0]}/>
-            <English id={SECTION_NAMES[1]}/>
-            <Translations id={SECTION_NAMES[2]}/>
-            <Offer id={SECTION_NAMES[3]}/>
-            <Contact id={SECTION_NAMES[4]}/>
+            <About id={SECTION_NAMES.main[0]}/>
+            <English id={SECTION_NAMES.main[1]}/>
+            <Translations id={SECTION_NAMES.main[2]}/>
+            <Offer id={SECTION_NAMES.main[3]}/>
+            <Contact id={SECTION_NAMES.main[4]}/>
         </React.Fragment>
     );
 };

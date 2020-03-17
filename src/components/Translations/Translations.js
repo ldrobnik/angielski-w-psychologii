@@ -49,7 +49,7 @@ const Translations = (props) => {
 
     //sets current section as active
     const setSection = () => {
-        props.setActiveSection(SECTION_NAMES[2].id);
+        props.setActiveSection(SECTION_NAMES.main[2].id);
     };
 
     //array of all illustration sources
@@ -68,8 +68,8 @@ const Translations = (props) => {
             <div className="lightBackground sectionContent">
                 <Container>
                     <Row>
-                        <h1 id={SECTION_NAMES[2].id}>
-                            {SECTION_NAMES[2].name}
+                        <h1 id={SECTION_NAMES.main[2].id}>
+                            {SECTION_NAMES.main[2].name}
                         </h1>
                     </Row>
                     <Row className="separator"></Row>

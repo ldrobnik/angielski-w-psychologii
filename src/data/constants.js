@@ -16,28 +16,35 @@ export const OFFSET_MOBILE = '280';
 export const MOBILE_BREAKPOINT = 768;
 
 //section names
-export const SECTION_NAMES = [
-    {
-        id: 'o-mnie',
-        name: <React.Fragment>O&nbsp;mnie</React.Fragment>
-    },
-    {
-        id: 'angielski-w-psychologii',
-        name: <React.Fragment>Angielski w&nbsp;psychologii</React.Fragment>
-    },
-    {
-        id: 'tlumaczenia-w-psychologii',
-        name: <React.Fragment>Tłumaczenia w&nbsp;psychologii</React.Fragment>
-    },
-    {
-        id: 'oferta',
-        name: <React.Fragment>Oferta</React.Fragment>
-    },
-    {
-        id: 'kontakt',
-        name: <React.Fragment>Kontakt</React.Fragment>
-    }
-];
+export const SECTION_NAMES = {
+    main: [
+        {
+            id: 'o-mnie',
+            name: <React.Fragment>O&nbsp;mnie</React.Fragment>
+        },
+        {
+            id: 'angielski-w-psychologii',
+            name: <React.Fragment>Angielski w&nbsp;psychologii</React.Fragment>
+        },
+        {
+            id: 'tlumaczenia-w-psychologii',
+            name: <React.Fragment>Tłumaczenia w&nbsp;psychologii</React.Fragment>
+        },
+        {
+            id: 'oferta',
+            name: <React.Fragment>Oferta</React.Fragment>
+        },
+        {
+            id: 'kontakt',
+            name: <React.Fragment>Kontakt</React.Fragment>
+        }
+    ],
+    blog: [
+        {
+            id: 'wpisy',
+            name: <React.Fragment>Lista wpisów</React.Fragment>
+        }]
+};
 
 //Text used on the website
 export const WEBSITE_TEXT = {

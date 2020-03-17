@@ -51,7 +51,7 @@ const English = (props) => {
 
     //sets current section as active
     const setSection = () => {
-        props.setActiveSection(SECTION_NAMES[1].id);
+        props.setActiveSection(SECTION_NAMES.main[1].id);
     };
 
 
@@ -70,8 +70,8 @@ const English = (props) => {
             <div className="sectionContent">
                 <Container>
                     <Row>
-                        <h1 id={SECTION_NAMES[1].id}>
-                            {SECTION_NAMES[1].name}
+                        <h1 id={SECTION_NAMES.main[1].id}>
+                            {SECTION_NAMES.main[1].name}
                         </h1>
                     </Row>
                     <Row className="separator"></Row>
