@@ -23,3 +23,11 @@ export const setActiveSection = (activeSection) => {
         activeSection
     }
 };
+
+//Specifies whether the main page is displayed
+export const setMainPage = (mainDisplayed) => {
+    return {
+        type: actionTypes.SET_MAIN_PAGE,
+        mainDisplayed
+    }
+};

@@ -3,7 +3,8 @@ import * as actionTypes from '../actions/constants';
 const initialState = {
     isMobile: false,
     pageLoaded: false,
-    activeSection: ''
+    activeSection: '',
+    mainDisplayed: true
 };
 
 const reducer = (state = initialState, action) => {
@@ -22,6 +23,11 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 activeSection: action.activeSection
+            };
+        case actionTypes.SET_MAIN_PAGE:
+            return {
+                ...state,
+                mainDisplayed: action.mainDisplayed
             };
         default:
             return state;
