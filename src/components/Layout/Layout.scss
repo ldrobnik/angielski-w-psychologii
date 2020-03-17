@@ -1,0 +1,108 @@
+@import '../../styles/common';
+
+body {
+  background: linear-gradient($themeColor, darken($themeColor, 7));
+  font-family: $serif !important;
+  @include set-selection($lightColor, $themeColor);
+  color: $lightColor !important;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+a {
+  color: $themeColor;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:link {
+    color: $themeColor;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $themeColor;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: $themeColor;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: $themeColor;
+    text-decoration: none;
+  }
+
+}
+
+.highlighted {
+  font-weight: bold;
+  color: setColor(4);
+}
+
+
+.separator {
+  background-color: $lightColor;
+  height: 8px;
+  margin-bottom: 1.5em;
+}
+
+.lightBackground {
+  background-color: $lightColor !important;
+  color: $darkColor;
+  width: 100vw;
+  @include set-selection($themeColor, $lightColor);
+
+  h1 {
+    color: $themeColor;
+  }
+
+  .highlighted {
+    color: $themeColor;
+  }
+
+  .separator {
+    background-color: $themeColor;
+  }
+}
+
+.sectionContent {
+  padding: 3% 1% 5% 1%;
+  overflow: hidden;
+}
+
+//for vertically centered content
+.verticallyCentered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+//for content centered both vertically and horizontally
+
+.centeredBothWays {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//class applied to page container to prevent scrolling
+.constrained {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 300;
+  height: 100vh;
+  width: 100vw;
+  background-color: $lightColor;
+}

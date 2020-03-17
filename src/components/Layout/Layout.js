@@ -2,10 +2,8 @@ import React from 'react';
 import {connect} from 'react-redux';
 import posed, {PoseGroup} from 'react-pose';
 
-import './Home.css';
+import './Layout.css';
 import NavigationBar from "../NavigationBar/NavigationBar";
-import Layout from '../Layout/Layout';
-import Main from '../Main/Main';
 import Spinner from '../UI/Spinner/Spinner';
 
 /* POSE */
@@ -23,15 +21,24 @@ const AnimatedOverlay = posed.div({
 });
 
 
-const Home = (props) => {
+const Layout = (props) => {
 
     //class applied to outer container to prevent scrolling before the page is loaded
     const containerClass = (props.loaded) ? "" : "constrained";
 
     return (
-        <Layout>
-            <Main/>
-        </Layout>
+        <div className="contentWrapper">
+            <div className={containerClass}>
+                {!props.loaded && <Spinner/>}
+                <PoseGroup>
+                    {!props.loaded && [
+                        <AnimatedOverlay key="overlay" className="overlay" />
+                    ]}
+                </PoseGroup>
+                {props.loaded && <NavigationBar/>}
+                {props.children}
+            </div>
+        </div>
     );
 };
 
@@ -41,4 +48,4 @@ const mapStateToProps = state => {
     }
 };
 
-export default connect(mapStateToProps)(Home);
+export default connect(mapStateToProps)(Layout);
