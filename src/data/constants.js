@@ -42,7 +42,7 @@ export const SECTION_NAMES = {
     blog: [
         {
             id: 'wpisy',
-            name: <React.Fragment>Lista wpisów</React.Fragment>
+            name: <React.Fragment>Lista lekcji</React.Fragment>
         }]
 };
 
@@ -227,12 +227,12 @@ export const WEBSITE_TEXT = {
     },
     blogBanner: {
         title: <React.Fragment>Angielski w&nbsp;psychologii</React.Fragment>,
-        subtitle: <React.Fragment>Blog o&nbsp;nauce języka angielskiego dla psychologów, psychoterapeutów i&nbsp;osób
+        subtitle: <React.Fragment>Darmowe materiały do nauki języka angielskiego dla psychologów, psychoterapeutów i&nbsp;osób
             zainteresowanych
             psychologią</React.Fragment>
     },
     blogLink: {
-        name: 'Blog',
+        name: 'Materiały edukacyjne',
         url: '/blog/'
     },
     homeLink: {
