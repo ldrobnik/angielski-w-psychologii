@@ -30,7 +30,6 @@ const NavigationBar = (props) => {
     // Lets the store know if the page is displayed on a mobile device
     const handleMobile = () => {
         props.setMobile(windowWidth < MOBILE_BREAKPOINT);
-        console.log(props.mobile, scrollOffset);
     };
 
     //Sets page status as not loaded
