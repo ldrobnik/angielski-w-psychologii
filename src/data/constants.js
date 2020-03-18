@@ -227,9 +227,7 @@ export const WEBSITE_TEXT = {
     },
     blogBanner: {
         title: <React.Fragment>Angielski w&nbsp;psychologii</React.Fragment>,
-        subtitle: <React.Fragment>Darmowe materiały do nauki języka angielskiego dla psychologów, psychoterapeutów i&nbsp;osób
-            zainteresowanych
-            psychologią</React.Fragment>
+        subtitle: <React.Fragment>Darmowe materiały do nauki języka angielskiego</React.Fragment>
     },
     blogLink: {
         name: 'Materiały edukacyjne',
