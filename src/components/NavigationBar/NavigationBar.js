@@ -78,34 +78,18 @@ const NavigationBar = (props) => {
             sticky="top"
         >
             <Navbar.Brand>
-                {props.mainPage
-                    ?
-                    <AnchorLink href="#top"
-                                offset={scrollOffset}
-                                onClick={() => setNavExpanded(false)}
-                    >
-                        <img
-                            src={logo}
-                            alt="Logo"
-                            width="30"
-                            height="30"
-                            className="d-inline-block align-top"
-                        />
-                    </AnchorLink>
-                    :
-                    <Link to="/"
-                          onClick={() => setNavExpanded(false)}
-                          onClick={() => handleLoaded()}
-                    >
-                        <img
-                            src={logo}
-                            alt="Logo"
-                            width="30"
-                            height="30"
-                            className="d-inline-block align-top"
-                        />
-                    </Link>
-                }
+                <AnchorLink href="#top"
+                            offset={scrollOffset}
+                            onClick={() => setNavExpanded(false)}
+                >
+                    <img
+                        src={logo}
+                        alt="Logo"
+                        width="30"
+                        height="30"
+                        className="d-inline-block align-top"
+                    />
+                </AnchorLink>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
             <Navbar.Collapse>
