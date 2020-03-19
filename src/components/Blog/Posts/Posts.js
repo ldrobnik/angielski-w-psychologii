@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
 
+import TextBubble from '../../UI/TextBubble/TextBubble';
+
 const Posts = () => {
 
     //Blog posts
@@ -28,9 +30,20 @@ const Posts = () => {
     }, []);
 
     return (
-        <div>
-            Posts
-        </div>
+        <React.Fragment>
+            {posts.map((post, index) => (
+                <TextBubble
+                    key={index}
+                    type="blog"
+                >
+                    <h2
+                        dangerouslySetInnerHTML={{__html: post.title.rendered}}/>
+                    <div
+                        className="blogPost"
+                        dangerouslySetInnerHTML={{__html: post.content.rendered}}/>
+                </TextBubble>
+            ))}
+        </React.Fragment>
     );
 };
 

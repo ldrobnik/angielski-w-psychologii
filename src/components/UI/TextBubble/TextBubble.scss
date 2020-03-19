@@ -47,3 +47,43 @@
 
   }
 }
+
+.blogTextBubble {
+  border: $themeBorder;
+  padding: 15px 20px;
+  margin: 25px 10px;
+  font-size: 1.1em;
+  background-color: $lightColor;
+  color: $darkColor;
+  text-align: center;
+  @include regularShadow;
+
+  a {
+    color: $themeColor;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 1s;
+
+    &:link {
+      color: $themeColor;
+      text-decoration: none;
+    }
+
+    &:visited {
+      color: $themeColor;
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: setColor(-2);
+      text-decoration: none;
+    }
+
+    &:active {
+      color: $themeColor;
+      text-decoration: none;
+    }
+
+  }
+
+}

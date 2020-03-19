@@ -37,4 +37,33 @@
       color: #ff6abe;
       text-decoration: none; }
 
+.blogTextBubble {
+  border: #9d0059 1px solid;
+  padding: 15px 20px;
+  margin: 25px 10px;
+  font-size: 1.1em;
+  background-color: #f8f9fa;
+  color: #0f0f0f;
+  text-align: center;
+  -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5); }
+  .blogTextBubble a {
+    color: #9d0059;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 1s; }
+    .blogTextBubble a:link {
+      color: #9d0059;
+      text-decoration: none; }
+    .blogTextBubble a:visited {
+      color: #9d0059;
+      text-decoration: none; }
+    .blogTextBubble a:hover {
+      color: #37001f;
+      text-decoration: none; }
+    .blogTextBubble a:active {
+      color: #9d0059;
+      text-decoration: none; }
+
 /*# sourceMappingURL=TextBubble.css.map */
