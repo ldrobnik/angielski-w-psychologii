@@ -71,5 +71,11 @@
     color: #9d0059; }
   .blogTextBubble p, .blogTextBubble ul, .blogTextBubble ol {
     text-align: left; }
+  .blogTextBubble cite {
+    text-align: left;
+    border-left: 4px solid #9d0059;
+    display: block;
+    padding-left: 1em;
+    padding-right: 2em; }
 
 /*# sourceMappingURL=TextBubble.css.map */

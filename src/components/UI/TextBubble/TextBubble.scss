@@ -97,4 +97,12 @@
   p, ul, ol {
     text-align: left;
   }
+
+  cite {
+    text-align: left;
+    border-left: 4px solid $themeColor;
+    display: block;
+    padding-left: 1em;
+    padding-right: 2em;
+  }
 }
