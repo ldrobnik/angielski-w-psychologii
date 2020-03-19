@@ -30,20 +30,24 @@ const Posts = () => {
     }, []);
 
     return (
-        <React.Fragment>
+        <div className="lightBackground sectionContent">
             {posts.map((post, index) => (
-                <TextBubble
+                <React.Fragment
                     key={index}
-                    type="blog"
                 >
-                    <h2
-                        dangerouslySetInnerHTML={{__html: post.title.rendered}}/>
-                    <div
-                        className="blogPost"
-                        dangerouslySetInnerHTML={{__html: post.content.rendered}}/>
-                </TextBubble>
+                    <TextBubble
+                        type="blog"
+                    >
+                        <h2
+                            dangerouslySetInnerHTML={{__html: post.title.rendered}}/>
+                        <div
+                            className="blogPost"
+                            dangerouslySetInnerHTML={{__html: post.content.rendered}}/>
+                    </TextBubble>
+                    {(index === 0) && <div id="lekcje"></div>}
+                </React.Fragment>
             ))}
-        </React.Fragment>
+        </div>
     );
 };
 

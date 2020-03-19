@@ -41,7 +41,7 @@ export const SECTION_NAMES = {
     ],
     blog: [
         {
-            id: 'wpisy',
+            id: 'lekcje',
             name: <React.Fragment>Lista lekcji</React.Fragment>
         }]
 };

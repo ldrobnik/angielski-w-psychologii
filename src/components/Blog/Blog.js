@@ -22,8 +22,10 @@ const Blog = props => {
         <React.Fragment>
             <div id="top"></div>
             <TopBanner/>
-            <Posts />
-            <CopyrightNote />
+            <div className="lightBackground sectionContent">
+                <Posts/>
+                <CopyrightNote/>
+            </div>
         </React.Fragment>
     );
 };
