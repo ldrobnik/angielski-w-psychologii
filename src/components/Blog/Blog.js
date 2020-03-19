@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import {connect} from 'react-redux'
 import {bindActionCreators} from "redux";
+import {Row, Container} from 'react-bootstrap';
 import {setMainPage} from "../../actions";
 
 import TopBanner from '../TopBanner/TopBanner';
@@ -23,8 +24,12 @@ const Blog = props => {
             <div id="top"></div>
             <TopBanner/>
             <div className="lightBackground sectionContent">
-                <Posts/>
-                <CopyrightNote/>
+                <Container>
+                    <Row>
+                        <Posts/>
+                        <CopyrightNote/>
+                    </Row>
+                </Container>
             </div>
         </React.Fragment>
     );

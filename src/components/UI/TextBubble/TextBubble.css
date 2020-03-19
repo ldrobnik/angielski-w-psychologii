@@ -65,5 +65,11 @@
     .blogTextBubble a:active {
       color: #9d0059;
       text-decoration: none; }
+  .blogTextBubble img, .blogTextBubble iframe {
+    max-width: 90%; }
+  .blogTextBubble h1, .blogTextBubble h2, .blogTextBubble h3, .blogTextBubble h4 {
+    color: #9d0059; }
+  .blogTextBubble p, .blogTextBubble ul, .blogTextBubble ol {
+    text-align: left; }
 
 /*# sourceMappingURL=TextBubble.css.map */

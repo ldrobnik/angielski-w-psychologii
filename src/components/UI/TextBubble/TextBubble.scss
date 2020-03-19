@@ -86,4 +86,15 @@
 
   }
 
+  img, iframe {
+    max-width: 90%;
+  }
+
+  h1, h2, h3, h4 {
+    color: $themeColor;
+  }
+
+  p, ul, ol {
+    text-align: left;
+  }
 }
