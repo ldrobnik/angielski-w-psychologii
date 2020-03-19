@@ -65,17 +65,32 @@
     .blogTextBubble a:active {
       color: #9d0059;
       text-decoration: none; }
-  .blogTextBubble img, .blogTextBubble iframe {
+  .blogTextBubble img {
     max-width: 90%; }
-  .blogTextBubble h1, .blogTextBubble h2, .blogTextBubble h3, .blogTextBubble h4 {
-    color: #9d0059; }
+  .blogTextBubble iframe {
+    width: 60vw;
+    height: 33.75vw;
+    /*16:9*/
+    margin-top: 2em;
+    margin-bottom: 0.2em; }
+  .blogTextBubble figcaption {
+    font-size: 0.8em;
+    margin-bottom: 2em; }
+  .blogTextBubble h2 {
+    color: #9d0059;
+    margin-bottom: 1em;
+    font-size: 2em; }
+  .blogTextBubble .blogPost h2 {
+    color: #0f0f0f !important;
+    font-size: 1.5em; }
   .blogTextBubble p, .blogTextBubble ul, .blogTextBubble ol {
     text-align: left; }
   .blogTextBubble cite {
     text-align: left;
     border-left: 4px solid #9d0059;
+    font-size: 0.9em;
     display: block;
-    padding-left: 1em;
-    padding-right: 2em; }
+    padding-left: 2em;
+    padding-right: 3em; }
 
 /*# sourceMappingURL=TextBubble.css.map */

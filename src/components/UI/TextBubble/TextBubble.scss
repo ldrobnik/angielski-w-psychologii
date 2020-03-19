@@ -86,13 +86,34 @@
 
   }
 
-  img, iframe {
+  img {
     max-width: 90%;
   }
 
-  h1, h2, h3, h4 {
-    color: $themeColor;
+  iframe {
+    width: 60vw;
+    height: 33.75vw; /*16:9*/
+    margin-top: 2em;
+    margin-bottom: 0.2em;
   }
+  figcaption {
+    font-size: 0.8em;
+    margin-bottom: 2em;
+  }
+
+  h2 {
+    color: $themeColor;
+    margin-bottom: 1em;
+    font-size: 2em;
+  }
+
+  .blogPost {
+    h2 {
+      color: $darkColor !important;
+      font-size: 1.5em;
+    }
+  }
+
 
   p, ul, ol {
     text-align: left;
@@ -101,8 +122,9 @@
   cite {
     text-align: left;
     border-left: 4px solid $themeColor;
+    font-size: 0.9em;
     display: block;
-    padding-left: 1em;
-    padding-right: 2em;
+    padding-left: 2em;
+    padding-right: 3em;
   }
 }
