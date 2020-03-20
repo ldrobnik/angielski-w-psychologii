@@ -1,7 +1,7 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import {bindActionCreators} from "redux";
 import {Jumbotron} from 'react-bootstrap';
-import {connect} from 'react-redux';
 import './TopBanner.css';
 
 import '../UI/AnchorButton/AnchorButton';
@@ -13,9 +13,13 @@ import {setPageLoaded} from "../../actions";
 
 const TopBanner = (props) => {
 
-    //Changes the page loaded state in Redux store
+    //Sets page as loaded
     const handleLoaded = () => {
+
+        //set page as loaded only if the main page is displayed
+        if (props.mainPage) {
         props.setPageLoaded(true);
+        }
     };
 
     //title depending on whether the main page is loaded
