@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
+import {connect} from 'react-redux';
 import {bindActionCreators} from "redux";
 import {Navbar, Nav} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import {connect} from 'react-redux';
 
 import {setMobile, setPageLoaded} from "../../actions";
 

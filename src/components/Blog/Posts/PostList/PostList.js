@@ -1,27 +1,25 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import {bindActionCreators} from "redux";
 import {Container, Row} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 
 import TextBubble from '../../../UI/TextBubble/TextBubble';
 import {SECTION_NAMES} from "../../../../data/constants";
+import {setPageLoaded} from "../../../../actions";
 
 const PostList = props => {
+
+    //Sets page status as not loaded
+    const handleLoaded = () => {
+        props.setPageLoaded(false);
+    };
 
     //removes 'read more' button from Worpdress excerpt
     const handleExcerpt = (excerpt) => {
         return excerpt.split("<div>")[0];
     };
 
-    //removes the url of the Wordpress site from an url
-    const shortenUrl = (url) => {
-        if (url) {
-            let shortenedUrl = url.split('.com')[1]; //split at the end of the Wordpress adress and extract the rest
-            shortenedUrl = '/materialy' + shortenedUrl;
-            return shortenedUrl;
-        } else {
-            return '/materialy/'
-        }
-    };
     return(
         <Container className="lightBackground sectionContent">
             <Row>
@@ -33,9 +31,10 @@ const PostList = props => {
             <Row className="horizontallyCentered">
                 {props.posts.map((post, index) => (
                     <Link
-                        to={shortenUrl(post.link)}
+                        to={props.shortenUrl(post.link)}
                         className="blogLink"
                         key={index}
+                        onClick={() => handleLoaded()}
                     >
                         <TextBubble
                             type="blog"
@@ -52,4 +51,9 @@ const PostList = props => {
     );
 };
 
-export default PostList;
+const mapDispatchToProps = dispatch => {
+    return bindActionCreators({
+        setPageLoaded
+    }, dispatch);
+};
+export default connect(null, mapDispatchToProps)(PostList);

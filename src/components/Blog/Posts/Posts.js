@@ -59,6 +59,17 @@ const Posts = props => {
         ]);
     };
 
+    //removes the url of the Wordpress site from an url
+    const shortenUrl = (url) => {
+        if (url) {
+            let shortenedUrl = url.split('.com')[1]; //split at the end of the Wordpress adress and extract the rest
+            shortenedUrl = '/materialy' + shortenedUrl;
+            return shortenedUrl;
+        } else {
+            return '/materialy/'
+        }
+    };
+
     useEffect(() => {
 
         //loads blog posts
@@ -82,13 +93,21 @@ const Posts = props => {
         loadPosts();
     }, []);
 
+    useEffect(() => {
+        if (posts.length > 0) {
+            handleLoaded();
+        }
+    });
+
     return (
         <React.Fragment>
             <DisplayedPost
                 post={posts[0]}
             />
-            {(props.loadedPosts > 1) && <PostList
+            {(props.loadedPosts > 1) &&
+            <PostList
                 posts={posts}
+                shortenUrl={shortenUrl}
             />}
         </React.Fragment>
     );
@@ -96,6 +115,7 @@ const Posts = props => {
 
 const mapStateToProps = state => {
     return {
+        pageLoaded: state.pageLoaded,
         loadedPosts: state.loadedPosts
     };
 };
