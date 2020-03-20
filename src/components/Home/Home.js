@@ -15,8 +15,8 @@ const Home = () => {
         <Layout>
             <Switch>
                 <Route path="/" exact component={Main} key="main"/>
-                <Route path="/blog/" exact component={Blog} key="blog"/>
-                <Route path="/blog/:id" exact component={Blog} key="blog-entry"/>
+                <Route path="/materialy/" exact component={Blog} key="blog"/>
+                <Route path="/materialy/:id" exact component={Blog} key="blog-entry"/>
                 <Route render={() => <Redirect to="/"/>} key="default"/>
             </Switch>
         </Layout>

@@ -231,7 +231,7 @@ export const WEBSITE_TEXT = {
     },
     blogLink: {
         name: 'Materiały edukacyjne',
-        url: '/blog/'
+        url: '/materialy/'
     },
     homeLink: {
         name: 'Strona główna',
