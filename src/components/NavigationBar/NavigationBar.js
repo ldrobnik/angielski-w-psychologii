@@ -118,7 +118,7 @@ const NavigationBar = (props) => {
                         })
                     )
                     }
-                    {!props.mainPage &&
+                    {(!props.mainPage && props.loadedPosts > 1) &&
                     (
                         SECTION_NAMES.blog.map((section) => {
                             return (
@@ -155,7 +155,8 @@ const mapStateToProps = state => {
         mobile: state.isMobile,
         loaded: state.pageLoaded,
         active: state.activeSection,
-        mainPage: state.mainDisplayed
+        mainPage: state.mainDisplayed,
+        loadedPosts: state.loadedPosts
     };
 };
 

@@ -100,8 +100,14 @@ const Posts = props => {
     );
 };
 
+const mapStateToProps = state => {
+    return {
+        loadedPosts: state.loadedPosts
+    };
+};
+
 const mapDispatchToProps = dispatch => {
     return bindActionCreators({setPageLoaded}, dispatch);
 };
 
-export default connect(null, mapDispatchToProps)(Posts);
+export default connect(mapStateToProps, mapDispatchToProps)(Posts);
