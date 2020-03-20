@@ -23,7 +23,7 @@ const Blog = props => {
         <React.Fragment>
             <div id="top"></div>
             <TopBanner/>
-            <div className="lightBackground sectionContent">
+            <div className="lightBackground sectionContent blog">
                 <Container>
                     <Row>
                         <Posts/>

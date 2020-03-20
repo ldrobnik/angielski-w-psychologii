@@ -1,11 +1,24 @@
 import React, {useEffect, useState} from 'react';
+import {Row} from 'react-bootstrap';
 
 import TextBubble from '../../UI/TextBubble/TextBubble';
 
 const Posts = () => {
 
     //Blog posts
-    const [posts, setPosts] = useState([]);
+    const [posts, setPosts] = useState([
+        {
+            title: {
+                rendered: ''
+            },
+            content: {
+                rendered: ''
+            },
+            excerpt: {
+                rendered: ''
+            }
+        }
+    ]);
 
     //Wordpress API URL
     const WP_API_URL = process.env.REACT_APP_WP_API_URL;
@@ -17,7 +30,7 @@ const Posts = () => {
             fetch(WP_API_URL).then(response => {
                 return response.json();
             }).then(posts => {
-                // Set posts
+                // Updates state with fetched posts
                 setPosts(posts);
                 console.log(posts);
             }).catch(err => {
@@ -31,25 +44,41 @@ const Posts = () => {
 
     return (
         <div className="lightBackground sectionContent">
-            {posts.map((post, index) => (
-                <React.Fragment
-                    key={index}
+            <Row>
+                {posts &&
+                <TextBubble
+                    type="blog"
                 >
-                    <TextBubble
-                        type="blog"
+                    <h2
+                        dangerouslySetInnerHTML={{__html: posts[0].title.rendered}}/>
+                    <div
+                        className="blogPost"
+                        dangerouslySetInnerHTML={{__html: posts[0].content.rendered}}/>
+                </TextBubble>
+                }
+            </Row>
+            <div id="lekcje"></div>
+            <Row className="separator"></Row>
+            <Row>
+                {posts.map((post, index) => (
+                    <React.Fragment
+                        key={index}
                     >
-                        <h2
-                            dangerouslySetInnerHTML={{__html: post.title.rendered}}/>
-                        <div
-                            className="blogPost"
-                            dangerouslySetInnerHTML={{__html: post.content.rendered}}/>
-                    </TextBubble>
-                    {(index === 0) && <div id="lekcje"></div>}
-                </React.Fragment>
-            ))}
+                        <TextBubble
+                            type="blog"
+                        >
+                            <h2
+                                dangerouslySetInnerHTML={{__html: post.title.rendered}}/>
+                            <div
+                                className="blogPost"
+                                dangerouslySetInnerHTML={{__html: post.excerpt.rendered}}/>
+                        </TextBubble>
+                    </React.Fragment>
+                ))}
+            </Row>
+            <Row className="separator"></Row>
         </div>
     );
 };
-
 
 export default Posts;
