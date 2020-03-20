@@ -10,14 +10,6 @@ import {WEBSITE_TEXT} from '../../../data/constants';
 
 const Posts = props => {
 
-    //creates a complete url from different parameters
-    const getUrl = () => {
-        return props.match.params.year + "/" + props.match.params.month + "/" + props.match.params.id;
-    };
-
-    //currently displayed url
-    const [url, setUrl] = useState(getUrl());
-
     //Blog posts
     const [posts, setPosts] = useState([
         {
@@ -32,6 +24,31 @@ const Posts = props => {
             }
         }
     ]);
+
+    //creates a complete url from different parameters
+    const getUrl = () => {
+        return props.match.params.year + "/" + props.match.params.month + "/" + props.match.params.id;
+    };
+
+    //currently displayed url
+    const [url, setUrl] = useState(getUrl());
+
+    //checks which post should be displayed based on the current url
+    const checkWhichPost = (url) => {
+        for (let i = 0; i < posts.length; i++) {
+            if (posts[i].link) {
+                if (posts[i].link.includes(url)) {
+                    return i;
+                }
+            }
+
+        }
+        return 0;
+    };
+
+    //currently displayed post
+    const [currPost, setCurrPost] = useState(checkWhichPost(getUrl()));
+
 
     //Wordpress API URL
     const WP_API_URL = process.env.REACT_APP_WP_API_URL;
@@ -77,6 +94,8 @@ const Posts = props => {
         }
     };
 
+
+
     useEffect(() => {
 
         //loads blog posts
@@ -110,11 +129,15 @@ const Posts = props => {
         setUrl(getUrl()); //update currently displayed URl whenever it changes
     }, [props.match.params.id]);
 
+    useEffect(() => {
+        setCurrPost(checkWhichPost(getUrl())); //update the currently displayed post
+    });
+
     return (
         <React.Fragment>
             <DisplayedPost
                 {...props}
-                post={posts[0]}
+                post={posts[currPost]}
                 url={url}
             />
             {(props.loadedPosts > 1) &&
