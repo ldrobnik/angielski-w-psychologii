@@ -90,4 +90,7 @@ a {
   width: 100vw;
   background-color: #f8f9fa; }
 
+.translucent {
+  opacity: 0.4; }
+
 /*# sourceMappingURL=Home.css.map */

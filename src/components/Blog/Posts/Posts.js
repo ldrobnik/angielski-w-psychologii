@@ -108,7 +108,6 @@ const Posts = props => {
 
     useEffect(() => {
         setUrl(getUrl()); //update currently displayed URl whenever it changes
-        console.log(url);
     }, [props.match.params.id]);
 
     return (
@@ -116,11 +115,13 @@ const Posts = props => {
             <DisplayedPost
                 {...props}
                 post={posts[0]}
+                url={url}
             />
             {(props.loadedPosts > 1) &&
             <PostList
                 {...props}
                 posts={posts}
+                url={url}
                 shortenUrl={shortenUrl}
             />}
         </React.Fragment>

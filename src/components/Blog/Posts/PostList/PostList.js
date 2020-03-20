@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from "redux";
 import {Container, Row} from 'react-bootstrap';
@@ -20,6 +20,9 @@ const PostList = props => {
         return excerpt.split("<div>")[0];
     };
 
+    useEffect(() => {
+        console.log(props.url, props.shortenUrl(props.posts[0].link));
+    });
     return(
         <Container className="lightBackground sectionContent">
             <Row>
@@ -32,7 +35,7 @@ const PostList = props => {
                 {props.posts.map((post, index) => (
                     <Link
                         to={props.shortenUrl(post.link)}
-                        className="blogLink"
+                        className={(props.shortenUrl(post.link).includes(props.url)) ? 'blogLink translucent' : 'blogLink'}
                         key={index}
                         onClick={() => handleLoaded()}
                     >
