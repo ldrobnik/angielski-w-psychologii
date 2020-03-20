@@ -6,13 +6,18 @@ import {Container, Row} from 'react-bootstrap';
 import TextBubble from '../../UI/TextBubble/TextBubble';
 import PostList from './PostList/PostList';
 import {SECTION_NAMES} from "../../../data/constants";
-import {setPageLoaded} from "../../../actions";
+import {setPageLoaded, setLoadedPosts} from "../../../actions";
 
 const Posts = props => {
 
     //Sets page as loaded after an interval
     const handleLoaded = () => {
         setTimeout(() => {props.setPageLoaded(true)}, 500);
+    };
+
+    //updates number of posts
+    const updatePosts = (numberOfPosts) => {
+        props.setLoadedPosts(numberOfPosts);
     };
 
     //Blog posts
@@ -43,6 +48,7 @@ const Posts = props => {
             }).then(posts => {
                 // Updates state with fetched posts
                 setPosts(posts);
+                updatePosts(posts.length);
                 handleLoaded(true);
                 console.log(posts);
             }).catch(err => {
@@ -86,7 +92,10 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = dispatch => {
-    return bindActionCreators({setPageLoaded}, dispatch);
+    return bindActionCreators({
+        setPageLoaded,
+        setLoadedPosts
+    }, dispatch);
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Posts);
