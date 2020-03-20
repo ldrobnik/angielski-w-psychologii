@@ -6,6 +6,10 @@ import {STRINGS_TO_REMOVE} from "../../../../data/constants";
 
 const DisplayedPost = props => {
 
+    //removes all instances of a string from another string
+    const removeString = (str, find) => {
+        return str ? str.replace(new RegExp(find, 'g'), '') : '';
+    };
 
     //removes unused Wordpress classes from post content
     const cleanUpPost = (content) => {
@@ -13,7 +17,7 @@ const DisplayedPost = props => {
 
         //loop through array of string to remove and remove them
         for (let i = 0; i < STRINGS_TO_REMOVE.length; i++) {
-            modifiedContent = props.removeString(modifiedContent, STRINGS_TO_REMOVE[i]);
+            modifiedContent = removeString(modifiedContent, STRINGS_TO_REMOVE[i]);
         }
 
         //return cleaned up content

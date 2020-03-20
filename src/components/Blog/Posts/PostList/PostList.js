@@ -12,15 +12,15 @@ const PostList = props => {
         return excerpt.split("<div>")[0];
     };
 
-    //url of the Wordpress site to be removed from links
-    const WP_URL = process.env.REACT_APP_WP_URL;
-
-    //
-    const removeString = props.removeString;
-
     //removes the url of the Wordpress site from an url
     const shortenUrl = (url) => {
-      return removeString(url, WP_URL);
+        if (url) {
+            let shortenedUrl = url.split('.com')[1]; //split at the end of the Wordpress adress and extract the rest
+            shortenedUrl = '/materialy' + shortenedUrl;
+            return shortenedUrl;
+        } else {
+            return '/materialy/'
+        }
     };
     return(
         <Container className="lightBackground sectionContent">
