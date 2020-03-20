@@ -39,8 +39,8 @@
 
 .blogTextBubble {
   border: #9d0059 1px solid;
-  padding: 15px 20px;
-  margin: 25px 10px;
+  padding: 20px;
+  margin: 20px 10px;
   font-size: 1.1em;
   background-color: #f8f9fa;
   color: #0f0f0f;
@@ -48,6 +48,20 @@
   -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5); }
+  .blogTextBubble p, .blogTextBubble cite, .blogTextBubble h2 {
+    padding: 0 15px; }
+  .blogTextBubble ol, .blogTextBubble ul {
+    margin-left: 25px; }
+  .blogTextBubble ul {
+    list-style: none;
+    /* Remove default bullets */ }
+  .blogTextBubble ul li::before {
+    content: "\2022";
+    color: #9d0059;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; }
   .blogTextBubble a {
     color: #9d0059;
     text-decoration: none;
