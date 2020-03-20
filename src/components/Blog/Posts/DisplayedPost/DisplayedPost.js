@@ -2,9 +2,23 @@ import React from 'react';
 import {Container, Row} from 'react-bootstrap';
 
 import TextBubble from '../../../UI/TextBubble/TextBubble';
+import {STRINGS_TO_REMOVE} from "../../../../data/constants";
 
 const DisplayedPost = props => {
 
+
+    //removes unused Wordpress classes from post content
+    const cleanUpPost = (content) => {
+        let modifiedContent = content;
+
+        //loop through array of string to remove and remove them
+        for (let i = 0; i < STRINGS_TO_REMOVE.length; i++) {
+            modifiedContent = props.removeString(modifiedContent, STRINGS_TO_REMOVE[i]);
+        }
+
+        //return cleaned up content
+        return modifiedContent;
+    };
     return(
         <Container className="lightBackground">
             <Row className="horizontallyCentered">
@@ -16,7 +30,7 @@ const DisplayedPost = props => {
                         dangerouslySetInnerHTML={{__html: props.post.title.rendered}}/>
                     <div
                         className="blogPost"
-                        dangerouslySetInnerHTML={{__html: props.post.content.rendered}}/>
+                        dangerouslySetInnerHTML={{__html: cleanUpPost(props.post.content.rendered)}}/>
                 </TextBubble>
                 }
             </Row>

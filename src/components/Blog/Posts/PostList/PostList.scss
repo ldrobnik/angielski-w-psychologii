@@ -1,0 +1,9 @@
+@import '../../../../styles/common';
+
+.blogLink {
+  text-decoration: none !important;
+
+  &:hover {
+    text-decoration: none !important;
+  }
+}

@@ -243,3 +243,12 @@ export const WEBSITE_TEXT = {
             content: 'Przepraszamy za usterkę. Spróbuj ponownie później.'
         }
 };
+
+//array containing unused Wordpress classes to be removed blog content
+export const STRINGS_TO_REMOVE = [
+    ' class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"',
+    ' class="wp-block-embed__wrapper"',
+    ' class="wp-block-quote"',
+    ' class="wp-block-image size-large"',
+    ' class="wp-block-image size-large"'
+];

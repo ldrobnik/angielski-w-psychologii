@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,SAAU;EACR,eAAe,EAAE,eAAe;EAEhC,eAAQ;IACN,eAAe,EAAE,eAAe",
+"sources": ["PostList.scss"],
+"names": [],
+"file": "PostList.css"
+}

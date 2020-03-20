@@ -1,5 +1,6 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {Container, Row} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
 import TextBubble from '../../../UI/TextBubble/TextBubble';
 import {SECTION_NAMES} from "../../../../data/constants";
@@ -10,11 +11,17 @@ const PostList = props => {
     const handleExcerpt = (excerpt) => {
         return excerpt.split("<div>")[0];
     };
-    //
-    // useEffect(() => {
-    //     handleExcerpt(posts[0].excerpt.rendered);
-    // });
 
+    //url of the Wordpress site to be removed from links
+    const WP_URL = process.env.REACT_APP_WP_URL;
+
+    //
+    const removeString = props.removeString;
+
+    //removes the url of the Wordpress site from an url
+    const shortenUrl = (url) => {
+      return removeString(url, WP_URL);
+    };
     return(
         <Container className="lightBackground sectionContent">
             <Row>
@@ -25,7 +32,9 @@ const PostList = props => {
             <Row className="separator"></Row>
             <Row className="horizontallyCentered">
                 {props.posts.map((post, index) => (
-                    <React.Fragment
+                    <Link
+                        to={shortenUrl(post.link)}
+                        className="blogLink"
                         key={index}
                     >
                         <TextBubble
@@ -36,7 +45,7 @@ const PostList = props => {
                             <div
                                 dangerouslySetInnerHTML={{__html: handleExcerpt(post.excerpt.rendered)}}/>
                         </TextBubble>
-                    </React.Fragment>
+                    </Link>
                 ))}
             </Row>
         </Container>

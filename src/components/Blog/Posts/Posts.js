@@ -10,6 +10,11 @@ import {WEBSITE_TEXT} from '../../../data/constants';
 
 const Posts = props => {
 
+    //removes all instances of a string from another string
+    const removeString = (str, find) => {
+        return str ? str.replace(new RegExp(find, 'g'), '') : '';
+    };
+
     //Sets page as loaded after an interval
     const handleLoaded = () => {
         setTimeout(() => {
@@ -86,9 +91,11 @@ const Posts = props => {
         <React.Fragment>
             <DisplayedPost
                 post={posts[0]}
+                removeString={removeString}
             />
             {(props.loadedPosts > 1) && <PostList
                 posts={posts}
+                removeString={removeString}
             />}
         </React.Fragment>
     );
