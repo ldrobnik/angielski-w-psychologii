@@ -10,17 +10,13 @@ import {WEBSITE_TEXT} from '../../../data/constants';
 
 const Posts = props => {
 
-    //Sets page as loaded after an interval
-    const handleLoaded = () => {
-        setTimeout(() => {
-            props.setPageLoaded(true)
-        }, 500);
+    //creates a complete url from different parameters
+    const getUrl = () => {
+        return props.match.params.year + "/" + props.match.params.month + "/" + props.match.params.id;
     };
 
-    //updates number of posts
-    const updatePosts = (numberOfPosts) => {
-        props.setLoadedPosts(numberOfPosts);
-    };
+    //currently displayed url
+    const [url, setUrl] = useState(getUrl());
 
     //Blog posts
     const [posts, setPosts] = useState([
@@ -37,10 +33,21 @@ const Posts = props => {
         }
     ]);
 
-
     //Wordpress API URL
     const WP_API_URL = process.env.REACT_APP_WP_API_URL;
 
+
+    //Sets page as loaded after an interval
+    const handleLoaded = () => {
+        setTimeout(() => {
+            props.setPageLoaded(true)
+        }, 500);
+    };
+
+    //updates number of posts
+    const updatePosts = (numberOfPosts) => {
+        props.setLoadedPosts(numberOfPosts);
+    };
 
     //sets error message if fetching posts fails
     const setErrorMessage = () => {
@@ -99,13 +106,20 @@ const Posts = props => {
         }
     });
 
+    useEffect(() => {
+        setUrl(getUrl()); //update currently displayed URl whenever it changes
+        console.log(url);
+    }, [props.match.params.id]);
+
     return (
         <React.Fragment>
             <DisplayedPost
+                {...props}
                 post={posts[0]}
             />
             {(props.loadedPosts > 1) &&
             <PostList
+                {...props}
                 posts={posts}
                 shortenUrl={shortenUrl}
             />}
