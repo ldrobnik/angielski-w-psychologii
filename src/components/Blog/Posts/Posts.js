@@ -72,9 +72,9 @@ const Posts = props => {
                     }
                 </Row>
             </Container>
-            <PostList
+            {(props.loadedPosts > 1) && <PostList
                 posts={posts}
-            />
+            />}
         </React.Fragment>
     );
 };
