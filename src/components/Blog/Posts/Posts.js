@@ -4,6 +4,7 @@ import {bindActionCreators} from "redux";
 import {Container, Row} from 'react-bootstrap';
 
 import TextBubble from '../../UI/TextBubble/TextBubble';
+import PostList from './PostList/PostList';
 import {SECTION_NAMES} from "../../../data/constants";
 import {setPageLoaded} from "../../../actions";
 
@@ -71,31 +72,9 @@ const Posts = props => {
                     }
                 </Row>
             </Container>
-            <Container className="lightBackground sectionContent">
-                <Row>
-                    <h1 id={SECTION_NAMES.blog[0].id}>
-                        {SECTION_NAMES.blog[0].name}
-                    </h1>
-                </Row>
-                <Row className="separator"></Row>
-                <Row>
-                    {posts.map((post, index) => (
-                        <React.Fragment
-                            key={index}
-                        >
-                            <TextBubble
-                                type="blog"
-                            >
-                                <h2
-                                    dangerouslySetInnerHTML={{__html: post.title.rendered}}/>
-                                <div
-                                    className="blogPost"
-                                    dangerouslySetInnerHTML={{__html: post.excerpt.rendered}}/>
-                            </TextBubble>
-                        </React.Fragment>
-                    ))}
-                </Row>
-            </Container>
+            <PostList
+                posts={posts}
+            />
         </React.Fragment>
     );
 };
