@@ -31,3 +31,11 @@ export const setMainPage = (mainDisplayed) => {
         mainDisplayed
     }
 };
+
+//Specifies the number of fetched blog posts
+export const setLoadedPosts = (loadedPosts) => {
+    return {
+        type: actionTypes.SET_LOADED_POSTS,
+        loadedPosts
+    }
+};

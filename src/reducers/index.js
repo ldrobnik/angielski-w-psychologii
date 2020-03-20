@@ -4,7 +4,8 @@ const initialState = {
     isMobile: false,
     pageLoaded: false,
     activeSection: '',
-    mainDisplayed: true
+    mainDisplayed: true,
+    loadedPosts: 0
 };
 
 const reducer = (state = initialState, action) => {
@@ -28,6 +29,11 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 mainDisplayed: action.mainDisplayed
+            };
+        case actionTypes.SET_LOADED_POSTS:
+            return {
+                ...state,
+                loadedPosts: action.loadedPosts
             };
         default:
             return state;
