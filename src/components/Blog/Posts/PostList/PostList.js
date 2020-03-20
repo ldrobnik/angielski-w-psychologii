@@ -1,10 +1,19 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Container, Row} from 'react-bootstrap';
 
 import TextBubble from '../../../UI/TextBubble/TextBubble';
 import {SECTION_NAMES} from "../../../../data/constants";
 
 const PostList = props => {
+
+    //removes 'read more' button from Worpdress excerpt
+    const handleExcerpt = (excerpt) => {
+        return excerpt.split("<div>")[0];
+    };
+    //
+    // useEffect(() => {
+    //     handleExcerpt(posts[0].excerpt.rendered);
+    // });
 
     return(
         <Container className="lightBackground sectionContent">
@@ -24,8 +33,8 @@ const PostList = props => {
                         >
                             <h2
                                 dangerouslySetInnerHTML={{__html: post.title.rendered}}/>
-                            {/*<div*/}
-                            {/*    dangerouslySetInnerHTML={{__html: post.excerpt.rendered}}/>*/}
+                            <div
+                                dangerouslySetInnerHTML={{__html: handleExcerpt(post.excerpt.rendered)}}/>
                         </TextBubble>
                     </React.Fragment>
                 ))}
