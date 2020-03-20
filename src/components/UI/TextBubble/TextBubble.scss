@@ -93,12 +93,16 @@
   iframe {
     width: 60vw;
     height: 33.75vw; /*16:9*/
-    margin-top: 2em;
-    margin-bottom: 0.2em;
   }
+
+  figure {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+
   figcaption {
     font-size: 0.8em;
-    margin-bottom: 2em;
+    margin-top: 0.2em;
   }
 
   h2 {
@@ -110,7 +114,8 @@
   .blogPost {
     h2 {
       color: $darkColor !important;
-      font-size: 1.5em;
+      font-size: 1.4em;
+      text-align: left;
     }
   }
 

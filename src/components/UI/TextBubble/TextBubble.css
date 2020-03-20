@@ -70,19 +70,21 @@
   .blogTextBubble iframe {
     width: 60vw;
     height: 33.75vw;
-    /*16:9*/
-    margin-top: 2em;
-    margin-bottom: 0.2em; }
+    /*16:9*/ }
+  .blogTextBubble figure {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em; }
   .blogTextBubble figcaption {
     font-size: 0.8em;
-    margin-bottom: 2em; }
+    margin-top: 0.2em; }
   .blogTextBubble h2 {
     color: #9d0059;
     margin-bottom: 1em;
     font-size: 2em; }
   .blogTextBubble .blogPost h2 {
     color: #0f0f0f !important;
-    font-size: 1.5em; }
+    font-size: 1.4em;
+    text-align: left; }
   .blogTextBubble p, .blogTextBubble ul, .blogTextBubble ol {
     text-align: left; }
   .blogTextBubble cite {
