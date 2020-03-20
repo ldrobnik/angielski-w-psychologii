@@ -236,5 +236,10 @@ export const WEBSITE_TEXT = {
     homeLink: {
         name: 'Strona główna',
         url: '/'
-    }
+    },
+    fetchErrorMessage:
+        {
+            title: 'Błąd ładowania treści',
+            content: 'Przepraszamy za usterkę. Spróbuj ponownie później.'
+        }
 };

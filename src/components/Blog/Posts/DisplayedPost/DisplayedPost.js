@@ -7,7 +7,8 @@ const DisplayedPost = props => {
 
     return(
         <Container className="lightBackground">
-            <Row>
+            <Row className="horizontallyCentered">
+                {props.post &&
                 <TextBubble
                     type="blog"
                 >
@@ -17,6 +18,7 @@ const DisplayedPost = props => {
                         className="blogPost"
                         dangerouslySetInnerHTML={{__html: props.post.content.rendered}}/>
                 </TextBubble>
+                }
             </Row>
         </Container>
     );

@@ -80,8 +80,14 @@ a {
   justify-content: center;
 }
 
-//for content centered both vertically and horizontally
+//for horizontally centered content
+.horizontallyCentered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+//for content centered both vertically and horizontally
 .centeredBothWays {
   display: flex;
   justify-content: center;

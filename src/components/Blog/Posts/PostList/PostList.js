@@ -14,7 +14,7 @@ const PostList = props => {
                 </h1>
             </Row>
             <Row className="separator"></Row>
-            <Row>
+            <Row className="horizontallyCentered">
                 {props.posts.map((post, index) => (
                     <React.Fragment
                         key={index}
@@ -24,9 +24,8 @@ const PostList = props => {
                         >
                             <h2
                                 dangerouslySetInnerHTML={{__html: post.title.rendered}}/>
-                            <div
-                                className="blogPost"
-                                dangerouslySetInnerHTML={{__html: post.excerpt.rendered}}/>
+                            {/*<div*/}
+                            {/*    dangerouslySetInnerHTML={{__html: post.excerpt.rendered}}/>*/}
                         </TextBubble>
                     </React.Fragment>
                 ))}

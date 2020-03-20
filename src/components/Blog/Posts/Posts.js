@@ -1,19 +1,20 @@
 import React, {useEffect, useState} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from "redux";
-import {Container, Row} from 'react-bootstrap';
 
-import TextBubble from '../../UI/TextBubble/TextBubble';
 import DisplayedPost from './DisplayedPost/DisplayedPost';
 import PostList from './PostList/PostList';
-import {SECTION_NAMES} from "../../../data/constants";
 import {setPageLoaded, setLoadedPosts} from "../../../actions";
+
+import {WEBSITE_TEXT} from '../../../data/constants';
 
 const Posts = props => {
 
     //Sets page as loaded after an interval
     const handleLoaded = () => {
-        setTimeout(() => {props.setPageLoaded(true)}, 500);
+        setTimeout(() => {
+            props.setPageLoaded(true)
+        }, 500);
     };
 
     //updates number of posts
@@ -40,6 +41,24 @@ const Posts = props => {
     //Wordpress API URL
     const WP_API_URL = process.env.REACT_APP_WP_API_URL;
 
+
+    //sets error message if fetching posts fails
+    const setErrorMessage = () => {
+        setPosts([
+            {
+                title: {
+                    rendered: WEBSITE_TEXT.fetchErrorMessage.title
+                },
+                content: {
+                    rendered: WEBSITE_TEXT.fetchErrorMessage.content
+                },
+                excerpt: {
+                    rendered: ''
+                }
+            }
+        ]);
+    };
+
     useEffect(() => {
 
         //loads blog posts
@@ -53,8 +72,9 @@ const Posts = props => {
                 handleLoaded(true);
                 console.log(posts);
             }).catch(err => {
-                // Error occurred
-                console.log("Error Reading data " + err);
+                //display error message in case of error
+                setErrorMessage();
+                updatePosts(1);
                 handleLoaded(true);
             });
         }
