@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import {Row} from 'react-bootstrap';
+import {Container, Row} from 'react-bootstrap';
 
 import TextBubble from '../../UI/TextBubble/TextBubble';
+import {SECTION_NAMES} from "../../../data/constants";
 
 const Posts = () => {
 
@@ -43,41 +44,48 @@ const Posts = () => {
     }, []);
 
     return (
-        <div className="lightBackground sectionContent">
-            <Row>
-                {posts &&
-                <TextBubble
-                    type="blog"
-                >
-                    <h2
-                        dangerouslySetInnerHTML={{__html: posts[0].title.rendered}}/>
-                    <div
-                        className="blogPost"
-                        dangerouslySetInnerHTML={{__html: posts[0].content.rendered}}/>
-                </TextBubble>
-                }
-            </Row>
-            <div id="lekcje"></div>
-            <Row className="separator"></Row>
-            <Row>
-                {posts.map((post, index) => (
-                    <React.Fragment
-                        key={index}
+        <React.Fragment>
+            <Container className="lightBackground sectionContent">
+                <Row>
+                    {posts &&
+                    <TextBubble
+                        type="blog"
                     >
-                        <TextBubble
-                            type="blog"
+                        <h2
+                            dangerouslySetInnerHTML={{__html: posts[0].title.rendered}}/>
+                        <div
+                            className="blogPost"
+                            dangerouslySetInnerHTML={{__html: posts[0].content.rendered}}/>
+                    </TextBubble>
+                    }
+                </Row>
+            </Container>
+            <Container className="lightBackground sectionContent">
+                <Row>
+                    <h1 id={SECTION_NAMES.blog[0].id}>
+                        {SECTION_NAMES.blog[0].name}
+                    </h1>
+                </Row>
+                <Row className="separator"></Row>
+                <Row>
+                    {posts.map((post, index) => (
+                        <React.Fragment
+                            key={index}
                         >
-                            <h2
-                                dangerouslySetInnerHTML={{__html: post.title.rendered}}/>
-                            <div
-                                className="blogPost"
-                                dangerouslySetInnerHTML={{__html: post.excerpt.rendered}}/>
-                        </TextBubble>
-                    </React.Fragment>
-                ))}
-            </Row>
-            <Row className="separator"></Row>
-        </div>
+                            <TextBubble
+                                type="blog"
+                            >
+                                <h2
+                                    dangerouslySetInnerHTML={{__html: post.title.rendered}}/>
+                                <div
+                                    className="blogPost"
+                                    dangerouslySetInnerHTML={{__html: post.excerpt.rendered}}/>
+                            </TextBubble>
+                        </React.Fragment>
+                    ))}
+                </Row>
+            </Container>
+        </React.Fragment>
     );
 };
 
