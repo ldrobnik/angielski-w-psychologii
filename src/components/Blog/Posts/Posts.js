@@ -4,6 +4,7 @@ import {bindActionCreators} from "redux";
 import {Container, Row} from 'react-bootstrap';
 
 import TextBubble from '../../UI/TextBubble/TextBubble';
+import DisplayedPost from './DisplayedPost/DisplayedPost';
 import PostList from './PostList/PostList';
 import {SECTION_NAMES} from "../../../data/constants";
 import {setPageLoaded, setLoadedPosts} from "../../../actions";
@@ -63,21 +64,9 @@ const Posts = props => {
 
     return (
         <React.Fragment>
-            <Container className="lightBackground sectionContent">
-                <Row>
-                    {posts &&
-                    <TextBubble
-                        type="blog"
-                    >
-                        <h2
-                            dangerouslySetInnerHTML={{__html: posts[0].title.rendered}}/>
-                        <div
-                            className="blogPost"
-                            dangerouslySetInnerHTML={{__html: posts[0].content.rendered}}/>
-                    </TextBubble>
-                    }
-                </Row>
-            </Container>
+            <DisplayedPost
+                post={posts[0]}
+            />
             {(props.loadedPosts > 1) && <PostList
                 posts={posts}
             />}
