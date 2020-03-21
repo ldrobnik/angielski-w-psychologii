@@ -250,11 +250,11 @@ export const WEBSITE_TEXT = {
             title: <React.Fragment>Angielski w&nbsp;psychologii</React.Fragment>,
             subtitle: <React.Fragment>Darmowe materiały do nauki języka angielskiego</React.Fragment>
         },
-        errorMessage:
-            {
-                title: 'Błąd ładowania treści',
-                content: 'Przepraszamy za usterkę. Spróbuj ponownie później.'
-            }
+        errorMessage: {
+            title: 'Błąd ładowania treści',
+            content: 'Przepraszamy za usterkę. Spróbuj ponownie później.'
+        },
+        backToTop: "Powrót"
     }
 };
 
