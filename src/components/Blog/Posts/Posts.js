@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from "redux";
-import {Container, Row} from 'react-bootstrap';
+import {Container} from 'react-bootstrap';
 
 import DisplayedPost from './DisplayedPost/DisplayedPost';
 import PostList from './PostList/PostList';
@@ -105,7 +105,7 @@ const Posts = props => {
         }
 
         loadPosts();
-    }, [WP_API_URL, updatePosts]);
+    }, [WP_API_URL]);
 
 
     useEffect(() => {
