@@ -10,10 +10,12 @@ import {
 
 //offset used for smooth scrolling
 export const OFFSET_DESKTOP = '60';
-export const OFFSET_MOBILE = '280';
+export const OFFSET_MOBILE = '360';
+
+//280
 
 //breakpoint below which the navbar collapses
-export const MOBILE_BREAKPOINT = 768;
+export const MOBILE_BREAKPOINT = 992;
 
 //section names
 export const SECTION_NAMES = {

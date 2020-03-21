@@ -72,7 +72,7 @@ const NavigationBar = (props) => {
             collapseOnSelect
             onToggle={() => setNavExpanded(!navExpanded)}
             expanded={navExpanded}
-            expand="md"
+            expand="lg"
             bg="light"
             variant="light"
             sticky="top"
