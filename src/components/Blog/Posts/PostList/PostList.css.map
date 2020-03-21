@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAGE,gBAAI;EACF,KAAK,ECHI,OAAO;EDIhB,SAAS,EAAE,GAAG;EACd,UAAU,EAAE,KAAK",
+"mappings": "AAGE,gBAAI;EACF,KAAK,ECHI,OAAO;EDIhB,SAAS,EAAE,GAAG;EACd,UAAU,EAAE,KAAK;;AAIrB,OAAQ;EACN,UAAU,EAAE,GAAG",
 "sources": ["PostList.scss","../../../../styles/_variables.scss"],
 "names": [],
 "file": "PostList.css"

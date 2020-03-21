@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from "redux";
-import {Container} from 'react-bootstrap';
+import {Container, Row} from 'react-bootstrap';
 
 import DisplayedPost from './DisplayedPost/DisplayedPost';
 import PostList from './PostList/PostList';
@@ -124,11 +124,13 @@ const Posts = props => {
                 url={url}
             />
             <Container>
-                <AnchorButton
-                    target="top"
-                    message={WEBSITE_TEXT.blog.backToTop}
-                    className="bannerButton"
-                />
+                <Row>
+                    <AnchorButton
+                        target="top"
+                        message={WEBSITE_TEXT.blog.backToTop}
+                        className="bannerButton"
+                    />
+                </Row>
             </Container>
             {(props.loadedPosts > 1) &&
             <PostList
@@ -137,6 +139,7 @@ const Posts = props => {
                 currPost={currPost}
                 url={url}
                 shortenUrl={shortenUrl}
+                id="postList"
             />}
         </React.Fragment>
     );
