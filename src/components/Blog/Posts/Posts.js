@@ -120,7 +120,7 @@ const Posts = props => {
     }, []);
 
     useEffect(() => {
-        if (posts.length > 0) {
+        if (props.pageLoaded && posts.length > 0) {
             handleLoaded();
         }
     });
