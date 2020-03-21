@@ -1,11 +1,21 @@
 import React, {useEffect} from 'react';
+import {connect} from 'react-redux';
+import {bindActionCreators} from "redux";
 import {Container, Row} from 'react-bootstrap';
 
 import TextBubble from '../../../UI/TextBubble/TextBubble';
 import AnchorButton from '../../../UI/AnchorButton/AnchorButton';
 import {STRINGS_TO_REMOVE, WEBSITE_TEXT} from "../../../../data/constants";
+import {setPageLoaded} from "../../../../actions";
 
 const DisplayedPost = props => {
+
+    //Sets page as loaded after an interval
+    const handleLoaded = () => {
+        setTimeout(() => {
+            props.setPageLoaded(true)
+        }, 800);
+    };
 
     //removes all instances of a string from another string
     const removeString = (str, find) => {
@@ -27,6 +37,12 @@ const DisplayedPost = props => {
 
     useEffect(() => {
         document.title = `${WEBSITE_TEXT.pageTitle.core} - ${props.post.title.rendered}`; //update document title
+    }, [props.post.title.rendered]);
+
+    useEffect(() => {
+        if (props.post.title.rendered.length > 1) {
+          handleLoaded(); //if post data have been obtained, turn off spinner
+        };
     }, [props.post.title.rendered]);
 
     return(
@@ -53,4 +69,10 @@ const DisplayedPost = props => {
     );
 };
 
-export default DisplayedPost;
+const mapDispatchToProps = dispatch => {
+    return bindActionCreators({
+        setPageLoaded
+    }, dispatch);
+};
+
+export default connect(null, mapDispatchToProps)(DisplayedPost);

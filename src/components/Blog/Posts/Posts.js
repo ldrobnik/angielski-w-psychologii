@@ -56,9 +56,9 @@ const Posts = props => {
 
     //Sets page as loaded after an interval
     const handleLoaded = () => {
-        setTimeout(() => {
-            props.setPageLoaded(true)
-        }, 800);
+        // setTimeout(() => {
+        //     props.setPageLoaded(true)
+        // }, 800);
     };
 
     //updates number of posts
@@ -105,21 +105,18 @@ const Posts = props => {
             }).then(posts => {
                 setPosts(posts); // Update state with fetched posts
                 updatePosts(posts.length); //update state with the number of fetched posts
-                handleLoaded(true); //turn off spinner
             }).catch(err => {
                 setErrorMessage(); //display error message in case of error
                 updatePosts(1); //so that only error message is displayed
-                handleLoaded(true); //turn of spinner
             });
         }
 
         loadPosts();
-    }, [WP_API_URL, handleLoaded, updatePosts]);
+    }, [WP_API_URL, updatePosts]);
 
 
     useEffect(() => {
         setUrl(getUrl()); //update currently displayed URl whenever it changes
-        handleLoaded(); //turn off spinner after a while
     }, [props.match.params]);
 
     useEffect(() => {
