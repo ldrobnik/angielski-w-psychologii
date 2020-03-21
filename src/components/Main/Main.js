@@ -10,7 +10,7 @@ import Translations from '../Translations/Translations';
 import Offer from '../Offer/Offer';
 
 import Contact from '../Contact/Contact';
-import {SECTION_NAMES} from "../../data/constants";
+import {SECTION_NAMES, WEBSITE_TEXT} from "../../data/constants";
 
 const Main = props => {
 
@@ -21,6 +21,7 @@ const Main = props => {
 
     useEffect(() => {
         setMainDisplayed(); //set the main page as displayed
+        document.title = `${WEBSITE_TEXT.pageTitle.core} - ${WEBSITE_TEXT.pageTitle.core}`; //update document title
     }, []);
 
     return (

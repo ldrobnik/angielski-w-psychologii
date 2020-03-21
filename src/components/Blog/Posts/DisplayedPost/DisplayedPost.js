@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Container, Row} from 'react-bootstrap';
 
 import TextBubble from '../../../UI/TextBubble/TextBubble';
-import {STRINGS_TO_REMOVE} from "../../../../data/constants";
+import {STRINGS_TO_REMOVE, WEBSITE_TEXT} from "../../../../data/constants";
 
 const DisplayedPost = props => {
 
@@ -23,6 +23,11 @@ const DisplayedPost = props => {
         //return cleaned up content
         return modifiedContent;
     };
+
+    useEffect(() => {
+        document.title = `${WEBSITE_TEXT.pageTitle.core} - ${props.post.title.rendered}`; //update document title
+    }, [props.post.title.rendered]);
+
     return(
         <Container className="lightBackground">
             <Row className="horizontallyCentered">
