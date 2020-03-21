@@ -48,15 +48,22 @@
   -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5); }
-  .blogTextBubble p, .blogTextBubble blockquote, .blogTextBubble h2 {
+  @media all and (max-width: 500px) {
+    .blogTextBubble {
+      padding: 45px 10px;
+      margin: 20px 0; } }
+  .blogTextBubble p, .blogTextBubble h2 {
     padding: 0 15px; }
+    @media all and (max-width: 500px) {
+      .blogTextBubble p, .blogTextBubble h2 {
+        padding: 0 10px; } }
   .blogTextBubble ol, .blogTextBubble ul {
     margin-left: 3em;
     margin-right: 3em; }
     @media all and (max-width: 768px) {
       .blogTextBubble ol, .blogTextBubble ul {
-        margin-left: 1.5em;
-        margin-right: 1.5em; } }
+        margin-left: 0.5em;
+        margin-right: 1em; } }
   .blogTextBubble ul {
     list-style: none;
     /* Remove default bullets */ }
@@ -127,6 +134,9 @@
     display: block;
     margin-left: 1em;
     padding: 1em 3em 0.5em 2em; }
+    @media all and (max-width: 500px) {
+      .blogTextBubble blockquote {
+        padding: 1em 1em 0.5em 1.5em; } }
 
 .hoverableTextBubble {
   border: #9d0059 1px solid;

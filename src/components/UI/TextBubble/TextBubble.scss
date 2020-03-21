@@ -58,9 +58,19 @@
   text-align: center;
   @include regularShadow;
 
+  @media all and (max-width: 500px) {
+    padding: 45px 10px;
+    margin: 20px 0;
+  }
 
-  p, blockquote, h2 {
+
+  p, h2 {
     padding: 0 15px;
+
+    @media all and (max-width: 500px) {
+      padding: 0 10px;
+    }
+
   }
 
   ol, ul {
@@ -68,8 +78,8 @@
     margin-right: 3em;
 
     @media all and (max-width: 768px) {
-      margin-left: 1.5em;
-      margin-right: 1.5em;
+      margin-left: 0.5em;
+      margin-right: 1em;
     }
 
   }
@@ -168,7 +178,6 @@
     }
   }
 
-
   p, ul, ol {
     text-align: left;
   }
@@ -180,6 +189,11 @@
     display: block;
     margin-left: 1em;
     padding: 1em 3em 0.5em 2em;
+
+    @media all and (max-width: 500px) {
+      padding: 1em 1em 0.5em 1.5em;
+    }
+
     }
 }
 
