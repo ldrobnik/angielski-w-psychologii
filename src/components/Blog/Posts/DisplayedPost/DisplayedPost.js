@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from "redux";
-import {Container, Row} from 'react-bootstrap';
+import {Container, Row, Col} from 'react-bootstrap';
 
 import TextBubble from '../../../UI/TextBubble/TextBubble';
 import {STRINGS_TO_REMOVE, WEBSITE_TEXT} from "../../../../data/constants";
@@ -40,24 +40,27 @@ const DisplayedPost = props => {
 
     useEffect(() => {
         if (props.post.title.rendered.length > 1) {
-          handleLoaded(); //if post data have been obtained, turn off spinner
-        };
+            handleLoaded(); //if post data have been obtained, turn off spinner
+        }
+        ;
     }, [props.post.title.rendered]);
 
-    return(
+    return (
         <Container className="lightBackground horizontallyCentered">
             <Row className="horizontallyCentered">
-                {props.post &&
-                <TextBubble
-                    type="blog"
-                >
-                    <h2
-                        dangerouslySetInnerHTML={{__html: props.post.title.rendered}}/>
-                    <div
-                        className="blogPost"
-                        dangerouslySetInnerHTML={{__html: cleanUpPost(props.post.content.rendered)}}/>
-                </TextBubble>
-                }
+                <Col>
+                    {props.post &&
+                    <TextBubble
+                        type="blog"
+                    >
+                        <h2
+                            dangerouslySetInnerHTML={{__html: props.post.title.rendered}}/>
+                        <div
+                            className="blogPost"
+                            dangerouslySetInnerHTML={{__html: cleanUpPost(props.post.content.rendered)}}/>
+                    </TextBubble>
+                    }
+                </Col>
             </Row>
         </Container>
     );

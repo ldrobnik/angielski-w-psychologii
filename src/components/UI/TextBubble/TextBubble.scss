@@ -66,6 +66,12 @@
   ol, ul {
     margin-left: 3em;
     margin-right: 3em;
+
+    @media all and (max-width: 768px) {
+      margin-left: 1.5em;
+      margin-right: 1.5em;
+    }
+
   }
 
   ul {

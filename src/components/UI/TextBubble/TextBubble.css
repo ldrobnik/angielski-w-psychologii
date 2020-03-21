@@ -53,6 +53,10 @@
   .blogTextBubble ol, .blogTextBubble ul {
     margin-left: 3em;
     margin-right: 3em; }
+    @media all and (max-width: 768px) {
+      .blogTextBubble ol, .blogTextBubble ul {
+        margin-left: 1.5em;
+        margin-right: 1.5em; } }
   .blogTextBubble ul {
     list-style: none;
     /* Remove default bullets */ }

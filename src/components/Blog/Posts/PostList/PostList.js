@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from "redux";
 import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
-import {Container, Row} from 'react-bootstrap';
+import {Container, Row, Col} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import './PostList.css';
 
@@ -82,15 +82,16 @@ const PostList = props => {
                 bottomOffset={animationOffset}
             />
             <Row className="horizontallyCentered">
-                <AnimatedList
-                    pose={postsVisible ? 'visible' : 'hidden'}
-                >
-                    {props.posts.map((post, k) => (
-                        <AnimatedPost
-                            pose={postsVisible ? 'visible' : 'hidden'}
-                            key={k}
-                        >
-                            {(props.currPost !== k) &&
+                <Col>
+                    <AnimatedList
+                        pose={postsVisible ? 'visible' : 'hidden'}
+                    >
+                        {props.posts.map((post, k) => (
+                            <AnimatedPost
+                                pose={postsVisible ? 'visible' : 'hidden'}
+                                key={k}
+                            >
+                                {(props.currPost !== k) &&
                                 <Link
                                     to={props.shortenUrl(post.link)}
                                     onClick={() => handleLoaded()}
@@ -105,10 +106,11 @@ const PostList = props => {
                                             dangerouslySetInnerHTML={{__html: handleExcerpt(post.excerpt.rendered)}}/>
                                     </TextBubble>
                                 </Link>
-                            }
-                        </AnimatedPost>
-                    ))}
-                </AnimatedList>
+                                }
+                            </AnimatedPost>
+                        ))}
+                    </AnimatedList>
+                </Col>
             </Row>
             <AnchorButton
                 target="top"
