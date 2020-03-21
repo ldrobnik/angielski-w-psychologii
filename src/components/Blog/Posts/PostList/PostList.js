@@ -40,7 +40,7 @@ const PostList = props => {
     const [postsVisible, setPostsVisible] = useState(false);
 
 // offset for triggering animation
-    const animationOffset = "30%";
+    const animationOffset = "-20%";
 
     //shows the posts
     const showPosts = () => {
@@ -86,25 +86,26 @@ const PostList = props => {
                     pose={postsVisible ? 'visible' : 'hidden'}
                 >
                     {props.posts.map((post, k) => (
-                        (props.currPost !== k) &&
                         <AnimatedPost
                             pose={postsVisible ? 'visible' : 'hidden'}
                             key={k}
                         >
-                            <Link
-                                to={props.shortenUrl(post.link)}
-                                onClick={() => handleLoaded()}
-                            >
-                                <TextBubble
-                                    type="hoverable"
+                            {(props.currPost !== k) &&
+                                <Link
+                                    to={props.shortenUrl(post.link)}
+                                    onClick={() => handleLoaded()}
                                 >
-                                    <h2
-                                        dangerouslySetInnerHTML={{__html: post.title.rendered}}/>
-                                    <div
-                                        className="postExcerpt"
-                                        dangerouslySetInnerHTML={{__html: handleExcerpt(post.excerpt.rendered)}}/>
-                                </TextBubble>
-                            </Link>
+                                    <TextBubble
+                                        type="hoverable"
+                                    >
+                                        <h2
+                                            dangerouslySetInnerHTML={{__html: post.title.rendered}}/>
+                                        <div
+                                            className="postExcerpt"
+                                            dangerouslySetInnerHTML={{__html: handleExcerpt(post.excerpt.rendered)}}/>
+                                    </TextBubble>
+                                </Link>
+                            }
                         </AnimatedPost>
                     ))}
                 </AnimatedList>

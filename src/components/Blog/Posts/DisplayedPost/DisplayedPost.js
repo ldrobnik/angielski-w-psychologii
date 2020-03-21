@@ -42,7 +42,7 @@ const DisplayedPost = props => {
         if (props.post.title.rendered.length > 1) {
           handleLoaded(); //if post data have been obtained, turn off spinner
         };
-    }, [props.post.title.rendered, handleLoaded]);
+    }, [props.post.title.rendered]);
 
     return(
         <Container className="lightBackground horizontallyCentered">

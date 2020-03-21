@@ -114,7 +114,7 @@ const Posts = props => {
 
     useEffect(() => {
         setCurrPost(checkWhichPost(getUrl())); //update the currently displayed post
-    });
+    }, [props.match.params]);
 
     return (
         <React.Fragment>
