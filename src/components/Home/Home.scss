@@ -25,8 +25,8 @@ a {
   }
 
   &:hover {
-    color: $themeColor;
-    text-decoration: none;
+    color: $themeColor !important;
+    text-decoration: none !important;
   }
 
   &:active {

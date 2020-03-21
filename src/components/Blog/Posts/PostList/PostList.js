@@ -35,7 +35,7 @@ const PostList = props => {
                 {props.posts.map((post, index) => (
                     <Link
                         to={props.shortenUrl(post.link)}
-                        className={(props.shortenUrl(post.link).includes(props.url)) ? 'blogLink translucent' : 'blogLink'}
+                        className={(props.shortenUrl(post.link).includes(props.url) || (props.url === 'materialy/' && index === 0)) ? 'blogLink translucent' : 'blogLink'}
                         key={index}
                         onClick={() => handleLoaded()}
                     >
