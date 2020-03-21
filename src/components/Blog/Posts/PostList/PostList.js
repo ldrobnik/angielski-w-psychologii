@@ -86,6 +86,7 @@ const PostList = props => {
                     pose={postsVisible ? 'visible' : 'hidden'}
                 >
                     {props.posts.map((post, k) => (
+                        (props.currPost !== k) &&
                         <AnimatedPost
                             pose={postsVisible ? 'visible' : 'hidden'}
                             key={k}
@@ -95,7 +96,7 @@ const PostList = props => {
                                 onClick={() => handleLoaded()}
                             >
                                 <TextBubble
-                                    type={(props.currPost === k) ? "greyedOut" : "hoverable"}
+                                    type="hoverable"
                                 >
                                     <h2
                                         dangerouslySetInnerHTML={{__html: post.title.rendered}}/>
