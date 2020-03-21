@@ -72,9 +72,11 @@ const PostList = props => {
     return (
         <Container className="lightBackground sectionContent">
             <Row>
-                <h1 id={SECTION_NAMES.blog[0].id}>
-                    {SECTION_NAMES.blog[0].name}
-                </h1>
+                <Col>
+                    <h1 id={SECTION_NAMES.blog[0].id}>
+                        {SECTION_NAMES.blog[0].name}
+                    </h1>
+                </Col>
             </Row>
             <Row className="separator"></Row>
             <Waypoint
