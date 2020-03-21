@@ -44,13 +44,13 @@ const NavigationBar = (props) => {
 
     const routerLink = props.mainPage ?
         {
-            name: WEBSITE_TEXT.blogLink.name,
-            url: WEBSITE_TEXT.blogLink.url
+            name: WEBSITE_TEXT.navbar.blogLink.name,
+            url: WEBSITE_TEXT.navbar.blogLink.url
         }
         :
         {
-            name: WEBSITE_TEXT.homeLink.name,
-            url: WEBSITE_TEXT.homeLink.url
+            name: WEBSITE_TEXT.navbar.homeLink.name,
+            url: WEBSITE_TEXT.navbar.homeLink.url
         }
     ;
 

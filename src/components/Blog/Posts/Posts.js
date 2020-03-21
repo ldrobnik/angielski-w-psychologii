@@ -71,10 +71,10 @@ const Posts = props => {
         setPosts([
             {
                 title: {
-                    rendered: WEBSITE_TEXT.fetchErrorMessage.title
+                    rendered: WEBSITE_TEXT.blog.errorMessage.title
                 },
                 content: {
-                    rendered: WEBSITE_TEXT.fetchErrorMessage.content
+                    rendered: WEBSITE_TEXT.blog.errorMessage.content
                 },
                 excerpt: {
                     rendered: ''

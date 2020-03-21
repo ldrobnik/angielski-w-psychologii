@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import {Container, Row} from 'react-bootstrap';
 
 import TextBubble from '../../../UI/TextBubble/TextBubble';
+import AnchorButton from '../../../UI/AnchorButton/AnchorButton';
 import {STRINGS_TO_REMOVE, WEBSITE_TEXT} from "../../../../data/constants";
 
 const DisplayedPost = props => {

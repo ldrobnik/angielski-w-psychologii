@@ -54,6 +54,20 @@ export const WEBSITE_TEXT = {
         core: 'Angielski w psychologii',
         main: 'Katarzyna Łasocha-Nowak'
     },
+    navbar: {
+        blogLink: {
+            name: 'Materiały edukacyjne',
+            url: '/materialy/'
+        },
+        homeLink: {
+            name: 'Strona główna',
+            url: '/'
+        },
+    },
+    homeLink: {
+        name: 'Strona główna',
+        url: '/'
+    },
     topBanner: {
         title: <React.Fragment>Angielski w&nbsp;psychologii</React.Fragment>,
         subtitle: <React.Fragment>Język angielski dla psychologów, psychoterapeutów i&nbsp;osób zainteresowanych
@@ -231,23 +245,17 @@ export const WEBSITE_TEXT = {
         },
         copyrightNotice: <React.Fragment>&copy; 2020 Łukasz Drobnik & Katarzyna Łasocha-Nowak</React.Fragment>
     },
-    blogBanner: {
-        title: <React.Fragment>Angielski w&nbsp;psychologii</React.Fragment>,
-        subtitle: <React.Fragment>Darmowe materiały do nauki języka angielskiego</React.Fragment>
-    },
-    blogLink: {
-        name: 'Materiały edukacyjne',
-        url: '/materialy/'
-    },
-    homeLink: {
-        name: 'Strona główna',
-        url: '/'
-    },
-    fetchErrorMessage:
-        {
-            title: 'Błąd ładowania treści',
-            content: 'Przepraszamy za usterkę. Spróbuj ponownie później.'
-        }
+    blog: {
+        banner: {
+            title: <React.Fragment>Angielski w&nbsp;psychologii</React.Fragment>,
+            subtitle: <React.Fragment>Darmowe materiały do nauki języka angielskiego</React.Fragment>
+        },
+        errorMessage:
+            {
+                title: 'Błąd ładowania treści',
+                content: 'Przepraszamy za usterkę. Spróbuj ponownie później.'
+            }
+    }
 };
 
 //array containing unused Wordpress classes to be removed blog content
