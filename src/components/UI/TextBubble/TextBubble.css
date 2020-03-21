@@ -62,6 +62,20 @@
     display: inline-block;
     width: 1em;
     margin-left: -1em; }
+  .blogTextBubble ol {
+    list-style: none;
+    counter-reset: li; }
+  .blogTextBubble ol li::before {
+    content: "." counter(li);
+    color: #9d0059;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1.5em;
+    margin-right: 0.5em;
+    text-align: right;
+    direction: rtl; }
+  .blogTextBubble ol li {
+    counter-increment: li; }
   .blogTextBubble a {
     color: #9d0059;
     text-decoration: none;

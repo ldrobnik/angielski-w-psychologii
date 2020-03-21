@@ -80,6 +80,26 @@
     margin-left: -1em;
   }
 
+  ol {
+    list-style: none;
+    counter-reset: li;
+  }
+
+  ol li::before {
+    content: "." counter(li);
+    color: $themeColor;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1.5em;
+    margin-right: 0.5em;
+    text-align: right;
+    direction: rtl;
+  }
+
+  ol li {
+    counter-increment: li;
+  }
+
   a {
     color: $themeColor;
     text-decoration: none;

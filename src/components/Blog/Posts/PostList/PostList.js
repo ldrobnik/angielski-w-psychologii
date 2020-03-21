@@ -26,7 +26,7 @@ const AnimatedPost = posed.div({
         delay: 600,
         transition: {
             type: 'spring',
-            stiffness: 90
+            stiffness: 60
         }
     },
     hidden: {
@@ -66,8 +66,8 @@ const PostList = props => {
     };
 
     useEffect(() => {
-        console.log(props.currPost);
-    }, [props]);
+        setPostsVisible(false); //turn off posts so the animation can play again
+    }, [props.match.params]);
 
     return (
         <Container className="lightBackground sectionContent">
