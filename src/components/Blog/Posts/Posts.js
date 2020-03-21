@@ -58,7 +58,7 @@ const Posts = props => {
     const handleLoaded = () => {
         setTimeout(() => {
             props.setPageLoaded(true)
-        }, 500);
+        }, 800);
     };
 
     //updates number of posts
@@ -119,15 +119,11 @@ const Posts = props => {
         loadPosts();
     }, []);
 
-    useEffect(() => {
-        if (posts && posts.length > 0) {
-            handleLoaded();
-        }
-    });
 
     useEffect(() => {
         setUrl(getUrl()); //update currently displayed URl whenever it changes
-    }, [props.match.params.id]);
+        handleLoaded(); //turn off spinner after a while
+    }, [props.match.params]);
 
     useEffect(() => {
         setCurrPost(checkWhichPost(getUrl())); //update the currently displayed post
