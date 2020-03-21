@@ -56,8 +56,8 @@ export const WEBSITE_TEXT = {
     },
     navbar: {
         blogLink: {
-            name: 'Materiały edukacyjne',
-            url: '/materialy/'
+            name: 'Moje lekcje',
+            url: '/lekcje/'
         },
         homeLink: {
             name: 'Strona główna',
@@ -248,7 +248,7 @@ export const WEBSITE_TEXT = {
     blog: {
         banner: {
             title: <React.Fragment>Angielski w&nbsp;psychologii</React.Fragment>,
-            subtitle: <React.Fragment>Darmowe materiały do nauki języka angielskiego</React.Fragment>
+            subtitle: <React.Fragment>Moje lekcje – materiały do pobrania</React.Fragment>
         },
         errorMessage: {
             title: 'Błąd ładowania treści',

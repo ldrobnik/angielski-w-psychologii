@@ -81,10 +81,10 @@ const Posts = props => {
     const shortenUrl = (url) => {
         if (url) {
             let shortenedUrl = url.split('.com')[1]; //split at the end of the Wordpress adress and extract the rest
-            shortenedUrl = '/materialy' + shortenedUrl;
+            shortenedUrl = '/lekcje' + shortenedUrl;
             return shortenedUrl;
         } else {
-            return '/materialy/'
+            return '/lekcje/'
         }
     };
 
