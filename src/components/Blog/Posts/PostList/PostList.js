@@ -15,22 +15,23 @@ import {setPageLoaded} from "../../../../actions";
 const AnimatedList = posed.div({
     visible: {
         delayChildren: 100,
-        staggerChildren: 350
+        staggerChildren: 150
     }
 });
 
-const AnimatedMessage = posed.div({
+const AnimatedPost = posed.div({
     visible: {
-        x: '0%',
-        opacity: '1',
+        transform: 'scale(1, 1)',
+        opacity: 1,
+        delay: 400,
         transition: {
             type: 'spring',
             stiffness: 80
         }
     },
     hidden: {
-        x: '300%',
-        opacity: '0'
+        transform: 'scale(1, 0)',
+        opacity: 0
     }
 });
 
@@ -40,7 +41,7 @@ const PostList = props => {
     const [postsVisible, setPostsVisible] = useState(false);
 
 
-    //shows the messages
+    //shows the posts
     const showPosts = () => {
         setPostsVisible(true);
     };
@@ -63,7 +64,11 @@ const PostList = props => {
         return modifiedExcerpt.split('<div>')[0].concat(WEBSITE_TEXT.blog.readMore); //extract excerpt until the pair tags & replace the cut part with 'read  more' link
     };
 
-    return(
+    useEffect(() => {
+        setTimeout(() => showPosts(), 2000);
+    }, []);
+
+    return (
         <Container className="lightBackground sectionContent">
             <Row>
                 <h1 id={SECTION_NAMES.blog[0].id}>
@@ -72,24 +77,32 @@ const PostList = props => {
             </Row>
             <Row className="separator"></Row>
             <Row className="horizontallyCentered">
-                {props.posts.map((post, index) => (
-                    <Link
-                        to={props.shortenUrl(post.link)}
-                        className={(props.currPost === index) ? 'translucent' : ''}
-                        key={index}
-                        onClick={() => handleLoaded()}
-                    >
-                        <TextBubble
-                            type="hoverable"
+                <AnimatedList
+                    pose={postsVisible ? 'visible' : 'hidden'}
+                >
+                    {props.posts.map((post, k) => (
+                        <AnimatedPost
+                            pose={postsVisible ? 'visible' : 'hidden'}
+                            key={k}
                         >
-                            <h2
-                                dangerouslySetInnerHTML={{__html: post.title.rendered}}/>
-                            <div
-                                className="postExcerpt"
-                                dangerouslySetInnerHTML={{__html: handleExcerpt(post.excerpt.rendered)}}/>
-                        </TextBubble>
-                    </Link>
-                ))}
+                            <Link
+                                to={props.shortenUrl(post.link)}
+                                className={(props.currPost === k) ? 'translucent' : ''}
+                                onClick={() => handleLoaded()}
+                            >
+                                <TextBubble
+                                    type="hoverable"
+                                >
+                                    <h2
+                                        dangerouslySetInnerHTML={{__html: post.title.rendered}}/>
+                                    <div
+                                        className="postExcerpt"
+                                        dangerouslySetInnerHTML={{__html: handleExcerpt(post.excerpt.rendered)}}/>
+                                </TextBubble>
+                            </Link>
+                        </AnimatedPost>
+                    ))}
+                </AnimatedList>
             </Row>
             <AnchorButton
                 target="top"
