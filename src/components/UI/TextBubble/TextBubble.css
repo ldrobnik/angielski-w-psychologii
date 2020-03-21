@@ -111,7 +111,7 @@
 
 .hoverableTextBubble {
   border: #9d0059 1px solid;
-  padding: 45px 6vw;
+  padding: 25px 6vw;
   margin: 20px 10px;
   font-size: 1.1em;
   background-color: #f8f9fa;
@@ -126,9 +126,12 @@
   .hoverableTextBubble p, .hoverableTextBubble h2 {
     padding: 0 15px; }
   .hoverableTextBubble p {
-    text-align: left; }
+    text-align: left;
+    font-size: 0.8em; }
   .hoverableTextBubble h2 {
-    color: #9d0059; }
+    color: #9d0059;
+    font-size: 1.6em;
+    margin-bottom: 0.6em; }
   .hoverableTextBubble a {
     color: #9d0059;
     text-decoration: none;

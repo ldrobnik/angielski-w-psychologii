@@ -158,7 +158,7 @@
 
 .hoverableTextBubble {
   border: $themeBorder;
-  padding: 45px 6vw;
+  padding: 25px 6vw;
   margin: 20px 10px;
   font-size: 1.1em;
   background-color: $lightColor;
@@ -177,10 +177,13 @@
 
   p {
     text-align: left;
+    font-size: 0.8em;
   }
 
   h2 {
     color: $themeColor;
+    font-size: 1.6em;
+    margin-bottom: 0.6em;
   }
 
   a {

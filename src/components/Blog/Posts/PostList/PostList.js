@@ -1,6 +1,7 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from "redux";
+import posed from 'react-pose';
 import {Container, Row} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import './PostList.css';
@@ -10,7 +11,39 @@ import AnchorButton from '../../../UI/AnchorButton/AnchorButton';
 import {SECTION_NAMES, WEBSITE_TEXT} from "../../../../data/constants";
 import {setPageLoaded} from "../../../../actions";
 
+/* POSE */
+const AnimatedList = posed.div({
+    visible: {
+        delayChildren: 100,
+        staggerChildren: 350
+    }
+});
+
+const AnimatedMessage = posed.div({
+    visible: {
+        x: '0%',
+        opacity: '1',
+        transition: {
+            type: 'spring',
+            stiffness: 80
+        }
+    },
+    hidden: {
+        x: '300%',
+        opacity: '0'
+    }
+});
+
 const PostList = props => {
+
+    //specifies whether text links should be visible
+    const [postsVisible, setPostsVisible] = useState(false);
+
+
+    //shows the messages
+    const showPosts = () => {
+        setPostsVisible(true);
+    };
 
     //Sets page status as not loaded
     const handleLoaded = () => {
