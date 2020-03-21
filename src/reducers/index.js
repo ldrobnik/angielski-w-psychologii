@@ -5,7 +5,8 @@ const initialState = {
     pageLoaded: false,
     activeSection: '',
     mainDisplayed: true,
-    loadedPosts: 0
+    loadedPosts: 0,
+    currPost: 0
 };
 
 const reducer = (state = initialState, action) => {
@@ -34,6 +35,11 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 loadedPosts: action.loadedPosts
+            };
+        case actionTypes.SET_CURR_POST:
+            return {
+                ...state,
+                currPost: action.currPost
             };
         default:
             return state;
