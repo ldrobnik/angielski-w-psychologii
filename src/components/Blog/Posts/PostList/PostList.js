@@ -16,14 +16,19 @@ const PostList = props => {
         props.setPageLoaded(false);
     };
 
-    //removes 'read more' button from Worpdress excerpt
-    const handleExcerpt = (excerpt) => {
-        return excerpt.split("<div>")[0];
+    //replaces the last occurence of a string with another string
+    const replaceLastOcc = (str, find, replace) => {
+        const findIndex = str.lastIndexOf(find); //the index of the phrase to be replaced
+        const findLength = find.length; //the length to be replaced
+        return str.substring(0, findIndex).concat(replace, str.substring(findIndex + findLength));
     };
 
-    useEffect(() => {
-        console.log(props.url, props.shortenUrl(props.posts[0].link));
-    });
+    //removes 'read more' button from Worpdress excerpt
+    const handleExcerpt = (excerpt) => {
+        let modifiedExcerpt = replaceLastOcc(excerpt, '</p>', '&hellip;</p>'); //excerpt with added ellipsis at the end
+        return modifiedExcerpt.split('<div>')[0].concat(WEBSITE_TEXT.blog.readMore); //extract excerpt until the pair tags & replace the cut part with 'read  more' link
+    };
+
     return(
         <Container className="lightBackground sectionContent">
             <Row>

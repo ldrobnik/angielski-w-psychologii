@@ -125,6 +125,8 @@
     background-color: #d00076; }
   .hoverableTextBubble p, .hoverableTextBubble h2 {
     padding: 0 15px; }
+  .hoverableTextBubble p {
+    text-align: left; }
   .hoverableTextBubble h2 {
     color: #9d0059; }
   .hoverableTextBubble a {

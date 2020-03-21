@@ -254,7 +254,8 @@ export const WEBSITE_TEXT = {
             title: 'Błąd ładowania treści',
             content: 'Przepraszamy za usterkę. Spróbuj ponownie później.'
         },
-        backToTop: "Powrót"
+        backToTop: "Powrót",
+        readMore: '<div className="readMore">Przejdź do lekcji</div>'
     }
 };
 

@@ -107,7 +107,6 @@ const Posts = props => {
                 setPosts(posts);
                 updatePosts(posts.length);
                 handleLoaded(true);
-                console.log(posts);
             }).catch(err => {
                 //display error message in case of error
                 setErrorMessage();
