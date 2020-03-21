@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from "redux";
 import posed from 'react-pose';
+import {Waypoint} from "react-waypoint";
 import {Container, Row} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import './PostList.css';
@@ -22,24 +23,24 @@ const AnimatedList = posed.div({
 const AnimatedPost = posed.div({
     visible: {
         transform: 'scale(1, 1)',
-        opacity: 1,
-        delay: 400,
+        delay: 600,
         transition: {
             type: 'spring',
-            stiffness: 80
+            stiffness: 90
         }
     },
     hidden: {
-        transform: 'scale(1, 0)',
-        opacity: 0
+        transform: 'scale(1, 0)'
     }
 });
 
 const PostList = props => {
 
-    //specifies whether text links should be visible
+    //specifies whether blog posts should be visible
     const [postsVisible, setPostsVisible] = useState(false);
 
+// offset for triggering animation
+    const animationOffset = "30%";
 
     //shows the posts
     const showPosts = () => {
@@ -65,8 +66,8 @@ const PostList = props => {
     };
 
     useEffect(() => {
-        setTimeout(() => showPosts(), 2000);
-    }, []);
+        console.log(props.currPost);
+    }, [props]);
 
     return (
         <Container className="lightBackground sectionContent">
@@ -76,6 +77,10 @@ const PostList = props => {
                 </h1>
             </Row>
             <Row className="separator"></Row>
+            <Waypoint
+                onEnter={() => showPosts()}
+                bottomOffset={animationOffset}
+            />
             <Row className="horizontallyCentered">
                 <AnimatedList
                     pose={postsVisible ? 'visible' : 'hidden'}
@@ -87,11 +92,10 @@ const PostList = props => {
                         >
                             <Link
                                 to={props.shortenUrl(post.link)}
-                                className={(props.currPost === k) ? 'translucent' : ''}
                                 onClick={() => handleLoaded()}
                             >
                                 <TextBubble
-                                    type="hoverable"
+                                    type={(props.currPost === k) ? "greyedOut" : "hoverable"}
                                 >
                                     <h2
                                         dangerouslySetInnerHTML={{__html: post.title.rendered}}/>
