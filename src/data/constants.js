@@ -255,7 +255,7 @@ export const WEBSITE_TEXT = {
             content: 'Przepraszamy za usterkę. Spróbuj ponownie później.'
         },
         backToTop: "Powrót",
-        readMore: '<div className="readMore">Przejdź do lekcji</div>'
+        readMore: '<div>Czytaj więcej</div>'
     }
 };
 

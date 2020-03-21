@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from "redux";
 import {Container, Row} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
+import './PostList.css';
 
 import TextBubble from '../../../UI/TextBubble/TextBubble';
 import AnchorButton from '../../../UI/AnchorButton/AnchorButton';
@@ -41,7 +42,7 @@ const PostList = props => {
                 {props.posts.map((post, index) => (
                     <Link
                         to={props.shortenUrl(post.link)}
-                        className={(props.currPost === index) && 'translucent'}
+                        className={(props.currPost === index) ? 'translucent' : ''}
                         key={index}
                         onClick={() => handleLoaded()}
                     >
@@ -51,6 +52,7 @@ const PostList = props => {
                             <h2
                                 dangerouslySetInnerHTML={{__html: post.title.rendered}}/>
                             <div
+                                className="postExcerpt"
                                 dangerouslySetInnerHTML={{__html: handleExcerpt(post.excerpt.rendered)}}/>
                         </TextBubble>
                     </Link>

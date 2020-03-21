@@ -1,9 +1,10 @@
 @import '../../../../styles/common';
 
-.blogLink {
-  transition: background-color 1s;
+.postExcerpt {
 
-  &:hover {
-    background-color: $themeColor !important;
+  div {
+    color: $themeColor;
+    font-size: 1.2em;
+    margin-top: 5px;
   }
 }

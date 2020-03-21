@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAEA,SAAU;EACR,UAAU,EAAE,mBAAmB;EAE/B,eAAQ;IACN,gBAAgB,EAAE,kBAAsB",
-"sources": ["PostList.scss"],
+"mappings": "AAIE,gBAAI;EACF,KAAK,ECJI,OAAO;EDKhB,SAAS,EAAE,KAAK;EAChB,UAAU,EAAE,GAAG",
+"sources": ["PostList.scss","../../../../styles/_variables.scss"],
 "names": [],
 "file": "PostList.css"
 }

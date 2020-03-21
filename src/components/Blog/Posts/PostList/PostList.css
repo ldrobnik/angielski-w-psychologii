@@ -1,6 +1,6 @@
-.blogLink {
-  transition: background-color 1s; }
-  .blogLink:hover {
-    background-color: #9d0059 !important; }
+.postExcerpt div {
+  color: #9d0059;
+  font-size: 1.2em;
+  margin-top: 5px; }
 
 /*# sourceMappingURL=PostList.css.map */
