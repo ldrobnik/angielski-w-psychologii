@@ -50,6 +50,10 @@ export const SECTION_NAMES = {
 
 //Text used on the website
 export const WEBSITE_TEXT = {
+    pageTitle: {
+        core: 'Angielski w psychologii',
+        main: 'Katarzyna Łasocha-Nowak'
+    },
     topBanner: {
         title: <React.Fragment>Angielski w&nbsp;psychologii</React.Fragment>,
         subtitle: <React.Fragment>Język angielski dla psychologów, psychoterapeutów i&nbsp;osób zainteresowanych
