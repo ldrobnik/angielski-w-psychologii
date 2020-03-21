@@ -44,6 +44,11 @@ const DisplayedPost = props => {
                 </TextBubble>
                 }
             </Row>
+            <AnchorButton
+                target="top"
+                message={WEBSITE_TEXT.blog.backToTop}
+                className="bannerButton"
+            />
         </Container>
     );
 };
