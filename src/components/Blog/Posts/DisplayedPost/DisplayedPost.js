@@ -4,7 +4,6 @@ import {bindActionCreators} from "redux";
 import {Container, Row} from 'react-bootstrap';
 
 import TextBubble from '../../../UI/TextBubble/TextBubble';
-import AnchorButton from '../../../UI/AnchorButton/AnchorButton';
 import {STRINGS_TO_REMOVE, WEBSITE_TEXT} from "../../../../data/constants";
 import {setPageLoaded} from "../../../../actions";
 
@@ -43,7 +42,7 @@ const DisplayedPost = props => {
         if (props.post.title.rendered.length > 1) {
           handleLoaded(); //if post data have been obtained, turn off spinner
         };
-    }, [props.post.title.rendered]);
+    }, [props.post.title.rendered, handleLoaded]);
 
     return(
         <Container className="lightBackground horizontallyCentered">
@@ -60,11 +59,6 @@ const DisplayedPost = props => {
                 </TextBubble>
                 }
             </Row>
-            <AnchorButton
-                target="top"
-                message={WEBSITE_TEXT.blog.backToTop}
-                className="bannerButton"
-            />
         </Container>
     );
 };

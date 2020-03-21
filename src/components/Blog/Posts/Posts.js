@@ -1,12 +1,14 @@
 import React, {useEffect, useState} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from "redux";
+import {Container, Row} from 'react-bootstrap';
 
 import DisplayedPost from './DisplayedPost/DisplayedPost';
 import PostList from './PostList/PostList';
-import {setPageLoaded, setLoadedPosts} from "../../../actions";
+import {setLoadedPosts} from "../../../actions";
 
 import {WEBSITE_TEXT} from '../../../data/constants';
+import AnchorButton from "../../UI/AnchorButton/AnchorButton";
 
 const Posts = props => {
 
@@ -53,14 +55,6 @@ const Posts = props => {
     //Wordpress API URL
     const WP_API_URL = process.env.REACT_APP_WP_API_URL;
 
-
-    //Sets page as loaded after an interval
-    const handleLoaded = () => {
-        // setTimeout(() => {
-        //     props.setPageLoaded(true)
-        // }, 800);
-    };
-
     //updates number of posts
     const updatePosts = (numberOfPosts) => {
         props.setLoadedPosts(numberOfPosts);
@@ -93,7 +87,6 @@ const Posts = props => {
             return '/materialy/'
         }
     };
-
 
 
     useEffect(() => {
@@ -130,6 +123,13 @@ const Posts = props => {
                 post={posts[currPost]}
                 url={url}
             />
+            <Container>
+                <AnchorButton
+                    target="top"
+                    message={WEBSITE_TEXT.blog.backToTop}
+                    className="bannerButton"
+                />
+            </Container>
             {(props.loadedPosts > 1) &&
             <PostList
                 {...props}
@@ -151,7 +151,6 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return bindActionCreators({
-        setPageLoaded,
         setLoadedPosts
     }, dispatch);
 };
