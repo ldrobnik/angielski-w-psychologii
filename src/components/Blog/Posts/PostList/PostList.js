@@ -5,7 +5,8 @@ import {Container, Row} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 
 import TextBubble from '../../../UI/TextBubble/TextBubble';
-import {SECTION_NAMES} from "../../../../data/constants";
+import AnchorButton from '../../../UI/AnchorButton/AnchorButton';
+import {SECTION_NAMES, WEBSITE_TEXT} from "../../../../data/constants";
 import {setPageLoaded} from "../../../../actions";
 
 const PostList = props => {
@@ -50,6 +51,11 @@ const PostList = props => {
                     </Link>
                 ))}
             </Row>
+            <AnchorButton
+                target="top"
+                message={WEBSITE_TEXT.blog.backToTop}
+                className="bannerButton"
+            />
         </Container>
     );
 };
