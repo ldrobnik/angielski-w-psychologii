@@ -109,4 +109,40 @@
     padding-left: 2em;
     padding-right: 3em; }
 
+.hoverableTextBubble {
+  border: #9d0059 1px solid;
+  padding: 45px 6vw;
+  margin: 20px 10px;
+  font-size: 1.1em;
+  background-color: #f8f9fa;
+  color: #0f0f0f;
+  text-align: center;
+  -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
+  transition: background-color 1s; }
+  .hoverableTextBubble:hover {
+    background-color: #d00076; }
+  .hoverableTextBubble p, .hoverableTextBubble h2 {
+    padding: 0 15px; }
+  .hoverableTextBubble h2 {
+    color: #9d0059; }
+  .hoverableTextBubble a {
+    color: #9d0059;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 1s; }
+    .hoverableTextBubble a:link {
+      color: #9d0059;
+      text-decoration: none; }
+    .hoverableTextBubble a:visited {
+      color: #9d0059;
+      text-decoration: none; }
+    .hoverableTextBubble a:hover {
+      color: #37001f;
+      text-decoration: none; }
+    .hoverableTextBubble a:active {
+      color: #9d0059;
+      text-decoration: none; }
+
 /*# sourceMappingURL=TextBubble.css.map */

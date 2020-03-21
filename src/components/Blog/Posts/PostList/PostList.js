@@ -35,12 +35,12 @@ const PostList = props => {
                 {props.posts.map((post, index) => (
                     <Link
                         to={props.shortenUrl(post.link)}
-                        className={(props.currPost === index) ? 'blogLink translucent' : 'blogLink'}
+                        className={(props.currPost === index) && 'translucent'}
                         key={index}
                         onClick={() => handleLoaded()}
                     >
                         <TextBubble
-                            type="blog"
+                            type="hoverable"
                         >
                             <h2
                                 dangerouslySetInnerHTML={{__html: post.title.rendered}}/>

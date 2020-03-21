@@ -155,3 +155,55 @@
     padding-right: 3em;
   }
 }
+
+.hoverableTextBubble {
+  border: $themeBorder;
+  padding: 45px 6vw;
+  margin: 20px 10px;
+  font-size: 1.1em;
+  background-color: $lightColor;
+  color: $darkColor;
+  text-align: center;
+  @include regularShadow;
+  transition: background-color 1s;
+
+  &:hover {
+    background-color: setColor(1);
+  }
+
+  p, h2 {
+    padding: 0 15px;
+  }
+
+  h2 {
+    color: $themeColor;
+  }
+
+  a {
+    color: $themeColor;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 1s;
+
+    &:link {
+      color: $themeColor;
+      text-decoration: none;
+    }
+
+    &:visited {
+      color: $themeColor;
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: setColor(-2);
+      text-decoration: none;
+    }
+
+    &:active {
+      color: $themeColor;
+      text-decoration: none;
+    }
+
+  }
+}

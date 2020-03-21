@@ -1,3 +1,6 @@
-
+.blogLink {
+  transition: background-color 1s; }
+  .blogLink:hover {
+    background-color: #9d0059 !important; }
 
 /*# sourceMappingURL=PostList.css.map */
