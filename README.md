@@ -9,6 +9,7 @@ A **React-based** website advertising services offered by [Katarzyna Łasocha-No
 
 * a **responsive navigation bar** for easy navigation;
 * **easily expandable sections** showcasing Katarzyna’s experience and offer;
+* a **blog section** featuring educational materials;
 * **animations** triggered by scrolling;
 * a **smooth scrolling effect** for anchor links.
 
@@ -17,6 +18,7 @@ A **React-based** website advertising services offered by [Katarzyna Łasocha-No
 * a single-page app created with **React.js**;
 * app state controlled with **Redux**;
 * neat styles thanks to **SCSS**;
+* a blog section utilising **Wordpress API**;
 * **React-Bootstrap** providing responsive and coherent design;
 * **Pose** to add extra oomph to animations;
 * clear visual communication thanks to **FontAwesome** icons;
