@@ -40,10 +40,3 @@ export const setLoadedPosts = (loadedPosts) => {
     }
 };
 
-//Specifies the index of the currently displayed blog post
-export const setCurrPost = (currPost) => {
-    return {
-        type: actionTypes.SET_CURR_POST,
-        currPost
-    }
-};

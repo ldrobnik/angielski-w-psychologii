@@ -120,7 +120,7 @@ const Posts = props => {
     }, []);
 
     useEffect(() => {
-        if (props.pageLoaded && posts.length > 0) {
+        if (posts && posts.length > 0) {
             handleLoaded();
         }
     });
@@ -144,6 +144,7 @@ const Posts = props => {
             <PostList
                 {...props}
                 posts={posts}
+                currPost={currPost}
                 url={url}
                 shortenUrl={shortenUrl}
             />}
