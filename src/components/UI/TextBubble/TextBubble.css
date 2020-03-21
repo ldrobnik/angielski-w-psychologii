@@ -51,7 +51,8 @@
   .blogTextBubble p, .blogTextBubble blockquote, .blogTextBubble h2 {
     padding: 0 15px; }
   .blogTextBubble ol, .blogTextBubble ul {
-    margin-left: 25px; }
+    margin-left: 3em;
+    margin-right: 3em; }
   .blogTextBubble ul {
     list-style: none;
     /* Remove default bullets */ }
