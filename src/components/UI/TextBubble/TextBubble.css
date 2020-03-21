@@ -48,7 +48,7 @@
   -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5); }
-  .blogTextBubble p, .blogTextBubble cite, .blogTextBubble h2 {
+  .blogTextBubble p, .blogTextBubble blockquote, .blogTextBubble h2 {
     padding: 0 15px; }
   .blogTextBubble ol, .blogTextBubble ul {
     margin-left: 25px; }
@@ -115,13 +115,13 @@
     text-align: left; }
   .blogTextBubble p, .blogTextBubble ul, .blogTextBubble ol {
     text-align: left; }
-  .blogTextBubble cite {
+  .blogTextBubble blockquote {
     text-align: left;
     border-left: 4px solid #9d0059;
     font-size: 0.9em;
     display: block;
-    padding-left: 2em;
-    padding-right: 3em; }
+    margin-left: 1em;
+    padding: 1em 3em 0.5em 2em; }
 
 .hoverableTextBubble {
   border: #9d0059 1px solid;

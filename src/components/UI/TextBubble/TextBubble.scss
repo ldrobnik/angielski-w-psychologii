@@ -59,7 +59,7 @@
   @include regularShadow;
 
 
-  p, cite, h2 {
+  p, blockquote, h2 {
     padding: 0 15px;
   }
 
@@ -166,14 +166,14 @@
     text-align: left;
   }
 
-  cite {
+  blockquote {
     text-align: left;
     border-left: 4px solid $themeColor;
     font-size: 0.9em;
     display: block;
-    padding-left: 2em;
-    padding-right: 3em;
-  }
+    margin-left: 1em;
+    padding: 1em 3em 0.5em 2em;
+    }
 }
 
 .hoverableTextBubble {
