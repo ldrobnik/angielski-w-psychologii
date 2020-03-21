@@ -103,20 +103,18 @@ const Posts = props => {
             fetch(WP_API_URL).then(response => {
                 return response.json();
             }).then(posts => {
-                // Updates state with fetched posts
-                setPosts(posts);
-                updatePosts(posts.length);
-                handleLoaded(true);
+                setPosts(posts); // Update state with fetched posts
+                updatePosts(posts.length); //update state with the number of fetched posts
+                handleLoaded(true); //turn off spinner
             }).catch(err => {
-                //display error message in case of error
-                setErrorMessage();
-                updatePosts(1);
-                handleLoaded(true);
+                setErrorMessage(); //display error message in case of error
+                updatePosts(1); //so that only error message is displayed
+                handleLoaded(true); //turn of spinner
             });
         }
 
         loadPosts();
-    }, []);
+    }, [WP_API_URL, handleLoaded, updatePosts]);
 
 
     useEffect(() => {

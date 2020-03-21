@@ -30,7 +30,7 @@ const DisplayedPost = props => {
     }, [props.post.title.rendered]);
 
     return(
-        <Container className="lightBackground">
+        <Container className="lightBackground horizontallyCentered">
             <Row className="horizontallyCentered">
                 {props.post &&
                 <TextBubble
