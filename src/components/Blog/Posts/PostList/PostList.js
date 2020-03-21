@@ -113,7 +113,7 @@ const PostList = props => {
                 </Col>
             </Row>
             <AnchorButton
-                target="top"
+                target="lekcje"
                 message={WEBSITE_TEXT.blog.backToTop}
                 className="bannerButton"
             />
