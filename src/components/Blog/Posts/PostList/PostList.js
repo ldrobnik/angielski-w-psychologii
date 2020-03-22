@@ -40,7 +40,7 @@ const PostList = props => {
     const [postsVisible, setPostsVisible] = useState(false);
 
 // offset for triggering animation
-    const animationOffset = "-20%";
+    const animationOffset = "30%";
 
     //shows the posts
     const showPosts = () => {
