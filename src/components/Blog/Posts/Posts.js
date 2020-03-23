@@ -3,6 +3,8 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from "redux";
 import {Container, Row} from 'react-bootstrap';
 
+import './Posts.css';
+
 import DisplayedPost from './DisplayedPost/DisplayedPost';
 import PostList from './PostList/PostList';
 import {setLoadedPosts} from "../../../actions";
@@ -117,31 +119,35 @@ const Posts = props => {
     }, [props.match.params]);
 
     return (
-        <React.Fragment>
+        <div id="postWrapper" className="verticallyCentered">
             <DisplayedPost
                 {...props}
                 post={posts[currPost]}
                 url={url}
             />
-            <Container>
-                <Row>
-                    <AnchorButton
-                        target="top"
-                        message={WEBSITE_TEXT.blog.backToTop}
-                        className="bannerButton"
-                    />
-                </Row>
-            </Container>
+
             {(props.loadedPosts > 1) &&
-            <PostList
-                {...props}
-                posts={posts}
-                currPost={currPost}
-                url={url}
-                shortenUrl={shortenUrl}
-                id="postList"
-            />}
-        </React.Fragment>
+            <React.Fragment>
+                <Container>
+                    <Row>
+                        <AnchorButton
+                            target="top"
+                            message={WEBSITE_TEXT.blog.backToTop}
+                            className="bannerButton"
+                        />
+                    </Row>
+                    <PostList
+                        {...props}
+                        posts={posts}
+                        currPost={currPost}
+                        url={url}
+                        shortenUrl={shortenUrl}
+                        id="postList"
+                    />
+                </Container>
+            </React.Fragment>
+            }
+        </div>
     );
 };
 

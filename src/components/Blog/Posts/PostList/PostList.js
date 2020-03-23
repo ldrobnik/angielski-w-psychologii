@@ -70,7 +70,9 @@ const PostList = props => {
     }, [props.match.params]);
 
     return (
-        <Container className="lightBackground sectionContent">
+        <Container
+            className="lightBackground sectionContent"
+        >
             <Row>
                 <Col>
                     <h1 id={SECTION_NAMES.blog[0].id}>
@@ -115,7 +117,7 @@ const PostList = props => {
                 </Col>
             </Row>
             <AnchorButton
-                target="lekcje"
+                target={SECTION_NAMES.blog.id}
                 message={WEBSITE_TEXT.blog.backToTop}
                 className="bannerButton"
             />
