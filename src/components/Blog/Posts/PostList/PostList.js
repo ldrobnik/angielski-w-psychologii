@@ -117,7 +117,7 @@ const PostList = props => {
                 </Col>
             </Row>
             <AnchorButton
-                target={SECTION_NAMES.blog.id}
+                target={SECTION_NAMES.blog[0].id}
                 message={WEBSITE_TEXT.blog.backToTop}
                 className="bannerButton"
             />
