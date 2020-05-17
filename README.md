@@ -17,6 +17,7 @@ A **React-based** website advertising services offered by [Katarzyna Łasocha-No
 
 * a single-page app created with **React.js**;
 * app state controlled with **Redux**;
+* routes managed with **React-Router**;
 * neat styles thanks to **SCSS**;
 * a blog section utilising **Wordpress API**;
 * **React-Bootstrap** providing responsive and coherent design;
