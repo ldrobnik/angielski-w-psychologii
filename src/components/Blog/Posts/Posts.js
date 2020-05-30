@@ -55,7 +55,7 @@ const Posts = props => {
 
 
     //Wordpress API URL
-    const WP_API_URL = process.env.REACT_APP_WP_API_URL;
+    const WP_API_URL = process.env.REACT_APP_WP_API_URL + '/wp-json/wp/v2/posts?per_page=100';
 
     //updates number of posts
     const updatePosts = (numberOfPosts) => {
