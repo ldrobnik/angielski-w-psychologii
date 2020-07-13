@@ -105,9 +105,6 @@ const PostList = props => {
                                     >
                                         <h2
                                             dangerouslySetInnerHTML={{__html: post.title.rendered}}/>
-                                        <div
-                                            className="postExcerpt"
-                                            dangerouslySetInnerHTML={{__html: handleExcerpt(post.excerpt.rendered)}}/>
                                     </TextBubble>
                                 </Link>
                                 }
