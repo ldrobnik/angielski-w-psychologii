@@ -39,7 +39,7 @@
 
 .blogTextBubble {
   border: #9d0059 1px solid;
-  padding: 45px 6vw;
+  padding: 45px 8vw;
   margin: 20px 10px;
   font-size: 1.1em;
   background-color: #f8f9fa;
@@ -52,6 +52,22 @@
     .blogTextBubble {
       padding: 45px 10px;
       margin: 20px 0; } }
+  .blogTextBubble .wp-block-file {
+    display: inline-block;
+    margin: 1em auto; }
+    .blogTextBubble .wp-block-file a {
+      border: 1px solid #0f0f0f;
+      margin: 0.5em 0.6em;
+      padding: 0.5em 1.5em;
+      background-color: #f8f9fa;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      transition: background-color 1s; }
+      .blogTextBubble .wp-block-file a:hover {
+        background-color: #ff0492;
+        text-decoration: none; }
   .blogTextBubble p, .blogTextBubble h2 {
     padding: 0 15px; }
     @media all and (max-width: 500px) {
@@ -125,7 +141,7 @@
     color: #0f0f0f !important;
     font-size: 1.4em;
     text-align: left; }
-  .blogTextBubble p, .blogTextBubble ul, .blogTextBubble ol {
+  .blogTextBubble ul, .blogTextBubble ol {
     text-align: left; }
   .blogTextBubble blockquote {
     text-align: left;

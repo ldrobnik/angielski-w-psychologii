@@ -50,7 +50,7 @@
 
 .blogTextBubble {
   border: $themeBorder;
-  padding: 45px 6vw;
+  padding: 45px 8vw;
   margin: 20px 10px;
   font-size: 1.1em;
   background-color: $lightColor;
@@ -63,6 +63,24 @@
     margin: 20px 0;
   }
 
+  .wp-block-file {
+    display: inline-block;
+    margin: 1em auto;
+
+    a {
+      border: 1px solid $darkColor;
+      margin: 0.5em 0.6em;
+      padding: 0.5em 1.5em;
+      background-color: $lightColor;
+      @include no-select;
+      transition: background-color 1s;
+
+      &:hover {
+        background-color: setColor(2);
+        text-decoration: none;
+      }
+    }
+  }
 
   p, h2 {
     padding: 0 15px;
@@ -178,7 +196,7 @@
     }
   }
 
-  p, ul, ol {
+  ul, ol {
     text-align: left;
   }
 
