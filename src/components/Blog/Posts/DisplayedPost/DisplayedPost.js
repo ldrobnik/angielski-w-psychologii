@@ -4,7 +4,7 @@ import {bindActionCreators} from "redux";
 import {Container, Row, Col} from 'react-bootstrap';
 
 import TextBubble from '../../../UI/TextBubble/TextBubble';
-import {STRINGS_TO_REMOVE, WEBSITE_TEXT} from "../../../../data/constants";
+import {STRINGS_TO_REMOVE, STRINGS_TO_REPLACE, WEBSITE_TEXT} from "../../../../data/constants";
 import {setPageLoaded} from "../../../../actions";
 
 const DisplayedPost = props => {
@@ -30,6 +30,10 @@ const DisplayedPost = props => {
             modifiedContent = replaceString(modifiedContent, STRINGS_TO_REMOVE[i], '');
         }
 
+        //loop through array of strings to replace and replace them
+        for (let i = 0; i < STRINGS_TO_REPLACE.length; i++) {
+            modifiedContent = replaceString(modifiedContent, STRINGS_TO_REPLACE[i][0], STRINGS_TO_REPLACE[i][1]);
+        }
         //return cleaned up content
         return modifiedContent;
     };

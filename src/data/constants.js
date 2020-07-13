@@ -259,11 +259,17 @@ export const WEBSITE_TEXT = {
     }
 };
 
-//array containing unused Wordpress classes to be removed blog content
+//array containing unused Wordpress classes to be removed from blog content
 export const STRINGS_TO_REMOVE = [
     ' class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"',
     ' class="wp-block-embed__wrapper"',
     ' class="wp-block-quote"',
     ' class="wp-block-image size-large"',
     ' class="wp-block-image size-large"'
+];
+
+//array containing text to be replaced from blog content, with new text
+export const STRINGS_TO_REPLACE = [
+    ['>.doc', ' target="_blank" rel="noopener noreferrer">.doc'],
+    ['>.pdf', ' target="_blank" rel="noopener noreferrer">.pdf']
 ];
