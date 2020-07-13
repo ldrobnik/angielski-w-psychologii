@@ -113,11 +113,12 @@ const PostList = props => {
                     </AnimatedList>
                 </Col>
             </Row>
+            {(props.posts.length > 5) &&
             <AnchorButton
                 target={SECTION_NAMES.blog[0].id}
                 message={WEBSITE_TEXT.blog.backToTop}
                 className="bannerButton"
-            />
+            />}
         </Container>
     );
 };
