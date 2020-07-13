@@ -16,9 +16,9 @@ const DisplayedPost = props => {
         }, 800);
     };
 
-    //removes all instances of a string from another string
-    const removeString = (str, find) => {
-        return str ? str.replace(new RegExp(find, 'g'), '') : '';
+    //in a given string, replaces all instances of text with another text
+    const replaceString = (str, find, newText) => {
+        return str ? str.replace(new RegExp(find, 'g'), newText) : '';
     };
 
     //removes unused Wordpress classes from post content
@@ -27,7 +27,7 @@ const DisplayedPost = props => {
 
         //loop through array of string to remove and remove them
         for (let i = 0; i < STRINGS_TO_REMOVE.length; i++) {
-            modifiedContent = removeString(modifiedContent, STRINGS_TO_REMOVE[i]);
+            modifiedContent = replaceString(modifiedContent, STRINGS_TO_REMOVE[i], '');
         }
 
         //return cleaned up content
