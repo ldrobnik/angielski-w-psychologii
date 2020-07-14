@@ -259,5 +259,9 @@ export const STRINGS_TO_REMOVE = [
 //array containing text to be replaced from blog content, with new text
 export const STRINGS_TO_REPLACE = [
     ['>.doc', ' target="_blank" rel="noopener noreferrer">.doc'],
-    ['>.pdf', ' target="_blank" rel="noopener noreferrer">.pdf']
+    ['>.docx', ' target="_blank" rel="noopener noreferrer">.docx'],
+    ['>.pdf', ' target="_blank" rel="noopener noreferrer">.pdf'],
+    ['>doc', ' target="_blank" rel="noopener noreferrer">doc'],
+    ['>docx', ' target="_blank" rel="noopener noreferrer">docx'],
+    ['>pdf', ' target="_blank" rel="noopener noreferrer">pdf']
 ];
