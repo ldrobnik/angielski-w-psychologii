@@ -7,6 +7,7 @@ import {Waypoint} from "react-waypoint";
 import './Contact.css';
 
 import TextBubble from '../UI/TextBubble/TextBubble';
+import LinkButton from '../UI/LinkButton/LinkButton';
 import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
 
 import {SECTION_NAMES, WEBSITE_TEXT} from "../../data/constants";
@@ -121,22 +122,10 @@ const Contact = (props) => {
                                             <h3>
                                                 {WEBSITE_TEXT.contact.available.title}
                                             </h3>
-                                            <div className="hoursListContainer">
-                                                    {WEBSITE_TEXT.contact.available.hours.map((hour, k) => {
-                                                            return (
-                                                                <div
-                                                                    className="hoursItem"
-                                                                    key={k}
-                                                                >
-                                                                    {hour}
-                                                                </div>
-                                                            );
-                                                        }
-                                                    )}
-                                            </div>
-                                            <div className="hoursNote">
-                                                {WEBSITE_TEXT.contact.available.info}
-                                            </div>
+                                            <LinkButton
+                                                message={WEBSITE_TEXT.contact.available.buttonMessage}
+                                                url={WEBSITE_TEXT.contact.available.buttonUrl}
+                                            />
                                         </div>
                                     </div>
                                 </TextBubble>

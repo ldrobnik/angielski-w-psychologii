@@ -227,30 +227,9 @@ export const WEBSITE_TEXT = {
             </React.Fragment>
         ],
         available: {
-            title: <React.Fragment>Umów się na zajęcia</React.Fragment>,
-            button: <React.Fragment></React.Fragment>
-            hours: [
-                <div className="booked">
-                    <FontAwesomeIcon
-                        icon={faClock}
-                        className="hoursIcon"
-                    />poniedziałki 15:30</div>,
-                <div><FontAwesomeIcon
-                    icon={faClock}
-                    className="hoursIcon"
-                />środy 15:45</div>,
-                <div className="booked">
-                    <FontAwesomeIcon
-                        icon={faClock}
-                        className="hoursIcon"
-                    />piątki 8:45</div>,
-                <div>
-                    <FontAwesomeIcon
-                        icon={faClock}
-                        className="hoursIcon"
-                    />piątki 16:00</div>
-            ],
-            info: <React.Fragment>Więcej wolnych terminów od czerwca</React.Fragment>
+            title: <React.Fragment>Umów się na zajęcia:</React.Fragment>,
+            buttonMessage: <React.Fragment>Wybierz termin</React.Fragment>,
+            buttonUrl: 'https://calendly.com/klasocha/60min'
         },
         copyrightNotice: <React.Fragment>&copy; 2020 Łukasz Drobnik & Katarzyna Łasocha-Nowak</React.Fragment>
     },

@@ -1,0 +1,24 @@
+@import '../../../styles/common';
+
+.linkButton {
+  display: block;
+  background-color: $lightColor;
+  border: $themeBorder;
+  text-align: center;
+  max-width: 12em;
+  margin: 1em auto 0 auto;
+  padding: 0.2em 0.5em;
+  font-size: 1.6em;
+  font-weight: 700;
+  font-family: $serif !important;
+  letter-spacing: 0.1em;
+  color: $themeColor !important;
+  transition: background-color 1s;
+  @include regularShadow;
+  @include no-select;
+
+  &:hover {
+    background-color: setColor(2);
+    text-decoration: none;
+  }
+}
