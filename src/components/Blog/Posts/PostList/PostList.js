@@ -120,12 +120,12 @@ const PostList = props => {
                 className="bannerButton"
             />}
         </Container>
-    );
+);
 };
 
 const mapDispatchToProps = dispatch => {
     return bindActionCreators({
-        setPageLoaded
-    }, dispatch);
+    setPageLoaded
+}, dispatch);
 };
 export default connect(null, mapDispatchToProps)(PostList);
