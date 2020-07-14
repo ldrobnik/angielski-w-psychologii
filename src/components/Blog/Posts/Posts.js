@@ -129,13 +129,6 @@ const Posts = props => {
             {(props.loadedPosts > 1) &&
             <React.Fragment>
                 <Container>
-                    <Row>
-                        <AnchorButton
-                            target="top"
-                            message={WEBSITE_TEXT.blog.backToTop}
-                            className="bannerButton"
-                        />
-                    </Row>
                     <PostList
                         {...props}
                         posts={posts}

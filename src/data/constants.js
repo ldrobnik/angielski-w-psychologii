@@ -6,6 +6,7 @@ import {
     faEnvelope,
     faClock
 } from "@fortawesome/free-solid-svg-icons";
+import { faFacebookSquare} from '@fortawesome/free-brands-svg-icons';
 
 
 //offset used for smooth scrolling
@@ -216,10 +217,18 @@ export const WEBSITE_TEXT = {
                     className="contactIcon"
                 />
                 600&nbsp;829&nbsp;261
+            </React.Fragment>,
+            <React.Fragment>
+                <FontAwesomeIcon
+                    icon={faFacebookSquare}
+                    className="contactIcon"
+                />
+                <a href="https://www.facebook.com/Angielski-w-psychologii-111402360575036/" target="_blank" rel="noopener noreferrer">oficjalny fanpage</a>
             </React.Fragment>
         ],
         available: {
-            title: <React.Fragment>Dostępne godziny zajęć</React.Fragment>,
+            title: <React.Fragment>Umów się na zajęcia</React.Fragment>,
+            button: <React.Fragment></React.Fragment>
             hours: [
                 <div className="booked">
                     <FontAwesomeIcon
