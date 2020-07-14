@@ -86,7 +86,7 @@ const PostList = props => {
                 bottomOffset={animationOffset}
             />
             <Row className="horizontallyCentered">
-                <Col>
+                <Col xs={10} sm={12} md={10}>
                     <AnimatedList
                         pose={postsVisible ? 'visible' : 'hidden'}
                     >
