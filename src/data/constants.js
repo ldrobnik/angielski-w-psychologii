@@ -6,7 +6,7 @@ import {
     faEnvelope,
     faClock
 } from "@fortawesome/free-solid-svg-icons";
-import { faFacebookSquare} from '@fortawesome/free-brands-svg-icons';
+import {faFacebookSquare} from '@fortawesome/free-brands-svg-icons';
 
 
 //offset used for smooth scrolling
@@ -74,6 +74,14 @@ export const WEBSITE_TEXT = {
         subtitle: <React.Fragment>Język angielski dla psychologów, psychoterapeutów i&nbsp;osób zainteresowanych
             psychologią</React.Fragment>,
         button: <React.Fragment>Oferta</React.Fragment>,
+        fanpage: <a
+            href="https://www.facebook.com/Angielski-w-psychologii-111402360575036/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <FontAwesomeIcon
+                icon={faFacebookSquare}
+            /></a>,
         backdropAltText: "Poznańskie Jeżyce"
     },
     about: {
@@ -223,7 +231,8 @@ export const WEBSITE_TEXT = {
                     icon={faFacebookSquare}
                     className="contactIcon"
                 />
-                <a href="https://www.facebook.com/Angielski-w-psychologii-111402360575036/" target="_blank" rel="noopener noreferrer">oficjalny fanpage</a>
+                <a href="https://www.facebook.com/Angielski-w-psychologii-111402360575036/" target="_blank"
+                   rel="noopener noreferrer">oficjalny fanpage</a>
             </React.Fragment>
         ],
         available: {
