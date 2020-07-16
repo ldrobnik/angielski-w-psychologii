@@ -13,7 +13,7 @@ const AnimatedPost = posed.div({
         opacity: 1,
         transition: {
             ease: 'easeInOut',
-            duration: 200
+            duration: 1000
         }
     },
     hidden: {
@@ -23,7 +23,7 @@ const AnimatedPost = posed.div({
 
 const DisplayedPost = props => {
 
-    const [postLoaded, setpostLoaded] = useState(false);
+    const [postLoaded, setPostLoaded] = useState(false);
 
     //Sets page as loaded after an interval
     const handleLoaded = () => {
@@ -55,15 +55,20 @@ const DisplayedPost = props => {
     };
 
     useEffect(() => {
+        setPostLoaded(false); //hide post content
         document.title = `${WEBSITE_TEXT.pageTitle.core} - ${props.post.title.rendered}`; //update document title
     }, [props.post.title.rendered]);
 
     useEffect(() => {
         if (props.post.title.rendered.length > 1) {
             handleLoaded(); //if post data have been obtained, turn off spinner
-        }
-        ;
+        };
     }, [props.post.title.rendered]);
+
+    useEffect(() => {
+        //show post content after a while
+       setTimeout(() => setPostLoaded(true), 2000);
+    });
 
     return (
         <Container className="lightBackground horizontallyCentered">
