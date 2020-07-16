@@ -44,7 +44,8 @@
   margin-top: 0.5em; }
   .fanpageIcon a {
     color: #f8f9fa;
-    transition: color 1s; }
+    transition: color 1s;
+    text-shadow: 2px 2px 8px #FF0000 !important; }
     .fanpageIcon a:hover {
       color: #ff0492 !important;
       text-decoration: none; }

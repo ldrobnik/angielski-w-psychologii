@@ -1,13 +1,29 @@
-import React, {useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from "redux";
+import posed from 'react-pose';
 import {Container, Row, Col} from 'react-bootstrap';
 
 import TextBubble from '../../../UI/TextBubble/TextBubble';
 import {STRINGS_TO_REMOVE, STRINGS_TO_REPLACE, WEBSITE_TEXT} from "../../../../data/constants";
 import {setPageLoaded} from "../../../../actions";
 
+const AnimatedPost = posed.div({
+    visible: {
+        opacity: 1,
+        transition: {
+            ease: 'easeInOut',
+            duration: 200
+        }
+    },
+    hidden: {
+        opacity: 0
+    }
+});
+
 const DisplayedPost = props => {
+
+    const [postLoaded, setpostLoaded] = useState(false);
 
     //Sets page as loaded after an interval
     const handleLoaded = () => {
@@ -51,21 +67,26 @@ const DisplayedPost = props => {
 
     return (
         <Container className="lightBackground horizontallyCentered">
+
             <Row className="horizontallyCentered">
                 <Col>
                     {props.post &&
                     <TextBubble
                         type="blog"
                     >
-                        <h2
-                            dangerouslySetInnerHTML={{__html: props.post.title.rendered}}/>
-                        <div
-                            className="blogPost"
-                            dangerouslySetInnerHTML={{__html: cleanUpPost(props.post.content.rendered)}}/>
+                        <AnimatedPost
+                            pose={postLoaded ? 'visible' : 'hidden'}>
+                            <h2
+                                dangerouslySetInnerHTML={{__html: props.post.title.rendered}}/>
+                            <div
+                                className="blogPost"
+                                dangerouslySetInnerHTML={{__html: cleanUpPost(props.post.content.rendered)}}/>
+                        </AnimatedPost>
                     </TextBubble>
                     }
                 </Col>
             </Row>
+
         </Container>
     );
 };

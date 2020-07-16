@@ -58,6 +58,7 @@
   a {
     color: $lightColor;
     transition: color 1s;
+    text-shadow: 2px 2px 8px #FF0000 !important;
 
     &:hover {
       color: setColor(2) !important;
