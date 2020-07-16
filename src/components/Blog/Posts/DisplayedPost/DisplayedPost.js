@@ -5,6 +5,7 @@ import posed from 'react-pose';
 import {Container, Row, Col} from 'react-bootstrap';
 
 import TextBubble from '../../../UI/TextBubble/TextBubble';
+import logoImage from '../../../../assets/images/logo.svg';
 import {STRINGS_TO_REMOVE, STRINGS_TO_REPLACE, WEBSITE_TEXT} from "../../../../data/constants";
 import {setPageLoaded} from "../../../../actions";
 
@@ -79,11 +80,22 @@ const DisplayedPost = props => {
                     <TextBubble
                         type="blog"
                     >
+                        {!postLoaded && <div className="spinnerWrapper">
+
+                            <img
+                                src={logoImage}
+                                alt="loading…"
+                                height="110px"
+                                width="110px"
+                            />
+
+                        </div>}
                         <AnimatedPost
                             pose={postLoaded ? 'visible' : 'hidden'}>
                             <h2
                                 dangerouslySetInnerHTML={{__html: props.post.title.rendered}}/>
-                            <div
+
+                                <div
                                 className="blogPost"
                                 dangerouslySetInnerHTML={{__html: cleanUpPost(props.post.content.rendered)}}/>
                         </AnimatedPost>

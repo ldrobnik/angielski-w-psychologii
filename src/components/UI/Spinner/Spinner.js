@@ -14,7 +14,7 @@ const Spinner = () => {
 
                         <img
                             src={logoImage}
-                            alt="loading spinner"
+                            alt="loading…"
                             height="110px"
                             width="110px"
                         />

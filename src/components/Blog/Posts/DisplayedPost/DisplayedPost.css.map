@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AACA,kBAYC;EAXC,EAAG;IACD,OAAO,EAAE,CAAC;EAGZ,GAAI;IACF,OAAO,EAAE,GAAG;EAGd,IAAK;IACH,OAAO,EAAE,CAAC;AAId,eAAgB;EACd,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,CAAC;EACV,GAAG,EAAE,GAAG;EACR,IAAI,EAAE,GAAG;EACT,SAAS,EAAE,qBAAqB;EAChC,SAAS,EAAE,+BAA+B",
+"sources": ["DisplayedPost.scss"],
 "names": [],
 "file": "DisplayedPost.css"
 }
