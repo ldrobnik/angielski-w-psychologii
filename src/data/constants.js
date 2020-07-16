@@ -267,10 +267,5 @@ export const STRINGS_TO_REMOVE = [
 
 //array containing text to be replaced from blog content, with new text - to make file links open in a new tab
 export const STRINGS_TO_REPLACE = [
-    ['>.doc', ' target="_blank" rel="noopener noreferrer">.doc'],
-    ['>.docx', ' target="_blank" rel="noopener noreferrer">.docx'],
-    ['>.pdf', ' target="_blank" rel="noopener noreferrer">.pdf'],
-    ['>doc', ' target="_blank" rel="noopener noreferrer">doc'],
-    ['>docx', ' target="_blank" rel="noopener noreferrer">docx'],
-    ['>pdf', ' target="_blank" rel="noopener noreferrer">pdf']
+    ['<a', '<a target="_blank" rel="noopener noreferrer"']
 ];

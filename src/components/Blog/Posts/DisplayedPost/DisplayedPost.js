@@ -80,7 +80,7 @@ const DisplayedPost = props => {
                     <TextBubble
                         type="blog"
                     >
-                        {!postLoaded && <div className="spinnerWrapper">
+                        {(props.loaded && !postLoaded) && <div className="spinnerWrapper">
 
                             <img
                                 src={logoImage}
@@ -108,10 +108,16 @@ const DisplayedPost = props => {
     );
 };
 
+const mapStateToProps = state => {
+    return {
+        loaded: state.pageLoaded
+    }
+};
+
 const mapDispatchToProps = dispatch => {
     return bindActionCreators({
         setPageLoaded
     }, dispatch);
 };
 
-export default connect(null, mapDispatchToProps)(DisplayedPost);
+export default connect(mapStateToProps, mapDispatchToProps)(DisplayedPost);
