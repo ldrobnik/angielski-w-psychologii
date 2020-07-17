@@ -64,6 +64,14 @@ export const WEBSITE_TEXT = {
             name: 'Strona główna',
             url: '/'
         },
+        facebookLink: {
+            name: <React.Fragment><FontAwesomeIcon
+                icon={faFacebookSquare}
+                className="facebookIcon"
+            />Fanpage
+            </React.Fragment>,
+            url: 'https://www.facebook.com/Angielski-w-psychologii-111402360575036/'
+        }
     },
     homeLink: {
         name: 'Strona główna',

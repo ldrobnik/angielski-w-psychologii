@@ -7,6 +7,9 @@
   .navLink:hover {
     text-decoration: underline !important; }
 
+.facebookIcon {
+  margin-right: 5px; }
+
 .active {
   text-decoration: underline !important; }
 

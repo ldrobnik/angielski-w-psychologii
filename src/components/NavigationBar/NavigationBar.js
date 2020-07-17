@@ -141,7 +141,14 @@ const NavigationBar = (props) => {
                         className="navLink"
                         onClick={() => handleLoaded()}
                     >{routerLink.name}</Link>
-
+                    <a
+                        href={WEBSITE_TEXT.navbar.facebookLink.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="navLink facebookLink"
+                        >
+                        {WEBSITE_TEXT.navbar.facebookLink.name}
+                    </a>
 
                 </Nav>
                 }
