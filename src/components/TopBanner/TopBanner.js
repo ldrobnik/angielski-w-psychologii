@@ -43,7 +43,6 @@ const TopBanner = (props) => {
                     message={WEBSITE_TEXT.topBanner.button}
                     className="bannerButton"
                 />}
-                <div className="fanpageIcon">{WEBSITE_TEXT.topBanner.fanpage}</div>
             </div>
             <img
                 className="hiddenBackdrop"

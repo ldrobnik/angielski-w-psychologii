@@ -74,14 +74,6 @@ export const WEBSITE_TEXT = {
         subtitle: <React.Fragment>Język angielski dla psychologów, psychoterapeutów i&nbsp;osób zainteresowanych
             psychologią</React.Fragment>,
         button: <React.Fragment>Oferta</React.Fragment>,
-        fanpage: <a
-            href="https://www.facebook.com/Angielski-w-psychologii-111402360575036/"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <FontAwesomeIcon
-                icon={faFacebookSquare}
-            /></a>,
         backdropAltText: "Poznańskie Jeżyce"
     },
     about: {
