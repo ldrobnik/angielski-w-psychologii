@@ -52,22 +52,6 @@
   margin-top: 2em;
 }
 
-.fanpageIcon {
-  font-size: 3em;
-  margin-top: 0.5em;
-  a {
-    color: $lightColor;
-    transition: color 1s;
-    text-shadow: 2px 2px 8px #FF0000 !important;
-
-    &:hover {
-      color: setColor(2) !important;
-      text-decoration: none;
-    }
-
-  }
-}
-
 .hiddenBackdrop {
   visibility: hidden;
   height: 0;
