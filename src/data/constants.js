@@ -68,7 +68,7 @@ export const WEBSITE_TEXT = {
             name: <React.Fragment><FontAwesomeIcon
                 icon={faFacebookSquare}
                 className="facebookIcon"
-            />Facebook
+            />
             </React.Fragment>,
             url: 'https://www.facebook.com/Angielski-w-psychologii-111402360575036/'
         }
