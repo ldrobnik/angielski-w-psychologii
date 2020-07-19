@@ -1,6 +1,6 @@
 # Angielski w psychologii
 
-A **React-based** website advertising services offered by [Katarzyna Łasocha-Nowak](https://angielskiwpsychologii.pl/), an English teacher and translator specialising in psychology. You can find a demo of the most recent version [here](https://angielskiwpsychologii-demo.netlify.app/). (It additionally contains a blog section which hasn’t gone live yet.)
+A **React-based** website advertising services offered by [Katarzyna Łasocha-Nowak](https://angielskiwpsychologii.pl/), an English teacher and translator specialising in psychology. You can find a demo of the most recent version [here](https://angielskiwpsychologii-demo.netlify.app/). (It additionally contains a blog section which hasn’t gone live yet. The section uses Wordpress as a headless CMS.)
 
 * [Main features](#main-features)
 * [Technicalities](#technicalities)
