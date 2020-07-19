@@ -90,22 +90,20 @@ const Posts = props => {
         }
     };
 
+    //loads blog posts
+    async function loadPosts() {
+        fetch(WP_API_URL).then(response => {
+            return response.json();
+        }).then(posts => {
+            setPosts(posts); // Update state with fetched posts
+            updatePosts(posts.length); //update state with the number of fetched posts
+        }).catch(err => {
+            setErrorMessage(); //display error message in case of error
+            updatePosts(1); //so that only error message is displayed
+        });
+    }
 
     useEffect(() => {
-
-        //loads blog posts
-        async function loadPosts() {
-            fetch(WP_API_URL).then(response => {
-                return response.json();
-            }).then(posts => {
-                setPosts(posts); // Update state with fetched posts
-                updatePosts(posts.length); //update state with the number of fetched posts
-            }).catch(err => {
-                setErrorMessage(); //display error message in case of error
-                updatePosts(1); //so that only error message is displayed
-            });
-        }
-
         loadPosts();
     }, [WP_API_URL]);
 
