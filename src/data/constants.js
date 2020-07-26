@@ -153,10 +153,14 @@ export const WEBSITE_TEXT = {
     },
     translations: {
         messages: [
-            <p>Oferuję <span
-                className="highlighted">tłumaczenia tekstów z&nbsp;dziedziny psychologii</span> – zarówno artykułów
-                z&nbsp;języka
-                angielskiego na polski, jak i&nbsp;prac naukowych z&nbsp;języka polskiego na angielski.</p>,
+            <React.Fragment>
+                <p>Oferuję <span
+                    className="highlighted">tłumaczenia tekstów z&nbsp;dziedziny psychologii</span> – zarówno artykułów
+                    z&nbsp;języka
+                    angielskiego na polski, jak i&nbsp;prac naukowych z&nbsp;języka polskiego na angielski.</p>
+                <p> <AnchorLink href="#kontakt" offset={OFFSET_DESKTOP} className="highlighted">Napisz do
+                    mnie</AnchorLink>, aby uzyskać darmową wycenę.</p>
+            </React.Fragment>,
             <p>Wykonuję również <span
                 className="highlighted">korekty i&nbsp;redakcje tłumaczeń</span> dla klientów, którzy władają językiem
                 angielskim, jednak chcieliby, żeby ich tekst został gruntownie zweryfikowany lub przeredagowany tak, aby
