@@ -9,7 +9,7 @@
   text-align: center;
   @include regularShadow;
 
-  a {
+  .inlineLink a {
     color: setColor(4);
     text-decoration: none;
     cursor: pointer;
@@ -46,7 +46,7 @@
   text-align: center;
   @include regularShadow;
 
-  a {
+  .inlineLink a {
     color: setColor(4);
     text-decoration: none;
     cursor: pointer;

@@ -83,7 +83,7 @@ const Offer = (props) => {
                     <Row className="offerRow">
                         <Col
                             className="offerColumn"
-                            lg={7}
+                            lg={{span: 8, offset: 2}}
                         >
                             <AnimatedMessageLeft
                                 pose={messagesVisible ? 'visible' : 'hidden'}
@@ -120,6 +120,8 @@ const Offer = (props) => {
                                 </TextBubble>
                             </AnimatedMessageLeft>
                         </Col>
+                    </Row>
+                    <Row>
                         <Col
                             className="offerColumn"
                         >

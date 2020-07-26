@@ -139,9 +139,8 @@ export const WEBSITE_TEXT = {
                         className="highlighted">zawsze w kontekście i&nbsp;świadomie</span>,
                     nie mechanicznie i&nbsp;na zasadzie &bdquo;sztuka dla sztuki&rdquo;, bo to po prostu nie
                     działa.</p>
-                <p> Jeżeli masz jakieś pytania, <AnchorLink href="#kontakt" offset={OFFSET_DESKTOP}
-                                                            className="highlighted">napisz do
-                    mnie</AnchorLink>.</p>
+                <p> Jeżeli masz jakieś pytania, <span className="inlineLink"> <AnchorLink href="#kontakt" offset={OFFSET_DESKTOP} className="highlighted">napisz do
+                    mnie</AnchorLink></span>.</p>
             </React.Fragment>
         ],
         altTexts: [
@@ -158,8 +157,8 @@ export const WEBSITE_TEXT = {
                     className="highlighted">tłumaczenia tekstów z&nbsp;dziedziny psychologii</span> – zarówno artykułów
                     z&nbsp;języka
                     angielskiego na polski, jak i&nbsp;prac naukowych z&nbsp;języka polskiego na angielski.</p>
-                <p> <AnchorLink href="#kontakt" offset={OFFSET_DESKTOP} className="highlighted">Napisz do
-                    mnie</AnchorLink>, aby uzyskać darmową wycenę.</p>
+                <p> <span className="inlineLink"><AnchorLink href="#kontakt" offset={OFFSET_DESKTOP} className="highlighted">Napisz do
+                    mnie</AnchorLink></span>, aby uzyskać darmową wycenę.</p>
             </React.Fragment>,
             <p>Wykonuję również <span
                 className="highlighted">korekty i&nbsp;redakcje tłumaczeń</span> dla klientów, którzy władają językiem

@@ -1,12 +1,6 @@
 .offerBox {
   color: #f8f9fa;
   padding: 20px; }
-  @media all and (min-width: 992px) {
-    .offerBox {
-      min-height: 510px; } }
-  @media all and (min-width: 1200px) {
-    .offerBox {
-      min-height: 480px; } }
   .offerBox h2 {
     font-weight: bold;
     font-size: 1.8em; }

@@ -8,21 +8,21 @@
   -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5); }
-  .lightTextBubble a {
+  .lightTextBubble .inlineLink a {
     color: #ff6abe;
     text-decoration: none;
     cursor: pointer;
     transition: color 1s; }
-    .lightTextBubble a:link {
+    .lightTextBubble .inlineLink a:link {
       color: #9d0059;
       text-decoration: none; }
-    .lightTextBubble a:visited {
+    .lightTextBubble .inlineLink a:visited {
       color: #9d0059;
       text-decoration: none; }
-    .lightTextBubble a:hover {
+    .lightTextBubble .inlineLink a:hover {
       color: #ff0492 !important;
       text-decoration: none; }
-    .lightTextBubble a:active {
+    .lightTextBubble .inlineLink a:active {
       color: #9d0059;
       text-decoration: none; }
 
@@ -36,21 +36,21 @@
   -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5); }
-  .themeTextBubble a {
+  .themeTextBubble .inlineLink a {
     color: #ff6abe;
     text-decoration: none;
     cursor: pointer;
     transition: color 1s; }
-    .themeTextBubble a:link {
+    .themeTextBubble .inlineLink a:link {
       color: #ff6abe;
       text-decoration: none; }
-    .themeTextBubble a:visited {
+    .themeTextBubble .inlineLink a:visited {
       color: #ff6abe;
       text-decoration: none; }
-    .themeTextBubble a:hover {
+    .themeTextBubble .inlineLink a:hover {
       color: #ff0492 !important;
       text-decoration: none; }
-    .themeTextBubble a:active {
+    .themeTextBubble .inlineLink a:active {
       color: #ff6abe;
       text-decoration: none; }
 
