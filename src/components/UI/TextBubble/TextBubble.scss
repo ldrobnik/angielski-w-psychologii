@@ -8,6 +8,33 @@
   background-color: $lightColor;
   text-align: center;
   @include regularShadow;
+
+  a {
+    color: setColor(4);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 1s;
+
+    &:link {
+      color: $themeColor;
+      text-decoration: none;
+    }
+
+    &:visited {
+      color: $themeColor;
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: setColor(2) !important;
+      text-decoration: none;
+    }
+
+    &:active {
+      color: $themeColor;
+      text-decoration: none;
+    }
+  }
 }
 
 .themeTextBubble {
@@ -168,8 +195,8 @@
   }
 
   iframe {
-      width: 60vw;
-      height: 33.75vw; /*16:9*/
+    width: 60vw;
+    height: 33.75vw; /*16:9*/
   }
 
   figure {
@@ -212,7 +239,7 @@
       padding: 1em 1em 0.5em 1.5em;
     }
 
-    }
+  }
 }
 
 .hoverableTextBubble {

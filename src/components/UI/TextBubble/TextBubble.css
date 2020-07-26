@@ -8,6 +8,23 @@
   -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5); }
+  .lightTextBubble a {
+    color: #ff6abe;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 1s; }
+    .lightTextBubble a:link {
+      color: #9d0059;
+      text-decoration: none; }
+    .lightTextBubble a:visited {
+      color: #9d0059;
+      text-decoration: none; }
+    .lightTextBubble a:hover {
+      color: #ff0492 !important;
+      text-decoration: none; }
+    .lightTextBubble a:active {
+      color: #9d0059;
+      text-decoration: none; }
 
 .themeTextBubble {
   border: #f8f9fa 1px solid;
