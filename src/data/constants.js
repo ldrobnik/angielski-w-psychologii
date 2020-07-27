@@ -213,12 +213,11 @@ export const WEBSITE_TEXT = {
             footnote: <React.Fragment>*1800&nbsp;znaków ze spacjami</React.Fragment>
         },
         specialOffer: {
-            title: <React.Fragment>zajęcia dla zapracowanych</React.Fragment>,
+            title: <React.Fragment>Zajęcia dla zapracowanych</React.Fragment>,
             content: <React.Fragment>
-                <p>W każdy piątek o&nsp;11:45 odbywają się otwarte zajęcia grupowe. <span
-                    className="highlighted">Każdy może do nich dołączyć</span> i uczestniczyć w&nbsp;nich tak często, jak chce i może. Co tydzień inny temat. Koszt jednych zajęć to <span
-                    className="highlighted">tylko 25&nbsp;zł</span>. </p>
-                <p> Brzmi ciekawie? <span className="inlineLink"><a href="https://calendly.com/klasocha/60min" target="_blank" rel="noopener noreferrer">Wybierz dogodny termin.</a></span></p>
+                <p>W każdy piątek o&nbsp;11:45 odbywają się otwarte zajęcia grupowe. <span
+                    className="highlighted inlineLink"><a href="https://calendly.com/klasocha/60min" target="_blank" rel="noopener noreferrer">Każdy może do nich dołączyć</a></span> i uczestniczyć w&nbsp;nich tak często, jak chce i może. Co tydzień inny temat. Koszt jednych zajęć to <span
+                    className="highlighted inlineLink"><a href="https://calendly.com/klasocha/60min" target="_blank" rel="noopener noreferrer">tylko 25&nbsp;zł</a></span>. Brzmi ciekawie? <span className="highlighted inlineLink"><a href="https://calendly.com/klasocha/60min" target="_blank" rel="noopener noreferrer">Wybierz dogodny termin.</a></span></p>
             </React.Fragment>
         }
     },

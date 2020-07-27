@@ -135,27 +135,11 @@ const Offer = (props) => {
                                         className="offerBox"
                                     >
                                         <div>
-                                            <h2 className="serviceName">{WEBSITE_TEXT.offer.translations.title}</h2>
+                                            <h2 className="serviceName">{WEBSITE_TEXT.offer.specialOffer.title}</h2>
                                         </div>
                                         <Row>
-                                            {WEBSITE_TEXT.offer.translations.content.map((item, k) => {
-                                                return (
-                                                    <div key={k}
-                                                         className="serviceItem"
-                                                    >
-                                                        <div className="serviceType">
-                                                            {item.type}
-                                                        </div>
-                                                        <div className="servicePrice">
-                                                            {item.price}
-                                                        </div>
-                                                    </div>
-                                                );
-                                            })}
+                                            {WEBSITE_TEXT.offer.specialOffer.content}
                                         </Row>
-                                            <p className="offerFootnote">
-                                                {WEBSITE_TEXT.offer.translations.footnote}
-                                            </p>
                                     </div>
                                 </TextBubble>
                             </AnimatedMessageRight>
