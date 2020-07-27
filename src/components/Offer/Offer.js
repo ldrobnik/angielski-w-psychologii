@@ -94,9 +94,9 @@ const Offer = (props) => {
                                     <div
                                         className="offerBox"
                                     >
-                                        <Row>
+                                        <div>
                                             <h2 className="serviceName">{WEBSITE_TEXT.offer.english.title}</h2>
-                                        </Row>
+                                        </div>
                                         <Row>
                                             {WEBSITE_TEXT.offer.english.content.map((item, k) => {
                                                 return (
@@ -124,6 +124,7 @@ const Offer = (props) => {
                     <Row>
                         <Col
                             className="offerColumn"
+                            lg={{span: 8, offset: 2}}
                         >
                             <AnimatedMessageRight
                                 pose={messagesVisible ? 'visible' : 'hidden'}

@@ -1,6 +1,7 @@
 .offerBox {
   color: #f8f9fa;
-  padding: 20px; }
+  padding: 20px;
+  text-align: center !important; }
   .offerBox h2 {
     font-weight: bold;
     font-size: 1.8em; }
