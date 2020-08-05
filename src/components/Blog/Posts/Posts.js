@@ -10,7 +10,6 @@ import PostList from './PostList/PostList';
 import {setLoadedPosts} from "../../../actions";
 
 import {WEBSITE_TEXT} from '../../../data/constants';
-import AnchorButton from "../../UI/AnchorButton/AnchorButton";
 
 const Posts = props => {
 
@@ -91,7 +90,7 @@ const Posts = props => {
     };
 
     //loads blog posts
-    async function loadPosts() {
+    const loadPosts = () => {
         fetch(WP_API_URL).then(response => {
             return response.json();
         }).then(posts => {
@@ -101,7 +100,7 @@ const Posts = props => {
             setErrorMessage(); //display error message in case of error
             updatePosts(1); //so that only error message is displayed
         });
-    }
+    };
 
     useEffect(() => {
         loadPosts();
