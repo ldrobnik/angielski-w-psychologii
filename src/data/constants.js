@@ -242,7 +242,7 @@ export const WEBSITE_TEXT = {
                     className="contactIcon"
                 />
                 <a href="https://www.facebook.com/Angielski-w-psychologii-111402360575036/" target="_blank"
-                   rel="noopener noreferrer">oficjalny fanpage</a>
+                   rel="noopener noreferrer">fanpage</a>
             </React.Fragment>
         ],
         available: {
