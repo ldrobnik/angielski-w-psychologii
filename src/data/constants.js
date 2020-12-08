@@ -216,7 +216,7 @@ export const WEBSITE_TEXT = {
             title: <React.Fragment>Zajęcia dla zapracowanych</React.Fragment>,
             content: <React.Fragment>
                 <p>W każdy piątek o&nbsp;11:45 odbywają się otwarte zajęcia grupowe. <span
-                    className="highlighted inlineLink"><a href="https://calendly.com/klasocha/60min" target="_blank" rel="noopener noreferrer">Możesz do nich dołączyć</a></span> i uczestniczyć w&nbsp;nich tak często, jak tylko chcesz i&nbsp;możesz. Co tydzień realizujemy inny temat. Poziom uczestników to B1/B2. Koszt jednych zajęć to 25&nbsp;zł. Brzmi ciekawie? <span className="highlighted inlineLink"><a href="https://calendly.com/klasocha/60min" target="_blank" rel="noopener noreferrer">Tutaj możesz się zapisać.</a></span></p>
+                    className="highlighted inlineLink"><a href="mailto:k.lasocha@gmail.com">Możesz do nich dołączyć</a></span> i uczestniczyć w&nbsp;nich tak często, jak tylko chcesz i&nbsp;możesz. Co tydzień realizujemy inny temat. Poziom uczestników to B1/B2. Koszt jednych zajęć to 25&nbsp;zł. Brzmi ciekawie? <span className="highlighted inlineLink"><a href="mailto:k.lasocha@gmail.com">Napisz do mnie.</a></span></p>
             </React.Fragment>
         }
     },
@@ -247,8 +247,8 @@ export const WEBSITE_TEXT = {
         ],
         available: {
             title: <React.Fragment>Umów się na zajęcia:</React.Fragment>,
-            buttonMessage: <React.Fragment>Wybierz termin</React.Fragment>,
-            buttonUrl: 'https://calendly.com/klasocha/60min'
+            buttonMessage: <React.Fragment>k.lasocha@gmail.com</React.Fragment>,
+            buttonUrl: 'mailto:k.lasocha@gmail.com'
         },
         copyrightNotice: <React.Fragment>&copy; 2020 Łukasz Drobnik & Katarzyna Łasocha-Nowak</React.Fragment>
     },
