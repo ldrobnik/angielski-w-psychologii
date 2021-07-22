@@ -5,7 +5,7 @@ import {
     faPhone,
     faEnvelope,
     faClock
-} from "@fortawesome/free-solid-svg-icons";
+} from '@fortawesome/free-solid-svg-icons';
 import {faFacebookSquare} from '@fortawesome/free-brands-svg-icons';
 
 
@@ -82,7 +82,7 @@ export const WEBSITE_TEXT = {
         subtitle: <React.Fragment>Język angielski dla psychologów, psychoterapeutów i&nbsp;osób zainteresowanych
             psychologią</React.Fragment>,
         button: <React.Fragment>Oferta</React.Fragment>,
-        backdropAltText: "Poznańskie Jeżyce"
+        backdropAltText: 'Poznańskie Jeżyce'
     },
     about: {
         name: <React.Fragment>Katarzyna Łasocha-Nowak</React.Fragment>,
@@ -139,14 +139,16 @@ export const WEBSITE_TEXT = {
                         className="highlighted">zawsze w kontekście i&nbsp;świadomie</span>,
                     nie mechanicznie i&nbsp;na zasadzie &bdquo;sztuka dla sztuki&rdquo;, bo to po prostu nie
                     działa.</p>
-                <p> Jeżeli masz jakieś pytania, <span className="inlineLink"> <AnchorLink href="#kontakt" offset={OFFSET_DESKTOP} className="highlighted">napisz do
+                <p> Jeżeli masz jakieś pytania, <span className="inlineLink"> <AnchorLink href="#kontakt"
+                                                                                          offset={OFFSET_DESKTOP}
+                                                                                          className="highlighted">napisz do
                     mnie</AnchorLink></span>.</p>
             </React.Fragment>
         ],
         altTexts: [
-            "Podręcznik do nauki psychologii",
-            "Podręcznik do nauki słownictwa",
-            "Pomoce multimedialne"
+            'Podręcznik do nauki psychologii',
+            'Podręcznik do nauki słownictwa',
+            'Pomoce multimedialne'
 
         ]
     },
@@ -157,7 +159,8 @@ export const WEBSITE_TEXT = {
                     className="highlighted">tłumaczenia tekstów z&nbsp;dziedziny psychologii</span> – zarówno artykułów
                     z&nbsp;języka
                     angielskiego na polski, jak i&nbsp;prac naukowych z&nbsp;języka polskiego na angielski.</p>
-                <p> <span className="inlineLink"><AnchorLink href="#kontakt" offset={OFFSET_DESKTOP} className="highlighted">Napisz do
+                <p> <span className="inlineLink"><AnchorLink href="#kontakt" offset={OFFSET_DESKTOP}
+                                                             className="highlighted">Napisz do
                     mnie</AnchorLink></span>, aby uzyskać darmową wycenę.</p>
             </React.Fragment>,
             <p>Wykonuję również <span
@@ -167,8 +170,8 @@ export const WEBSITE_TEXT = {
                 bardziej klarowny i&nbsp;lepszy stylistycznie.</p>
         ],
         altTexts: [
-            "Laptop",
-            "Zeszyt"
+            'Laptop',
+            'Zeszyt'
 
         ]
     },
@@ -216,7 +219,11 @@ export const WEBSITE_TEXT = {
             title: <React.Fragment>Zajęcia dla zapracowanych</React.Fragment>,
             content: <React.Fragment>
                 <p>W każdy piątek o&nbsp;11:45 odbywają się otwarte zajęcia grupowe. <span
-                    className="highlighted inlineLink"><a href="mailto:k.lasocha@gmail.com">Możesz do nich dołączyć</a></span> i uczestniczyć w&nbsp;nich tak często, jak tylko chcesz i&nbsp;możesz. Co tydzień realizujemy inny temat. Poziom uczestników to B1/B2. Koszt jednych zajęć to 25&nbsp;zł. Brzmi ciekawie? <span className="highlighted inlineLink"><a href="mailto:k.lasocha@gmail.com">Napisz do mnie.</a></span></p>
+                    className="highlighted inlineLink"><a href="mailto:k.lasocha@gmail.com">Możesz do nich dołączyć</a></span> i
+                    uczestniczyć w&nbsp;nich tak często, jak tylko chcesz i&nbsp;możesz. Co tydzień realizujemy inny
+                    temat. Poziom uczestników to B1/B2. Koszt jednych zajęć to 25&nbsp;zł. Brzmi ciekawie? <span
+                        className="highlighted inlineLink"><a
+                        href="mailto:k.lasocha@gmail.com">Napisz do mnie.</a></span></p>
             </React.Fragment>
         }
     },
@@ -261,7 +268,7 @@ export const WEBSITE_TEXT = {
             title: 'Błąd ładowania treści',
             content: 'Przepraszamy za usterkę. Spróbuj ponownie później.'
         },
-        backToTop: "Powrót",
+        backToTop: 'Powrót',
         readMore: '<div>Czytaj więcej</div>'
     }
 };

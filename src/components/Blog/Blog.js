@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {connect} from 'react-redux'
-import {bindActionCreators} from "redux";
-import {setMainPage} from "../../actions";
+import {bindActionCreators} from 'redux';
+import {setMainPage} from '../../actions';
 
 import TopBanner from '../TopBanner/TopBanner';
 import Posts from './Posts/Posts';

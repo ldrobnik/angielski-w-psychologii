@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import {connect} from 'react-redux';
-import {bindActionCreators} from "redux";
+import {bindActionCreators} from 'redux';
 import {Row, Col, Container} from 'react-bootstrap';
 import posed from 'react-pose';
-import {Waypoint} from "react-waypoint";
+import {Waypoint} from 'react-waypoint';
 
 import './Offer.css';
-import {SECTION_NAMES, WEBSITE_TEXT} from "../../data/constants";
-import {setActiveSection} from "../../actions";
+import {SECTION_NAMES, WEBSITE_TEXT} from '../../data/constants';
+import {setActiveSection} from '../../actions';
 import TextBubble from '../UI/TextBubble/TextBubble';
 
 /* POSE */
@@ -60,7 +60,7 @@ const Offer = (props) => {
     };
 
     //offset for triggering animation - larger for mobile
-    const animationOffset = props.mobile ? "30%" : "250px";
+    const animationOffset = props.mobile ? '30%' : '250px';
 
 
     return (

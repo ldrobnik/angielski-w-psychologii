@@ -1,6 +1,6 @@
-import React from "react";
-import {Container, Row} from "react-bootstrap";
-import {WEBSITE_TEXT} from "../../../data/constants";
+import React from 'react';
+import {Container, Row} from 'react-bootstrap';
+import {WEBSITE_TEXT} from '../../../data/constants';
 import './CopyrightNote.css';
 
 const CopyrightNote = () => {

@@ -1,6 +1,6 @@
-import React, {useState} from "react";
+import React, {useState} from 'react';
 import posed from 'react-pose';
-import {Image} from "react-bootstrap";
+import {Image} from 'react-bootstrap';
 
 import './RoundedImage.css';
 

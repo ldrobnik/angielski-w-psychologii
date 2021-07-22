@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import {bindActionCreators} from "redux";
+import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {Row, Container} from 'react-bootstrap';
 import posed from 'react-pose';
-import {Waypoint} from "react-waypoint";
+import {Waypoint} from 'react-waypoint';
 import './English.css';
 import TextBubble from '../UI/TextBubble/TextBubble';
 import Note from '../UI/Note/Note';
@@ -12,8 +12,8 @@ import illustration0 from '../../assets/images/english0.jpg';
 import illustration1 from '../../assets/images/english1.jpg';
 import illustration2 from '../../assets/images/english2.jpg';
 
-import {SECTION_NAMES, WEBSITE_TEXT} from "../../data/constants";
-import {setActiveSection} from "../../actions";
+import {SECTION_NAMES, WEBSITE_TEXT} from '../../data/constants';
+import {setActiveSection} from '../../actions';
 
 /* POSE */
 const AnimatedList = posed.div({
@@ -59,7 +59,7 @@ const English = (props) => {
     const illustrations = [illustration0, illustration1, illustration2];
 
     //offset for triggering animation - larger for mobile
-    const animationOffset = props.mobile ? "350px" : "300px";
+    const animationOffset = props.mobile ? '350px' : '300px';
 
     return (
         <React.Fragment>

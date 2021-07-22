@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import {connect} from 'react-redux';
-import {bindActionCreators} from "redux";
+import {bindActionCreators} from 'redux';
 import posed from 'react-pose';
 import {Container, Row, Col} from 'react-bootstrap';
 
 import TextBubble from '../../../UI/TextBubble/TextBubble';
 import logoImage from '../../../../assets/images/logo.svg';
-import {STRINGS_TO_REMOVE, STRINGS_TO_REPLACE, WEBSITE_TEXT} from "../../../../data/constants";
-import {setPageLoaded} from "../../../../actions";
+import {STRINGS_TO_REMOVE, STRINGS_TO_REPLACE, WEBSITE_TEXT} from '../../../../data/constants';
+import {setPageLoaded} from '../../../../actions';
 
 const AnimatedPost = posed.div({
     visible: {
@@ -63,12 +63,13 @@ const DisplayedPost = props => {
     useEffect(() => {
         if (props.post.title.rendered.length > 1) {
             handleLoaded(); //if post data have been obtained, turn off spinner
-        };
+        }
+        ;
     }, [props.post.title.rendered]);
 
     useEffect(() => {
         //show post content after a while
-       setTimeout(() => setPostLoaded(true), 2000);
+        setTimeout(() => setPostLoaded(true), 2000);
     });
 
     return (
@@ -95,7 +96,7 @@ const DisplayedPost = props => {
                             <h2
                                 dangerouslySetInnerHTML={{__html: props.post.title.rendered}}/>
 
-                                <div
+                            <div
                                 className="blogPost"
                                 dangerouslySetInnerHTML={{__html: cleanUpPost(props.post.content.rendered)}}/>
                         </AnimatedPost>

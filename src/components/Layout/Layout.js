@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import posed, {PoseGroup} from 'react-pose';
 
 import './Layout.css';
-import NavigationBar from "../NavigationBar/NavigationBar";
+import NavigationBar from '../NavigationBar/NavigationBar';
 import Spinner from '../UI/Spinner/Spinner';
 
 /* POSE */
@@ -24,7 +24,7 @@ const AnimatedOverlay = posed.div({
 const Layout = (props) => {
 
     //class applied to outer container to prevent scrolling before the page is loaded
-    const containerClass = (props.loaded) ? "" : "constrained";
+    const containerClass = (props.loaded) ? '' : 'constrained';
 
     return (
         <div className="contentWrapper">
@@ -32,7 +32,7 @@ const Layout = (props) => {
                 {!props.loaded && <Spinner/>}
                 <PoseGroup>
                     {!props.loaded && [
-                        <AnimatedOverlay key="overlay" className="overlay" />
+                        <AnimatedOverlay key="overlay" className="overlay"/>
                     ]}
                 </PoseGroup>
                 {props.loaded && <NavigationBar/>}

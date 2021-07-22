@@ -1,17 +1,17 @@
 import React, {useState} from 'react';
-import {bindActionCreators} from "redux";
+import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {Row, Col, Container} from 'react-bootstrap';
 import posed from 'react-pose';
-import {Waypoint} from "react-waypoint";
+import {Waypoint} from 'react-waypoint';
 import './Contact.css';
 
 import TextBubble from '../UI/TextBubble/TextBubble';
 import LinkButton from '../UI/LinkButton/LinkButton';
 import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
 
-import {SECTION_NAMES, WEBSITE_TEXT} from "../../data/constants";
-import {setActiveSection} from "../../actions";
+import {SECTION_NAMES, WEBSITE_TEXT} from '../../data/constants';
+import {setActiveSection} from '../../actions';
 
 /* POSE */
 const AnimatedMessageLeft = posed.div({
@@ -63,7 +63,7 @@ const Contact = (props) => {
     };
 
     //offset for triggering animation - larger for mobile
-    const animationOffset = props.mobile ? "200px" : "300px";
+    const animationOffset = props.mobile ? '200px' : '300px';
 
     return (
         <React.Fragment>
@@ -134,7 +134,7 @@ const Contact = (props) => {
 
                     </Row>
                 </Container>
-                <CopyrightNote />
+                <CopyrightNote/>
             </div>
         </React.Fragment>
     );

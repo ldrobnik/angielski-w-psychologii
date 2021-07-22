@@ -1,18 +1,18 @@
 import React, {useState} from 'react';
-import {bindActionCreators} from "redux";
+import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {Row, Container} from 'react-bootstrap';
 import posed from 'react-pose';
-import {Waypoint} from "react-waypoint";
+import {Waypoint} from 'react-waypoint';
 import './Translations.css';
 
 import illustration0 from '../../assets/images/translations0.jpg';
 import illustration1 from '../../assets/images/translations1.jpg';
 
-import {SECTION_NAMES, WEBSITE_TEXT} from "../../data/constants";
-import TextBubble from "../UI/TextBubble/TextBubble";
-import Note from "../UI/Note/Note";
-import {setActiveSection} from "../../actions";
+import {SECTION_NAMES, WEBSITE_TEXT} from '../../data/constants';
+import TextBubble from '../UI/TextBubble/TextBubble';
+import Note from '../UI/Note/Note';
+import {setActiveSection} from '../../actions';
 
 /* POSE */
 
@@ -56,7 +56,7 @@ const Translations = (props) => {
     const illustrations = [illustration0, illustration1];
 
     //offset for triggering animation - larger for mobile
-    const animationOffset = props.mobile ? "50px" : "350px";
+    const animationOffset = props.mobile ? '50px' : '350px';
 
 
     return (

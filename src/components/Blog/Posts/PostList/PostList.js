@@ -1,16 +1,16 @@
 import React, {useEffect, useState} from 'react';
 import {connect} from 'react-redux';
-import {bindActionCreators} from "redux";
+import {bindActionCreators} from 'redux';
 import posed from 'react-pose';
-import {Waypoint} from "react-waypoint";
+import {Waypoint} from 'react-waypoint';
 import {Container, Row, Col} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import './PostList.css';
 
 import TextBubble from '../../../UI/TextBubble/TextBubble';
 import AnchorButton from '../../../UI/AnchorButton/AnchorButton';
-import {SECTION_NAMES, WEBSITE_TEXT} from "../../../../data/constants";
-import {setPageLoaded} from "../../../../actions";
+import {SECTION_NAMES, WEBSITE_TEXT} from '../../../../data/constants';
+import {setPageLoaded} from '../../../../actions';
 
 /* POSE */
 const AnimatedList = posed.div({
@@ -40,7 +40,7 @@ const PostList = props => {
     const [postsVisible, setPostsVisible] = useState(false);
 
 // offset for triggering animation
-    const animationOffset = "30%";
+    const animationOffset = '30%';
 
     //shows the posts
     const showPosts = () => {
@@ -120,12 +120,12 @@ const PostList = props => {
                 className="bannerButton"
             />}
         </Container>
-);
+    );
 };
 
 const mapDispatchToProps = dispatch => {
     return bindActionCreators({
-    setPageLoaded
-}, dispatch);
+        setPageLoaded
+    }, dispatch);
 };
 export default connect(null, mapDispatchToProps)(PostList);

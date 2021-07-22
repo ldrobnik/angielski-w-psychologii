@@ -36,7 +36,7 @@ const Note = (props) => {
     if (props.mobile) {
         content = <React.Fragment>{imageColumn}{textColumn}</React.Fragment>;
     } else {
-        if (props.order%2 !== 0) {
+        if (props.order % 2 !== 0) {
             content = <React.Fragment>{imageColumn}{textColumn}</React.Fragment>;
         } else {
             content = <React.Fragment>{textColumn}{imageColumn}</React.Fragment>;

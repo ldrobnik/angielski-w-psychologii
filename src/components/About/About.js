@@ -1,16 +1,16 @@
 import React, {useState} from 'react';
-import {bindActionCreators} from "redux";
+import {bindActionCreators} from 'redux';
 import {Row, Container, Col} from 'react-bootstrap';
 import {connect} from 'react-redux';
-import {Waypoint} from "react-waypoint";
+import {Waypoint} from 'react-waypoint';
 import posed from 'react-pose';
 import TextBubble from '../UI/TextBubble/TextBubble';
 import Portrait from './Portrait/Portrait';
 import './About.css';
 
 import photo from '../../assets/images/portrait.jpg';
-import {SECTION_NAMES, WEBSITE_TEXT} from "../../data/constants";
-import {setActiveSection} from "../../actions";
+import {SECTION_NAMES, WEBSITE_TEXT} from '../../data/constants';
+import {setActiveSection} from '../../actions';
 
 /* POSE */
 const AnimatedList = posed.div({
@@ -91,36 +91,37 @@ const About = (props) => {
         </Col>
     );
     //shows different content order on mobile and larger screens
-    const mainContent = props.mobile ? <React.Fragment>{portrait}{textBubbles}</React.Fragment> : <React.Fragment>{textBubbles}{portrait} </React.Fragment>;
+    const mainContent = props.mobile ? <React.Fragment>{portrait}{textBubbles}</React.Fragment> :
+        <React.Fragment>{textBubbles}{portrait} </React.Fragment>;
 
     //offset for triggering animation - larger for mobile
-    const animationOffset = props.mobile ? "-80%" : "-150px";
+    const animationOffset = props.mobile ? '-80%' : '-150px';
     return (
         <React.Fragment>
 
-        <div className="lightBackground sectionContent">
-            <Container>
-                <Row>
-                    <h1 id={SECTION_NAMES.main[0].id}>
-                        {SECTION_NAMES.main[0].name}
-                    </h1>
-                </Row>
-                <Row className="separator">
-                </Row>
-                <Waypoint
-                    onEnter={() => setSection()}
-                />
-                <Row>
-                    <div className="introduction">
-                        <h2>{WEBSITE_TEXT.about.name}</h2>
-                        <p>{WEBSITE_TEXT.about.description}</p>
-                    </div>
-                </Row>
-                <Row>
-                    {mainContent}
-                </Row>
-            </Container>
-        </div>
+            <div className="lightBackground sectionContent">
+                <Container>
+                    <Row>
+                        <h1 id={SECTION_NAMES.main[0].id}>
+                            {SECTION_NAMES.main[0].name}
+                        </h1>
+                    </Row>
+                    <Row className="separator">
+                    </Row>
+                    <Waypoint
+                        onEnter={() => setSection()}
+                    />
+                    <Row>
+                        <div className="introduction">
+                            <h2>{WEBSITE_TEXT.about.name}</h2>
+                            <p>{WEBSITE_TEXT.about.description}</p>
+                        </div>
+                    </Row>
+                    <Row>
+                        {mainContent}
+                    </Row>
+                </Container>
+            </div>
             <Waypoint
                 onEnter={() => showMessages()}
                 bottomOffset={animationOffset}

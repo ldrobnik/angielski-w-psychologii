@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import {connect} from 'react-redux';
-import {bindActionCreators} from "redux";
+import {bindActionCreators} from 'redux';
 import {Container, Row} from 'react-bootstrap';
 
 import './Posts.css';
 
 import DisplayedPost from './DisplayedPost/DisplayedPost';
 import PostList from './PostList/PostList';
-import {setLoadedPosts} from "../../../actions";
+import {setLoadedPosts} from '../../../actions';
 
 import {WEBSITE_TEXT} from '../../../data/constants';
 
@@ -30,7 +30,7 @@ const Posts = props => {
 
     //creates a complete url from different parameters
     const getUrl = () => {
-        return props.match.params.year + "/" + props.match.params.month + "/" + props.match.params.id;
+        return props.match.params.year + '/' + props.match.params.month + '/' + props.match.params.id;
     };
 
     //currently displayed url

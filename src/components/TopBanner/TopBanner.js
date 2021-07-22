@@ -1,15 +1,15 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {bindActionCreators} from "redux";
+import {bindActionCreators} from 'redux';
 import {Jumbotron} from 'react-bootstrap';
 import './TopBanner.css';
 
 import '../UI/AnchorButton/AnchorButton';
 
-import {WEBSITE_TEXT} from "../../data/constants";
-import AnchorButton from "../UI/AnchorButton/AnchorButton";
+import {WEBSITE_TEXT} from '../../data/constants';
+import AnchorButton from '../UI/AnchorButton/AnchorButton';
 import backdrop from '../../assets/images/backdrop.jpg';
-import {setPageLoaded} from "../../actions";
+import {setPageLoaded} from '../../actions';
 
 const TopBanner = (props) => {
 
@@ -18,7 +18,7 @@ const TopBanner = (props) => {
 
         //set page as loaded only if the main page is displayed
         if (props.mainPage) {
-        props.setPageLoaded(true);
+            props.setPageLoaded(true);
         }
     };
 
@@ -29,7 +29,7 @@ const TopBanner = (props) => {
     const subtitle = props.mainPage ? WEBSITE_TEXT.topBanner.subtitle : WEBSITE_TEXT.blog.banner.subtitle;
 
     //banner class depending on whether the main page is displayed
-    const bannerClass = props.mainPage? "verticallyCentered wide" : "verticallyCentered thin";
+    const bannerClass = props.mainPage ? 'verticallyCentered wide' : 'verticallyCentered thin';
 
     return (
         <Jumbotron

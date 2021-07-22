@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Image} from 'react-bootstrap';
 import posed from 'react-pose';
 
-import "./Portrait.css";
+import './Portrait.css';
 
 /* POSE */
 const AnimatedPic = posed.div({
@@ -11,7 +11,8 @@ const AnimatedPic = posed.div({
         filter: 'blur(0)',
         transition: {
             ease: 'easeIn',
-            duration: 500 }
+            duration: 500
+        }
     },
     hidden: {
         opacity: 0,

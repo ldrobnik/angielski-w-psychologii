@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import {connect} from 'react-redux';
-import {bindActionCreators} from "redux";
+import {bindActionCreators} from 'redux';
 import {Navbar, Nav} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-import {setMobile, setPageLoaded} from "../../actions";
+import {setMobile, setPageLoaded} from '../../actions';
 
 import './NavigatorBar.css';
 
@@ -146,7 +146,7 @@ const NavigationBar = (props) => {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="navLink facebookLink"
-                        >
+                    >
                         {WEBSITE_TEXT.navbar.facebookLink.name}
                     </a>
 

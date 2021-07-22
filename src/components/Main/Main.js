@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {connect} from 'react-redux'
-import {bindActionCreators} from "redux";
-import {setMainPage} from "../../actions";
+import {bindActionCreators} from 'redux';
+import {setMainPage} from '../../actions';
 
 import TopBanner from '../TopBanner/TopBanner';
 import About from '../About/About';
@@ -10,7 +10,7 @@ import Translations from '../Translations/Translations';
 import Offer from '../Offer/Offer';
 
 import Contact from '../Contact/Contact';
-import {SECTION_NAMES, WEBSITE_TEXT} from "../../data/constants";
+import {SECTION_NAMES, WEBSITE_TEXT} from '../../data/constants';
 
 const Main = props => {
 
