@@ -7,21 +7,21 @@ A **React-based** website advertising services offered by [Katarzyna Łasocha-No
 
 ## Main features
 
-* a **responsive navigation bar** for easy navigation;
-* **easily expandable sections** showcasing Katarzyna’s experience and offer;
-* a **blog section** featuring educational materials;
-* **animations** triggered by scrolling;
-* a **smooth scrolling effect** for anchor links.
+* A **responsive navigation bar** for easy navigation
+* **Easily expandable sections** showcasing Katarzyna’s experience and offer
+* A **blog section** featuring educational materials
+* **Animations** triggered by scrolling
+* A **smooth scrolling effect** for anchor links
 
 ## Technicalities
 
-* a single-page app created with **React.js**;
-* app state controlled with **Redux**;
-* routes managed with **React-Router**;
-* neat styles thanks to **SCSS**;
-* a blog section utilising **Wordpress API**;
-* **React-Bootstrap** providing responsive and coherent design;
-* **Pose** to add extra oomph to animations;
-* clear visual communication thanks to **FontAwesome** icons;
-* **React Waypoint** to display elements depending on the current scroll position;
-* smooth scrolling to anchors by means of **react-anchor-link-smooth-scroll**.
+* A single-page app created with **React.js**
+* App state controlled with **Redux**
+* Routes managed with **React-Router**
+* Neat styles thanks to **SCSS**
+* A blog section utilising **Wordpress API**
+* **React-Bootstrap** providing responsive and coherent design
+* **Pose** to add extra oomph to animations
+* Clear visual communication thanks to **FontAwesome** icons
+* **React Waypoint** to display elements depending on the current scroll position
+* Smooth scrolling to anchors by means of **react-anchor-link-smooth-scroll**
