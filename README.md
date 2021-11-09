@@ -1,6 +1,6 @@
 # Angielski w psychologii
 
-A **React-based** website advertising services offered by [Katarzyna Łasocha-Nowak](https://angielskiwpsychologii.pl/), an English teacher and translator specialising in psychology.
+A **React-based** website advertising services offered by, an English teacher and translator specialising in psychology. (The website is temporarily inactive.)
 
 * [Main features](#main-features)
 * [Technicalities](#technicalities)
