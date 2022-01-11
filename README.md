@@ -1,6 +1,6 @@
 # Angielski w psychologii
 
-A **React-based** website advertising services offered by, an English teacher and translator specialising in psychology. (The website is temporarily inactive.)
+A **React-based** [website](https://angielskiwpsychologii.pl) advertising services offered by, an English teacher and translator specialising in psychology.
 
 * [Main features](#main-features)
 * [Technicalities](#technicalities)
