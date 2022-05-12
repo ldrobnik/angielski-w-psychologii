@@ -89,12 +89,10 @@ export const WEBSITE_TEXT = {
         description: <React.Fragment>Nauczycielka języka angielskiego i&nbsp;tłumaczka</React.Fragment>,
         altText: 'Katarzyna Łasocha-Nowak',
         details: [
-            <React.Fragment>Od 14 lat wspieram osoby dorosłe w&nbsp;ich rozwoju
-                językowym. Przeprowadziłam <span className="highlighted">kilkadziesiąt
-                kursów języka angielskiego</span> ogólnego i&nbsp;specjalistycznego na różnych poziomach zaawansowania.
-                Nauczam osoby dojrzałe w&nbsp;ramach Akademii 50&nbsp;plus oraz studentów 2&nbsp;szkół wyższych —
-                poznańskiego oddziału SWPS i&nbsp;WSB.
-
+            <React.Fragment>
+                <p>Od 16&nbsp;lat wspieram osoby dorosłe w&nbsp;ich rozwoju językowym. Przeprowadziłam <span className="highlighted">kilkadziesiąt
+                kursów języka angielskiego</span> ogólnego i&nbsp;specjalistycznego na różnych poziomach zaawansowania.</p>
+                <p>Obecnie prowadzę zajęcia z&nbsp;języka angielskiego biznesowego dla firm, angielskiego ogólnego dla studentów szkół wyższych — UAM i&nbsp;SWPS oraz angielskiego w&nbsp;psychologii dla osób indywidualnych. Większość zajęć odbywa się online.</p>
             </React.Fragment>,
             <React.Fragment>Jestem współautorką <span className="highlighted">specjalistycznego podręcznika języka angielskiego dla psychologów</span>,
                 w&nbsp;oparciu o&nbsp;który przeprowadziłam kilka edycji mojego autorskiego kursu „Angielski w
@@ -102,7 +100,7 @@ export const WEBSITE_TEXT = {
                 z&nbsp;grupą poznańskich psychologów i&nbsp;psychoterapeutów.</React.Fragment>,
             <React.Fragment>Wychodząc naprzeciw potrzebom osób, które nie mają czasu lub możliwości uczestniczenia
                 w&nbsp;moich kursach na żywo, oferuję <span
-                    className="highlighted">zajęcia przez Skype</span>.</React.Fragment>
+                    className="highlighted">zajęcia online</span>.</React.Fragment>
         ]
     },
     english: {
@@ -177,7 +175,7 @@ export const WEBSITE_TEXT = {
     },
     offer: {
         english: {
-            title: <React.Fragment>Angielski w&nbsp;psychologii przez Skype</React.Fragment>,
+            title: <React.Fragment>Angielski w&nbsp;psychologii online</React.Fragment>,
             content: [
                 {
                     type: <React.Fragment>Indywidualnie:</React.Fragment>,
