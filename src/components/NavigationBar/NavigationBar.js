@@ -42,17 +42,17 @@ const NavigationBar = (props) => {
 
     //specifies the url and text of the router link
 
-    const routerLink = props.mainPage ?
-        {
-            name: WEBSITE_TEXT.navbar.blogLink.name,
-            url: WEBSITE_TEXT.navbar.blogLink.url
-        }
-        :
-        {
-            name: WEBSITE_TEXT.navbar.homeLink.name,
-            url: WEBSITE_TEXT.navbar.homeLink.url
-        }
-    ;
+    // const routerLink = props.mainPage ?
+    //     {
+    //         name: WEBSITE_TEXT.navbar.blogLink.name,
+    //         url: WEBSITE_TEXT.navbar.blogLink.url
+    //     }
+    //     :
+    //     {
+    //         name: WEBSITE_TEXT.navbar.homeLink.name,
+    //         url: WEBSITE_TEXT.navbar.homeLink.url
+    //     }
+    // ;
 
 
     useEffect(() => {
@@ -136,11 +136,11 @@ const NavigationBar = (props) => {
                         })
                     )
                     }
-                    <Link
-                        to={routerLink.url}
-                        className="navLink"
-                        onClick={() => handleLoaded()}
-                    >{routerLink.name}</Link>
+                    {/*<Link*/}
+                    {/*    to={routerLink.url}*/}
+                    {/*    className="navLink"*/}
+                    {/*    onClick={() => handleLoaded()}*/}
+                    {/*>{routerLink.name}</Link>*/}
                     <a
                         href={WEBSITE_TEXT.navbar.facebookLink.url}
                         target="_blank"
