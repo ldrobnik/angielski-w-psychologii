@@ -132,7 +132,7 @@ export const WEBSITE_TEXT = {
             <React.Fragment>
                 <p>A co z&nbsp;gramatyką? Oczywiście, gramatyka jest ważna, jednak to nie ona będzie
                     wyznaczać nam kierunek.</p>
-                <p>Gdy zobaczę, że walczysz z&nbsp;jakimś czasem (Present Perfect -
+                <p>Gdy zobaczę, że walczysz z&nbsp;jakimś czasem (Present Perfect –
                     zgadłam?) – poświęcimy mu uwagę, ale <span
                         className="highlighted">zawsze w kontekście i&nbsp;świadomie</span>,
                     nie mechanicznie i&nbsp;na zasadzie &bdquo;sztuka dla sztuki&rdquo;, bo to po prostu nie
