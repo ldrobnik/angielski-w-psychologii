@@ -255,7 +255,7 @@ export const WEBSITE_TEXT = {
             buttonMessage: <React.Fragment>k.lasocha@gmail.com</React.Fragment>,
             buttonUrl: 'mailto:k.lasocha@gmail.com'
         },
-        copyrightNotice: <React.Fragment>&copy; 2020 Łukasz Drobnik & Katarzyna Łasocha-Nowak</React.Fragment>
+        copyrightNotice: <React.Fragment>&copy; 2022 Łukasz Drobnik & Katarzyna Łasocha-Nowak</React.Fragment>
     },
     blog: {
         banner: {
