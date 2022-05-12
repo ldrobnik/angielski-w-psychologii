@@ -121,31 +121,31 @@ const Offer = (props) => {
                             </AnimatedMessageLeft>
                         </Col>
                     </Row>
-                    <Row>
-                        <Col
-                            className="offerColumn"
-                            lg={{span: 8, offset: 2}}
-                        >
-                            <AnimatedMessageRight
-                                pose={messagesVisible ? 'visible' : 'hidden'}
-                            >
-                                <TextBubble
-                                    type="theme"
-                                >
-                                    <div
-                                        className="offerBox"
-                                    >
-                                        <div>
-                                            <h2 className="serviceName">{WEBSITE_TEXT.offer.specialOffer.title}</h2>
-                                        </div>
-                                        <Row>
-                                            {WEBSITE_TEXT.offer.specialOffer.content}
-                                        </Row>
-                                    </div>
-                                </TextBubble>
-                            </AnimatedMessageRight>
-                        </Col>
-                    </Row>
+                    {/*<Row>*/}
+                    {/*    <Col*/}
+                    {/*        className="offerColumn"*/}
+                    {/*        lg={{span: 8, offset: 2}}*/}
+                    {/*    >*/}
+                    {/*        <AnimatedMessageRight*/}
+                    {/*            pose={messagesVisible ? 'visible' : 'hidden'}*/}
+                    {/*        >*/}
+                    {/*            <TextBubble*/}
+                    {/*                type="theme"*/}
+                    {/*            >*/}
+                    {/*                <div*/}
+                    {/*                    className="offerBox"*/}
+                    {/*                >*/}
+                    {/*                    <div>*/}
+                    {/*                        <h2 className="serviceName">{WEBSITE_TEXT.offer.specialOffer.title}</h2>*/}
+                    {/*                    </div>*/}
+                    {/*                    <Row>*/}
+                    {/*                        {WEBSITE_TEXT.offer.specialOffer.content}*/}
+                    {/*                    </Row>*/}
+                    {/*                </div>*/}
+                    {/*            </TextBubble>*/}
+                    {/*        </AnimatedMessageRight>*/}
+                    {/*    </Col>*/}
+                    {/*</Row>*/}
                 </Container>
             </div>
         </React.Fragment>
