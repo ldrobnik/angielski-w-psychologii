@@ -190,7 +190,7 @@ export const WEBSITE_TEXT = {
                 {
                     type: <React.Fragment>Pakiet 10&nbsp;lekcji<sup>*</sup>:</React.Fragment>,
                     price: <React.Fragment><span
-                        className="priceValue">800&nbsp;zł</span> brutto</React.Fragment>
+                        className="priceValue">900&nbsp;zł</span> brutto</React.Fragment>
                 }
             ],
             footnote: <React.Fragment>*Do wykorzystania w&nbsp;ciągu 12&nbsp;tygodni</React.Fragment>
