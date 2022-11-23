@@ -277,11 +277,6 @@ export const WEBSITE_TEXT = {
           ),
         },
       ],
-      footnote: (
-        <React.Fragment>
-          *Do wykorzystania w&nbsp;ciągu 12&nbsp;tygodni
-        </React.Fragment>
-      ),
     },
     translations: {
       title: <React.Fragment>Tłumaczenia w&nbsp;psychologii</React.Fragment>,
