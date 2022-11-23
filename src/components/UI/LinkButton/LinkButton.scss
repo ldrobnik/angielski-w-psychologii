@@ -21,4 +21,9 @@
     background-color: setColor(2);
     text-decoration: none;
   }
+
+
+  @media all and (max-width: 420px) {
+    font-size: 0.8em;
+  }
 }

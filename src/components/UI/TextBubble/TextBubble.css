@@ -30,6 +30,11 @@
   color: #9d0059;
   text-decoration: none;
 }
+@media all and (max-width: 420px) {
+  .lightTextBubble {
+    padding: 5px;
+  }
+}
 
 .themeTextBubble {
   border: #f8f9fa 1px solid;
@@ -61,6 +66,11 @@
 .themeTextBubble .inlineLink a:active {
   color: #ff6abe;
   text-decoration: none;
+}
+@media all and (max-width: 420px) {
+  .themeTextBubble {
+    padding: 5px;
+  }
 }
 
 .blogTextBubble {
@@ -98,26 +108,31 @@
   background-color: #ff0492;
   text-decoration: none;
 }
-.blogTextBubble p, .blogTextBubble h2 {
+.blogTextBubble p,
+.blogTextBubble h2 {
   padding: 0 15px;
 }
 @media all and (max-width: 500px) {
-  .blogTextBubble p, .blogTextBubble h2 {
+  .blogTextBubble p,
+.blogTextBubble h2 {
     padding: 0 10px;
   }
 }
-.blogTextBubble ol, .blogTextBubble ul {
+.blogTextBubble ol,
+.blogTextBubble ul {
   margin-left: 3em;
   margin-right: 3em;
 }
 @media all and (max-width: 768px) {
-  .blogTextBubble ol, .blogTextBubble ul {
+  .blogTextBubble ol,
+.blogTextBubble ul {
     margin-left: 0.5em;
     margin-right: 1em;
   }
 }
 .blogTextBubble ul {
-  list-style: none; /* Remove default bullets */
+  list-style: none;
+  /* Remove default bullets */
 }
 .blogTextBubble ul li::before {
   content: "•";
@@ -171,7 +186,8 @@
 }
 .blogTextBubble iframe {
   width: 60vw;
-  height: 33.75vw; /*16:9*/
+  height: 33.75vw;
+  /*16:9*/
 }
 .blogTextBubble figure {
   margin-top: 1.5em;
@@ -191,7 +207,8 @@
   font-size: 1.4em;
   text-align: left;
 }
-.blogTextBubble ul, .blogTextBubble ol {
+.blogTextBubble ul,
+.blogTextBubble ol {
   text-align: left;
 }
 .blogTextBubble blockquote {
@@ -222,7 +239,8 @@
 .hoverableTextBubble:hover {
   background-color: #d00076;
 }
-.hoverableTextBubble p, .hoverableTextBubble h2 {
+.hoverableTextBubble p,
+.hoverableTextBubble h2 {
   padding: 0 15px;
 }
 .hoverableTextBubble p {

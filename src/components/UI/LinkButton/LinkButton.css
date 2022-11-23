@@ -21,4 +21,9 @@
 .linkButton:hover {
   background-color: #ff0492;
   text-decoration: none;
+}
+@media all and (max-width: 420px) {
+  .linkButton {
+    font-size: 0.8em;
+  }
 }/*# sourceMappingURL=LinkButton.css.map */

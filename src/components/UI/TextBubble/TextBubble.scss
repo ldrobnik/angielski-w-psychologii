@@ -35,6 +35,10 @@
       text-decoration: none;
     }
   }
+
+  @media all and (max-width: 420px) {
+    padding: 5px;
+  }
 }
 
 .themeTextBubble {
@@ -73,6 +77,10 @@
     }
 
   }
+
+  @media all and (max-width: 420px) {
+    padding: 5px;
+  }
 }
 
 .blogTextBubble {
@@ -109,7 +117,8 @@
     }
   }
 
-  p, h2 {
+  p,
+  h2 {
     padding: 0 15px;
 
     @media all and (max-width: 500px) {
@@ -118,7 +127,8 @@
 
   }
 
-  ol, ul {
+  ol,
+  ul {
     margin-left: 3em;
     margin-right: 3em;
 
@@ -130,7 +140,8 @@
   }
 
   ul {
-    list-style: none; /* Remove default bullets */
+    list-style: none;
+    /* Remove default bullets */
   }
 
   ul li::before {
@@ -148,7 +159,7 @@
   }
 
   ol li::before {
-    content: "." counter(li);
+    content: "."counter(li);
     color: $themeColor;
     display: inline-block;
     width: 1em;
@@ -196,7 +207,8 @@
 
   iframe {
     width: 60vw;
-    height: 33.75vw; /*16:9*/
+    height: 33.75vw;
+    /*16:9*/
   }
 
   figure {
@@ -223,7 +235,8 @@
     }
   }
 
-  ul, ol {
+  ul,
+  ol {
     text-align: left;
   }
 
@@ -257,7 +270,8 @@
     background-color: setColor(1);
   }
 
-  p, h2 {
+  p,
+  h2 {
     padding: 0 15px;
   }
 

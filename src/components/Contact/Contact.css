@@ -56,6 +56,11 @@
   color: #9d0059;
   margin-bottom: 20px;
 }
+@media all and (max-width: 420px) {
+  .availableHours h3 {
+    font-size: 1.2em;
+  }
+}
 .availableHours li {
   margin-left: 30px;
 }
