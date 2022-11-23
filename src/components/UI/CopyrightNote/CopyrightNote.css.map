@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAEA,cAAe;EACb,SAAS,EAAE,KAAK;EAChB,KAAK,ECFK,OAAO;EDGjB,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,MAAM",
-"sources": ["CopyrightNote.scss","../../../styles/_variables.scss"],
-"names": [],
-"file": "CopyrightNote.css"
-}
+{"version":3,"sources":["CopyrightNote.scss","../../../styles/_variables.scss","CopyrightNote.css"],"names":[],"mappings":"AAEA;EACE,gBAAA;EACA,cCFU;EDGV,YAAA;EACA,cAAA;AEDF","file":"CopyrightNote.css"}

@@ -125,7 +125,7 @@ export const WEBSITE_TEXT = {
       <React.Fragment>
         Wychodząc naprzeciw potrzebom osób, które nie mają czasu lub możliwości
         uczestniczenia w&nbsp;moich kursach na żywo, oferuję{" "}
-        <span className="highlighted">zajęcia online</span>.
+        <span className="highlighted">zajęcia&nbsp;online</span>.
       </React.Fragment>,
     ],
   },
@@ -278,13 +278,22 @@ export const WEBSITE_TEXT = {
           ),
         },
         {
-          type: <React.Fragment>Konsultacje indywidualne:</React.Fragment>,
-          explanation:
-            "1 do 5 spotkań, podczas których pomogę ci się przygotować do rozmowy kwalifikacyjnej lub egzaminu na uczelni albo pomogę doszlifować prezentację, webinar, warsztaty, czy szkolenie w języku angielskim.",
+          type: (
+            <React.Fragment>
+              Konsultacje indywidualne<sup>*</sup>:
+            </React.Fragment>
+          ),
+          explanation: (
+            <React.Fragment>
+              <sup>*</sup>Od 1 do 5&nbsp;spotkań, podczas których pomogę ci się
+              przygotować do rozmowy kwalifikacyjnej lub egzaminu na uczelni
+              albo pomogę doszlifować prezentację, webinar, warsztaty czy
+              szkolenie w&nbsp;języku angielskim.
+            </React.Fragment>
+          ),
           price: (
             <React.Fragment>
-              <span className="priceValue">120&nbsp;zł</span>{" "}
-              brutto/os./55&nbsp;min
+              <span className="priceValue">120&nbsp;zł</span> brutto/55&nbsp;min
             </React.Fragment>
           ),
         },

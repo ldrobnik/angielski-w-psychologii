@@ -1,70 +1,88 @@
 .contactBox {
   min-height: 250px;
-  position: relative; }
+  position: relative;
+}
 
 .contactDetails {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -42%); }
+  transform: translate(-50%, -42%);
+}
 
 .contactItem {
-  white-space: nowrap; }
+  white-space: nowrap;
+}
+.contactItem a {
+  color: #0f0f0f;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 1s;
+}
+.contactItem a:link {
+  color: #0f0f0f;
+  text-decoration: none;
+}
+.contactItem a:visited {
+  color: #0f0f0f;
+  text-decoration: none;
+}
+.contactItem a:hover {
+  color: #9d0059;
+  text-decoration: none;
+}
+.contactItem a:active {
+  color: #0f0f0f;
+  text-decoration: none;
+}
+@media all and (max-width: 360px) {
   .contactItem a {
-    color: #0f0f0f;
-    text-decoration: none;
-    cursor: pointer;
-    transition: color 1s; }
-    .contactItem a:link {
-      color: #0f0f0f;
-      text-decoration: none; }
-    .contactItem a:visited {
-      color: #0f0f0f;
-      text-decoration: none; }
-    .contactItem a:hover {
-      color: #9d0059;
-      text-decoration: none; }
-    .contactItem a:active {
-      color: #0f0f0f;
-      text-decoration: none; }
-    @media all and (max-width: 360px) {
-      .contactItem a {
-        font-size: 0.8em; } }
+    font-size: 0.8em;
+  }
+}
 
 .contactIcon {
   color: #9d0059;
   max-width: 25px;
   margin-right: 15px;
-  transform: translateY(-2px); }
+  transform: translateY(-2px);
+}
 
 .availableHours {
   margin: 0 auto;
-  padding: 12px; }
-  .availableHours h3 {
-    color: #9d0059;
-    margin-bottom: 20px; }
+  padding: 12px;
+}
+.availableHours h3 {
+  color: #9d0059;
+  margin-bottom: 20px;
+}
+.availableHours li {
+  margin-left: 30px;
+}
+@media all and (max-width: 360px) {
   .availableHours li {
-    margin-left: 30px; }
-    @media all and (max-width: 360px) {
-      .availableHours li {
-        margin-left: 0; } }
+    margin-left: 0;
+  }
+}
 
 .hoursIcon {
   max-width: 15px;
   margin-right: 15px;
-  color: #9d0059; }
+  color: #9d0059;
+}
 
 .hoursItem {
-  margin: 2px 0; }
+  margin: 2px 0;
+}
 
 .hoursNote {
   color: #9d0059;
   margin-top: 20px;
   padding: 5px 10px;
   border: #9d0059 1px solid;
-  text-align: center; }
+  text-align: center;
+}
 
 .booked {
-  opacity: 0.5; }
-
-/*# sourceMappingURL=Contact.css.map */
+  opacity: 0.5;
+}/*# sourceMappingURL=Contact.css.map */

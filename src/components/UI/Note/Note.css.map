@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAEA,WAAY;EACV,OAAO,EAAE,eAAe",
-"sources": ["Note.scss"],
-"names": [],
-"file": "Note.css"
-}
+{"version":3,"sources":["Note.scss","Note.css"],"names":[],"mappings":"AAEA;EACE,wBAAA;ACDF","file":"Note.css"}

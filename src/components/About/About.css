@@ -1,12 +1,14 @@
 .introduction {
   text-align: center;
-  width: 100%; }
-  .introduction h2 {
-    color: #9d0059; }
-  .introduction p {
-    font-size: 1.1em; }
+  width: 100%;
+}
+.introduction h2 {
+  color: #9d0059;
+}
+.introduction p {
+  font-size: 1.1em;
+}
 
 .aboutTextBubbles {
-  z-index: 300; }
-
-/*# sourceMappingURL=About.css.map */
+  z-index: 300;
+}/*# sourceMappingURL=About.css.map */

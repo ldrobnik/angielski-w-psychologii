@@ -12,15 +12,13 @@
   letter-spacing: 0.1em;
   color: #9d0059 !important;
   transition: background-color 1s;
-  -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; }
-  .linkButton:hover {
-    background-color: #ff0492;
-    text-decoration: none; }
-
-/*# sourceMappingURL=LinkButton.css.map */
+  user-select: none;
+}
+.linkButton:hover {
+  background-color: #ff0492;
+  text-decoration: none;
+}/*# sourceMappingURL=LinkButton.css.map */

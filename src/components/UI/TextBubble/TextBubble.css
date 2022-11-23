@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .lightTextBubble {
   border: #9d0059 1px solid;
   padding: 15px 20px;
@@ -5,26 +6,30 @@
   font-size: 1.1em;
   background-color: #f8f9fa;
   text-align: center;
-  -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
-  box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5); }
-  .lightTextBubble .inlineLink a {
-    color: #ff6abe;
-    text-decoration: none;
-    cursor: pointer;
-    transition: color 1s; }
-    .lightTextBubble .inlineLink a:link {
-      color: #9d0059;
-      text-decoration: none; }
-    .lightTextBubble .inlineLink a:visited {
-      color: #9d0059;
-      text-decoration: none; }
-    .lightTextBubble .inlineLink a:hover {
-      color: #ff0492 !important;
-      text-decoration: none; }
-    .lightTextBubble .inlineLink a:active {
-      color: #9d0059;
-      text-decoration: none; }
+  box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
+}
+.lightTextBubble .inlineLink a {
+  color: #ff6abe;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 1s;
+}
+.lightTextBubble .inlineLink a:link {
+  color: #9d0059;
+  text-decoration: none;
+}
+.lightTextBubble .inlineLink a:visited {
+  color: #9d0059;
+  text-decoration: none;
+}
+.lightTextBubble .inlineLink a:hover {
+  color: #ff0492 !important;
+  text-decoration: none;
+}
+.lightTextBubble .inlineLink a:active {
+  color: #9d0059;
+  text-decoration: none;
+}
 
 .themeTextBubble {
   border: #f8f9fa 1px solid;
@@ -33,26 +38,30 @@
   font-size: 1.1em;
   background-color: #9d0059;
   text-align: center;
-  -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
-  box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5); }
-  .themeTextBubble .inlineLink a {
-    color: #ff6abe;
-    text-decoration: none;
-    cursor: pointer;
-    transition: color 1s; }
-    .themeTextBubble .inlineLink a:link {
-      color: #ff6abe;
-      text-decoration: none; }
-    .themeTextBubble .inlineLink a:visited {
-      color: #ff6abe;
-      text-decoration: none; }
-    .themeTextBubble .inlineLink a:hover {
-      color: #ff0492 !important;
-      text-decoration: none; }
-    .themeTextBubble .inlineLink a:active {
-      color: #ff6abe;
-      text-decoration: none; }
+  box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
+}
+.themeTextBubble .inlineLink a {
+  color: #ff6abe;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 1s;
+}
+.themeTextBubble .inlineLink a:link {
+  color: #ff6abe;
+  text-decoration: none;
+}
+.themeTextBubble .inlineLink a:visited {
+  color: #ff6abe;
+  text-decoration: none;
+}
+.themeTextBubble .inlineLink a:hover {
+  color: #ff0492 !important;
+  text-decoration: none;
+}
+.themeTextBubble .inlineLink a:active {
+  color: #ff6abe;
+  text-decoration: none;
+}
 
 .blogTextBubble {
   border: #9d0059 1px solid;
@@ -62,114 +71,142 @@
   background-color: #f8f9fa;
   color: #0f0f0f;
   text-align: center;
-  -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
-  box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5); }
-  @media all and (max-width: 500px) {
-    .blogTextBubble {
-      padding: 45px 10px;
-      margin: 20px 0; } }
-  .blogTextBubble .wp-block-file {
-    display: inline-block;
-    margin: 1em auto; }
-    .blogTextBubble .wp-block-file a {
-      border: 1px solid #0f0f0f;
-      margin: 0.5em 0.6em;
-      padding: 0.5em 1.5em;
-      background-color: #f8f9fa;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      transition: background-color 1s; }
-      .blogTextBubble .wp-block-file a:hover {
-        background-color: #ff0492;
-        text-decoration: none; }
+  box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
+}
+@media all and (max-width: 500px) {
+  .blogTextBubble {
+    padding: 45px 10px;
+    margin: 20px 0;
+  }
+}
+.blogTextBubble .wp-block-file {
+  display: inline-block;
+  margin: 1em auto;
+}
+.blogTextBubble .wp-block-file a {
+  border: 1px solid #0f0f0f;
+  margin: 0.5em 0.6em;
+  padding: 0.5em 1.5em;
+  background-color: #f8f9fa;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: background-color 1s;
+}
+.blogTextBubble .wp-block-file a:hover {
+  background-color: #ff0492;
+  text-decoration: none;
+}
+.blogTextBubble p, .blogTextBubble h2 {
+  padding: 0 15px;
+}
+@media all and (max-width: 500px) {
   .blogTextBubble p, .blogTextBubble h2 {
-    padding: 0 15px; }
-    @media all and (max-width: 500px) {
-      .blogTextBubble p, .blogTextBubble h2 {
-        padding: 0 10px; } }
+    padding: 0 10px;
+  }
+}
+.blogTextBubble ol, .blogTextBubble ul {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+@media all and (max-width: 768px) {
   .blogTextBubble ol, .blogTextBubble ul {
-    margin-left: 3em;
-    margin-right: 3em; }
-    @media all and (max-width: 768px) {
-      .blogTextBubble ol, .blogTextBubble ul {
-        margin-left: 0.5em;
-        margin-right: 1em; } }
-  .blogTextBubble ul {
-    list-style: none;
-    /* Remove default bullets */ }
-  .blogTextBubble ul li::before {
-    content: "\2022";
-    color: #9d0059;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em; }
-  .blogTextBubble ol {
-    list-style: none;
-    counter-reset: li; }
-  .blogTextBubble ol li::before {
-    content: "." counter(li);
-    color: #9d0059;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1.5em;
-    margin-right: 0.5em;
-    text-align: right;
-    direction: rtl; }
-  .blogTextBubble ol li {
-    counter-increment: li; }
-  .blogTextBubble a {
-    color: #9d0059;
-    text-decoration: none;
-    cursor: pointer;
-    transition: color 1s; }
-    .blogTextBubble a:link {
-      color: #9d0059;
-      text-decoration: none; }
-    .blogTextBubble a:visited {
-      color: #9d0059;
-      text-decoration: none; }
-    .blogTextBubble a:hover {
-      color: #37001f;
-      text-decoration: none; }
-    .blogTextBubble a:active {
-      color: #9d0059;
-      text-decoration: none; }
-  .blogTextBubble img {
-    max-width: 90%; }
-  .blogTextBubble iframe {
-    width: 60vw;
-    height: 33.75vw;
-    /*16:9*/ }
-  .blogTextBubble figure {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em; }
-  .blogTextBubble figcaption {
-    font-size: 0.8em;
-    margin-top: 0.2em; }
-  .blogTextBubble h2 {
-    color: #9d0059;
-    margin-bottom: 1em;
-    font-size: 2em; }
-  .blogTextBubble .blogPost h2 {
-    color: #0f0f0f !important;
-    font-size: 1.4em;
-    text-align: left; }
-  .blogTextBubble ul, .blogTextBubble ol {
-    text-align: left; }
+    margin-left: 0.5em;
+    margin-right: 1em;
+  }
+}
+.blogTextBubble ul {
+  list-style: none; /* Remove default bullets */
+}
+.blogTextBubble ul li::before {
+  content: "•";
+  color: #9d0059;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.blogTextBubble ol {
+  list-style: none;
+  counter-reset: li;
+}
+.blogTextBubble ol li::before {
+  content: "." counter(li);
+  color: #9d0059;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.5em;
+  margin-right: 0.5em;
+  text-align: right;
+  direction: rtl;
+}
+.blogTextBubble ol li {
+  counter-increment: li;
+}
+.blogTextBubble a {
+  color: #9d0059;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 1s;
+}
+.blogTextBubble a:link {
+  color: #9d0059;
+  text-decoration: none;
+}
+.blogTextBubble a:visited {
+  color: #9d0059;
+  text-decoration: none;
+}
+.blogTextBubble a:hover {
+  color: #37001f;
+  text-decoration: none;
+}
+.blogTextBubble a:active {
+  color: #9d0059;
+  text-decoration: none;
+}
+.blogTextBubble img {
+  max-width: 90%;
+}
+.blogTextBubble iframe {
+  width: 60vw;
+  height: 33.75vw; /*16:9*/
+}
+.blogTextBubble figure {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+.blogTextBubble figcaption {
+  font-size: 0.8em;
+  margin-top: 0.2em;
+}
+.blogTextBubble h2 {
+  color: #9d0059;
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+.blogTextBubble .blogPost h2 {
+  color: #0f0f0f !important;
+  font-size: 1.4em;
+  text-align: left;
+}
+.blogTextBubble ul, .blogTextBubble ol {
+  text-align: left;
+}
+.blogTextBubble blockquote {
+  text-align: left;
+  border-left: 4px solid #9d0059;
+  font-size: 0.9em;
+  display: block;
+  margin-left: 1em;
+  padding: 1em 3em 0.5em 2em;
+}
+@media all and (max-width: 500px) {
   .blogTextBubble blockquote {
-    text-align: left;
-    border-left: 4px solid #9d0059;
-    font-size: 0.9em;
-    display: block;
-    margin-left: 1em;
-    padding: 1em 3em 0.5em 2em; }
-    @media all and (max-width: 500px) {
-      .blogTextBubble blockquote {
-        padding: 1em 1em 0.5em 1.5em; } }
+    padding: 1em 1em 0.5em 1.5em;
+  }
+}
 
 .hoverableTextBubble {
   border: #9d0059 1px solid;
@@ -179,38 +216,44 @@
   background-color: #f8f9fa;
   color: #0f0f0f;
   text-align: center;
-  -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
-  transition: background-color 1s; }
-  .hoverableTextBubble:hover {
-    background-color: #d00076; }
-  .hoverableTextBubble p, .hoverableTextBubble h2 {
-    padding: 0 15px; }
-  .hoverableTextBubble p {
-    text-align: left;
-    font-size: 0.8em; }
-  .hoverableTextBubble h2 {
-    color: #9d0059;
-    font-size: 1.6em;
-    margin-top: 0.6em;
-    margin-bottom: 0.6em; }
-  .hoverableTextBubble a {
-    color: #9d0059;
-    text-decoration: none;
-    cursor: pointer;
-    transition: color 1s; }
-    .hoverableTextBubble a:link {
-      color: #9d0059;
-      text-decoration: none; }
-    .hoverableTextBubble a:visited {
-      color: #9d0059;
-      text-decoration: none; }
-    .hoverableTextBubble a:hover {
-      color: #37001f;
-      text-decoration: none; }
-    .hoverableTextBubble a:active {
-      color: #9d0059;
-      text-decoration: none; }
-
-/*# sourceMappingURL=TextBubble.css.map */
+  transition: background-color 1s;
+}
+.hoverableTextBubble:hover {
+  background-color: #d00076;
+}
+.hoverableTextBubble p, .hoverableTextBubble h2 {
+  padding: 0 15px;
+}
+.hoverableTextBubble p {
+  text-align: left;
+  font-size: 0.8em;
+}
+.hoverableTextBubble h2 {
+  color: #9d0059;
+  font-size: 1.6em;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+.hoverableTextBubble a {
+  color: #9d0059;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 1s;
+}
+.hoverableTextBubble a:link {
+  color: #9d0059;
+  text-decoration: none;
+}
+.hoverableTextBubble a:visited {
+  color: #9d0059;
+  text-decoration: none;
+}
+.hoverableTextBubble a:hover {
+  color: #37001f;
+  text-decoration: none;
+}
+.hoverableTextBubble a:active {
+  color: #9d0059;
+  text-decoration: none;
+}/*# sourceMappingURL=TextBubble.css.map */

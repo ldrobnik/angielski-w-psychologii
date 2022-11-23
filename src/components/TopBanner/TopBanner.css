@@ -6,44 +6,56 @@
   min-height: 70vh;
   margin-bottom: 0 !important;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .wide {
-  min-height: 70vh; }
+  min-height: 70vh;
+}
 
 .thin {
-  min-height: 40vh; }
+  min-height: 40vh;
+}
 
 .topBannerContainer {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .title {
   font-family: "Fugaz One", cursive;
-  font-size: 4em; }
-  @media all and (max-width: 450px) {
-    .title {
-      margin-top: 12vh;
-      font-size: 2.5em; } }
-  @media all and (max-width: 290px) {
-    .title {
-      margin-top: 12vh;
-      font-size: 1.2em; } }
+  font-size: 4em;
+}
+@media all and (max-width: 450px) {
+  .title {
+    margin-top: 12vh;
+    font-size: 2.5em;
+  }
+}
+@media all and (max-width: 290px) {
+  .title {
+    margin-top: 12vh;
+    font-size: 1.2em;
+  }
+}
 
 .subtitle {
   font-size: 1.3em;
-  margin: 1.5em 0 0 0; }
-  @media all and (max-width: 450px) {
-    .subtitle {
-      font-size: 1em; } }
+  margin: 1.5em 0 0 0;
+}
+@media all and (max-width: 450px) {
+  .subtitle {
+    font-size: 1em;
+  }
+}
 
 .bannerButton {
-  margin-top: 2em; }
+  margin-top: 2em;
+}
 
 .hiddenBackdrop {
   visibility: hidden;
   height: 0;
   position: absolute;
   top: -1000;
-  left: -1000; }
-
-/*# sourceMappingURL=TopBanner.css.map */
+  left: -1000;
+}/*# sourceMappingURL=TopBanner.css.map */

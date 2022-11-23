@@ -88,6 +88,11 @@ const Offer = (props) => {
                           <div key={k} className="serviceItem">
                             <div className="serviceType">{item.type}</div>
                             <div className="servicePrice">{item.price}</div>
+                            {item.explanation && (
+                              <div className="serviceExplanation">
+                                {item.explanation}
+                              </div>
+                            )}
                           </div>
                         );
                       })}

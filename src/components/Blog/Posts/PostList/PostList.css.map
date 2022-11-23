@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAGE,gBAAI;EACF,KAAK,ECHI,OAAO;EDIhB,SAAS,EAAE,GAAG;EACd,UAAU,EAAE,KAAK;;AAIrB,OAAQ;EACN,UAAU,EAAE,GAAG",
-"sources": ["PostList.scss","../../../../styles/_variables.scss"],
-"names": [],
-"file": "PostList.css"
-}
+{"version":3,"sources":["PostList.scss","../../../../styles/_variables.scss","PostList.css"],"names":[],"mappings":"AAGE;EACE,cCHS;EDIT,cAAA;EACA,iBAAA;AEFJ;;AFMA;EACE,eAAA;AEHF","file":"PostList.css"}
