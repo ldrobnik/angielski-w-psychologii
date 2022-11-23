@@ -108,9 +108,10 @@ export const WEBSITE_TEXT = {
           ogólnego i&nbsp;specjalistycznego na różnych poziomach zaawansowania.
         </p>
         <p>
-          Obecnie prowadzę zajęcia z&nbsp;języka angielskiego biznesowego dla
-          firm, angielskiego ogólnego dla studentów i&nbsp;pracowników SWPS oraz
-          angielskiego w&nbsp;psychologii dla osób indywidualnych.
+          Obecnie prowadzę zajęcia Business English w&nbsp;firmach, angielskiego
+          ogólnego, akademickiego i&nbsp;psychologicznego ze studentami
+          i&nbsp;pracownikami uniwersytetu SWPS oraz ogólnego
+          i&nbsp;psychologicznego z&nbsp;klientami indywidualnymi.
         </p>
       </React.Fragment>,
       <React.Fragment>
