@@ -82,8 +82,8 @@ export const WEBSITE_TEXT = {
     title: <React.Fragment>Angielski w&nbsp;psychologii</React.Fragment>,
     subtitle: (
       <React.Fragment>
-        Język angielski dla psychologów, psychoterapeutów i&nbsp;osób
-        zainteresowanych psychologią
+        Język angielski dla psychologów, trenerów i&nbsp;osób zainteresowanych
+        psychologią
       </React.Fragment>
     ),
     button: <React.Fragment>Oferta</React.Fragment>,
@@ -93,7 +93,7 @@ export const WEBSITE_TEXT = {
     name: <React.Fragment>Katarzyna Łasocha-Nowak</React.Fragment>,
     description: (
       <React.Fragment>
-        Nauczycielka języka angielskiego i&nbsp;tłumaczka
+        Lektorka języka angielskiego i&nbsp;tłumaczka
       </React.Fragment>
     ),
     altText: "Katarzyna Łasocha-Nowak",
@@ -109,9 +109,8 @@ export const WEBSITE_TEXT = {
         </p>
         <p>
           Obecnie prowadzę zajęcia z&nbsp;języka angielskiego biznesowego dla
-          firm, angielskiego ogólnego dla studentów szkół wyższych — UAM
-          i&nbsp;SWPS oraz angielskiego w&nbsp;psychologii dla osób
-          indywidualnych. Większość zajęć odbywa się online.
+          firm, angielskiego ogólnego dla studentów i&nbsp;pracowników SWPS oraz
+          angielskiego w&nbsp;psychologii dla osób indywidualnych.
         </p>
       </React.Fragment>,
       <React.Fragment>
@@ -260,19 +259,32 @@ export const WEBSITE_TEXT = {
       ),
       content: [
         {
-          type: <React.Fragment>Indywidualnie:</React.Fragment>,
+          type: <React.Fragment>Zajęcia indywidualne:</React.Fragment>,
+          explanation: "",
           price: (
             <React.Fragment>
-              <span className="priceValue">100&nbsp;zł</span> brutto/60&nbsp;min
+              <span className="priceValue">100&nbsp;zł</span> brutto/55&nbsp;min
             </React.Fragment>
           ),
         },
         {
-          type: <React.Fragment>Grupa dwuosobowa:</React.Fragment>,
+          type: <React.Fragment>Zajęcia grupowe:</React.Fragment>,
+          explanation: "",
           price: (
             <React.Fragment>
-              <span className="priceValue">70&nbsp;zł</span>{" "}
-              brutto/os./60&nbsp;min
+              <span className="priceValue">60&nbsp;zł</span>{" "}
+              brutto/os./55&nbsp;min
+            </React.Fragment>
+          ),
+        },
+        {
+          type: <React.Fragment>Konsultacje indywidualne:</React.Fragment>,
+          explanation:
+            "1 do 5 spotkań, podczas których pomogę ci się przygotować do rozmowy kwalifikacyjnej lub egzaminu na uczelni albo pomogę doszlifować prezentację, webinar, warsztaty, czy szkolenie w języku angielskim.",
+          price: (
+            <React.Fragment>
+              <span className="priceValue">120&nbsp;zł</span>{" "}
+              brutto/os./55&nbsp;min
             </React.Fragment>
           ),
         },
