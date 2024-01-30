@@ -264,7 +264,7 @@ export const WEBSITE_TEXT = {
           explanation: "",
           price: (
             <React.Fragment>
-              <span className="priceValue">100&nbsp;zł</span> brutto/55&nbsp;min
+              <span className="priceValue">120&nbsp;zł</span> brutto/55&nbsp;min
             </React.Fragment>
           ),
         },
