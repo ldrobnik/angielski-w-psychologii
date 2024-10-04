@@ -4,6 +4,7 @@ import { bindActionCreators } from "redux";
 import { Row, Col, Container } from "react-bootstrap";
 import posed from "react-pose";
 import { Waypoint } from "react-waypoint";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import "./Offer.css";
 import { SECTION_NAMES, WEBSITE_TEXT } from "../../data/constants";
@@ -79,30 +80,32 @@ const Offer = (props) => {
               <AnimatedMessageLeft
                 pose={messagesVisible ? "visible" : "hidden"}
               >
-                <TextBubble type="theme">
-                  <div className="offerBox">
-                    <div>
-                      <h2 className="serviceName">
-                        {WEBSITE_TEXT.offer.english.title}
-                      </h2>
+                <AnchorLink href="#kontakt">
+                  <TextBubble type="theme">
+                    <div className="offerBox">
+                      <div>
+                        <h2 className="serviceName">
+                          {WEBSITE_TEXT.offer.english.title}
+                        </h2>
+                      </div>
+                      <Row>
+                        {WEBSITE_TEXT.offer.english.content.map((item, k) => {
+                          return (
+                            <div key={k} className="serviceItem">
+                              <div className="serviceType">{item.type}</div>
+                              <div className="servicePrice">{item.price}</div>
+                              {item.explanation && (
+                                <div className="serviceExplanation">
+                                  {item.explanation}
+                                </div>
+                              )}
+                            </div>
+                          );
+                        })}
+                      </Row>
                     </div>
-                    <Row>
-                      {WEBSITE_TEXT.offer.english.content.map((item, k) => {
-                        return (
-                          <div key={k} className="serviceItem">
-                            <div className="serviceType">{item.type}</div>
-                            <div className="servicePrice">{item.price}</div>
-                            {item.explanation && (
-                              <div className="serviceExplanation">
-                                {item.explanation}
-                              </div>
-                            )}
-                          </div>
-                        );
-                      })}
-                    </Row>
-                  </div>
-                </TextBubble>
+                  </TextBubble>
+                </AnchorLink>
               </AnimatedMessageLeft>
             </Col>
           </Row>
@@ -111,12 +114,14 @@ const Offer = (props) => {
               <AnimatedMessageRight
                 pose={messagesVisible ? "visible" : "hidden"}
               >
-                <PosterBubble type="light">
-                  <img
-                    src={poster1}
-                    alt={WEBSITE_TEXT.offer.posterAltTexts[0]}
-                  />
-                </PosterBubble>
+                <AnchorLink href="#kontakt">
+                  <PosterBubble type="light">
+                    <img
+                      src={poster1}
+                      alt={WEBSITE_TEXT.offer.posterAltTexts[0]}
+                    />
+                  </PosterBubble>
+                </AnchorLink>
               </AnimatedMessageRight>
             </Col>
           </Row>
@@ -125,12 +130,14 @@ const Offer = (props) => {
               <AnimatedMessageLeft
                 pose={messagesVisible ? "visible" : "hidden"}
               >
-                <PosterBubble type="light">
-                  <img
-                    src={poster2}
-                    alt={WEBSITE_TEXT.offer.posterAltTexts[1]}
-                  />
-                </PosterBubble>
+                <AnchorLink href="#kontakt">
+                  <PosterBubble type="light">
+                    <img
+                      src={poster2}
+                      alt={WEBSITE_TEXT.offer.posterAltTexts[1]}
+                    />
+                  </PosterBubble>
+                </AnchorLink>
               </AnimatedMessageLeft>
             </Col>
           </Row>
@@ -139,12 +146,14 @@ const Offer = (props) => {
               <AnimatedMessageRight
                 pose={messagesVisible ? "visible" : "hidden"}
               >
-                <PosterBubble type="light">
-                  <img
-                    src={poster3}
-                    alt={WEBSITE_TEXT.offer.posterAltTexts[2]}
-                  />
-                </PosterBubble>
+                <AnchorLink href="#kontakt">
+                  <PosterBubble type="light">
+                    <img
+                      src={poster3}
+                      alt={WEBSITE_TEXT.offer.posterAltTexts[2]}
+                    />
+                  </PosterBubble>
+                </AnchorLink>
               </AnimatedMessageRight>
             </Col>
           </Row>
