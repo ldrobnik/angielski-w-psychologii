@@ -343,6 +343,11 @@ export const WEBSITE_TEXT = {
         </React.Fragment>
       ),
     },
+    posterAltTexts: [
+      "Angielski w psychologii, semestr pierwszy - tematy: depression, mindset, addiction, procrastination, relationship challenges. Piętnaście spotkań w kameralnej grupie. Cena: 1050 złotych lub 4 razy 270 złotych, online, środy od piętnastej do szesnastej. Terminy do ustalenia",
+      "Angielski w psychologii, semestr drugi - tematy: eating disorders, personality, grief, vulnerability, thinking fast and slow. Piętnaście spotkań w kameralnej grupie. Cena: 1050 złotych lub 4 razy 270 złotych, online, środy od piętnastej do szesnastej. Terminy do ustalenia",
+      "Angielski w psychologii, semestr trzeci - tematy: anxiety disorders, trauma, positive psychology, work psychology, personality disorders. Piętnaście spotkań w kameralnej grupie. Cena: 1050 złotych lub 4 razy 270 złotych, online, środy od piętnastej do szesnastej. Terminy do ustalenia",
+    ],
   },
   contact: {
     details: [
