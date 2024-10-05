@@ -26,3 +26,10 @@ yarn-error.log*
 .netlify
 .idea
 .sass-cache
+
+
+# compiled css
+*.css
+*.css.map
+*.css
+*.map

@@ -100,7 +100,6 @@
   background-color: #f8f9fa;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   transition: background-color 1s;
 }
@@ -114,7 +113,7 @@
 }
 @media all and (max-width: 500px) {
   .blogTextBubble p,
-.blogTextBubble h2 {
+  .blogTextBubble h2 {
     padding: 0 10px;
   }
 }
@@ -125,7 +124,7 @@
 }
 @media all and (max-width: 768px) {
   .blogTextBubble ol,
-.blogTextBubble ul {
+  .blogTextBubble ul {
     margin-left: 0.5em;
     margin-right: 1em;
   }

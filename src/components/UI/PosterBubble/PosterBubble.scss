@@ -1,0 +1,81 @@
+@import "../../../styles/common";
+
+.lightPosterBubble {
+  border: $themeBorder;
+  margin: 25px 10px;
+  font-size: 1.1em;
+  background-color: $lightColor;
+  text-align: center;
+  @include regularShadow;
+
+  img {
+    width: 100%;
+  }
+
+  .inlineLink a {
+    color: setColor(4);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 1s;
+
+    &:link {
+      color: $themeColor;
+      text-decoration: none;
+    }
+
+    &:visited {
+      color: $themeColor;
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: setColor(2) !important;
+      text-decoration: none;
+    }
+
+    &:active {
+      color: $themeColor;
+      text-decoration: none;
+    }
+  }
+}
+
+.themePosterBubble {
+  border: $lightBorder;
+  margin: 25px 10px;
+  font-size: 1.1em;
+  background-color: $themeColor;
+  text-align: center;
+  @include regularShadow;
+
+  img {
+    width: 100%;
+  }
+
+  .inlineLink a {
+    color: setColor(4);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 1s;
+
+    &:link {
+      color: setColor(4);
+      text-decoration: none;
+    }
+
+    &:visited {
+      color: setColor(4);
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: setColor(2) !important;
+      text-decoration: none;
+    }
+
+    &:active {
+      color: setColor(4);
+      text-decoration: none;
+    }
+  }
+}
