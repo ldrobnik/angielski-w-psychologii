@@ -90,18 +90,21 @@ const About = (props) => {
     );
 
     //desktop: top row has 3 bubbles left + portrait right (vertically centered),
-    //         bottom rows alternate left/right for remaining 4 bubbles
+    //         bottom rows alternate left/right for remaining 4 bubbles.
+    //         Single AnimatedList wraps everything so stagger applies in DOM order.
     const desktopContent = (
-        <React.Fragment>
+        <AnimatedList pose={pose}>
             <Row className="align-items-center">
                 <Col md={6} className="aboutTextBubbles">
-                    <AnimatedList pose={pose}>
-                        {details.slice(0, 3).map((bubble, k) => (
-                            <AnimatedMessage pose={pose} key={k}>
-                                <TextBubble type="light">{bubble}</TextBubble>
-                            </AnimatedMessage>
-                        ))}
-                    </AnimatedList>
+                    <AnimatedMessage pose={pose}>
+                        <TextBubble type="light">{details[0]}</TextBubble>
+                    </AnimatedMessage>
+                    <AnimatedMessage pose={pose}>
+                        <TextBubble type="light">{details[1]}</TextBubble>
+                    </AnimatedMessage>
+                    <AnimatedMessage pose={pose}>
+                        <TextBubble type="light">{details[2]}</TextBubble>
+                    </AnimatedMessage>
                 </Col>
                 <Col md={6} className="d-flex align-items-center justify-content-center aboutPortraitCol">
                     <Portrait
@@ -132,7 +135,7 @@ const About = (props) => {
                     </AnimatedMessageRight>
                 </Col>
             </Row>
-        </React.Fragment>
+        </AnimatedList>
     );
 
     const mainContent = props.mobile ? mobileContent : desktopContent;
