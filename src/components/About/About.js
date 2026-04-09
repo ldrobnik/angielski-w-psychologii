@@ -35,11 +35,25 @@ const AnimatedMessage = posed.div({
     }
 });
 
+const AnimatedMessageRight = posed.div({
+    visible: {
+        x: '0%',
+        opacity: '1',
+        transition: {
+            type: 'spring',
+            stiffness: 80
+        }
+    },
+    hidden: {
+        x: '300%',
+        opacity: '0'
+    }
+});
+
 const About = (props) => {
 
     //specifies whether text links should be visible
     const [messagesVisible, setMessagesVisible] = useState(false);
-
 
     //shows the messages
     const showMessages = () => {
@@ -51,54 +65,83 @@ const About = (props) => {
         props.setActiveSection(SECTION_NAMES.main[0].id);
     };
 
-    //contains the portrait jsx
-    const portrait = (
-        <Col
-            md={5}
-            className="verticallyCentered"
-        >
-            <Portrait
-                source={photo}
-                altText={WEBSITE_TEXT.about.altText}
-            />
-        </Col>
+    const details = WEBSITE_TEXT.about.details;
+    const pose = messagesVisible ? 'visible' : 'hidden';
+
+    //mobile: portrait on top, all bubbles below stacked
+    const mobileContent = (
+        <Row>
+            <Col xs={12} className="verticallyCentered">
+                <Portrait
+                    source={photo}
+                    altText={WEBSITE_TEXT.about.altText}
+                />
+            </Col>
+            <Col xs={12} className="verticallyCentered aboutTextBubbles">
+                <AnimatedList pose={pose}>
+                    {details.map((bubble, k) => (
+                        <AnimatedMessage pose={pose} key={k}>
+                            <TextBubble type="light">{bubble}</TextBubble>
+                        </AnimatedMessage>
+                    ))}
+                </AnimatedList>
+            </Col>
+        </Row>
     );
-    //contains the text bubble jsx
-    const textBubbles = (
-        <Col
-            className="verticallyCentered aboutTextBubbles"
-            md={7}
-        >
-            <AnimatedList
-                pose={messagesVisible ? 'visible' : 'hidden'}
-            >
-                {WEBSITE_TEXT.about.details.map((bubble, k) => {
-                        return (
-                            <AnimatedMessage
-                                pose={messagesVisible ? 'visible' : 'hidden'}
-                                key={k}
-                            >
-                                <TextBubble
-                                    type="light"
-                                >
-                                    {bubble}
-                                </TextBubble>
+
+    //desktop: top row has 3 bubbles left + portrait right (vertically centered),
+    //         bottom rows alternate left/right for remaining 4 bubbles
+    const desktopContent = (
+        <React.Fragment>
+            <Row className="align-items-center">
+                <Col md={6} className="aboutTextBubbles">
+                    <AnimatedList pose={pose}>
+                        {details.slice(0, 3).map((bubble, k) => (
+                            <AnimatedMessage pose={pose} key={k}>
+                                <TextBubble type="light">{bubble}</TextBubble>
                             </AnimatedMessage>
-                        )
-                    }
-                )}
-            </AnimatedList>
-        </Col>
+                        ))}
+                    </AnimatedList>
+                </Col>
+                <Col md={6} className="d-flex align-items-center justify-content-center aboutPortraitCol">
+                    <Portrait
+                        source={photo}
+                        altText={WEBSITE_TEXT.about.altText}
+                    />
+                </Col>
+            </Row>
+            <Row>
+                <Col md={6} className="aboutTextBubbles">
+                    <AnimatedMessage pose={pose}>
+                        <TextBubble type="light">{details[3]}</TextBubble>
+                    </AnimatedMessage>
+                </Col>
+                <Col md={6} className="aboutTextBubbles">
+                    <AnimatedMessageRight pose={pose}>
+                        <TextBubble type="light">{details[4]}</TextBubble>
+                    </AnimatedMessageRight>
+                </Col>
+                <Col md={6} className="aboutTextBubbles">
+                    <AnimatedMessage pose={pose}>
+                        <TextBubble type="light">{details[5]}</TextBubble>
+                    </AnimatedMessage>
+                </Col>
+                <Col md={6} className="aboutTextBubbles">
+                    <AnimatedMessageRight pose={pose}>
+                        <TextBubble type="light">{details[6]}</TextBubble>
+                    </AnimatedMessageRight>
+                </Col>
+            </Row>
+        </React.Fragment>
     );
-    //shows different content order on mobile and larger screens
-    const mainContent = props.mobile ? <React.Fragment>{portrait}{textBubbles}</React.Fragment> :
-        <React.Fragment>{textBubbles}{portrait} </React.Fragment>;
+
+    const mainContent = props.mobile ? mobileContent : desktopContent;
 
     //offset for triggering animation - larger for mobile
     const animationOffset = props.mobile ? '-80%' : '-150px';
+
     return (
         <React.Fragment>
-
             <div className="lightBackground sectionContent">
                 <Container>
                     <Row>
@@ -117,9 +160,7 @@ const About = (props) => {
                             <p>{WEBSITE_TEXT.about.description}</p>
                         </div>
                     </Row>
-                    <Row>
-                        {mainContent}
-                    </Row>
+                    {mainContent}
                 </Container>
             </div>
             <Waypoint

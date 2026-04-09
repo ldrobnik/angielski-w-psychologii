@@ -11,4 +11,9 @@
 
 .aboutTextBubbles {
   z-index: 300;
+}
+
+.aboutPortraitCol {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }/*# sourceMappingURL=About.css.map */
