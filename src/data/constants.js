@@ -109,6 +109,8 @@ export const WEBSITE_TEXT = {
           , którzy chcą swobodnie i&nbsp;profesjonalnie komunikować się
           w&nbsp;swoim obszarze zawodowym.
         </p>
+      </React.Fragment>,
+      <React.Fragment>
         <p>
           Współpracuję także z&nbsp;firmami (Business English i&nbsp;General
           English) oraz ze studentami i&nbsp;pracownikami Uniwersytetu SWPS,
@@ -120,13 +122,22 @@ export const WEBSITE_TEXT = {
         <p>
           Pracuję w&nbsp;oparciu o&nbsp;autorskie materiały oraz treści
           dobierane i&nbsp;tworzone indywidualnie pod konkretnego klienta
-          i&nbsp;jego cele zawodowe. Współpracuję z&nbsp;osobami
-          reprezentującymi różne podejścia terapeutyczne: od
-          psychoanalitycznego, przez psychodynamiczne (w&nbsp;tym ISTDP
-          i&nbsp;TFP), po humanistyczne (w&nbsp;tym Gestalt)
-          i&nbsp;poznawczo-behawioralne. Pracuję także z&nbsp;psychologami
-          dziecięcymi, seksuologami, psychodietetykami, coachami oraz
-          nauczycielami akademickimi, dlatego każda współpraca jest{" "}
+          i&nbsp;jego cele zawodowe.
+        </p>
+      </React.Fragment>,
+      <React.Fragment>
+        <p>
+          Współpracuję z&nbsp;osobami reprezentującymi różne podejścia
+          terapeutyczne: od psychoanalitycznego, przez psychodynamiczne
+          (w&nbsp;tym ISTDP i&nbsp;TFP), po humanistyczne (w&nbsp;tym Gestalt)
+          i&nbsp;poznawczo-behawioralne.
+        </p>
+      </React.Fragment>,
+      <React.Fragment>
+        <p>
+          Pracuję także z&nbsp;psychologami dziecięcymi, seksuologami,
+          psychodietetykami, coachami oraz nauczycielami akademickimi, dlatego
+          każda współpraca jest{" "}
           <span className="highlighted">
             dopasowana do indywidualnych potrzeb i&nbsp;kontekstu zawodowego
           </span>
