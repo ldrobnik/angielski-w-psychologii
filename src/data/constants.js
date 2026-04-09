@@ -100,44 +100,52 @@ export const WEBSITE_TEXT = {
     details: [
       <React.Fragment>
         <p>
-          Od ponad 20&nbsp;lat uczę języka angielskiego osoby dorosłe, a&nbsp;dziś
-          specjalizuję się w&nbsp;pracy z&nbsp;psychologami, psychoterapeutami
-          i&nbsp;coachami, którzy chcą swobodnie i&nbsp;profesjonalnie komunikować
-          się w&nbsp;swoim obszarze zawodowym.
+          Od ponad 20&nbsp;lat uczę języka angielskiego osoby dorosłe,
+          a&nbsp;dziś{" "}
+          <span className="highlighted">
+            specjalizuję się w&nbsp;pracy z&nbsp;psychologami, psychoterapeutami
+            i&nbsp;coachami
+          </span>
+          , którzy chcą swobodnie i&nbsp;profesjonalnie komunikować się
+          w&nbsp;swoim obszarze zawodowym.
         </p>
         <p>
           Współpracuję także z&nbsp;firmami (Business English i&nbsp;General
           English) oraz ze studentami i&nbsp;pracownikami Uniwersytetu SWPS,
-          jednak to właśnie praca z&nbsp;osobami z&nbsp;obszaru psychologii stanowi
-          dziś główny kierunek mojej działalności.
+          jednak to właśnie praca z&nbsp;osobami z&nbsp;obszaru psychologii
+          stanowi dziś główny kierunek mojej działalności.
         </p>
       </React.Fragment>,
       <React.Fragment>
         <p>
-          Pracuję w&nbsp;oparciu o&nbsp;autorskie materiały oraz treści dobierane
-          i&nbsp;tworzone indywidualnie pod konkretnego klienta i&nbsp;jego cele
-          zawodowe. Współpracuję z&nbsp;osobami reprezentującymi różne podejścia
-          terapeutyczne: od psychoanalitycznego, przez psychodynamiczne
-          (w&nbsp;tym ISTDP i&nbsp;TFP), po humanistyczne (w&nbsp;tym Gestalt)
+          Pracuję w&nbsp;oparciu o&nbsp;autorskie materiały oraz treści
+          dobierane i&nbsp;tworzone indywidualnie pod konkretnego klienta
+          i&nbsp;jego cele zawodowe. Współpracuję z&nbsp;osobami
+          reprezentującymi różne podejścia terapeutyczne: od
+          psychoanalitycznego, przez psychodynamiczne (w&nbsp;tym ISTDP
+          i&nbsp;TFP), po humanistyczne (w&nbsp;tym Gestalt)
           i&nbsp;poznawczo-behawioralne. Pracuję także z&nbsp;psychologami
-          dziecięcymi, seksuologami, psychodietetykami, coachami oraz nauczycielami
-          akademickimi, dlatego każda współpraca jest dopasowana do indywidualnych
-          potrzeb i&nbsp;kontekstu zawodowego.
+          dziecięcymi, seksuologami, psychodietetykami, coachami oraz
+          nauczycielami akademickimi, dlatego każda współpraca jest{" "}
+          <span className="highlighted">
+            dopasowana do indywidualnych potrzeb i&nbsp;kontekstu zawodowego
+          </span>
+          .
         </p>
       </React.Fragment>,
       <React.Fragment>
         <p>
-          Równolegle studiuję coaching z&nbsp;elementami psychologii na Uniwersytecie
-          SWPS, co pozwala mi jeszcze lepiej wspierać moich klientów w&nbsp;procesie
-          uczenia się i&nbsp;zmiany.
+          Równolegle studiuję coaching z&nbsp;elementami psychologii na
+          Uniwersytecie SWPS, co pozwala mi jeszcze lepiej wspierać moich
+          klientów w&nbsp;procesie uczenia się i&nbsp;zmiany.
         </p>
       </React.Fragment>,
       <React.Fragment>
         <p>
-          Zajęcia online są dziś naturalną formą pracy, dlatego większość moich
-          kursów i&nbsp;lekcji prowadzę właśnie w&nbsp;tej formule &ndash;
-          elastycznie, efektywnie i&nbsp;z&nbsp;dopasowaniem do potrzeb dorosłych
-          uczących się.
+          <span className="highlighted">Zajęcia online</span> są dziś naturalną
+          formą pracy, dlatego większość moich kursów i&nbsp;lekcji prowadzę
+          właśnie w&nbsp;tej formule &ndash; elastycznie, efektywnie
+          i&nbsp;z&nbsp;dopasowaniem do potrzeb dorosłych uczących się.
         </p>
       </React.Fragment>,
     ],
