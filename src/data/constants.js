@@ -114,21 +114,26 @@ export const WEBSITE_TEXT = {
         <p>
           Współpracuję także z&nbsp;firmami (Business English i&nbsp;General
           English) oraz ze studentami i&nbsp;pracownikami Uniwersytetu SWPS,
-          jednak to właśnie praca z&nbsp;osobami z&nbsp;obszaru psychologii
+          jednak to właśnie{" "}
+          <span className="highlighted">
+            praca z&nbsp;osobami z&nbsp;obszaru psychologii
+          </span>{" "}
           stanowi dziś główny kierunek mojej działalności.
         </p>
       </React.Fragment>,
       <React.Fragment>
         <p>
-          Pracuję w&nbsp;oparciu o&nbsp;autorskie materiały oraz treści
-          dobierane i&nbsp;tworzone indywidualnie pod konkretnego klienta
-          i&nbsp;jego cele zawodowe.
+          Pracuję w&nbsp;oparciu o&nbsp;autorskie materiały oraz{" "}
+          <span className="highlighted">
+            treści dobierane i&nbsp;tworzone indywidualnie pod konkretnego klienta
+          </span>
+          {" "}i&nbsp;jego cele zawodowe.
         </p>
       </React.Fragment>,
       <React.Fragment>
         <p>
-          Współpracuję z&nbsp;osobami reprezentującymi różne podejścia
-          terapeutyczne: od psychoanalitycznego, przez psychodynamiczne
+          Współpracuję z&nbsp;osobami reprezentującymi{" "}
+          <span className="highlighted">różne podejścia terapeutyczne</span>: od psychoanalitycznego, przez psychodynamiczne
           (w&nbsp;tym ISTDP i&nbsp;TFP), po humanistyczne (w&nbsp;tym Gestalt)
           i&nbsp;poznawczo-behawioralne.
         </p>
@@ -147,8 +152,11 @@ export const WEBSITE_TEXT = {
       <React.Fragment>
         <p>
           Równolegle studiuję coaching z&nbsp;elementami psychologii na
-          Uniwersytecie SWPS, co pozwala mi jeszcze lepiej wspierać moich
-          klientów w&nbsp;procesie uczenia się i&nbsp;zmiany.
+          Uniwersytecie SWPS, co pozwala mi{" "}
+          <span className="highlighted">
+            jeszcze lepiej wspierać moich klientów
+          </span>{" "}
+          w&nbsp;procesie uczenia się i&nbsp;zmiany.
         </p>
       </React.Fragment>,
       <React.Fragment>
