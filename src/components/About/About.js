@@ -109,7 +109,7 @@ const About = (props) => {
           <Portrait source={photo} altText={WEBSITE_TEXT.about.altText} />
         </Col>
       </Row>
-      <Row>
+      <Row style={{marginTop: '-25px'}}>
         <Col md={6} className="aboutTextBubbles">
           <AnimatedMessage pose={pose}>
             <TextBubble type="light">{details[3]}</TextBubble>
@@ -120,6 +120,8 @@ const About = (props) => {
             <TextBubble type="light">{details[4]}</TextBubble>
           </AnimatedMessageRight>
         </Col>
+      </Row>
+      <Row style={{marginTop: '-25px'}}>
         <Col md={6} className="aboutTextBubbles">
           <AnimatedMessage pose={pose}>
             <TextBubble type="light">{details[5]}</TextBubble>
