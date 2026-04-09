@@ -100,33 +100,45 @@ export const WEBSITE_TEXT = {
     details: [
       <React.Fragment>
         <p>
-          Od 16&nbsp;lat wspieram osoby dorosłe w&nbsp;ich rozwoju językowym.
-          Przeprowadziłam{" "}
-          <span className="highlighted">
-            kilkadziesiąt kursów języka angielskiego
-          </span>{" "}
-          ogólnego i&nbsp;specjalistycznego na różnych poziomach zaawansowania.
+          Od ponad 20&nbsp;lat uczę języka angielskiego osoby dorosłe, a&nbsp;dziś
+          specjalizuję się w&nbsp;pracy z&nbsp;psychologami, psychoterapeutami
+          i&nbsp;coachami, którzy chcą swobodnie i&nbsp;profesjonalnie komunikować
+          się w&nbsp;swoim obszarze zawodowym.
         </p>
         <p>
-          Obecnie prowadzę zajęcia Business English w&nbsp;firmach, angielskiego
-          ogólnego, akademickiego i&nbsp;psychologicznego ze studentami
-          i&nbsp;pracownikami uniwersytetu SWPS oraz ogólnego
-          i&nbsp;psychologicznego z&nbsp;klientami indywidualnymi.
+          Współpracuję także z&nbsp;firmami (Business English i&nbsp;General
+          English) oraz ze studentami i&nbsp;pracownikami Uniwersytetu SWPS,
+          jednak to właśnie praca z&nbsp;osobami z&nbsp;obszaru psychologii stanowi
+          dziś główny kierunek mojej działalności.
         </p>
       </React.Fragment>,
       <React.Fragment>
-        Jestem współautorką{" "}
-        <span className="highlighted">
-          specjalistycznego podręcznika języka angielskiego dla psychologów
-        </span>
-        , w&nbsp;oparciu o&nbsp;który przeprowadziłam kilka edycji mojego
-        autorskiego kursu „Angielski w psychologii” z&nbsp;grupą poznańskich
-        psychologów i&nbsp;psychoterapeutów.
+        <p>
+          Pracuję w&nbsp;oparciu o&nbsp;autorskie materiały oraz treści dobierane
+          i&nbsp;tworzone indywidualnie pod konkretnego klienta i&nbsp;jego cele
+          zawodowe. Współpracuję z&nbsp;osobami reprezentującymi różne podejścia
+          terapeutyczne: od psychoanalitycznego, przez psychodynamiczne
+          (w&nbsp;tym ISTDP i&nbsp;TFP), po humanistyczne (w&nbsp;tym Gestalt)
+          i&nbsp;poznawczo-behawioralne. Pracuję także z&nbsp;psychologami
+          dziecięcymi, seksuologami, psychodietetykami, coachami oraz nauczycielami
+          akademickimi, dlatego każda współpraca jest dopasowana do indywidualnych
+          potrzeb i&nbsp;kontekstu zawodowego.
+        </p>
       </React.Fragment>,
       <React.Fragment>
-        Wychodząc naprzeciw potrzebom osób, które nie mają czasu lub możliwości
-        uczestniczenia w&nbsp;moich kursach na żywo, oferuję{" "}
-        <span className="highlighted">zajęcia&nbsp;online</span>.
+        <p>
+          Równolegle studiuję coaching z&nbsp;elementami psychologii na Uniwersytecie
+          SWPS, co pozwala mi jeszcze lepiej wspierać moich klientów w&nbsp;procesie
+          uczenia się i&nbsp;zmiany.
+        </p>
+      </React.Fragment>,
+      <React.Fragment>
+        <p>
+          Zajęcia online są dziś naturalną formą pracy, dlatego większość moich
+          kursów i&nbsp;lekcji prowadzę właśnie w&nbsp;tej formule &ndash;
+          elastycznie, efektywnie i&nbsp;z&nbsp;dopasowaniem do potrzeb dorosłych
+          uczących się.
+        </p>
       </React.Fragment>,
     ],
   },
