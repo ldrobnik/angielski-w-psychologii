@@ -100,33 +100,47 @@ export const WEBSITE_TEXT = {
     details: [
       <React.Fragment>
         <p>
-          Od 16&nbsp;lat wspieram osoby dorosłe w&nbsp;ich rozwoju językowym.
-          Przeprowadziłam{" "}
+          Specjalizuję się w&nbsp;{" "}
           <span className="highlighted">
-            kilkadziesiąt kursów języka angielskiego
-          </span>{" "}
-          ogólnego i&nbsp;specjalistycznego na różnych poziomach zaawansowania.
+            nauczaniu języka angielskiego osób dorosłych
+          </span>
+          ,
+          szczególnie psychologów, psychoterapeutów i&nbsp;coachów, którzy chcą
+          swobodnie i&nbsp;profesjonalnie komunikować się w&nbsp;swoim obszarze
+          zawodowym.
         </p>
         <p>
-          Obecnie prowadzę zajęcia Business English w&nbsp;firmach, angielskiego
-          ogólnego, akademickiego i&nbsp;psychologicznego ze studentami
-          i&nbsp;pracownikami uniwersytetu SWPS oraz ogólnego
-          i&nbsp;psychologicznego z&nbsp;klientami indywidualnymi.
+          Pracuję w&nbsp;oparciu o&nbsp;autorskie materiały oraz treści dobierane
+          indywidualnie pod cele zawodowe/rozwojowe klienta. Wykorzystuję także
+          doświadczenie translatorskie, dzięki czemu pracujemy nie tylko na
+          codziennym języku, ale również na wymagających,{" "}
+          <span className="highlighted">
+            specjalistycznych tekstach z&nbsp;obszaru psychologii
+            i&nbsp;psychoterapii
+          </span>
+          .
         </p>
-      </React.Fragment>,
-      <React.Fragment>
-        Jestem współautorką{" "}
-        <span className="highlighted">
-          specjalistycznego podręcznika języka angielskiego dla psychologów
-        </span>
-        , w&nbsp;oparciu o&nbsp;który przeprowadziłam kilka edycji mojego
-        autorskiego kursu „Angielski w psychologii” z&nbsp;grupą poznańskich
-        psychologów i&nbsp;psychoterapeutów.
-      </React.Fragment>,
-      <React.Fragment>
-        Wychodząc naprzeciw potrzebom osób, które nie mają czasu lub możliwości
-        uczestniczenia w&nbsp;moich kursach na żywo, oferuję{" "}
-        <span className="highlighted">zajęcia&nbsp;online</span>.
+        <p>
+          Wspieram osoby reprezentujące różne podejścia terapeutyczne:
+          psychoanalityczne, psychodynamiczne (w&nbsp;tym ISTDP i&nbsp;TFP),
+          humanistyczne (w&nbsp;tym Gestalt) oraz poznawczo-behawioralne.
+          Współpracuję także z&nbsp;{" "}
+          <span className="highlighted">
+            psychologami dziecięcymi, seksuologami, psychodietetykami, coachami
+            i&nbsp;nauczycielami akademickimi
+          </span>
+          , dlatego
+          każda współpraca jest dopasowana do konkretnego kontekstu zawodowego.
+        </p>
+        <p>
+          Równolegle studiuję{" "}
+          <span className="highlighted">
+            coaching z&nbsp;elementami psychologii
+          </span>{" "}
+          na
+          Uniwersytecie SWPS, co pozwala mi jeszcze lepiej wspierać klientów
+          w&nbsp;procesie uczenia się i&nbsp;zmiany.
+        </p>
       </React.Fragment>,
     ],
   },
