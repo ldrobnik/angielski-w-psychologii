@@ -295,20 +295,17 @@ export const WEBSITE_TEXT = {
         {
           type: (
             <React.Fragment>
-              Konsultacje indywidualne<sup>*</sup>:
+              Spotkania 2&nbsp;razy w&nbsp;miesiącu<sup>*</sup>:
             </React.Fragment>
           ),
           explanation: (
             <React.Fragment>
-              <sup>*</sup>Od 1 do 5&nbsp;spotkań, podczas których pomogę ci się
-              przygotować do rozmowy kwalifikacyjnej lub egzaminu na uczelni
-              albo pomogę doszlifować prezentację, webinar, warsztaty czy
-              szkolenie w&nbsp;języku angielskim.
+              <sup>*</sup>Plus praca samodzielna z&nbsp;autorskimi materiałami
             </React.Fragment>
           ),
           price: (
             <React.Fragment>
-              <span className="priceValue">150&nbsp;zł</span> brutto/55&nbsp;min
+              <span className="priceValue">165&nbsp;zł</span> brutto/60&nbsp;min
             </React.Fragment>
           ),
         },
